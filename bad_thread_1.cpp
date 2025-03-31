@@ -2,7 +2,6 @@
 void do_something(int &i){
     i++; 
 }
-
 struct func {
     func(int &i_): i(i_){}
     void operator()(){
@@ -10,12 +9,8 @@ struct func {
             do_something(i); 
         }
     }
-    
-
     int &i; 
 }; 
-
-
 int main(){
     int local_variable = 0;
 
