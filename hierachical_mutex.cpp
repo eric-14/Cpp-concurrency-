@@ -45,9 +45,6 @@ public:
         update_mutex_value(); 
         return true; 
     }
-
-    
-
 };
 
 threal_local unsigned long hierachical_mutex::this_thread_value(U_LONG_MAX);
