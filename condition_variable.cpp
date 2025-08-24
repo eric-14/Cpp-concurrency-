@@ -20,6 +20,9 @@ void data_processing_thread()
 {
     while(true)
     {
+        //Why use unique lock 
+        //because in this instance wait should lock the queue once it tries to read from it 
+        // and unlock it when the operation is complete. 
         std::unique_lock<std::mutex> lk(mut); 
         data_cond.wait(
             lk, []{return !data_queue.empty();}); 
