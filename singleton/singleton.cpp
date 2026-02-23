@@ -9,22 +9,25 @@
     private:
         // global instance of singleton  
         static std::unique_ptr<singleton> m_instance; 
-        static int count = 0; 
+        static std::once_flag m_onceFlag; 
+        static int count; 
         singleton()
         {
             std::print("Called Singleton Constructor"); 
             ++count; 
         }
-         //delete copy constructor 
+        //delete copy constructor 
         singleton(const singleton& other) = delete; 
-        singleton& operator(const singleton& other) = delete; 
-        static std::once_flag m_onceFlag; 
+        singleton& operator=(const singleton& other) = delete;       
     
     public:   
         //return reference to global singleton pattern 
-        singleton& getInstance(){return instance;}
+        singleton& getInstance(); 
 
 }; 
+
+int singleton::count = 0; 
+std::once_flag singleton::m_onceFlag; 
 
 singleton& singleton::getInstance()
 {
