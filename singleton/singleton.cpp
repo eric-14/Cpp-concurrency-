@@ -28,6 +28,7 @@
 
 int singleton::count = 0; 
 std::once_flag singleton::m_onceFlag; 
+std::unique_ptr<singleton> singleton::m_instance; 
 
 singleton& singleton::getInstance()
 {
