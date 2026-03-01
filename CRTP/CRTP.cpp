@@ -1,4 +1,6 @@
 
+
+#include <benchmark/benchmark.h>
 #include <print>
 // template <class T>
 // class Base{}; 
@@ -11,30 +13,30 @@
 // class X: public Base<X> {}; 
 
 
-// class interface {
-//     public: 
-//         virtual void process () = 0; 
-// };
+class interface {
+    public: 
+        virtual void process () = 0; 
+};
 
 
 /***
  * Dynamic polymorphism  
  * 
  */
-// class Impl : public interface {
-//     public: 
-//         virtual void process {
-//             std::print("running implementation class "); 
-//         }
-// }; 
+class Impl : public interface {
+    public: 
+        virtual void process (){
+            std::print("running implementation class \n"); 
+        }
+}; 
 
-// void do_work(interface * obj)
-// {
-//     obj->process(); 
-// }
+void do_work(interface* obj)
+{
+    obj->process(); 
+}
 
-// interface* obj_impl = new impl(); 
-// do_work(obj_impl);
+interface* obj_impl = new Impl(); 
+
 
 /**
  * 
@@ -42,37 +44,48 @@
  * 
  */
 
-template <typename Impl>
-class interface {
-    public: 
-        void process()
-        {
-            impl().process(); 
-        }
-    private: 
-        Impl& impl()
-        {
-            return *static_cast<Impl*>(this);
-        }
+// template <typename Impl>
+// class interface {
+//     public: 
+//         void process()
+//         {
+//             impl().process(); 
+//         }
+//     private: 
+//         Impl& impl()
+//         {
+//             return *static_cast<Impl*>(this);
+//         }
 
- };
+//  };
 
-class Impl: public interface<Impl> {
-    public: 
-        void process()
-        {
-            std::print("Processing implementation \n"); 
-        }   
-}; 
+// class Impl: public interface<Impl> {
+//     public: 
+//         void process()
+//         {
+//             std::print("Processing implementation \n"); 
+//         }   
+// }; 
 
-void do_work(interface<Impl>* obj)
+// void do_work(interface<Impl>* obj)
+// {
+//     obj->process(); 
+// }
+
+static void do_work_wrapper(benchmark::State& state)
 {
-    obj->process(); 
+    interface* obj = new Impl(); 
+    for(auto _: state)
+    {
+        do_work(obj); 
+    }
+    
 }
 
-
-int main()
-{
-    interface<Impl>* obj = new Impl(); 
-    do_work(obj); 
-}
+// int main()
+// {
+//     interface<Impl>* obj = new Impl(); 
+//     do_work(obj); 
+// }
+BENCHMARK(do_work_wrapper); 
+BENCHMARK_MAIN(); 
