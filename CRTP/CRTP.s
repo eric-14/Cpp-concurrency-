@@ -1,0 +1,23459 @@
+	.file	"CRTP.cpp"
+	.text
+	.section	.text._ZNSt8__format5_SinkIcE10_M_reserveEm,"axG",@progbits,_ZNSt8__format5_SinkIcE10_M_reserveEm,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt8__format5_SinkIcE10_M_reserveEm
+	.type	_ZNSt8__format5_SinkIcE10_M_reserveEm, @function
+_ZNSt8__format5_SinkIcE10_M_reserveEm:
+.LFB4823:
+	.cfi_startproc
+	endbr64
+	pushq	%rbx
+	.cfi_def_cfa_offset 16
+	.cfi_offset 3, -16
+	movq	%rsi, %rbx
+	movq	%rdi, %rax
+	subq	$16, %rsp
+	.cfi_def_cfa_offset 32
+	movq	16(%rdi), %rcx
+	movq	24(%rdi), %rdx
+	subq	8(%rdi), %rdx
+	movq	%rcx, %rsi
+	subq	%rdx, %rsi
+	cmpq	%rbx, %rsi
+	jnb	.L3
+	cmpq	%rbx, %rcx
+	jb	.L4
+	movq	(%rdi), %rdx
+	movq	%rdi, 8(%rsp)
+	call	*(%rdx)
+	movq	8(%rsp), %rax
+	movq	16(%rax), %rdx
+	movq	24(%rax), %rcx
+	subq	8(%rax), %rcx
+	subq	%rcx, %rdx
+	cmpq	%rbx, %rdx
+	jb	.L4
+.L3:
+	addq	$16, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 16
+	popq	%rbx
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L4:
+	.cfi_restore_state
+	addq	$16, %rsp
+	.cfi_def_cfa_offset 16
+	xorl	%eax, %eax
+	popq	%rbx
+	.cfi_def_cfa_offset 8
+	ret
+	.cfi_endproc
+.LFE4823:
+	.size	_ZNSt8__format5_SinkIcE10_M_reserveEm, .-_ZNSt8__format5_SinkIcE10_M_reserveEm
+	.section	.text._ZNSt8__format5_SinkIcE7_M_bumpEm,"axG",@progbits,_ZNSt8__format5_SinkIcE7_M_bumpEm,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt8__format5_SinkIcE7_M_bumpEm
+	.type	_ZNSt8__format5_SinkIcE7_M_bumpEm, @function
+_ZNSt8__format5_SinkIcE7_M_bumpEm:
+.LFB4939:
+	.cfi_startproc
+	endbr64
+	addq	%rsi, 24(%rdi)
+	ret
+	.cfi_endproc
+.LFE4939:
+	.size	_ZNSt8__format5_SinkIcE7_M_bumpEm, .-_ZNSt8__format5_SinkIcE7_M_bumpEm
+	.section	.text._ZNSt12format_errorD2Ev,"axG",@progbits,_ZNSt12format_errorD5Ev,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt12format_errorD2Ev
+	.type	_ZNSt12format_errorD2Ev, @function
+_ZNSt12format_errorD2Ev:
+.LFB3682:
+	.cfi_startproc
+	endbr64
+	leaq	16+_ZTVSt12format_error(%rip), %rax
+	movq	%rax, (%rdi)
+	jmp	_ZNSt13runtime_errorD2Ev@PLT
+	.cfi_endproc
+.LFE3682:
+	.size	_ZNSt12format_errorD2Ev, .-_ZNSt12format_errorD2Ev
+	.weak	_ZNSt12format_errorD1Ev
+	.set	_ZNSt12format_errorD1Ev,_ZNSt12format_errorD2Ev
+	.section	.text._ZNSt12format_errorD0Ev,"axG",@progbits,_ZNSt12format_errorD5Ev,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt12format_errorD0Ev
+	.type	_ZNSt12format_errorD0Ev, @function
+_ZNSt12format_errorD0Ev:
+.LFB3684:
+	.cfi_startproc
+	endbr64
+	leaq	16+_ZTVSt12format_error(%rip), %rax
+	pushq	%rbx
+	.cfi_def_cfa_offset 16
+	.cfi_offset 3, -16
+	movq	%rdi, %rbx
+	movq	%rax, (%rdi)
+	call	_ZNSt13runtime_errorD2Ev@PLT
+	movq	%rbx, %rdi
+	movl	$16, %esi
+	popq	%rbx
+	.cfi_def_cfa_offset 8
+	jmp	_ZdlPvm@PLT
+	.cfi_endproc
+.LFE3684:
+	.size	_ZNSt12format_errorD0Ev, .-_ZNSt12format_errorD0Ev
+	.section	.text._ZNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEE11_M_overflowEv,"axG",@progbits,_ZNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEE11_M_overflowEv,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEE11_M_overflowEv
+	.type	_ZNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEE11_M_overflowEv, @function
+_ZNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEE11_M_overflowEv:
+.LFB5224:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	movq	%rdi, %r12
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$8, %rsp
+	.cfi_def_cfa_offset 64
+	movq	24(%rdi), %r15
+	movq	8(%rdi), %rbx
+	movq	296(%rdi), %r13
+	movq	%r15, %r14
+	subq	%rbx, %r14
+	testq	%r13, %r13
+	js	.L24
+	movq	304(%rdi), %rax
+	cmpq	%r13, %rax
+	jnb	.L17
+	subq	%rax, %r13
+	movq	288(%rdi), %rbp
+	cmpq	%r14, %r13
+	cmova	%r14, %r13
+	testq	%r13, %r13
+	jle	.L18
+	addq	%rbx, %r13
+	.p2align 6
+	.p2align 4
+	.p2align 3
+.L20:
+	movq	24(%rbp), %rax
+	movzbl	(%rbx), %edx
+	leaq	1(%rax), %rcx
+	movq	%rcx, 24(%rbp)
+	movb	%dl, (%rax)
+	movq	24(%rbp), %rax
+	subq	8(%rbp), %rax
+	cmpq	16(%rbp), %rax
+	je	.L25
+.L19:
+	addq	$1, %rbx
+	cmpq	%r13, %rbx
+	jne	.L20
+	movq	8(%r12), %rbx
+	movq	304(%r12), %rax
+.L18:
+	movq	%rbp, 288(%r12)
+.L17:
+	addq	%rax, %r14
+	movq	%rbx, 24(%r12)
+	movq	%r14, 304(%r12)
+	addq	$8, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L25:
+	.cfi_restore_state
+	movq	0(%rbp), %rax
+	movq	%rbp, %rdi
+	call	*(%rax)
+	jmp	.L19
+	.p2align 4,,10
+	.p2align 3
+.L24:
+	movq	288(%rdi), %rbp
+	testq	%r14, %r14
+	jle	.L14
+	.p2align 6
+	.p2align 4
+	.p2align 3
+.L16:
+	movq	24(%rbp), %rax
+	movzbl	(%rbx), %edx
+	leaq	1(%rax), %rcx
+	movq	%rcx, 24(%rbp)
+	movb	%dl, (%rax)
+	movq	24(%rbp), %rax
+	subq	8(%rbp), %rax
+	cmpq	16(%rbp), %rax
+	je	.L26
+.L15:
+	addq	$1, %rbx
+	cmpq	%rbx, %r15
+	jne	.L16
+	movq	8(%r12), %rbx
+.L14:
+	movq	%rbp, 288(%r12)
+	movq	304(%r12), %rax
+	jmp	.L17
+	.p2align 4,,10
+	.p2align 3
+.L26:
+	movq	0(%rbp), %rax
+	movq	%rbp, %rdi
+	call	*(%rax)
+	jmp	.L15
+	.cfi_endproc
+.LFE5224:
+	.size	_ZNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEE11_M_overflowEv, .-_ZNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEE11_M_overflowEv
+	.section	.text._ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE11_M_on_charsEPKc,"axG",@progbits,_ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE11_M_on_charsEPKc,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE11_M_on_charsEPKc
+	.type	_ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE11_M_on_charsEPKc, @function
+_ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE11_M_on_charsEPKc:
+.LFB5114:
+	.cfi_startproc
+	endbr64
+	pushq	%r14
+	.cfi_def_cfa_offset 16
+	.cfi_offset 14, -16
+	pushq	%r13
+	.cfi_def_cfa_offset 24
+	.cfi_offset 13, -24
+	pushq	%r12
+	.cfi_def_cfa_offset 32
+	.cfi_offset 12, -32
+	pushq	%rbp
+	.cfi_def_cfa_offset 40
+	.cfi_offset 6, -40
+	pushq	%rbx
+	.cfi_def_cfa_offset 48
+	.cfi_offset 3, -48
+	movq	48(%rdi), %r14
+	movq	8(%rdi), %r13
+	movq	16(%r14), %rbp
+	subq	%r13, %rsi
+	jne	.L43
+.L28:
+	movq	%rbp, 16(%r14)
+	popq	%rbx
+	.cfi_remember_state
+	.cfi_def_cfa_offset 40
+	popq	%rbp
+	.cfi_def_cfa_offset 32
+	popq	%r12
+	.cfi_def_cfa_offset 24
+	popq	%r13
+	.cfi_def_cfa_offset 16
+	popq	%r14
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L43:
+	.cfi_restore_state
+	movq	24(%rbp), %rdi
+	movq	16(%rbp), %rbx
+	movq	%rsi, %r12
+	movq	%rdi, %rax
+	subq	8(%rbp), %rax
+	subq	%rax, %rbx
+	cmpq	%rbx, %rsi
+	jb	.L29
+	.p2align 4
+	.p2align 3
+.L31:
+	cmpq	%rbx, %r12
+	movq	%rbx, %rdx
+	cmovbe	%r12, %rdx
+	testq	%rdx, %rdx
+	je	.L30
+	movq	%r13, %rsi
+	call	memcpy@PLT
+.L30:
+	movq	0(%rbp), %rax
+	addq	%rbx, 24(%rbp)
+	movq	%rbp, %rdi
+	addq	%rbx, %r13
+	subq	%rbx, %r12
+	call	*(%rax)
+	movq	24(%rbp), %rdi
+	movq	16(%rbp), %rbx
+	movq	%rdi, %rax
+	subq	8(%rbp), %rax
+	subq	%rax, %rbx
+	cmpq	%rbx, %r12
+	jnb	.L31
+	testq	%r12, %r12
+	je	.L28
+.L29:
+	movq	%r12, %rdx
+	movq	%r13, %rsi
+	call	memcpy@PLT
+	addq	%r12, 24(%rbp)
+	movq	%rbp, 16(%r14)
+	popq	%rbx
+	.cfi_def_cfa_offset 40
+	popq	%rbp
+	.cfi_def_cfa_offset 32
+	popq	%r12
+	.cfi_def_cfa_offset 24
+	popq	%r13
+	.cfi_def_cfa_offset 16
+	popq	%r14
+	.cfi_def_cfa_offset 8
+	ret
+	.cfi_endproc
+.LFE5114:
+	.size	_ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE11_M_on_charsEPKc, .-_ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE11_M_on_charsEPKc
+	.section	.text.unlikely._ZSt20__throw_format_errorPKc,"axG",@progbits,_ZSt20__throw_format_errorPKc,comdat
+	.weak	_ZSt20__throw_format_errorPKc
+	.type	_ZSt20__throw_format_errorPKc, @function
+_ZSt20__throw_format_errorPKc:
+.LFB3680:
+	.cfi_startproc
+	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
+	.cfi_lsda 0x1b,.LLSDA3680
+	endbr64
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rdi, %rbp
+	movl	$16, %edi
+	pushq	%rbx
+	.cfi_def_cfa_offset 24
+	.cfi_offset 3, -24
+	pushq	%rax
+	.cfi_def_cfa_offset 32
+	call	__cxa_allocate_exception@PLT
+	movq	%rbp, %rsi
+	movq	%rax, %rdi
+	movq	%rax, %rbx
+.LEHB0:
+	call	_ZNSt13runtime_errorC2EPKc@PLT
+.LEHE0:
+	leaq	16+_ZTVSt12format_error(%rip), %rax
+	leaq	_ZNSt12format_errorD1Ev(%rip), %rdx
+	movq	%rbx, %rdi
+	leaq	_ZTISt12format_error(%rip), %rsi
+	movq	%rax, (%rbx)
+.LEHB1:
+	call	__cxa_throw@PLT
+.L46:
+	endbr64
+	movq	%rax, %rbp
+.L45:
+	movq	%rbx, %rdi
+	call	__cxa_free_exception@PLT
+	movq	%rbp, %rdi
+	call	_Unwind_Resume@PLT
+.LEHE1:
+	.cfi_endproc
+.LFE3680:
+	.section	.gcc_except_table._ZSt20__throw_format_errorPKc,"aG",@progbits,_ZSt20__throw_format_errorPKc,comdat
+.LLSDA3680:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x1
+	.uleb128 .LLSDACSE3680-.LLSDACSB3680
+.LLSDACSB3680:
+	.uleb128 .LEHB0-.LFB3680
+	.uleb128 .LEHE0-.LEHB0
+	.uleb128 .L46-.LFB3680
+	.uleb128 0
+	.uleb128 .LEHB1-.LFB3680
+	.uleb128 .LEHE1-.LEHB1
+	.uleb128 0
+	.uleb128 0
+.LLSDACSE3680:
+	.section	.text.unlikely._ZSt20__throw_format_errorPKc,"axG",@progbits,_ZSt20__throw_format_errorPKc,comdat
+	.size	_ZSt20__throw_format_errorPKc, .-_ZSt20__throw_format_errorPKc
+	.section	.rodata._ZNSt8__format39__conflicting_indexing_in_format_stringEv.str1.8,"aMS",@progbits,1
+	.align 8
+.LC0:
+	.string	"format error: conflicting indexing style in format string"
+	.section	.text.unlikely._ZNSt8__format39__conflicting_indexing_in_format_stringEv,"axG",@progbits,_ZNSt8__format39__conflicting_indexing_in_format_stringEv,comdat
+	.weak	_ZNSt8__format39__conflicting_indexing_in_format_stringEv
+	.type	_ZNSt8__format39__conflicting_indexing_in_format_stringEv, @function
+_ZNSt8__format39__conflicting_indexing_in_format_stringEv:
+.LFB3687:
+	.cfi_startproc
+	endbr64
+	pushq	%rax
+	.cfi_def_cfa_offset 16
+	popq	%rax
+	.cfi_def_cfa_offset 8
+	leaq	.LC0(%rip), %rdi
+	pushq	%rax
+	.cfi_def_cfa_offset 16
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE3687:
+	.size	_ZNSt8__format39__conflicting_indexing_in_format_stringEv, .-_ZNSt8__format39__conflicting_indexing_in_format_stringEv
+	.section	.rodata._ZNSt8__format33__invalid_arg_id_in_format_stringEv.str1.8,"aMS",@progbits,1
+	.align 8
+.LC1:
+	.string	"format error: invalid arg-id in format string"
+	.section	.text.unlikely._ZNSt8__format33__invalid_arg_id_in_format_stringEv,"axG",@progbits,_ZNSt8__format33__invalid_arg_id_in_format_stringEv,comdat
+	.weak	_ZNSt8__format33__invalid_arg_id_in_format_stringEv
+	.type	_ZNSt8__format33__invalid_arg_id_in_format_stringEv, @function
+_ZNSt8__format33__invalid_arg_id_in_format_stringEv:
+.LFB3688:
+	.cfi_startproc
+	endbr64
+	pushq	%rax
+	.cfi_def_cfa_offset 16
+	popq	%rax
+	.cfi_def_cfa_offset 8
+	leaq	.LC1(%rip), %rdi
+	pushq	%rax
+	.cfi_def_cfa_offset 16
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE3688:
+	.size	_ZNSt8__format33__invalid_arg_id_in_format_stringEv, .-_ZNSt8__format33__invalid_arg_id_in_format_stringEv
+	.section	.rodata._ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0.str1.8,"aMS",@progbits,1
+	.align 8
+.LC2:
+	.string	"format error: argument used for width or precision must be a non-negative integer"
+	.section	.text.unlikely._ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0,"ax",@progbits
+	.align 2
+.LCOLDB3:
+	.section	.text._ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0,"ax",@progbits
+.LHOTB3:
+	.align 2
+	.p2align 4
+	.type	_ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0, @function
+_ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0:
+.LFB5858:
+	.cfi_startproc
+	subq	$72, %rsp
+	.cfi_def_cfa_offset 80
+	movzbl	(%rsi), %eax
+	movzwl	%di, %edi
+	movl	%eax, %edx
+	andl	$15, %eax
+	andl	$15, %edx
+	cmpq	%rax, %rdi
+	jnb	.L53
+	movq	(%rsi), %rax
+	leaq	(%rdi,%rdi,4), %rcx
+	salq	$4, %rdi
+	addq	8(%rsi), %rdi
+	movdqa	(%rdi), %xmm0
+	shrq	$4, %rax
+	shrq	%cl, %rax
+	movaps	%xmm0, (%rsp)
+	andl	$31, %eax
+.L54:
+	leaq	.L58(%rip), %rdx
+	movb	%al, 16(%rsp)
+	movzbl	%al, %eax
+	movdqa	(%rsp), %xmm0
+	movslq	(%rdx,%rax,4), %rax
+	movaps	%xmm0, 32(%rsp)
+	addq	%rdx, %rax
+	notrack jmp	*%rax
+	.section	.rodata._ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0,"a",@progbits
+	.align 4
+	.align 4
+.L58:
+	.long	.L55-.L58
+	.long	.L57-.L58
+	.long	.L57-.L58
+	.long	.L62-.L58
+	.long	.L61-.L58
+	.long	.L60-.L58
+	.long	.L59-.L58
+	.long	.L57-.L58
+	.long	.L57-.L58
+	.long	.L57-.L58
+	.long	.L57-.L58
+	.long	.L57-.L58
+	.long	.L57-.L58
+	.long	.L57-.L58
+	.long	.L57-.L58
+	.long	.L57-.L58
+	.long	.L57-.L58
+	.long	.L57-.L58
+	.long	.L57-.L58
+	.long	.L57-.L58
+	.long	.L57-.L58
+	.section	.text._ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+	.p2align 4,,10
+	.p2align 3
+.L53:
+	testb	%dl, %dl
+	jne	.L55
+	movq	(%rsi), %rax
+	shrq	$4, %rax
+	cmpq	%rax, %rdi
+	jnb	.L55
+	salq	$5, %rdi
+	addq	8(%rsi), %rdi
+	movdqu	(%rdi), %xmm0
+	movzbl	16(%rdi), %eax
+	movaps	%xmm0, (%rsp)
+	jmp	.L54
+	.p2align 4,,10
+	.p2align 3
+.L60:
+	movq	32(%rsp), %rax
+	testq	%rax, %rax
+	js	.L63
+	addq	$72, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L61:
+	.cfi_restore_state
+	movl	32(%rsp), %eax
+	addq	$72, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L62:
+	.cfi_restore_state
+	movslq	32(%rsp), %rax
+	testl	%eax, %eax
+	js	.L63
+	addq	$72, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L59:
+	.cfi_restore_state
+	movq	32(%rsp), %rax
+	addq	$72, %rsp
+	.cfi_def_cfa_offset 8
+	ret
+	.cfi_endproc
+	.section	.text.unlikely._ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+	.cfi_startproc
+	.type	_ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0.cold, @function
+_ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0.cold:
+.LFSB5858:
+.L55:
+	.cfi_def_cfa_offset 80
+	call	_ZNSt8__format33__invalid_arg_id_in_format_stringEv
+.L63:
+	leaq	.LC2(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+.L57:
+	leaq	.LC2(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE5858:
+	.section	.text._ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+	.size	_ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0, .-_ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+	.section	.text.unlikely._ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+	.size	_ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0.cold, .-_ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0.cold
+.LCOLDE3:
+	.section	.text._ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+.LHOTE3:
+	.section	.text.unlikely._ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0,"ax",@progbits
+	.align 2
+.LCOLDB4:
+	.section	.text._ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0,"ax",@progbits
+.LHOTB4:
+	.align 2
+	.p2align 4
+	.type	_ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0, @function
+_ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0:
+.LFB5860:
+	.cfi_startproc
+	subq	$72, %rsp
+	.cfi_def_cfa_offset 80
+	movzbl	(%rsi), %eax
+	movzwl	%di, %edi
+	movl	%eax, %edx
+	andl	$15, %eax
+	andl	$15, %edx
+	cmpq	%rax, %rdi
+	jnb	.L67
+	movq	(%rsi), %rax
+	leaq	(%rdi,%rdi,4), %rcx
+	salq	$4, %rdi
+	addq	8(%rsi), %rdi
+	movdqa	(%rdi), %xmm0
+	shrq	$4, %rax
+	shrq	%cl, %rax
+	movaps	%xmm0, (%rsp)
+	andl	$31, %eax
+.L68:
+	leaq	.L72(%rip), %rdx
+	movb	%al, 16(%rsp)
+	movzbl	%al, %eax
+	movdqa	(%rsp), %xmm0
+	movslq	(%rdx,%rax,4), %rax
+	movaps	%xmm0, 32(%rsp)
+	addq	%rdx, %rax
+	notrack jmp	*%rax
+	.section	.rodata._ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0,"a",@progbits
+	.align 4
+	.align 4
+.L72:
+	.long	.L69-.L72
+	.long	.L71-.L72
+	.long	.L71-.L72
+	.long	.L76-.L72
+	.long	.L75-.L72
+	.long	.L74-.L72
+	.long	.L73-.L72
+	.long	.L71-.L72
+	.long	.L71-.L72
+	.long	.L71-.L72
+	.long	.L71-.L72
+	.long	.L71-.L72
+	.long	.L71-.L72
+	.long	.L71-.L72
+	.long	.L71-.L72
+	.long	.L71-.L72
+	.long	.L71-.L72
+	.long	.L71-.L72
+	.long	.L71-.L72
+	.long	.L71-.L72
+	.long	.L71-.L72
+	.section	.text._ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+	.p2align 4,,10
+	.p2align 3
+.L67:
+	testb	%dl, %dl
+	jne	.L69
+	movq	(%rsi), %rax
+	shrq	$4, %rax
+	cmpq	%rax, %rdi
+	jnb	.L69
+	salq	$5, %rdi
+	addq	8(%rsi), %rdi
+	movdqu	(%rdi), %xmm0
+	movzbl	16(%rdi), %eax
+	movaps	%xmm0, (%rsp)
+	jmp	.L68
+	.p2align 4,,10
+	.p2align 3
+.L74:
+	movq	32(%rsp), %rax
+	testq	%rax, %rax
+	js	.L77
+	addq	$72, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L75:
+	.cfi_restore_state
+	movl	32(%rsp), %eax
+	addq	$72, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L76:
+	.cfi_restore_state
+	movslq	32(%rsp), %rax
+	testl	%eax, %eax
+	js	.L77
+	addq	$72, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L73:
+	.cfi_restore_state
+	movq	32(%rsp), %rax
+	addq	$72, %rsp
+	.cfi_def_cfa_offset 8
+	ret
+	.cfi_endproc
+	.section	.text.unlikely._ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+	.cfi_startproc
+	.type	_ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0.cold, @function
+_ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0.cold:
+.LFSB5860:
+.L69:
+	.cfi_def_cfa_offset 80
+	call	_ZNSt8__format33__invalid_arg_id_in_format_stringEv
+.L77:
+	leaq	.LC2(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+.L71:
+	leaq	.LC2(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE5860:
+	.section	.text._ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+	.size	_ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0, .-_ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+	.section	.text.unlikely._ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+	.size	_ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0.cold, .-_ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0.cold
+.LCOLDE4:
+	.section	.text._ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+.LHOTE4:
+	.section	.rodata._ZNSt8__format29__failed_to_parse_format_specEv.str1.8,"aMS",@progbits,1
+	.align 8
+.LC5:
+	.string	"format error: failed to parse format-spec"
+	.section	.text.unlikely._ZNSt8__format29__failed_to_parse_format_specEv,"axG",@progbits,_ZNSt8__format29__failed_to_parse_format_specEv,comdat
+	.weak	_ZNSt8__format29__failed_to_parse_format_specEv
+	.type	_ZNSt8__format29__failed_to_parse_format_specEv, @function
+_ZNSt8__format29__failed_to_parse_format_specEv:
+.LFB3689:
+	.cfi_startproc
+	endbr64
+	pushq	%rax
+	.cfi_def_cfa_offset 16
+	popq	%rax
+	.cfi_def_cfa_offset 8
+	leaq	.LC5(%rip), %rdi
+	pushq	%rax
+	.cfi_def_cfa_offset 16
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE3689:
+	.size	_ZNSt8__format29__failed_to_parse_format_specEv, .-_ZNSt8__format29__failed_to_parse_format_specEv
+	.section	.text._ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv,"axG",@progbits,_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+	.type	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv, @function
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv:
+.LFB4505:
+	.cfi_startproc
+	endbr64
+	movq	(%rdi), %rax
+	leaq	16(%rdi), %rdx
+	cmpq	%rdx, %rax
+	je	.L82
+	movq	16(%rdi), %rsi
+	movq	%rax, %rdi
+	addq	$1, %rsi
+	jmp	_ZdlPvm@PLT
+	.p2align 4,,10
+	.p2align 3
+.L82:
+	ret
+	.cfi_endproc
+.LFE4505:
+	.size	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv, .-_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+	.section	.rodata._ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_15__do_vformat_toIS3_cS4_EET_S8_St17basic_string_viewIT0_St11char_traitsISA_EERKSt17basic_format_argsIT1_EPKSt6localeEUlRS8_E_EEDcOS8_NS1_6_Arg_tE.str1.1,"aMS",@progbits,1
+.LC6:
+	.string	"false"
+.LC7:
+	.string	"true"
+	.section	.text._ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_15__do_vformat_toIS3_cS4_EET_S8_St17basic_string_viewIT0_St11char_traitsISA_EERKSt17basic_format_argsIT1_EPKSt6localeEUlRS8_E_EEDcOS8_NS1_6_Arg_tE,"axG",@progbits,_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_15__do_vformat_toIS3_cS4_EET_S8_St17basic_string_viewIT0_St11char_traitsISA_EERKSt17basic_format_argsIT1_EPKSt6localeEUlRS8_E_EEDcOS8_NS1_6_Arg_tE,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_15__do_vformat_toIS3_cS4_EET_S8_St17basic_string_viewIT0_St11char_traitsISA_EERKSt17basic_format_argsIT1_EPKSt6localeEUlRS8_E_EEDcOS8_NS1_6_Arg_tE
+	.type	_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_15__do_vformat_toIS3_cS4_EET_S8_St17basic_string_viewIT0_St11char_traitsISA_EERKSt17basic_format_argsIT1_EPKSt6localeEUlRS8_E_EEDcOS8_NS1_6_Arg_tE, @function
+_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_15__do_vformat_toIS3_cS4_EET_S8_St17basic_string_viewIT0_St11char_traitsISA_EERKSt17basic_format_argsIT1_EPKSt6localeEUlRS8_E_EEDcOS8_NS1_6_Arg_tE:
+.LFB4662:
+	.cfi_startproc
+	endbr64
+	pushq	%r14
+	.cfi_def_cfa_offset 16
+	.cfi_offset 14, -16
+	leaq	.L87(%rip), %rcx
+	movzbl	%dl, %edx
+	pushq	%r13
+	.cfi_def_cfa_offset 24
+	.cfi_offset 13, -24
+	pushq	%r12
+	.cfi_def_cfa_offset 32
+	.cfi_offset 12, -32
+	pushq	%rbp
+	.cfi_def_cfa_offset 40
+	.cfi_offset 6, -40
+	movq	%rdi, %rbp
+	pushq	%rbx
+	.cfi_def_cfa_offset 48
+	.cfi_offset 3, -48
+	subq	$240, %rsp
+	.cfi_def_cfa_offset 288
+	movslq	(%rcx,%rdx,4), %rax
+	movq	%fs:40, %rbx
+	movq	%rbx, 232(%rsp)
+	movq	%rsi, %rbx
+	addq	%rcx, %rax
+	notrack jmp	*%rax
+	.section	.rodata._ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_15__do_vformat_toIS3_cS4_EET_S8_St17basic_string_viewIT0_St11char_traitsISA_EERKSt17basic_format_argsIT1_EPKSt6localeEUlRS8_E_EEDcOS8_NS1_6_Arg_tE,"aG",@progbits,_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_15__do_vformat_toIS3_cS4_EET_S8_St17basic_string_viewIT0_St11char_traitsISA_EERKSt17basic_format_argsIT1_EPKSt6localeEUlRS8_E_EEDcOS8_NS1_6_Arg_tE,comdat
+	.align 4
+	.align 4
+.L87:
+	.long	.L84-.L87
+	.long	.L95-.L87
+	.long	.L94-.L87
+	.long	.L93-.L87
+	.long	.L92-.L87
+	.long	.L91-.L87
+	.long	.L90-.L87
+	.long	.L84-.L87
+	.long	.L84-.L87
+	.long	.L84-.L87
+	.long	.L89-.L87
+	.long	.L88-.L87
+	.long	.L84-.L87
+	.long	.L84-.L87
+	.long	.L84-.L87
+	.long	.L84-.L87
+	.long	.L84-.L87
+	.long	.L84-.L87
+	.long	.L84-.L87
+	.long	.L84-.L87
+	.long	.L84-.L87
+	.section	.text._ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_15__do_vformat_toIS3_cS4_EET_S8_St17basic_string_viewIT0_St11char_traitsISA_EERKSt17basic_format_argsIT1_EPKSt6localeEUlRS8_E_EEDcOS8_NS1_6_Arg_tE,"axG",@progbits,_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_15__do_vformat_toIS3_cS4_EET_S8_St17basic_string_viewIT0_St11char_traitsISA_EERKSt17basic_format_argsIT1_EPKSt6localeEUlRS8_E_EEDcOS8_NS1_6_Arg_tE,comdat
+	.p2align 4,,10
+	.p2align 3
+.L93:
+	movl	(%rdi), %eax
+	movl	%eax, %r14d
+	movl	%eax, %ebp
+	shrl	$31, %r14d
+	negl	%ebp
+	cmovs	%eax, %ebp
+	cmpl	$9, %ebp
+	jbe	.L146
+	movl	%ebp, %ecx
+	movl	$1, %r12d
+	movabsq	$3777893186295716171, %rsi
+	jmp	.L108
+	.p2align 4,,10
+	.p2align 3
+.L105:
+	cmpl	$999, %ecx
+	jbe	.L189
+	cmpl	$9999, %ecx
+	jbe	.L190
+	movl	%ecx, %edx
+	addl	$4, %r12d
+	movq	%rdx, %rax
+	mulq	%rsi
+	shrq	$11, %rdx
+	cmpl	$99999, %ecx
+	jbe	.L104
+	movl	%edx, %ecx
+.L108:
+	cmpl	$99, %ecx
+	ja	.L105
+	addl	$1, %r12d
+.L104:
+	movq	(%rbx), %rax
+	leal	(%r14,%r12), %r13d
+	movq	%r13, %rsi
+	movq	(%rax), %rdi
+	movq	(%rdi), %rax
+	call	*8(%rax)
+	movq	%rax, %rdi
+	testq	%rax, %rax
+	je	.L84
+	movdqa	.LC8(%rip), %xmm0
+	movq	24(%rax), %rcx
+	movzbl	%r14b, %r14d
+	subl	$1, %r12d
+	movaps	%xmm0, 16(%rsp)
+	movdqa	.LC9(%rip), %xmm0
+	movb	$45, (%rcx)
+	addq	%r14, %rcx
+	movaps	%xmm0, 32(%rsp)
+	movdqa	.LC10(%rip), %xmm0
+	movaps	%xmm0, 48(%rsp)
+	movdqa	.LC11(%rip), %xmm0
+	movaps	%xmm0, 64(%rsp)
+	movdqa	.LC12(%rip), %xmm0
+	movaps	%xmm0, 80(%rsp)
+	movdqa	.LC13(%rip), %xmm0
+	movaps	%xmm0, 96(%rsp)
+	movdqa	.LC14(%rip), %xmm0
+	movaps	%xmm0, 112(%rsp)
+	movdqa	.LC15(%rip), %xmm0
+	movaps	%xmm0, 128(%rsp)
+	movdqa	.LC16(%rip), %xmm0
+	movaps	%xmm0, 144(%rsp)
+	movdqa	.LC17(%rip), %xmm0
+	movaps	%xmm0, 160(%rsp)
+	movdqa	.LC18(%rip), %xmm0
+	movaps	%xmm0, 176(%rsp)
+	movdqa	.LC19(%rip), %xmm0
+	movaps	%xmm0, 192(%rsp)
+	movdqa	.LC20(%rip), %xmm0
+	movups	%xmm0, 201(%rsp)
+	cmpl	$99, %ebp
+	jbe	.L110
+	.p2align 4
+	.p2align 3
+.L111:
+	movl	%ebp, %edx
+	movl	%ebp, %eax
+	imulq	$1374389535, %rdx, %rdx
+	shrq	$37, %rdx
+	imull	$100, %edx, %esi
+	subl	%esi, %eax
+	movl	%ebp, %esi
+	movl	%edx, %ebp
+	movl	%r12d, %edx
+	addl	%eax, %eax
+	leal	1(%rax), %r8d
+	movzbl	16(%rsp,%rax), %eax
+	movzbl	16(%rsp,%r8), %r8d
+	movb	%r8b, (%rcx,%rdx)
+	leal	-1(%r12), %edx
+	subl	$2, %r12d
+	movb	%al, (%rcx,%rdx)
+	cmpl	$9999, %esi
+	ja	.L111
+.L110:
+	leal	48(%rbp), %eax
+	cmpl	$9, %ebp
+	jbe	.L113
+	addl	%ebp, %ebp
+	leal	1(%rbp), %eax
+	movzbl	16(%rsp,%rax), %eax
+	movb	%al, 1(%rcx)
+	movzbl	16(%rsp,%rbp), %eax
+.L113:
+	movb	%al, (%rcx)
+.L186:
+	movq	(%rdi), %rax
+	movq	%r13, %rsi
+	call	*16(%rax)
+	movq	8(%rbx), %rax
+	movb	$1, (%rax)
+	.p2align 4
+	.p2align 3
+.L84:
+	movq	232(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L191
+	addq	$240, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 48
+	popq	%rbx
+	.cfi_def_cfa_offset 40
+	popq	%rbp
+	.cfi_def_cfa_offset 32
+	popq	%r12
+	.cfi_def_cfa_offset 24
+	popq	%r13
+	.cfi_def_cfa_offset 16
+	popq	%r14
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L89:
+	.cfi_restore_state
+	movq	(%rdi), %r13
+	movq	%r13, %rdi
+	call	strlen@PLT
+	movq	%rax, %r12
+.L188:
+	movq	(%rbx), %rax
+	movq	%r12, %rsi
+	movq	(%rax), %rdi
+	movq	(%rdi), %rax
+	call	*8(%rax)
+	movq	%rax, %rbp
+	testq	%rax, %rax
+	je	.L84
+	movq	24(%rax), %rdi
+	movq	%r12, %rdx
+	movq	%r13, %rsi
+	call	memcpy@PLT
+	movq	0(%rbp), %rax
+	movq	%r12, %rsi
+	movq	%rbp, %rdi
+	call	*16(%rax)
+	movq	8(%rbx), %rax
+	movb	$1, (%rax)
+	jmp	.L84
+	.p2align 4,,10
+	.p2align 3
+.L88:
+	movq	(%rdi), %r12
+	movq	8(%rdi), %r13
+	jmp	.L188
+	.p2align 4,,10
+	.p2align 3
+.L95:
+	leaq	.LC7(%rip), %rax
+	movzbl	(%rdi), %r12d
+	movq	.LC21(%rip), %xmm0
+	movq	%rax, %xmm1
+	movq	(%rbx), %rax
+	xorl	$1, %r12d
+	punpcklqdq	%xmm1, %xmm0
+	movq	(%rax), %rdi
+	movzbl	%r12b, %r12d
+	movaps	%xmm0, (%rsp)
+	addl	$4, %r12d
+	movq	(%rdi), %rax
+	movslq	%r12d, %r13
+	movq	%r13, %rsi
+	call	*8(%rax)
+	movq	%rax, %rdi
+	testq	%rax, %rax
+	je	.L84
+	movzbl	0(%rbp), %edx
+	movq	24(%rax), %rax
+	movq	(%rsp,%rdx,8), %rdx
+	cmpl	$8, %r12d
+	jnb	.L97
+	testb	$4, %r12b
+	jne	.L192
+	testl	%r12d, %r12d
+	je	.L186
+	movzbl	(%rdx), %ecx
+	movb	%cl, (%rax)
+	testb	$2, %r12b
+	je	.L186
+	movl	%r12d, %r12d
+	movzwl	-2(%rdx,%r12), %edx
+	movw	%dx, -2(%rax,%r12)
+	jmp	.L186
+	.p2align 4,,10
+	.p2align 3
+.L94:
+	movq	(%rbx), %rax
+	movl	$1, %esi
+	movq	(%rax), %rdi
+	movq	(%rdi), %rax
+	call	*8(%rax)
+	movq	%rax, %rdi
+	testq	%rax, %rax
+	je	.L84
+	movq	24(%rax), %rax
+	movzbl	0(%rbp), %edx
+	movl	$1, %esi
+	movb	%dl, (%rax)
+	movq	(%rdi), %rax
+	call	*16(%rax)
+	movq	8(%rbx), %rax
+	movb	$1, (%rax)
+	jmp	.L84
+	.p2align 4,,10
+	.p2align 3
+.L92:
+	movq	(%rbx), %rax
+	movl	(%rdi), %ebp
+	movq	(%rax), %rdi
+	movq	(%rdi), %rax
+	movq	8(%rax), %r8
+	cmpl	$9, %ebp
+	jbe	.L133
+	movl	%ebp, %ecx
+	movl	$1, %r12d
+	movabsq	$3777893186295716171, %rsi
+	jmp	.L119
+	.p2align 4,,10
+	.p2align 3
+.L115:
+	cmpl	$999, %ecx
+	jbe	.L193
+	cmpl	$9999, %ecx
+	jbe	.L194
+	movl	%ecx, %edx
+	addl	$4, %r12d
+	movq	%rdx, %rax
+	mulq	%rsi
+	shrq	$11, %rdx
+	cmpl	$99999, %ecx
+	jbe	.L116
+	movl	%edx, %ecx
+.L119:
+	cmpl	$99, %ecx
+	ja	.L115
+	addl	$1, %r12d
+.L116:
+	movl	%r12d, %r13d
+	movq	%r13, %rsi
+	call	*%r8
+	movq	%rax, %rdi
+	testq	%rax, %rax
+	je	.L84
+	movdqa	.LC8(%rip), %xmm0
+	movq	24(%rax), %rcx
+	subl	$1, %r12d
+	movaps	%xmm0, 16(%rsp)
+	movdqa	.LC9(%rip), %xmm0
+	movb	$45, (%rcx)
+	movaps	%xmm0, 32(%rsp)
+	movdqa	.LC10(%rip), %xmm0
+	movaps	%xmm0, 48(%rsp)
+	movdqa	.LC11(%rip), %xmm0
+	movaps	%xmm0, 64(%rsp)
+	movdqa	.LC12(%rip), %xmm0
+	movaps	%xmm0, 80(%rsp)
+	movdqa	.LC13(%rip), %xmm0
+	movaps	%xmm0, 96(%rsp)
+	movdqa	.LC14(%rip), %xmm0
+	movaps	%xmm0, 112(%rsp)
+	movdqa	.LC15(%rip), %xmm0
+	movaps	%xmm0, 128(%rsp)
+	movdqa	.LC16(%rip), %xmm0
+	movaps	%xmm0, 144(%rsp)
+	movdqa	.LC17(%rip), %xmm0
+	movaps	%xmm0, 160(%rsp)
+	movdqa	.LC18(%rip), %xmm0
+	movaps	%xmm0, 176(%rsp)
+	movdqa	.LC19(%rip), %xmm0
+	movaps	%xmm0, 192(%rsp)
+	movdqa	.LC20(%rip), %xmm0
+	movups	%xmm0, 201(%rsp)
+	cmpl	$99, %ebp
+	jbe	.L120
+	.p2align 4
+	.p2align 3
+.L121:
+	movl	%ebp, %edx
+	movl	%ebp, %eax
+	imulq	$1374389535, %rdx, %rdx
+	shrq	$37, %rdx
+	imull	$100, %edx, %esi
+	subl	%esi, %eax
+	movl	%ebp, %esi
+	movl	%edx, %ebp
+	movl	%r12d, %edx
+	addl	%eax, %eax
+	leal	1(%rax), %r8d
+	movzbl	16(%rsp,%rax), %eax
+	movzbl	16(%rsp,%r8), %r8d
+	movb	%r8b, (%rcx,%rdx)
+	leal	-1(%r12), %edx
+	subl	$2, %r12d
+	movb	%al, (%rcx,%rdx)
+	cmpl	$9999, %esi
+	ja	.L121
+	cmpl	$999, %esi
+	ja	.L120
+.L141:
+	addl	$48, %ebp
+.L142:
+	movb	%bpl, (%rcx)
+	jmp	.L186
+	.p2align 4,,10
+	.p2align 3
+.L91:
+	movq	(%rdi), %rax
+	movq	%rax, %r14
+	movq	%rax, %rbp
+	shrq	$63, %r14
+	negq	%rbp
+	cmovs	%rax, %rbp
+	cmpq	$9, %rbp
+	jbe	.L149
+	movq	%rbp, %rcx
+	movl	$1, %r12d
+	movabsq	$3777893186295716171, %rsi
+	jmp	.L128
+	.p2align 4,,10
+	.p2align 3
+.L125:
+	cmpq	$999, %rcx
+	jbe	.L195
+	cmpq	$9999, %rcx
+	jbe	.L196
+	movq	%rcx, %rax
+	addl	$4, %r12d
+	mulq	%rsi
+	shrq	$11, %rdx
+	cmpq	$99999, %rcx
+	jbe	.L124
+	movq	%rdx, %rcx
+.L128:
+	cmpq	$99, %rcx
+	ja	.L125
+	addl	$1, %r12d
+.L124:
+	movq	(%rbx), %rax
+	leal	(%r12,%r14), %r13d
+	movq	%r13, %rsi
+	movq	(%rax), %rdi
+	movq	(%rdi), %rax
+	call	*8(%rax)
+	movq	%rax, %rdi
+	testq	%rax, %rax
+	je	.L84
+	movdqa	.LC8(%rip), %xmm0
+	movq	24(%rax), %rcx
+	subl	$1, %r12d
+	movaps	%xmm0, 16(%rsp)
+	movdqa	.LC9(%rip), %xmm0
+	movb	$45, (%rcx)
+	addq	%r14, %rcx
+	movaps	%xmm0, 32(%rsp)
+	movdqa	.LC10(%rip), %xmm0
+	movaps	%xmm0, 48(%rsp)
+	movdqa	.LC11(%rip), %xmm0
+	movaps	%xmm0, 64(%rsp)
+	movdqa	.LC12(%rip), %xmm0
+	movaps	%xmm0, 80(%rsp)
+	movdqa	.LC13(%rip), %xmm0
+	movaps	%xmm0, 96(%rsp)
+	movdqa	.LC14(%rip), %xmm0
+	movaps	%xmm0, 112(%rsp)
+	movdqa	.LC15(%rip), %xmm0
+	movaps	%xmm0, 128(%rsp)
+	movdqa	.LC16(%rip), %xmm0
+	movaps	%xmm0, 144(%rsp)
+	movdqa	.LC17(%rip), %xmm0
+	movaps	%xmm0, 160(%rsp)
+	movdqa	.LC18(%rip), %xmm0
+	movaps	%xmm0, 176(%rsp)
+	movdqa	.LC19(%rip), %xmm0
+	movaps	%xmm0, 192(%rsp)
+	movdqa	.LC20(%rip), %xmm0
+	movups	%xmm0, 201(%rsp)
+	cmpq	$99, %rbp
+	jbe	.L129
+	movabsq	$2951479051793528259, %rsi
+	.p2align 4
+	.p2align 3
+.L130:
+	movq	%rbp, %rdx
+	shrq	$2, %rdx
+	movq	%rdx, %rax
+	mulq	%rsi
+	movq	%rbp, %rax
+	movq	%rdx, %r8
+	andq	$-4, %rdx
+	shrq	$2, %r8
+	addq	%r8, %rdx
+	leaq	(%rdx,%rdx,4), %rdx
+	salq	$2, %rdx
+	subq	%rdx, %rax
+	movq	%rbp, %rdx
+	movq	%r8, %rbp
+	movl	%r12d, %r8d
+	addq	%rax, %rax
+	movzbl	17(%rsp,%rax), %r9d
+	movzbl	16(%rsp,%rax), %eax
+	movb	%r9b, (%rcx,%r8)
+	leal	-1(%r12), %r8d
+	subl	$2, %r12d
+	movb	%al, (%rcx,%r8)
+	cmpq	$9999, %rdx
+	ja	.L130
+.L129:
+	leal	48(%rbp), %eax
+	cmpq	$9, %rbp
+	jbe	.L113
+	addq	%rbp, %rbp
+	movzbl	17(%rsp,%rbp), %eax
+	movb	%al, 1(%rcx)
+	movzbl	16(%rsp,%rbp), %eax
+	jmp	.L113
+	.p2align 4,,10
+	.p2align 3
+.L90:
+	movq	(%rbx), %rax
+	movq	(%rdi), %rbp
+	movq	(%rax), %rdi
+	movq	(%rdi), %rax
+	movq	8(%rax), %r8
+	cmpq	$9, %rbp
+	jbe	.L133
+	movq	%rbp, %rcx
+	movl	$1, %r12d
+	movabsq	$3777893186295716171, %rsi
+	jmp	.L138
+	.p2align 4,,10
+	.p2align 3
+.L134:
+	cmpq	$999, %rcx
+	jbe	.L197
+	cmpq	$9999, %rcx
+	jbe	.L198
+	movq	%rcx, %rax
+	addl	$4, %r12d
+	mulq	%rsi
+	shrq	$11, %rdx
+	cmpq	$99999, %rcx
+	jbe	.L135
+	movq	%rdx, %rcx
+.L138:
+	cmpq	$99, %rcx
+	ja	.L134
+	addl	$1, %r12d
+.L135:
+	movl	%r12d, %r13d
+	movq	%r13, %rsi
+	call	*%r8
+	movq	%rax, %rdi
+	testq	%rax, %rax
+	je	.L84
+	movdqa	.LC8(%rip), %xmm0
+	movq	24(%rax), %rcx
+	subl	$1, %r12d
+	movaps	%xmm0, 16(%rsp)
+	movdqa	.LC9(%rip), %xmm0
+	movb	$45, (%rcx)
+	movaps	%xmm0, 32(%rsp)
+	movdqa	.LC10(%rip), %xmm0
+	movaps	%xmm0, 48(%rsp)
+	movdqa	.LC11(%rip), %xmm0
+	movaps	%xmm0, 64(%rsp)
+	movdqa	.LC12(%rip), %xmm0
+	movaps	%xmm0, 80(%rsp)
+	movdqa	.LC13(%rip), %xmm0
+	movaps	%xmm0, 96(%rsp)
+	movdqa	.LC14(%rip), %xmm0
+	movaps	%xmm0, 112(%rsp)
+	movdqa	.LC15(%rip), %xmm0
+	movaps	%xmm0, 128(%rsp)
+	movdqa	.LC16(%rip), %xmm0
+	movaps	%xmm0, 144(%rsp)
+	movdqa	.LC17(%rip), %xmm0
+	movaps	%xmm0, 160(%rsp)
+	movdqa	.LC18(%rip), %xmm0
+	movaps	%xmm0, 176(%rsp)
+	movdqa	.LC19(%rip), %xmm0
+	movaps	%xmm0, 192(%rsp)
+	movdqa	.LC20(%rip), %xmm0
+	movups	%xmm0, 201(%rsp)
+	cmpq	$99, %rbp
+	jbe	.L139
+	movabsq	$2951479051793528259, %rsi
+	.p2align 4
+	.p2align 3
+.L140:
+	movq	%rbp, %rdx
+	shrq	$2, %rdx
+	movq	%rdx, %rax
+	mulq	%rsi
+	movq	%rbp, %rax
+	movq	%rdx, %r8
+	andq	$-4, %rdx
+	shrq	$2, %r8
+	addq	%r8, %rdx
+	leaq	(%rdx,%rdx,4), %rdx
+	salq	$2, %rdx
+	subq	%rdx, %rax
+	movq	%rbp, %rdx
+	movq	%r8, %rbp
+	movl	%r12d, %r8d
+	addq	%rax, %rax
+	movzbl	17(%rsp,%rax), %r9d
+	movzbl	16(%rsp,%rax), %eax
+	movb	%r9b, (%rcx,%r8)
+	leal	-1(%r12), %r8d
+	subl	$2, %r12d
+	movb	%al, (%rcx,%r8)
+	cmpq	$9999, %rdx
+	ja	.L140
+	cmpq	$999, %rdx
+	jbe	.L141
+.L139:
+	addq	%rbp, %rbp
+	movzbl	17(%rsp,%rbp), %eax
+	movb	%al, 1(%rcx)
+	movzbl	16(%rsp,%rbp), %ebp
+	jmp	.L142
+	.p2align 4,,10
+	.p2align 3
+.L97:
+	movq	(%rdx), %rcx
+	movq	%rcx, (%rax)
+	movl	%r12d, %ecx
+	movq	-8(%rdx,%rcx), %rsi
+	movq	%rsi, -8(%rax,%rcx)
+	leaq	8(%rax), %rcx
+	andq	$-8, %rcx
+	subq	%rcx, %rax
+	addl	%eax, %r12d
+	subq	%rax, %rdx
+	andl	$-8, %r12d
+	cmpl	$8, %r12d
+	jb	.L186
+	andl	$-8, %r12d
+	xorl	%eax, %eax
+.L101:
+	movl	%eax, %esi
+	addl	$8, %eax
+	movq	(%rdx,%rsi), %r8
+	movq	%r8, (%rcx,%rsi)
+	cmpl	%r12d, %eax
+	jb	.L101
+	jmp	.L186
+	.p2align 4,,10
+	.p2align 3
+.L120:
+	addl	%ebp, %ebp
+	leal	1(%rbp), %eax
+	movzbl	16(%rsp,%rax), %eax
+	movb	%al, 1(%rcx)
+	movzbl	16(%rsp,%rbp), %ebp
+	jmp	.L142
+	.p2align 4,,10
+	.p2align 3
+.L197:
+	addl	$2, %r12d
+	jmp	.L135
+	.p2align 4,,10
+	.p2align 3
+.L195:
+	addl	$2, %r12d
+	jmp	.L124
+	.p2align 4,,10
+	.p2align 3
+.L193:
+	addl	$2, %r12d
+	jmp	.L116
+	.p2align 4,,10
+	.p2align 3
+.L189:
+	addl	$2, %r12d
+	jmp	.L104
+	.p2align 4,,10
+	.p2align 3
+.L190:
+	addl	$3, %r12d
+	jmp	.L104
+	.p2align 4,,10
+	.p2align 3
+.L194:
+	addl	$3, %r12d
+	jmp	.L116
+	.p2align 4,,10
+	.p2align 3
+.L196:
+	addl	$3, %r12d
+	jmp	.L124
+	.p2align 4,,10
+	.p2align 3
+.L198:
+	addl	$3, %r12d
+	jmp	.L135
+.L133:
+	movl	$1, %esi
+	call	*%r8
+	movq	%rax, %rdi
+	testq	%rax, %rax
+	je	.L84
+	movq	24(%rdi), %rcx
+	movl	$1, %r13d
+	movb	$45, (%rcx)
+	jmp	.L141
+.L149:
+	movl	$1, %r12d
+	jmp	.L124
+.L146:
+	movl	$1, %r12d
+	jmp	.L104
+.L192:
+	movl	(%rdx), %ecx
+	movl	%r12d, %r12d
+	movl	%ecx, (%rax)
+	movl	-4(%rdx,%r12), %edx
+	movl	%edx, -4(%rax,%r12)
+	jmp	.L186
+.L191:
+	call	__stack_chk_fail@PLT
+	.cfi_endproc
+.LFE4662:
+	.size	_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_15__do_vformat_toIS3_cS4_EET_S8_St17basic_string_viewIT0_St11char_traitsISA_EERKSt17basic_format_argsIT1_EPKSt6localeEUlRS8_E_EEDcOS8_NS1_6_Arg_tE, .-_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_15__do_vformat_toIS3_cS4_EET_S8_St17basic_string_viewIT0_St11char_traitsISA_EERKSt17basic_format_argsIT1_EPKSt6localeEUlRS8_E_EEDcOS8_NS1_6_Arg_tE
+	.section	.rodata._ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm.str1.1,"aMS",@progbits,1
+.LC22:
+	.string	"basic_string::_M_create"
+	.section	.text._ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm,"axG",@progbits,_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	.type	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm, @function
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm:
+.LFB4913:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	leaq	16(%rdi), %r14
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	movq	%rcx, %r12
+	leaq	(%rsi,%rdx), %rcx
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	movq	%rsi, %rbp
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	movq	%rdi, %rbx
+	subq	$40, %rsp
+	.cfi_def_cfa_offset 96
+	movq	8(%rdi), %rax
+	movq	%rcx, 24(%rsp)
+	movq	%rax, %rsi
+	subq	%rcx, %rsi
+	movq	%r8, %rcx
+	subq	%rdx, %rcx
+	movq	%rsi, 8(%rsp)
+	leaq	(%rcx,%rax), %r15
+	cmpq	(%rdi), %r14
+	je	.L227
+	movq	16(%rdi), %rax
+	testq	%r15, %r15
+	js	.L201
+	cmpq	%r15, %rax
+	jnb	.L203
+	addq	%rax, %rax
+	cmpq	%rax, %r15
+	jnb	.L203
+	testq	%rax, %rax
+	jns	.L228
+.L205:
+	call	_ZSt17__throw_bad_allocv@PLT
+	.p2align 4,,10
+	.p2align 3
+.L227:
+	testq	%r15, %r15
+	js	.L201
+	leaq	-16(%r15), %rax
+	cmpq	$13, %rax
+	jbe	.L229
+	.p2align 4
+	.p2align 3
+.L203:
+	movq	%r15, %rdi
+	addq	$1, %rdi
+	js	.L205
+.L202:
+	movq	%r8, 16(%rsp)
+	call	_Znwm@PLT
+	testq	%rbp, %rbp
+	movq	16(%rsp), %r8
+	movq	%rax, %r13
+	je	.L206
+	movq	(%rbx), %rsi
+	cmpq	$1, %rbp
+	je	.L230
+	movq	%rbp, %rdx
+	movq	%rax, %rdi
+	movq	%r8, 16(%rsp)
+	call	memcpy@PLT
+	movq	16(%rsp), %r8
+.L206:
+	testq	%r12, %r12
+	je	.L208
+	testq	%r8, %r8
+	je	.L208
+	leaq	0(%r13,%rbp), %rdi
+	cmpq	$1, %r8
+	je	.L231
+	movq	%r8, %rdx
+	movq	%r12, %rsi
+	movq	%r8, 16(%rsp)
+	call	memcpy@PLT
+	movq	16(%rsp), %r8
+.L208:
+	movq	8(%rsp), %rax
+	movq	(%rbx), %r12
+	testq	%rax, %rax
+	jne	.L232
+.L210:
+	cmpq	%r12, %r14
+	je	.L212
+	movq	16(%rbx), %rax
+	movq	%r12, %rdi
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L212:
+	movq	%r13, (%rbx)
+	movq	%r15, 16(%rbx)
+	addq	$40, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L232:
+	.cfi_restore_state
+	movq	24(%rsp), %rsi
+	leaq	0(%rbp,%r8), %rdi
+	addq	%r13, %rdi
+	addq	%r12, %rsi
+	cmpq	$1, %rax
+	je	.L233
+	movq	8(%rsp), %rdx
+	call	memcpy@PLT
+	jmp	.L210
+	.p2align 4,,10
+	.p2align 3
+.L228:
+	leaq	1(%rax), %rdi
+	movq	%rax, %r15
+	jmp	.L202
+	.p2align 4,,10
+	.p2align 3
+.L230:
+	movzbl	(%rsi), %eax
+	movb	%al, 0(%r13)
+	jmp	.L206
+	.p2align 4,,10
+	.p2align 3
+.L231:
+	movzbl	(%r12), %eax
+	movq	(%rbx), %r12
+	movb	%al, (%rdi)
+	movq	8(%rsp), %rax
+	testq	%rax, %rax
+	je	.L210
+	jmp	.L232
+	.p2align 4,,10
+	.p2align 3
+.L233:
+	movzbl	(%rsi), %eax
+	movb	%al, (%rdi)
+	jmp	.L210
+	.p2align 4,,10
+	.p2align 3
+.L229:
+	movl	$30, %r15d
+	movl	$31, %edi
+	jmp	.L202
+.L201:
+	leaq	.LC22(%rip), %rdi
+	call	_ZSt20__throw_length_errorPKc@PLT
+	.cfi_endproc
+.LFE4913:
+	.size	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm, .-_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	.section	.rodata._ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE11_M_overflowEv.str1.1,"aMS",@progbits,1
+.LC23:
+	.string	"basic_string::append"
+	.section	.text._ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE11_M_overflowEv,"axG",@progbits,_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE11_M_overflowEv,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE11_M_overflowEv
+	.type	_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE11_M_overflowEv, @function
+_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE11_M_overflowEv:
+.LFB4685:
+	.cfi_startproc
+	endbr64
+	movq	8(%rdi), %rcx
+	movq	24(%rdi), %r8
+	subq	%rcx, %r8
+	je	.L246
+	movabsq	$9223372036854775807, %rax
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	pushq	%rbx
+	.cfi_def_cfa_offset 24
+	.cfi_offset 3, -24
+	movq	%rdi, %rbx
+	subq	$8, %rsp
+	.cfi_def_cfa_offset 32
+	movq	296(%rdi), %rsi
+	subq	%rsi, %rax
+	cmpq	%r8, %rax
+	jb	.L249
+	movq	288(%rdi), %rdi
+	leaq	304(%rbx), %rax
+	leaq	(%r8,%rsi), %rbp
+	cmpq	%rax, %rdi
+	je	.L241
+	movq	304(%rbx), %rax
+.L237:
+	cmpq	%rbp, %rax
+	jb	.L238
+	addq	%rsi, %rdi
+	cmpq	$1, %r8
+	je	.L250
+	movq	%r8, %rdx
+	movq	%rcx, %rsi
+	call	memcpy@PLT
+	jmp	.L240
+	.p2align 4,,10
+	.p2align 3
+.L238:
+	leaq	288(%rbx), %rdi
+	xorl	%edx, %edx
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+.L240:
+	movq	288(%rbx), %rax
+	movq	%rbp, 296(%rbx)
+	movb	$0, (%rax,%rbp)
+	movq	8(%rbx), %rax
+	movq	%rax, 24(%rbx)
+	addq	$8, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 24
+	popq	%rbx
+	.cfi_def_cfa_offset 16
+	popq	%rbp
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L250:
+	.cfi_restore_state
+	movzbl	(%rcx), %eax
+	movb	%al, (%rdi)
+	jmp	.L240
+	.p2align 4,,10
+	.p2align 3
+.L241:
+	movl	$15, %eax
+	jmp	.L237
+	.p2align 4,,10
+	.p2align 3
+.L246:
+	.cfi_def_cfa_offset 8
+	.cfi_restore 3
+	.cfi_restore 6
+	ret
+.L249:
+	.cfi_def_cfa_offset 32
+	.cfi_offset 3, -24
+	.cfi_offset 6, -16
+	leaq	.LC23(%rip), %rdi
+	call	_ZSt20__throw_length_errorPKc@PLT
+	.cfi_endproc
+.LFE4685:
+	.size	_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE11_M_overflowEv, .-_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE11_M_overflowEv
+	.section	.text._ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE10_M_reserveEm,"axG",@progbits,_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE10_M_reserveEm,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE10_M_reserveEm
+	.type	_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE10_M_reserveEm, @function
+_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE10_M_reserveEm:
+.LFB5257:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	leaq	304(%rdi), %r14
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	movq	%rsi, %rbp
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	movq	%rdi, %rbx
+	subq	$24, %rsp
+	.cfi_def_cfa_offset 80
+	movq	8(%rdi), %rcx
+	movq	24(%rdi), %r8
+	cmpq	%rcx, %r8
+	jne	.L279
+.L252:
+	movq	296(%rbx), %r13
+	movq	288(%rbx), %r12
+	addq	%r13, %rbp
+	cmpq	%r14, %r12
+	je	.L280
+	movq	304(%rbx), %rax
+	cmpq	%rbp, %rax
+	jb	.L281
+.L259:
+	movq	%rbp, 296(%rbx)
+	movb	$0, (%r12,%rbp)
+	movq	288(%rbx), %rax
+	movq	296(%rbx), %rdx
+	movq	%rax, 8(%rbx)
+	addq	%r13, %rax
+	movq	%rax, 24(%rbx)
+	movq	%rbx, %rax
+	movq	%rdx, 16(%rbx)
+	addq	$24, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L281:
+	.cfi_restore_state
+	testq	%rbp, %rbp
+	js	.L260
+	leaq	(%rax,%rax), %r15
+	cmpq	%r15, %rbp
+	jb	.L282
+.L262:
+	movq	%rbp, %rdi
+	movq	%rbp, %r15
+	addq	$1, %rdi
+	js	.L264
+.L265:
+	call	_Znwm@PLT
+	movq	288(%rbx), %rcx
+	movq	%rax, %r12
+	movq	296(%rbx), %rax
+	leaq	1(%rax), %rdx
+	testq	%rax, %rax
+	je	.L283
+	testq	%rdx, %rdx
+	jne	.L284
+.L267:
+	movq	304(%rbx), %rax
+	movq	%rcx, %rdi
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L268:
+	movq	%r12, 288(%rbx)
+	movq	%r15, 304(%rbx)
+	jmp	.L259
+	.p2align 4,,10
+	.p2align 3
+.L284:
+	movq	%rcx, %rsi
+	movq	%r12, %rdi
+	movq	%rcx, 8(%rsp)
+	call	memcpy@PLT
+	movq	8(%rsp), %rcx
+	cmpq	%rcx, %r14
+	jne	.L267
+	jmp	.L268
+	.p2align 4,,10
+	.p2align 3
+.L282:
+	leaq	1(%r15), %rdi
+	testq	%r15, %r15
+	jns	.L265
+.L264:
+	call	_ZSt17__throw_bad_allocv@PLT
+	.p2align 4,,10
+	.p2align 3
+.L280:
+	cmpq	$15, %rbp
+	jbe	.L259
+	testq	%rbp, %rbp
+	js	.L260
+	cmpq	$29, %rbp
+	ja	.L262
+	movl	$31, %edi
+	movl	$30, %r15d
+	jmp	.L265
+	.p2align 4,,10
+	.p2align 3
+.L283:
+	movzbl	(%rcx), %eax
+	movb	%al, (%r12)
+	cmpq	%rcx, %r14
+	jne	.L267
+	jmp	.L268
+	.p2align 4,,10
+	.p2align 3
+.L279:
+	movq	296(%rdi), %rsi
+	subq	%rcx, %r8
+	movabsq	$9223372036854775807, %rax
+	subq	%rsi, %rax
+	cmpq	%r8, %rax
+	jb	.L285
+	movq	288(%rdi), %rdi
+	leaq	(%rsi,%r8), %r12
+	cmpq	%r14, %rdi
+	je	.L270
+	movq	304(%rbx), %rax
+.L254:
+	cmpq	%r12, %rax
+	jb	.L255
+	addq	%rsi, %rdi
+	cmpq	$1, %r8
+	je	.L286
+	movq	%r8, %rdx
+	movq	%rcx, %rsi
+	call	memcpy@PLT
+.L257:
+	movq	288(%rbx), %rax
+	movq	%r12, 296(%rbx)
+	movb	$0, (%rax,%r12)
+	movq	8(%rbx), %rax
+	movq	%rax, 24(%rbx)
+	jmp	.L252
+	.p2align 4,,10
+	.p2align 3
+.L286:
+	movzbl	(%rcx), %eax
+	movb	%al, (%rdi)
+	jmp	.L257
+	.p2align 4,,10
+	.p2align 3
+.L255:
+	leaq	288(%rbx), %rdi
+	xorl	%edx, %edx
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	jmp	.L257
+	.p2align 4,,10
+	.p2align 3
+.L270:
+	movl	$15, %eax
+	jmp	.L254
+.L260:
+	leaq	.LC22(%rip), %rdi
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L285:
+	leaq	.LC23(%rip), %rdi
+	call	_ZSt20__throw_length_errorPKc@PLT
+	.cfi_endproc
+.LFE5257:
+	.size	_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE10_M_reserveEm, .-_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE10_M_reserveEm
+	.section	.rodata._ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7_M_bumpEm.str1.1,"aMS",@progbits,1
+.LC24:
+	.string	"basic_string::_M_replace_aux"
+	.section	.text._ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7_M_bumpEm,"axG",@progbits,_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7_M_bumpEm,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7_M_bumpEm
+	.type	_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7_M_bumpEm, @function
+_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7_M_bumpEm:
+.LFB5261:
+	.cfi_startproc
+	endbr64
+	pushq	%r13
+	.cfi_def_cfa_offset 16
+	.cfi_offset 13, -16
+	pushq	%r12
+	.cfi_def_cfa_offset 24
+	.cfi_offset 12, -24
+	pushq	%rbp
+	.cfi_def_cfa_offset 32
+	.cfi_offset 6, -32
+	pushq	%rbx
+	.cfi_def_cfa_offset 40
+	.cfi_offset 3, -40
+	movq	%rdi, %rbx
+	subq	$8, %rsp
+	.cfi_def_cfa_offset 48
+	movq	24(%rdi), %rbp
+	movq	296(%rdi), %r12
+	subq	8(%rdi), %rbp
+	addq	%rsi, %rbp
+	cmpq	%rbp, %r12
+	jb	.L298
+	cmpq	%r12, %rbp
+	jnb	.L294
+.L297:
+	movq	288(%rbx), %rax
+	movq	%rbp, 296(%rbx)
+	movb	$0, (%rax,%rbp)
+.L294:
+	leaq	32(%rbx), %rax
+	movq	$256, 16(%rbx)
+	movq	%rax, 8(%rbx)
+	movq	%rax, 24(%rbx)
+	addq	$8, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 40
+	popq	%rbx
+	.cfi_def_cfa_offset 32
+	popq	%rbp
+	.cfi_def_cfa_offset 24
+	popq	%r12
+	.cfi_def_cfa_offset 16
+	popq	%r13
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L298:
+	.cfi_restore_state
+	movabsq	$9223372036854775807, %rax
+	movq	%rbp, %r13
+	subq	%r12, %r13
+	subq	%r12, %rax
+	cmpq	%r13, %rax
+	jb	.L299
+	movq	288(%rdi), %rdi
+	leaq	304(%rbx), %rax
+	cmpq	%rax, %rdi
+	je	.L295
+	movq	304(%rbx), %rax
+.L290:
+	cmpq	%rbp, %rax
+	jb	.L300
+.L291:
+	addq	%r12, %rdi
+	cmpq	$1, %r13
+	je	.L301
+	movq	%r13, %rdx
+	xorl	%esi, %esi
+	call	memset@PLT
+	jmp	.L297
+	.p2align 4,,10
+	.p2align 3
+.L301:
+	movb	$0, (%rdi)
+	jmp	.L297
+	.p2align 4,,10
+	.p2align 3
+.L300:
+	leaq	288(%rbx), %rdi
+	movq	%r13, %r8
+	xorl	%ecx, %ecx
+	xorl	%edx, %edx
+	movq	%r12, %rsi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	movq	288(%rbx), %rdi
+	jmp	.L291
+	.p2align 4,,10
+	.p2align 3
+.L295:
+	movl	$15, %eax
+	jmp	.L290
+.L299:
+	leaq	.LC24(%rip), %rdi
+	call	_ZSt20__throw_length_errorPKc@PLT
+	.cfi_endproc
+.LFE5261:
+	.size	_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7_M_bumpEm, .-_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7_M_bumpEm
+	.section	.text._ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9push_backEc,"axG",@progbits,_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9push_backEc,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9push_backEc
+	.type	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9push_backEc, @function
+_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9push_backEc:
+.LFB5374:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	leaq	16(%rdi), %r15
+	movl	%esi, %ecx
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	movq	%rdi, %rbx
+	subq	$24, %rsp
+	.cfi_def_cfa_offset 80
+	movq	8(%rdi), %rbp
+	movq	(%rdi), %r12
+	leaq	1(%rbp), %r13
+	cmpq	%r12, %r15
+	je	.L319
+	movq	16(%rdi), %r14
+	cmpq	%r13, %r14
+	jb	.L320
+.L304:
+	movb	%cl, (%r12,%rbp)
+	movq	(%rbx), %rax
+	movq	%r13, 8(%rbx)
+	movb	$0, 1(%rax,%rbp)
+	addq	$24, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L320:
+	.cfi_restore_state
+	testq	%r13, %r13
+	js	.L321
+	addq	%r14, %r14
+	cmpq	%r14, %r13
+	jb	.L322
+	movq	%rbp, %rdi
+	movq	%r13, %r14
+	addq	$2, %rdi
+	js	.L308
+.L309:
+	movl	%ecx, (%rsp)
+	call	_Znwm@PLT
+	testq	%rbp, %rbp
+	movq	(%rbx), %r8
+	movl	(%rsp), %ecx
+	movq	%rax, %r12
+	jne	.L305
+.L310:
+	cmpq	%r8, %r15
+	je	.L313
+	movq	16(%rbx), %rax
+	movq	%r8, %rdi
+	movl	%ecx, (%rsp)
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+	movl	(%rsp), %ecx
+.L313:
+	movq	%r12, (%rbx)
+	movq	%r14, 16(%rbx)
+	jmp	.L304
+	.p2align 4,,10
+	.p2align 3
+.L319:
+	cmpq	$16, %r13
+	jne	.L304
+	movl	$31, %edi
+	movl	%esi, (%rsp)
+	movl	$30, %r14d
+	call	_Znwm@PLT
+	movq	(%rbx), %r8
+	movl	(%rsp), %ecx
+	movq	%rax, %r12
+.L305:
+	cmpq	$1, %rbp
+	je	.L323
+	movq	%r8, %rsi
+	movq	%rbp, %rdx
+	movq	%r12, %rdi
+	movl	%ecx, 12(%rsp)
+	movq	%r8, (%rsp)
+	call	memcpy@PLT
+	movl	12(%rsp), %ecx
+	movq	(%rsp), %r8
+	jmp	.L310
+	.p2align 4,,10
+	.p2align 3
+.L323:
+	movzbl	(%r8), %eax
+	movb	%al, (%r12)
+	jmp	.L310
+	.p2align 4,,10
+	.p2align 3
+.L322:
+	leaq	1(%r14), %rdi
+	testq	%r14, %r14
+	jns	.L309
+.L308:
+	call	_ZSt17__throw_bad_allocv@PLT
+.L321:
+	leaq	.LC22(%rip), %rdi
+	call	_ZSt20__throw_length_errorPKc@PLT
+	.cfi_endproc
+.LFE5374:
+	.size	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9push_backEc, .-_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9push_backEc
+	.section	.rodata._ZNSt8__format5_SpecIcE27_S_parse_width_or_precisionEPKcS3_RtRbRSt26basic_format_parse_contextIcE.str1.8,"aMS",@progbits,1
+	.align 8
+.LC25:
+	.string	"format error: unmatched '{' in format string"
+	.align 8
+.LC26:
+	.string	"format error: invalid width or precision in format-spec"
+	.section	.text._ZNSt8__format5_SpecIcE27_S_parse_width_or_precisionEPKcS3_RtRbRSt26basic_format_parse_contextIcE,"axG",@progbits,_ZNSt8__format5_SpecIcE27_S_parse_width_or_precisionEPKcS3_RtRbRSt26basic_format_parse_contextIcE,comdat
+	.p2align 4
+	.weak	_ZNSt8__format5_SpecIcE27_S_parse_width_or_precisionEPKcS3_RtRbRSt26basic_format_parse_contextIcE
+	.type	_ZNSt8__format5_SpecIcE27_S_parse_width_or_precisionEPKcS3_RtRbRSt26basic_format_parse_contextIcE, @function
+_ZNSt8__format5_SpecIcE27_S_parse_width_or_precisionEPKcS3_RtRbRSt26basic_format_parse_contextIcE:
+.LFB5413:
+	.cfi_startproc
+	endbr64
+	movq	%rdi, %r9
+	subq	$8, %rsp
+	.cfi_def_cfa_offset 16
+	movq	%rdx, %r10
+	movq	%rsi, %rdi
+	movzbl	(%r9), %edx
+	leaq	_ZNSt8__detail31__from_chars_alnum_to_val_tableILb0EE5valueE(%rip), %rsi
+	cmpb	$9, (%rsi,%rdx)
+	ja	.L325
+	movq	%r9, %rsi
+	xorl	%eax, %eax
+	movl	$16, %r8d
+	jmp	.L334
+	.p2align 4,,10
+	.p2align 3
+.L360:
+	leal	(%rax,%rax,4), %eax
+	movzbl	%cl, %ecx
+	addq	$1, %rsi
+	leal	(%rcx,%rax,2), %eax
+	cmpq	%rsi, %rdi
+	je	.L335
+.L334:
+	movzbl	(%rsi), %edx
+	leal	-48(%rdx), %ecx
+	cmpb	$9, %cl
+	ja	.L326
+	subl	$4, %r8d
+	jns	.L360
+	movl	$10, %edx
+	mulw	%dx
+	jo	.L331
+	movzbl	%cl, %ecx
+	addw	%ax, %cx
+	jc	.L331
+	addq	$1, %rsi
+	movl	%ecx, %eax
+	cmpq	%rsi, %rdi
+	jne	.L334
+	.p2align 4
+	.p2align 3
+.L335:
+	movw	%ax, (%r10)
+.L324:
+	movq	%rsi, %rax
+	addq	$8, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L325:
+	.cfi_restore_state
+	movq	%r9, %rsi
+	cmpb	$123, %dl
+	jne	.L324
+	leaq	1(%r9), %rsi
+	movb	$1, (%rcx)
+	cmpq	%rdi, %rsi
+	je	.L361
+	movsbw	1(%r9), %ax
+	cmpb	$125, %al
+	je	.L362
+	cmpb	$48, %al
+	je	.L363
+	leal	-49(%rax), %edx
+	cmpb	$8, %dl
+	ja	.L343
+	leaq	2(%r9), %rcx
+	cmpq	%rcx, %rdi
+	je	.L343
+	movzbl	2(%r9), %edx
+	subl	$48, %edx
+	cmpb	$9, %dl
+	jbe	.L356
+	subl	$48, %eax
+	movq	%rcx, %rsi
+	.p2align 4
+	.p2align 3
+.L345:
+	cmpb	$125, (%rsi)
+	jne	.L343
+	cmpl	$2, 16(%r8)
+	je	.L354
+	movl	$1, 16(%r8)
+	movw	%ax, (%r10)
+	jmp	.L340
+	.p2align 4,,10
+	.p2align 3
+.L326:
+	cmpq	%rsi, %r9
+	jne	.L335
+.L331:
+	leaq	.LC26(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+	.p2align 4,,10
+	.p2align 3
+.L362:
+	cmpl	$1, 16(%r8)
+	je	.L354
+	movq	24(%r8), %rax
+	movl	$2, 16(%r8)
+	leaq	1(%rax), %rdx
+	movq	%rdx, 24(%r8)
+	movw	%ax, (%r10)
+.L340:
+	addq	$1, %rsi
+	addq	$8, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 8
+	movq	%rsi, %rax
+	ret
+.L363:
+	.cfi_restore_state
+	leaq	2(%r9), %rsi
+	cmpq	%rsi, %rdi
+	sete	%dl
+	xorl	%eax, %eax
+.L342:
+	testb	%dl, %dl
+	je	.L345
+.L343:
+	call	_ZNSt8__format33__invalid_arg_id_in_format_stringEv
+	.p2align 4,,10
+	.p2align 3
+.L356:
+	movq	%rsi, %r9
+	xorl	%eax, %eax
+	movl	$16, %r11d
+	jmp	.L344
+	.p2align 4,,10
+	.p2align 3
+.L364:
+	leal	(%rax,%rax,4), %eax
+	movzbl	%cl, %ecx
+	leal	(%rcx,%rax,2), %eax
+.L348:
+	addq	$1, %r9
+	cmpq	%r9, %rdi
+	je	.L343
+.L344:
+	movzbl	(%r9), %edx
+	leal	-48(%rdx), %ecx
+	cmpb	$9, %cl
+	ja	.L346
+	subl	$4, %r11d
+	jns	.L364
+	movl	$10, %edx
+	mulw	%dx
+	jo	.L343
+	movzbl	%cl, %ecx
+	addw	%ax, %cx
+	jc	.L343
+	movl	%ecx, %eax
+	jmp	.L348
+.L346:
+	cmpq	%r9, %rsi
+	je	.L343
+	cmpq	%r9, %rdi
+	movq	%r9, %rsi
+	sete	%dl
+	jmp	.L342
+.L361:
+	leaq	.LC25(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+.L354:
+	call	_ZNSt8__format39__conflicting_indexing_in_format_stringEv
+	.cfi_endproc
+.LFE5413:
+	.size	_ZNSt8__format5_SpecIcE27_S_parse_width_or_precisionEPKcS3_RtRbRSt26basic_format_parse_contextIcE, .-_ZNSt8__format5_SpecIcE27_S_parse_width_or_precisionEPKcS3_RtRbRSt26basic_format_parse_contextIcE
+	.section	.text._ZNSt9__unicode13_Utf_iteratorIcDiPKcS2_NS_5_ReplEE12_M_read_utf8Ev,"axG",@progbits,_ZNSt9__unicode13_Utf_iteratorIcDiPKcS2_NS_5_ReplEE12_M_read_utf8Ev,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt9__unicode13_Utf_iteratorIcDiPKcS2_NS_5_ReplEE12_M_read_utf8Ev
+	.type	_ZNSt9__unicode13_Utf_iteratorIcDiPKcS2_NS_5_ReplEE12_M_read_utf8Ev, @function
+_ZNSt9__unicode13_Utf_iteratorIcDiPKcS2_NS_5_ReplEE12_M_read_utf8Ev:
+.LFB5541:
+	.cfi_startproc
+	endbr64
+	movq	16(%rdi), %rsi
+	movq	%rdi, %rax
+	leaq	1(%rsi), %rcx
+	movq	%rcx, 16(%rdi)
+	movsbl	(%rsi), %edx
+	testb	%dl, %dl
+	js	.L366
+	movl	$1, %ecx
+.L367:
+	movl	%edx, (%rax)
+	movl	$256, %edx
+	movb	%cl, 26(%rax)
+	movw	%dx, 24(%rax)
+	movq	%rsi, 16(%rax)
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L366:
+	cmpb	$-63, %dl
+	jbe	.L383
+	movq	32(%rdi), %rdi
+	cmpq	%rdi, %rcx
+	je	.L383
+	cmpb	$-33, %dl
+	jbe	.L386
+	cmpb	$-17, %dl
+	ja	.L369
+	cmpb	$-32, %dl
+	je	.L377
+	cmpb	$-19, %dl
+	movl	$-65, %r8d
+	movl	$-97, %ecx
+	movl	$-128, %r9d
+	cmove	%ecx, %r8d
+.L370:
+	movzbl	1(%rsi), %ecx
+	andl	$15, %edx
+	cmpb	%r9b, %cl
+	jb	.L383
+	cmpb	%cl, %r8b
+	jb	.L383
+	leaq	2(%rsi), %r8
+	movq	%r8, 16(%rax)
+	cmpq	%r8, %rdi
+	je	.L372
+	sall	$6, %edx
+	andl	$63, %ecx
+	orl	%edx, %ecx
+	movzbl	2(%rsi), %edx
+	leal	-128(%rdx), %edi
+	cmpb	$63, %dil
+	ja	.L372
+	sall	$6, %ecx
+	andl	$63, %edx
+	orl	%ecx, %edx
+	movl	$3, %ecx
+	jmp	.L367
+	.p2align 4,,10
+	.p2align 3
+.L386:
+	movzbl	1(%rsi), %ecx
+	andl	$31, %edx
+	leal	-128(%rcx), %edi
+	cmpb	$63, %dil
+	ja	.L383
+	andl	$63, %ecx
+	sall	$6, %edx
+	orl	%ecx, %edx
+	movl	$2, %ecx
+	jmp	.L367
+	.p2align 4,,10
+	.p2align 3
+.L383:
+	movl	$1, %ecx
+	movl	$65533, %edx
+	jmp	.L367
+	.p2align 4,,10
+	.p2align 3
+.L369:
+	cmpb	$-12, %dl
+	ja	.L383
+	cmpb	$-16, %dl
+	je	.L381
+	cmpb	$-12, %dl
+	movl	$-65, %r8d
+	movl	$-113, %ecx
+	movl	$-128, %r9d
+	cmove	%ecx, %r8d
+.L373:
+	movzbl	1(%rsi), %ecx
+	andl	$7, %edx
+	cmpb	%r9b, %cl
+	jb	.L383
+	cmpb	%cl, %r8b
+	jb	.L383
+	leaq	2(%rsi), %r8
+	movq	%r8, 16(%rax)
+	cmpq	%r8, %rdi
+	je	.L372
+	sall	$6, %edx
+	andl	$63, %ecx
+	orl	%edx, %ecx
+	movzbl	2(%rsi), %edx
+	leal	-128(%rdx), %r8d
+	cmpb	$63, %r8b
+	ja	.L372
+	leaq	3(%rsi), %r8
+	movq	%r8, 16(%rax)
+	cmpq	%r8, %rdi
+	je	.L385
+	andl	$63, %edx
+	sall	$6, %ecx
+	orl	%edx, %ecx
+	movzbl	3(%rsi), %edx
+	leal	-128(%rdx), %edi
+	cmpb	$63, %dil
+	ja	.L385
+	sall	$6, %ecx
+	andl	$63, %edx
+	orl	%ecx, %edx
+	movl	$4, %ecx
+	jmp	.L367
+.L377:
+	movl	$-96, %r9d
+	movl	$-65, %r8d
+	jmp	.L370
+.L372:
+	movl	$2, %ecx
+	movl	$65533, %edx
+	jmp	.L367
+.L381:
+	movl	$-112, %r9d
+	movl	$-65, %r8d
+	jmp	.L373
+.L385:
+	movl	$3, %ecx
+	movl	$65533, %edx
+	jmp	.L367
+	.cfi_endproc
+.LFE5541:
+	.size	_ZNSt9__unicode13_Utf_iteratorIcDiPKcS2_NS_5_ReplEE12_M_read_utf8Ev, .-_ZNSt9__unicode13_Utf_iteratorIcDiPKcS2_NS_5_ReplEE12_M_read_utf8Ev
+	.section	.text._ZNSt8__format5_SpecIcE23_M_parse_fill_and_alignEPKcS3_,"axG",@progbits,_ZNSt8__format5_SpecIcE23_M_parse_fill_and_alignEPKcS3_,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt8__format5_SpecIcE23_M_parse_fill_and_alignEPKcS3_
+	.type	_ZNSt8__format5_SpecIcE23_M_parse_fill_and_alignEPKcS3_, @function
+_ZNSt8__format5_SpecIcE23_M_parse_fill_and_alignEPKcS3_:
+.LFB5296:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$104, %rsp
+	.cfi_def_cfa_offset 160
+	movzbl	(%rsi), %r12d
+	movq	%fs:40, %rbx
+	movq	%rbx, 88(%rsp)
+	movq	%rsi, %rbx
+	cmpb	$123, %r12b
+	je	.L399
+	movq	%rdi, %r13
+	movq	%rdx, %rbp
+	cmpq	%rdx, %rbx
+	je	.L390
+	movq	%rbx, %xmm0
+	xorl	%eax, %eax
+	movq	%rsp, %rdi
+	movq	%rdx, 32(%rsp)
+	punpcklqdq	%xmm0, %xmm0
+	movw	%ax, 24(%rsp)
+	movups	%xmm0, 8(%rsp)
+	movb	$0, 26(%rsp)
+	call	_ZNSt9__unicode13_Utf_iteratorIcDiPKcS2_NS_5_ReplEE12_M_read_utf8Ev
+	movdqa	(%rsp), %xmm0
+	movq	32(%rsp), %rax
+	movzbl	24(%rsp), %r14d
+	movzbl	25(%rsp), %esi
+	movaps	%xmm0, 48(%rsp)
+	movdqa	16(%rsp), %xmm0
+	movq	16(%rsp), %rdx
+	movq	%rax, 80(%rsp)
+	movzbl	%r14b, %eax
+	movzbl	26(%rsp), %ecx
+	addl	$1, %eax
+	movaps	%xmm0, 64(%rsp)
+	cmpl	%esi, %eax
+	je	.L406
+.L391:
+	movl	48(%rsp,%r14,4), %ecx
+	cmpl	$55295, %ecx
+	ja	.L407
+.L394:
+	cmpq	%rdx, %rbp
+	je	.L390
+	movzbl	(%rdx), %eax
+	cmpb	$62, %al
+	je	.L401
+	cmpb	$94, %al
+	je	.L402
+	movl	$1, %esi
+	cmpb	$60, %al
+	jne	.L390
+.L396:
+	movzbl	0(%r13), %eax
+	movl	%ecx, 8(%r13)
+	andl	$-4, %eax
+	orl	%esi, %eax
+	movb	%al, 0(%r13)
+	leaq	1(%rdx), %rax
+	jmp	.L387
+	.p2align 4,,10
+	.p2align 3
+.L406:
+	cmpq	%rdx, %rbp
+	je	.L390
+	addq	%rdx, %rcx
+	cmpq	%rcx, %rbp
+	jne	.L408
+	.p2align 4
+	.p2align 3
+.L390:
+	cmpb	$62, %r12b
+	je	.L403
+	cmpb	$94, %r12b
+	je	.L404
+	movl	$1, %edx
+	cmpb	$60, %r12b
+	jne	.L399
+.L398:
+	movzbl	0(%r13), %eax
+	movl	$32, 8(%r13)
+	andl	$-4, %eax
+	orl	%edx, %eax
+	movb	%al, 0(%r13)
+	leaq	1(%rbx), %rax
+.L387:
+	movq	88(%rsp), %rdx
+	subq	%fs:40, %rdx
+	jne	.L409
+	addq	$104, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L399:
+	.cfi_restore_state
+	movq	%rbx, %rax
+	jmp	.L387
+	.p2align 4,,10
+	.p2align 3
+.L401:
+	movl	$2, %esi
+	jmp	.L396
+	.p2align 4,,10
+	.p2align 3
+.L403:
+	movl	$2, %edx
+	jmp	.L398
+	.p2align 4,,10
+	.p2align 3
+.L404:
+	movl	$3, %edx
+	jmp	.L398
+	.p2align 4,,10
+	.p2align 3
+.L402:
+	movl	$3, %esi
+	jmp	.L396
+	.p2align 4,,10
+	.p2align 3
+.L408:
+	movq	%rsp, %rdi
+	movq	%rcx, 16(%rsp)
+	call	_ZNSt9__unicode13_Utf_iteratorIcDiPKcS2_NS_5_ReplEE12_M_read_utf8Ev
+	movq	16(%rsp), %rdx
+	jmp	.L391
+	.p2align 4,,10
+	.p2align 3
+.L407:
+	leal	-57344(%rcx), %eax
+	cmpl	$1056767, %eax
+	ja	.L390
+	jmp	.L394
+.L409:
+	call	__stack_chk_fail@PLT
+	.cfi_endproc
+.LFE5296:
+	.size	_ZNSt8__format5_SpecIcE23_M_parse_fill_and_alignEPKcS3_, .-_ZNSt8__format5_SpecIcE23_M_parse_fill_and_alignEPKcS3_
+	.section	.rodata._ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE.str1.8,"aMS",@progbits,1
+	.align 8
+.LC28:
+	.string	"format error: width must be non-zero in format string"
+	.section	.text._ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE,"axG",@progbits,_ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE
+	.type	_ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE, @function
+_ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE:
+.LFB5129:
+	.cfi_startproc
+	endbr64
+	pushq	%r14
+	.cfi_def_cfa_offset 16
+	.cfi_offset 14, -16
+	movl	%edx, %eax
+	pushq	%r13
+	.cfi_def_cfa_offset 24
+	.cfi_offset 13, -24
+	andl	$15, %eax
+	pushq	%r12
+	.cfi_def_cfa_offset 32
+	.cfi_offset 12, -32
+	sall	$3, %eax
+	pushq	%rbp
+	.cfi_def_cfa_offset 40
+	.cfi_offset 6, -40
+	pushq	%rbx
+	.cfi_def_cfa_offset 48
+	.cfi_offset 3, -48
+	subq	$32, %rsp
+	.cfi_def_cfa_offset 80
+	movq	8(%rsi), %r14
+	movq	(%rsi), %rbx
+	movq	%fs:40, %rbp
+	movq	%rbp, 24(%rsp)
+	movq	%rdi, %rbp
+	movl	$32, 20(%rsp)
+	movq	$0, 12(%rsp)
+	movb	%al, 13(%rsp)
+	cmpq	%rbx, %r14
+	je	.L411
+	cmpb	$125, (%rbx)
+	je	.L411
+	movq	%rsi, %r12
+	movl	%edx, %r13d
+	movq	%rbx, %rsi
+	movq	%r14, %rdx
+	leaq	12(%rsp), %rdi
+	call	_ZNSt8__format5_SpecIcE23_M_parse_fill_and_alignEPKcS3_
+	movq	%rax, %rbx
+	cmpq	%r14, %rax
+	je	.L411
+	movzbl	(%rax), %eax
+	cmpb	$125, %al
+	je	.L411
+	leal	-32(%rax), %edx
+	cmpb	$13, %dl
+	ja	.L416
+	movzbl	%dl, %edx
+	leaq	CSWTCH.936(%rip), %rcx
+	movl	(%rcx,%rdx,4), %edx
+	testl	%edx, %edx
+	jne	.L413
+	cmpb	$35, %al
+	je	.L464
+.L415:
+	movb	$0, 11(%rsp)
+.L418:
+	leaq	11(%rsp), %rcx
+	leaq	16(%rsp), %rdx
+	movq	%r12, %r8
+	movq	%r14, %rsi
+	movq	%rbx, %rdi
+	call	_ZNSt8__format5_SpecIcE27_S_parse_width_or_precisionEPKcS3_RtRbRSt26basic_format_parse_contextIcE
+	cmpq	%rax, %rbx
+	je	.L420
+	movzbl	11(%rsp), %ecx
+	leal	1(%rcx), %edx
+	movzwl	12(%rsp), %ecx
+	andl	$3, %edx
+	sall	$7, %edx
+	andw	$-385, %cx
+	orl	%ecx, %edx
+	movw	%dx, 12(%rsp)
+.L420:
+	cmpq	%rax, %r14
+	je	.L444
+	movzbl	(%rax), %edx
+	cmpb	$125, %dl
+	je	.L445
+	cmpb	$76, %dl
+	je	.L465
+.L421:
+	subl	$66, %edx
+	cmpb	$54, %dl
+	ja	.L433
+	leaq	.L435(%rip), %rcx
+	movzbl	%dl, %edx
+	movslq	(%rcx,%rdx,4), %rdx
+	addq	%rcx, %rdx
+	notrack jmp	*%rdx
+	.section	.rodata._ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE,"aG",@progbits,_ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE,comdat
+	.align 4
+	.align 4
+.L435:
+	.long	.L424-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L430-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L422-.L435
+	.long	.L425-.L435
+	.long	.L427-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L428-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L431-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L433-.L435
+	.long	.L429-.L435
+	.section	.text._ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE,"axG",@progbits,_ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE,comdat
+	.p2align 4,,10
+	.p2align 3
+.L413:
+	movzbl	12(%rsp), %eax
+	andl	$3, %edx
+	sall	$2, %edx
+	andl	$-13, %eax
+	orl	%edx, %eax
+	leaq	1(%rbx), %rdx
+	movb	%al, 12(%rsp)
+	cmpq	%rdx, %r14
+	jne	.L466
+.L444:
+	movq	%r14, %rbx
+	.p2align 4
+	.p2align 3
+.L411:
+	movq	12(%rsp), %rax
+	movq	%rax, 0(%rbp)
+	movl	20(%rsp), %eax
+	movl	%eax, 8(%rbp)
+	movq	24(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L461
+	addq	$32, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 48
+	movq	%rbx, %rax
+	popq	%rbx
+	.cfi_def_cfa_offset 40
+	popq	%rbp
+	.cfi_def_cfa_offset 32
+	popq	%r12
+	.cfi_def_cfa_offset 24
+	popq	%r13
+	.cfi_def_cfa_offset 16
+	popq	%r14
+	.cfi_def_cfa_offset 8
+	ret
+.L466:
+	.cfi_restore_state
+	movzbl	1(%rbx), %eax
+	cmpb	$125, %al
+	je	.L440
+	cmpb	$35, %al
+	je	.L414
+	movq	%rdx, %rbx
+	.p2align 4
+	.p2align 3
+.L416:
+	cmpb	$48, %al
+	jne	.L415
+	leaq	1(%rbx), %rax
+	orb	$64, 12(%rsp)
+	cmpq	%rax, %r14
+	je	.L444
+	movzbl	1(%rbx), %edx
+	cmpb	$125, %dl
+	je	.L445
+	movb	$0, 11(%rsp)
+	cmpb	$48, %dl
+	je	.L467
+	movq	%rax, %rbx
+	jmp	.L418
+	.p2align 4,,10
+	.p2align 3
+.L445:
+	movq	%rax, %rbx
+	jmp	.L411
+.L428:
+	leaq	1(%rax), %rbx
+	movl	$4, %eax
+	.p2align 4
+	.p2align 3
+.L423:
+	movzbl	13(%rsp), %edx
+	sall	$3, %eax
+	andl	$-121, %edx
+	orl	%edx, %eax
+	movb	%al, 13(%rsp)
+	cmpq	%rbx, %r14
+	je	.L411
+	movq	%rbx, %rax
+	.p2align 4
+	.p2align 3
+.L433:
+	cmpb	$125, (%rax)
+	je	.L445
+.L426:
+	movq	24(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L461
+	call	_ZNSt8__format29__failed_to_parse_format_specEv
+	.p2align 4,,10
+	.p2align 3
+.L422:
+	leaq	1(%rax), %rbx
+	movl	$2, %eax
+	jmp	.L423
+.L427:
+	leaq	1(%rax), %rbx
+	movl	$1, %eax
+	jmp	.L423
+.L429:
+	leaq	1(%rax), %rbx
+	movl	$5, %eax
+	jmp	.L423
+.L430:
+	leaq	1(%rax), %rbx
+	movl	$6, %eax
+	jmp	.L423
+.L424:
+	leaq	1(%rax), %rbx
+	movl	$3, %eax
+	jmp	.L423
+.L425:
+	testl	%r13d, %r13d
+	je	.L426
+	leaq	1(%rax), %rbx
+	movl	$7, %eax
+	jmp	.L423
+.L431:
+	testl	%r13d, %r13d
+	jne	.L426
+	leaq	1(%rax), %rbx
+	xorl	%eax, %eax
+	jmp	.L423
+	.p2align 4,,10
+	.p2align 3
+.L464:
+	movq	%rbx, %rdx
+.L414:
+	leaq	1(%rdx), %rbx
+	orb	$16, 12(%rsp)
+	cmpq	%rbx, %r14
+	je	.L411
+	movzbl	1(%rdx), %eax
+	cmpb	$125, %al
+	je	.L411
+	jmp	.L416
+	.p2align 4,,10
+	.p2align 3
+.L465:
+	leaq	1(%rax), %rbx
+	orb	$32, 12(%rsp)
+	cmpq	%rbx, %r14
+	je	.L411
+	movzbl	1(%rax), %edx
+	movq	%rbx, %rax
+	cmpb	$125, %dl
+	je	.L411
+	jmp	.L421
+.L467:
+	movq	24(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L419
+.L461:
+	call	__stack_chk_fail@PLT
+.L440:
+	movq	%rdx, %rbx
+	jmp	.L411
+.L419:
+	leaq	.LC28(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE5129:
+	.size	_ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE, .-_ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE
+	.section	.rodata._ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE.str1.8,"aMS",@progbits,1
+	.align 8
+.LC29:
+	.string	"format error: missing precision after '.' in format string"
+	.section	.text._ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE,"axG",@progbits,_ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE
+	.type	_ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE, @function
+_ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE:
+.LFB5170:
+	.cfi_startproc
+	endbr64
+	pushq	%r13
+	.cfi_def_cfa_offset 16
+	.cfi_offset 13, -16
+	pushq	%r12
+	.cfi_def_cfa_offset 24
+	.cfi_offset 12, -24
+	pushq	%rbp
+	.cfi_def_cfa_offset 32
+	.cfi_offset 6, -32
+	pushq	%rbx
+	.cfi_def_cfa_offset 40
+	.cfi_offset 3, -40
+	subq	$40, %rsp
+	.cfi_def_cfa_offset 80
+	movq	8(%rsi), %r12
+	movq	(%rsi), %rbx
+	movq	%fs:40, %r13
+	movq	%r13, 24(%rsp)
+	movq	%rdi, %r13
+	movl	$32, 20(%rsp)
+	movq	$0, 12(%rsp)
+	cmpq	%rbx, %r12
+	je	.L469
+	cmpb	$125, (%rbx)
+	je	.L469
+	movq	%rsi, %rbp
+	leaq	12(%rsp), %rdi
+	movq	%rbx, %rsi
+	movq	%r12, %rdx
+	call	_ZNSt8__format5_SpecIcE23_M_parse_fill_and_alignEPKcS3_
+	movq	%rax, %rbx
+	cmpq	%r12, %rax
+	je	.L469
+	movzbl	(%rax), %eax
+	cmpb	$125, %al
+	je	.L469
+	leal	-32(%rax), %edx
+	cmpb	$13, %dl
+	ja	.L474
+	movzbl	%dl, %edx
+	leaq	CSWTCH.936(%rip), %rcx
+	movl	(%rcx,%rdx,4), %edx
+	testl	%edx, %edx
+	jne	.L471
+	cmpb	$35, %al
+	je	.L545
+.L473:
+	cmpb	$46, %al
+	jne	.L546
+.L476:
+	addq	$1, %rbx
+	movb	$0, 11(%rsp)
+	cmpq	%rbx, %r12
+	je	.L483
+	leaq	11(%rsp), %rcx
+	leaq	18(%rsp), %rdx
+	movq	%rbp, %r8
+	movq	%r12, %rsi
+	movq	%rbx, %rdi
+	call	_ZNSt8__format5_SpecIcE27_S_parse_width_or_precisionEPKcS3_RtRbRSt26basic_format_parse_contextIcE
+	cmpq	%rax, %rbx
+	je	.L483
+	movzbl	11(%rsp), %ecx
+	movzbl	13(%rsp), %edx
+	leal	2(%rcx,%rcx), %ecx
+	andl	$-7, %edx
+	andl	$6, %ecx
+	orl	%ecx, %edx
+	movb	%dl, 13(%rsp)
+	cmpq	%rax, %r12
+	je	.L513
+	movzbl	(%rax), %edx
+	cmpb	$125, %dl
+	jne	.L498
+.L514:
+	movq	%rax, %rbx
+	.p2align 4
+	.p2align 3
+.L469:
+	movq	12(%rsp), %rax
+	movq	%rax, 0(%r13)
+	movl	20(%rsp), %eax
+	movl	%eax, 8(%r13)
+	movq	24(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L542
+	addq	$40, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 40
+	movq	%rbx, %rax
+	popq	%rbx
+	.cfi_def_cfa_offset 32
+	popq	%rbp
+	.cfi_def_cfa_offset 24
+	popq	%r12
+	.cfi_def_cfa_offset 16
+	popq	%r13
+	.cfi_def_cfa_offset 8
+	ret
+.L549:
+	.cfi_restore_state
+	movzbl	1(%rbx), %eax
+	cmpb	$125, %al
+	je	.L504
+	cmpb	$35, %al
+	je	.L472
+	movq	%rdx, %rbx
+	.p2align 4
+	.p2align 3
+.L474:
+	cmpb	$48, %al
+	jne	.L473
+	leaq	1(%rbx), %rax
+	orb	$64, 12(%rsp)
+	cmpq	%rax, %r12
+	je	.L513
+	movzbl	1(%rbx), %edx
+	movq	%rax, %rbx
+	cmpb	$125, %dl
+	je	.L469
+	cmpb	$46, %dl
+	je	.L476
+	movb	$0, 11(%rsp)
+	cmpb	$48, %dl
+	je	.L547
+.L477:
+	leaq	11(%rsp), %rcx
+	leaq	16(%rsp), %rdx
+	movq	%rbp, %r8
+	movq	%r12, %rsi
+	movq	%rbx, %rdi
+	call	_ZNSt8__format5_SpecIcE27_S_parse_width_or_precisionEPKcS3_RtRbRSt26basic_format_parse_contextIcE
+	cmpq	%rax, %rbx
+	je	.L479
+	movzbl	11(%rsp), %ecx
+	leal	1(%rcx), %edx
+	movzwl	12(%rsp), %ecx
+	andl	$3, %edx
+	sall	$7, %edx
+	andw	$-385, %cx
+	orl	%ecx, %edx
+	movw	%dx, 12(%rsp)
+.L479:
+	cmpq	%rax, %r12
+	je	.L513
+	movzbl	(%rax), %edx
+	cmpb	$125, %dl
+	je	.L514
+	cmpb	$46, %dl
+	je	.L548
+.L498:
+	cmpb	$76, %dl
+	je	.L484
+	subl	$65, %edx
+	cmpb	$38, %dl
+	ja	.L485
+	leaq	.L487(%rip), %rcx
+	movzbl	%dl, %edx
+	movslq	(%rcx,%rdx,4), %rdx
+	addq	%rcx, %rdx
+	notrack jmp	*%rdx
+	.section	.rodata._ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE,"aG",@progbits,_ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE,comdat
+	.align 4
+	.align 4
+.L487:
+	.long	.L494-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L493-.L487
+	.long	.L492-.L487
+	.long	.L491-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L490-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L485-.L487
+	.long	.L489-.L487
+	.long	.L488-.L487
+	.long	.L486-.L487
+	.section	.text._ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE,"axG",@progbits,_ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE,comdat
+	.p2align 4,,10
+	.p2align 3
+.L471:
+	movzbl	12(%rsp), %eax
+	andl	$3, %edx
+	sall	$2, %edx
+	andl	$-13, %eax
+	orl	%edx, %eax
+	leaq	1(%rbx), %rdx
+	movb	%al, 12(%rsp)
+	cmpq	%rdx, %r12
+	jne	.L549
+.L513:
+	movq	%r12, %rbx
+	jmp	.L469
+	.p2align 4,,10
+	.p2align 3
+.L546:
+	movb	$0, 11(%rsp)
+	jmp	.L477
+.L520:
+	movq	%rbx, %rax
+.L490:
+	movzbl	13(%rsp), %edx
+	addq	$1, %rax
+	andl	$-121, %edx
+	orl	$8, %edx
+	movb	%dl, 13(%rsp)
+	.p2align 4
+	.p2align 3
+.L485:
+	cmpq	%rax, %r12
+	je	.L513
+.L496:
+	cmpb	$125, (%rax)
+	je	.L514
+	movq	24(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L542
+	call	_ZNSt8__format29__failed_to_parse_format_specEv
+.L523:
+	movq	%rbx, %rax
+.L486:
+	movzbl	13(%rsp), %edx
+	addq	$1, %rax
+	andl	$-121, %edx
+	orl	$56, %edx
+	movb	%dl, 13(%rsp)
+	jmp	.L485
+.L519:
+	movq	%rbx, %rax
+.L491:
+	movzbl	13(%rsp), %edx
+	addq	$1, %rax
+	andl	$-121, %edx
+	orl	$64, %edx
+	movb	%dl, 13(%rsp)
+	jmp	.L485
+.L518:
+	movq	%rbx, %rax
+.L492:
+	movzbl	13(%rsp), %edx
+	addq	$1, %rax
+	andl	$-121, %edx
+	orl	$48, %edx
+	movb	%dl, 13(%rsp)
+	jmp	.L485
+.L517:
+	movq	%rbx, %rax
+.L493:
+	movzbl	13(%rsp), %edx
+	addq	$1, %rax
+	andl	$-121, %edx
+	orl	$32, %edx
+	movb	%dl, 13(%rsp)
+	jmp	.L485
+.L516:
+	movq	%rbx, %rax
+.L494:
+	movzbl	13(%rsp), %edx
+	addq	$1, %rax
+	andl	$-121, %edx
+	orl	$16, %edx
+	movb	%dl, 13(%rsp)
+	jmp	.L485
+.L521:
+	movq	%rbx, %rax
+.L489:
+	movzbl	13(%rsp), %edx
+	addq	$1, %rax
+	andl	$-121, %edx
+	orl	$24, %edx
+	movb	%dl, 13(%rsp)
+	jmp	.L485
+.L522:
+	movq	%rbx, %rax
+.L488:
+	movzbl	13(%rsp), %edx
+	addq	$1, %rax
+	andl	$-121, %edx
+	orl	$40, %edx
+	movb	%dl, 13(%rsp)
+	jmp	.L485
+	.p2align 4,,10
+	.p2align 3
+.L545:
+	movq	%rbx, %rdx
+.L472:
+	leaq	1(%rdx), %rbx
+	orb	$16, 12(%rsp)
+	cmpq	%rbx, %r12
+	je	.L469
+	movzbl	1(%rdx), %eax
+	cmpb	$125, %al
+	je	.L469
+	jmp	.L474
+	.p2align 4,,10
+	.p2align 3
+.L484:
+	leaq	1(%rax), %rbx
+	orb	$32, 12(%rsp)
+	cmpq	%rbx, %r12
+	je	.L469
+	movzbl	1(%rax), %eax
+	cmpb	$125, %al
+	je	.L469
+	subl	$65, %eax
+	cmpb	$38, %al
+	ja	.L515
+	leaq	.L499(%rip), %rdx
+	movzbl	%al, %eax
+	movslq	(%rdx,%rax,4), %rax
+	addq	%rdx, %rax
+	notrack jmp	*%rax
+	.section	.rodata._ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE,"aG",@progbits,_ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE,comdat
+	.align 4
+	.align 4
+.L499:
+	.long	.L516-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L517-.L499
+	.long	.L518-.L499
+	.long	.L519-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L520-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L515-.L499
+	.long	.L521-.L499
+	.long	.L522-.L499
+	.long	.L523-.L499
+	.section	.text._ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE,"axG",@progbits,_ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE,comdat
+.L515:
+	movq	%rbx, %rax
+	jmp	.L496
+.L483:
+	movq	24(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L482
+.L542:
+	call	__stack_chk_fail@PLT
+.L548:
+	movq	%rax, %rbx
+	jmp	.L476
+.L504:
+	movq	%rdx, %rbx
+	jmp	.L469
+.L547:
+	movq	24(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L542
+	leaq	.LC28(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+.L482:
+	leaq	.LC29(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE5170:
+	.size	_ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE, .-_ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE
+	.section	.text._ZNSt8__format15__formatter_strIcE5parseERSt26basic_format_parse_contextIcE,"axG",@progbits,_ZNSt8__format15__formatter_strIcE5parseERSt26basic_format_parse_contextIcE,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt8__format15__formatter_strIcE5parseERSt26basic_format_parse_contextIcE
+	.type	_ZNSt8__format15__formatter_strIcE5parseERSt26basic_format_parse_contextIcE, @function
+_ZNSt8__format15__formatter_strIcE5parseERSt26basic_format_parse_contextIcE:
+.LFB5191:
+	.cfi_startproc
+	endbr64
+	pushq	%r14
+	.cfi_def_cfa_offset 16
+	.cfi_offset 14, -16
+	pushq	%r13
+	.cfi_def_cfa_offset 24
+	.cfi_offset 13, -24
+	pushq	%r12
+	.cfi_def_cfa_offset 32
+	.cfi_offset 12, -32
+	pushq	%rbp
+	.cfi_def_cfa_offset 40
+	.cfi_offset 6, -40
+	pushq	%rbx
+	.cfi_def_cfa_offset 48
+	.cfi_offset 3, -48
+	subq	$32, %rsp
+	.cfi_def_cfa_offset 80
+	movq	(%rsi), %rax
+	movq	8(%rsi), %r13
+	movq	%fs:40, %r12
+	movq	%r12, 24(%rsp)
+	movq	%rdi, %r12
+	movl	$32, 20(%rsp)
+	movq	$0, 12(%rsp)
+	cmpq	%r13, %rax
+	je	.L563
+	cmpb	$125, (%rax)
+	je	.L552
+	movq	%rsi, %rbx
+	leaq	12(%rsp), %rdi
+	movq	%r13, %rdx
+	movq	%rax, %rsi
+	call	_ZNSt8__format5_SpecIcE23_M_parse_fill_and_alignEPKcS3_
+	movq	%rax, %rbp
+	cmpq	%r13, %rax
+	je	.L563
+	movzbl	(%rax), %eax
+	cmpb	$125, %al
+	je	.L566
+	movb	$0, 11(%rsp)
+	cmpb	$48, %al
+	je	.L581
+	leaq	11(%rsp), %r14
+	leaq	16(%rsp), %rdx
+	movq	%rbx, %r8
+	movq	%r13, %rsi
+	movq	%r14, %rcx
+	movq	%rbp, %rdi
+	call	_ZNSt8__format5_SpecIcE27_S_parse_width_or_precisionEPKcS3_RtRbRSt26basic_format_parse_contextIcE
+	cmpq	%rax, %rbp
+	je	.L556
+	movzbl	11(%rsp), %ecx
+	leal	1(%rcx), %edx
+	movzwl	12(%rsp), %ecx
+	andl	$3, %edx
+	sall	$7, %edx
+	andw	$-385, %cx
+	orl	%ecx, %edx
+	movw	%dx, 12(%rsp)
+.L556:
+	cmpq	%rax, %r13
+	je	.L552
+	movzbl	(%rax), %edx
+	cmpb	$125, %dl
+	je	.L552
+	cmpb	$46, %dl
+	jne	.L578
+	leaq	1(%rax), %rbp
+	movb	$0, 11(%rsp)
+	cmpq	%rbp, %r13
+	je	.L562
+	leaq	18(%rsp), %rdx
+	movq	%rbx, %r8
+	movq	%r14, %rcx
+	movq	%r13, %rsi
+	movq	%rbp, %rdi
+	call	_ZNSt8__format5_SpecIcE27_S_parse_width_or_precisionEPKcS3_RtRbRSt26basic_format_parse_contextIcE
+	cmpq	%rax, %rbp
+	je	.L562
+	movzbl	11(%rsp), %ecx
+	movzbl	13(%rsp), %edx
+	leal	2(%rcx,%rcx), %ecx
+	andl	$-7, %edx
+	andl	$6, %ecx
+	orl	%ecx, %edx
+	movb	%dl, 13(%rsp)
+	cmpq	%rax, %r13
+	je	.L552
+	movzbl	(%rax), %edx
+	cmpb	$125, %dl
+	jne	.L578
+	.p2align 4
+	.p2align 3
+.L552:
+	movq	12(%rsp), %rdx
+	movq	%rdx, (%r12)
+	movl	20(%rsp), %edx
+	movl	%edx, 8(%r12)
+	movq	24(%rsp), %rdx
+	subq	%fs:40, %rdx
+	jne	.L580
+	addq	$32, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 48
+	popq	%rbx
+	.cfi_def_cfa_offset 40
+	popq	%rbp
+	.cfi_def_cfa_offset 32
+	popq	%r12
+	.cfi_def_cfa_offset 24
+	popq	%r13
+	.cfi_def_cfa_offset 16
+	popq	%r14
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L566:
+	.cfi_restore_state
+	movq	%rbp, %rax
+	jmp	.L552
+	.p2align 4,,10
+	.p2align 3
+.L582:
+	leaq	1(%rax), %rdx
+	cmpq	%r13, %rdx
+	je	.L563
+	cmpb	$125, 1(%rax)
+	jne	.L559
+	movq	%rdx, %r13
+	.p2align 4
+	.p2align 3
+.L563:
+	movq	%r13, %rax
+	jmp	.L552
+	.p2align 4,,10
+	.p2align 3
+.L578:
+	cmpb	$115, %dl
+	je	.L582
+.L559:
+	movq	24(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L580
+	call	_ZNSt8__format29__failed_to_parse_format_specEv
+.L562:
+	movq	24(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L561
+.L580:
+	call	__stack_chk_fail@PLT
+.L581:
+	movq	24(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L580
+	leaq	.LC28(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+.L561:
+	leaq	.LC29(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE5191:
+	.size	_ZNSt8__format15__formatter_strIcE5parseERSt26basic_format_parse_contextIcE, .-_ZNSt8__format15__formatter_strIcE5parseERSt26basic_format_parse_contextIcE
+	.section	.text._ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi,"axG",@progbits,_ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi,comdat
+	.p2align 4
+	.weak	_ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi
+	.type	_ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi, @function
+_ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi:
+.LFB5562:
+	.cfi_startproc
+	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
+	.cfi_lsda 0x1b,.LLSDA5562
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	movq	%rdi, %r14
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$232, %rsp
+	.cfi_def_cfa_offset 288
+	movq	%rsi, 16(%rsp)
+	movq	%rdx, 24(%rsp)
+	movq	%fs:40, %rax
+	movq	%rax, 216(%rsp)
+	xorl	%eax, %eax
+	movb	$0, 176(%rsp)
+	cmpl	$3, %ecx
+	je	.L880
+	cmpl	$2, %ecx
+	je	.L724
+	cmpl	$126, %r9d
+	ja	.L725
+	cmpq	$31, %r8
+	jbe	.L587
+	movd	%r9d, %xmm0
+	movq	16(%rsp), %rax
+	movq	%r8, %rbx
+	movl	$32, %r8d
+	punpcklbw	%xmm0, %xmm0
+	punpcklwd	%xmm0, %xmm0
+	movq	%rax, %r15
+	pshufd	$0, %xmm0, %xmm0
+	movaps	%xmm0, 176(%rsp)
+	movaps	%xmm0, 192(%rsp)
+	testq	%rax, %rax
+	jne	.L588
+.L589:
+	cmpq	%rbx, %r8
+	jnb	.L745
+	testq	%r8, %r8
+	je	.L773
+	leaq	176(%rsp), %r13
+	movq	%r8, %r15
+	movq	%r13, 8(%rsp)
+.L715:
+	movq	24(%r14), %rdi
+	movq	16(%r14), %rbp
+	movq	%r15, %r13
+	movq	8(%rsp), %r12
+	movq	%rdi, %rax
+	subq	8(%r14), %rax
+	subq	%rax, %rbp
+	cmpq	%rbp, %r15
+	jb	.L711
+	.p2align 4
+	.p2align 3
+.L713:
+	cmpq	%r13, %rbp
+	movq	%r13, %rdx
+	cmovbe	%rbp, %rdx
+	testq	%rdx, %rdx
+	je	.L712
+	movq	%r12, %rsi
+	call	memcpy@PLT
+.L712:
+	movq	(%r14), %rax
+	addq	%rbp, 24(%r14)
+	movq	%r14, %rdi
+	addq	%rbp, %r12
+	subq	%rbp, %r13
+.LEHB2:
+	call	*(%rax)
+	movq	24(%r14), %rdi
+	movq	16(%r14), %rbp
+	movq	%rdi, %rax
+	subq	8(%r14), %rax
+	subq	%rax, %rbp
+	cmpq	%rbp, %r13
+	jnb	.L713
+	testq	%r13, %r13
+	jne	.L711
+.L714:
+	subq	%r15, %rbx
+	cmpq	%rbx, %r15
+	jb	.L715
+	movq	8(%rsp), %r13
+	testq	%rbx, %rbx
+	jne	.L881
+.L681:
+	movq	216(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L867
+	addq	$232, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	movq	%r14, %rax
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L724:
+	.cfi_restore_state
+	movq	%r8, %rbp
+	xorl	%ebx, %ebx
+.L585:
+	cmpl	$126, %r9d
+	ja	.L586
+	cmpq	$31, %r8
+	ja	.L740
+	testq	%r8, %r8
+	jne	.L682
+	testq	%rbp, %rbp
+	je	.L882
+.L764:
+.L693:
+	jmp	.L693
+	.p2align 4,,10
+	.p2align 3
+.L740:
+	movl	$32, %r8d
+.L682:
+	leaq	176(%rsp), %r13
+	movl	%r8d, %edx
+	movq	%r13, %rax
+	cmpl	$8, %r8d
+	jnb	.L883
+.L685:
+	andl	$7, %edx
+	je	.L689
+	xorl	%esi, %esi
+.L688:
+	movl	%esi, %ecx
+	addl	$1, %esi
+	movb	%r9b, (%rax,%rcx)
+	cmpl	%edx, %esi
+	jb	.L688
+.L689:
+	testq	%rbp, %rbp
+	je	.L699
+	cmpq	%rbp, %r8
+	jnb	.L692
+	testq	%r8, %r8
+	je	.L764
+	movq	%r13, 8(%rsp)
+	movq	%rbx, 32(%rsp)
+	movq	%r8, %rbx
+.L698:
+	movq	24(%r14), %rdi
+	movq	16(%r14), %r12
+	movq	%rbx, %r13
+	movq	8(%rsp), %r15
+	movq	%rdi, %rax
+	subq	8(%r14), %rax
+	subq	%rax, %r12
+	cmpq	%r12, %rbx
+	jb	.L694
+	.p2align 4
+	.p2align 3
+.L696:
+	cmpq	%r13, %r12
+	movq	%r13, %rdx
+	cmovbe	%r12, %rdx
+	testq	%rdx, %rdx
+	je	.L695
+	movq	%r15, %rsi
+	call	memcpy@PLT
+.L695:
+	movq	(%r14), %rax
+	addq	%r12, 24(%r14)
+	movq	%r14, %rdi
+	addq	%r12, %r15
+	subq	%r12, %r13
+	call	*(%rax)
+	movq	24(%r14), %rdi
+	movq	16(%r14), %r12
+	movq	%rdi, %rax
+	subq	8(%r14), %rax
+	subq	%rax, %r12
+	cmpq	%r12, %r13
+	jnb	.L696
+	testq	%r13, %r13
+	jne	.L694
+.L697:
+	subq	%rbx, %rbp
+	cmpq	%rbp, %rbx
+	jb	.L698
+	movq	%rbx, %r8
+	movq	8(%rsp), %r13
+	movq	32(%rsp), %rbx
+	testq	%rbp, %rbp
+	jne	.L692
+.L699:
+	movq	16(%rsp), %rax
+	movq	%rax, %r15
+	testq	%rax, %rax
+	jne	.L588
+.L691:
+	testq	%rbx, %rbx
+	jne	.L589
+	jmp	.L681
+	.p2align 4,,10
+	.p2align 3
+.L880:
+	movq	%r8, %rbp
+	movq	%r8, %rax
+	shrq	%rbp
+	andl	$1, %eax
+	leaq	(%rax,%rbp), %r8
+	movq	%r8, %rbx
+	jmp	.L585
+	.p2align 4,,10
+	.p2align 3
+.L587:
+	testq	%r8, %r8
+	je	.L590
+	leaq	176(%rsp), %r13
+	movq	%r8, %rdx
+	movl	%r9d, %esi
+	movq	%r8, 8(%rsp)
+	movq	%r13, %rdi
+	call	memset@PLT
+	movq	16(%rsp), %rax
+	movq	8(%rsp), %r8
+	testq	%rax, %rax
+	movq	%rax, %r15
+	jne	.L884
+.L591:
+	movq	24(%r14), %rdi
+	movq	16(%r14), %rbp
+	movq	%r8, %rbx
+	movq	%rdi, %rax
+	subq	8(%r14), %rax
+	subq	%rax, %rbp
+	cmpq	%rbp, %r8
+	jb	.L717
+	.p2align 4
+	.p2align 3
+.L719:
+	cmpq	%rbp, %rbx
+	movq	%rbp, %rdx
+	cmovbe	%rbx, %rdx
+	testq	%rdx, %rdx
+	je	.L718
+	movq	%r13, %rsi
+	call	memcpy@PLT
+.L718:
+	movq	(%r14), %rax
+	addq	%rbp, 24(%r14)
+	movq	%r14, %rdi
+	addq	%rbp, %r13
+	subq	%rbp, %rbx
+	call	*(%rax)
+	movq	24(%r14), %rdi
+	movq	16(%r14), %rbp
+	movq	%rdi, %rax
+	subq	8(%r14), %rax
+	subq	%rax, %rbp
+	cmpq	%rbp, %rbx
+	jnb	.L719
+	testq	%rbx, %rbx
+	je	.L681
+.L717:
+	movq	%rbx, %rdx
+	movq	%r13, %rsi
+	call	memcpy@PLT
+	addq	%rbx, 24(%r14)
+	jmp	.L681
+	.p2align 4,,10
+	.p2align 3
+.L694:
+	movq	%r13, %rdx
+	movq	%r15, %rsi
+	call	memcpy@PLT
+	addq	%r13, 24(%r14)
+	jmp	.L697
+	.p2align 4,,10
+	.p2align 3
+.L711:
+	movq	%r13, %rdx
+	movq	%r12, %rsi
+	call	memcpy@PLT
+	addq	%r13, 24(%r14)
+	jmp	.L714
+.L884:
+	movq	%r8, %rbx
+	.p2align 4
+	.p2align 3
+.L588:
+	movq	24(%r14), %rdi
+	movq	16(%r14), %r13
+	movq	24(%rsp), %r12
+	movq	%rdi, %rax
+	subq	8(%r14), %rax
+	subq	%rax, %r13
+	cmpq	%r13, 16(%rsp)
+	jb	.L706
+.L873:
+	movq	%r8, %rbp
+	.p2align 4
+	.p2align 3
+.L708:
+	cmpq	%r13, %r15
+	movq	%r13, %rdx
+	cmovbe	%r15, %rdx
+	testq	%rdx, %rdx
+	je	.L707
+	movq	%r12, %rsi
+	call	memcpy@PLT
+.L707:
+	movq	(%r14), %rax
+	addq	%r13, 24(%r14)
+	movq	%r14, %rdi
+	addq	%r13, %r12
+	subq	%r13, %r15
+	call	*(%rax)
+.LEHE2:
+	movq	24(%r14), %rdi
+	movq	16(%r14), %r13
+	movq	%rdi, %rax
+	subq	8(%r14), %rax
+	subq	%rax, %r13
+	cmpq	%r13, %r15
+	jnb	.L708
+	movq	%rbp, %r8
+	testq	%r15, %r15
+	je	.L691
+.L706:
+	movq	%r15, %rdx
+	movq	%r12, %rsi
+	movq	%r8, 8(%rsp)
+	call	memcpy@PLT
+	addq	%r15, 24(%r14)
+	movq	8(%rsp), %r8
+	jmp	.L691
+	.p2align 4,,10
+	.p2align 3
+.L883:
+	movabsq	$72340172838076673, %rax
+	movzbl	%r9b, %esi
+	movl	%r8d, %edi
+	imulq	%rax, %rsi
+	andl	$-8, %edi
+	xorl	%eax, %eax
+.L686:
+	movl	%eax, %ecx
+	addl	$8, %eax
+	movq	%rsi, 0(%r13,%rcx)
+	cmpl	%edi, %eax
+	jb	.L686
+	addq	%r13, %rax
+	jmp	.L685
+.L590:
+	movq	16(%rsp), %rax
+	movq	%rax, %r15
+	testq	%rax, %rax
+	je	.L681
+	movq	24(%rdi), %rdi
+	movq	16(%r14), %r13
+	xorl	%ebx, %ebx
+	movq	24(%rsp), %r12
+	movq	%rdi, %rax
+	subq	8(%r14), %rax
+	subq	%rax, %r13
+	cmpq	%r13, 16(%rsp)
+	jnb	.L873
+	movq	16(%rsp), %rbx
+	movq	%r12, %rsi
+	movq	%rbx, %rdx
+	call	memcpy@PLT
+	addq	%rbx, 24(%r14)
+	jmp	.L681
+	.p2align 4,,10
+	.p2align 3
+.L725:
+	movq	%r8, %rbx
+	xorl	%ebp, %ebp
+.L586:
+	movl	%r9d, 92(%rsp)
+	cmpl	$55295, %r9d
+	ja	.L595
+	bsrl	%r9d, %eax
+	leal	1(%rax), %edx
+	cmpl	$6, %eax
+	jne	.L885
+	movl	%r9d, %eax
+	movl	$1, %edi
+	xorl	%edx, %edx
+	xorl	%r8d, %r8d
+	xorl	%esi, %esi
+.L600:
+	movzbl	%dl, %edx
+	movzbl	%r8b, %r8d
+	movzbl	%sil, %esi
+	xorl	%r9d, %r9d
+	sall	$8, %edx
+	leaq	96(%rsp), %rcx
+	leaq	112(%rsp), %r10
+	xorl	%r11d, %r11d
+	orl	%r8d, %edx
+	movq	%rcx, 32(%rsp)
+	xorl	%r12d, %r12d
+	xorl	%r13d, %r13d
+	sall	$8, %edx
+	movq	%r10, 48(%rsp)
+	leaq	111(%rsp), %r8
+	orl	%esi, %edx
+	movzbl	%al, %esi
+	movq	%r10, 96(%rsp)
+	sall	$8, %edx
+	movb	$0, 152(%rsp)
+	orl	%esi, %edx
+	movb	%dil, 153(%rsp)
+	movq	%rcx, %rsi
+	movl	%edx, 128(%rsp)
+	leaq	92(%rsp), %rdx
+	movq	%rdx, %xmm0
+	movb	$1, 154(%rsp)
+	punpcklqdq	%xmm0, %xmm0
+	movq	%rcx, 160(%rsp)
+	movq	$0, 104(%rsp)
+	movups	%xmm0, 136(%rsp)
+	jmp	.L601
+	.p2align 4,,10
+	.p2align 3
+.L609:
+	jge	.L610
+.L612:
+	movq	144(%rsp), %rcx
+	addl	$1, %r13d
+	movl	$1, %r9d
+	movq	%rcx, %rdx
+.L624:
+	cmpq	$15, %r12
+	je	.L886
+	movzbl	%r13b, %eax
+	movzbl	128(%rsp,%rax), %eax
+.L601:
+	addq	$1, %r12
+	movzbl	%dil, %ecx
+	movb	%al, (%r8,%r12)
+	leal	1(%r13), %eax
+	movzbl	%al, %eax
+	cmpl	%ecx, %eax
+	jne	.L609
+.L623:
+	cmpq	%rsi, %rdx
+	je	.L610
+	leaq	4(%rdx), %rcx
+	cmpq	%rsi, %rcx
+	je	.L732
+	leaq	8(%rdx), %rax
+	movq	%rax, 144(%rsp)
+	movl	4(%rdx), %eax
+	cmpl	$55295, %eax
+	ja	.L887
+	testl	%eax, %eax
+	je	.L734
+	bsrl	%eax, %edx
+	leal	1(%rdx), %edi
+	cmpl	$7, %edi
+	jg	.L617
+.L616:
+	xorl	%r9d, %r9d
+	movb	%al, 128(%rsp)
+	movb	$0, 129(%rsp)
+	movw	%r9w, 130(%rsp)
+	movq	%rcx, 144(%rsp)
+	cmpq	$15, %r12
+	je	.L888
+	addq	$1, %r12
+	movq	%rcx, %rdx
+	movl	$1, %r9d
+	xorl	%r13d, %r13d
+	movb	%al, (%r8,%r12)
+	movl	$1, %r11d
+	movl	$1, %edi
+	jmp	.L623
+	.p2align 4,,10
+	.p2align 3
+.L610:
+	movq	144(%rsp), %rcx
+	movq	%rcx, %rdx
+	cmpq	%rsi, %rcx
+	jne	.L624
+	testb	%r13b, %r13b
+	jne	.L624
+.L732:
+	movq	48(%rsp), %rax
+.L602:
+	movq	%r12, 104(%rsp)
+	movb	$0, (%rax,%r12)
+	movq	96(%rsp), %rax
+	movq	104(%rsp), %r15
+	movq	%rax, 40(%rsp)
+	leaq	-1(%rbp), %rax
+	movq	%rax, 8(%rsp)
+	testq	%rbp, %rbp
+	je	.L666
+	movq	8(%rsp), %rax
+	testq	%r15, %r15
+	jne	.L876
+.L856:
+	subq	$1, %rax
+	jnb	.L856
+.L666:
+	movq	16(%rsp), %rbp
+	testq	%rbp, %rbp
+	jne	.L889
+.L656:
+	leaq	-1(%rbx), %rbp
+	testq	%rbx, %rbx
+	je	.L680
+	testq	%r15, %r15
+	jne	.L877
+.L857:
+	subq	$1, %rbp
+	jnb	.L857
+.L680:
+	movq	96(%rsp), %rdi
+	movq	48(%rsp), %rax
+	cmpq	%rax, %rdi
+	je	.L681
+	movq	112(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+	jmp	.L681
+.L661:
+	movq	%rbp, %rdx
+	movq	%r12, %rsi
+	call	memcpy@PLT
+	subq	$1, 8(%rsp)
+	movq	8(%rsp), %rax
+	addq	%rbp, 24(%r14)
+	cmpq	$-1, %rax
+	je	.L666
+.L876:
+	movq	24(%r14), %rdi
+	movq	16(%r14), %rax
+.L659:
+	movq	%rdi, %rdx
+	subq	8(%r14), %rdx
+	movq	40(%rsp), %r12
+	movq	%r15, %rbp
+	subq	%rdx, %rax
+	movq	%rax, %r13
+	cmpq	%rax, %r15
+	jb	.L661
+	.p2align 4
+	.p2align 3
+.L663:
+	cmpq	%rbp, %r13
+	movq	%rbp, %rdx
+	cmovbe	%r13, %rdx
+	testq	%rdx, %rdx
+	je	.L662
+	movq	%r12, %rsi
+	call	memcpy@PLT
+.L662:
+	movq	(%r14), %rax
+	addq	%r13, 24(%r14)
+	addq	%r13, %r12
+	subq	%r13, %rbp
+	movq	%r14, %rdi
+.LEHB3:
+	call	*(%rax)
+	movq	24(%r14), %rdi
+	movq	16(%r14), %rax
+	movq	%rdi, %rdx
+	movq	%rax, %r13
+	subq	8(%r14), %rdx
+	subq	%rdx, %r13
+	cmpq	%r13, %rbp
+	jnb	.L663
+	testq	%rbp, %rbp
+	jne	.L661
+	subq	$1, 8(%rsp)
+	movq	8(%rsp), %rcx
+	cmpq	$-1, %rcx
+	jne	.L659
+	jmp	.L666
+.L739:
+	movq	40(%rsp), %rbx
+	movq	%r15, %r13
+.L675:
+	movq	%r13, %rdx
+	movq	%rbx, %rsi
+	call	memcpy@PLT
+	addq	%r13, 24(%r14)
+	subq	$1, %rbp
+	jb	.L680
+.L877:
+	movq	24(%r14), %rdi
+	movq	16(%r14), %rax
+.L673:
+	movq	%rdi, %rdx
+	subq	8(%r14), %rdx
+	subq	%rdx, %rax
+	movq	%rax, %r12
+	cmpq	%rax, %r15
+	jb	.L739
+	movq	40(%rsp), %rbx
+	movq	%r15, %r13
+	.p2align 4
+	.p2align 3
+.L677:
+	cmpq	%r12, %r13
+	movq	%r12, %rdx
+	cmovbe	%r13, %rdx
+	testq	%rdx, %rdx
+	je	.L676
+	movq	%rbx, %rsi
+	call	memcpy@PLT
+.L676:
+	movq	(%r14), %rax
+	addq	%r12, 24(%r14)
+	addq	%r12, %rbx
+	subq	%r12, %r13
+	movq	%r14, %rdi
+	call	*(%rax)
+.LEHE3:
+	movq	24(%r14), %rdi
+	movq	16(%r14), %rax
+	movq	%rdi, %rdx
+	movq	%rax, %r12
+	subq	8(%r14), %rdx
+	subq	%rdx, %r12
+	cmpq	%r12, %r13
+	jnb	.L677
+	testq	%r13, %r13
+	jne	.L675
+	subq	$1, %rbp
+	jnb	.L673
+	jmp	.L680
+	.p2align 4,,10
+	.p2align 3
+.L881:
+	movq	24(%r14), %rdi
+	movq	16(%r14), %rbp
+	movq	%rdi, %rax
+	subq	8(%r14), %rax
+	subq	%rax, %rbp
+	cmpq	%rbp, %rbx
+	jnb	.L719
+	jmp	.L717
+	.p2align 4,,10
+	.p2align 3
+.L692:
+	movq	24(%r14), %rdi
+	movq	16(%r14), %r12
+	movq	%rdi, %rax
+	subq	8(%r14), %rax
+	subq	%rax, %r12
+	cmpq	%r12, %rbp
+	jb	.L701
+	movq	%r8, %r15
+	.p2align 4
+	.p2align 3
+.L703:
+	cmpq	%r12, %rbp
+	movq	%r12, %rdx
+	cmovbe	%rbp, %rdx
+	testq	%rdx, %rdx
+	je	.L702
+	movq	%r13, %rsi
+	call	memcpy@PLT
+.L702:
+	movq	(%r14), %rax
+	addq	%r12, 24(%r14)
+	movq	%r14, %rdi
+	addq	%r12, %r13
+	subq	%r12, %rbp
+.LEHB4:
+	call	*(%rax)
+.LEHE4:
+	movq	24(%r14), %rdi
+	movq	16(%r14), %r12
+	movq	%rdi, %rax
+	subq	8(%r14), %rax
+	subq	%rax, %r12
+	cmpq	%r12, %rbp
+	jnb	.L703
+	movq	%r15, %r8
+	testq	%rbp, %rbp
+	je	.L699
+.L701:
+	movq	%rbp, %rdx
+	movq	%r13, %rsi
+	movq	%r8, 8(%rsp)
+	call	memcpy@PLT
+	addq	%rbp, 24(%r14)
+	movq	8(%rsp), %r8
+	jmp	.L699
+.L882:
+	cmpq	$0, 16(%rsp)
+	jne	.L741
+	testq	%rbx, %rbx
+	je	.L681
+.L773:
+.L710:
+	jmp	.L710
+	.p2align 4,,10
+	.p2align 3
+.L887:
+	leal	-57344(%rax), %edx
+	cmpl	$1056767, %edx
+	ja	.L733
+	bsrl	%eax, %edx
+	cmpl	$15, %edx
+	je	.L614
+	movl	%eax, %r9d
+	movl	%eax, %edx
+	movl	%eax, %edi
+	andl	$63, %eax
+	shrl	$6, %r9d
+	sall	$8, %eax
+	movq	%rcx, 144(%rsp)
+	shrl	$12, %edi
+	andl	$63, %r9d
+	shrl	$18, %edx
+	orl	%r9d, %eax
+	andl	$63, %edi
+	movzbl	%dl, %edx
+	sall	$8, %eax
+	orl	%edi, %eax
+	movl	.LC30(%rip), %edi
+	sall	$8, %eax
+	orl	%edx, %eax
+	orl	%edi, %eax
+	movl	%eax, 128(%rsp)
+	cmpq	$15, %r12
+	je	.L735
+	movzbl	128(%rsp), %eax
+	addq	$1, %r12
+	movl	$4, %edi
+	movb	%al, (%r8,%r12)
+.L622:
+	xorl	%r13d, %r13d
+	movl	$1, %r11d
+	jmp	.L612
+.L886:
+	testb	%r9b, %r9b
+	je	.L730
+	movb	%r13b, 152(%rsp)
+	testb	%r13b, %r13b
+	sete	%al
+.L605:
+	testb	%r11b, %r11b
+	jne	.L722
+.L606:
+	movq	32(%rsp), %rsi
+	cmpq	%rsi, %rcx
+	jne	.L750
+	testb	%al, %al
+	jne	.L731
+.L750:
+	movl	$15, %r8d
+	movl	$15, %r9d
+	movl	$15, %edx
+	jmp	.L608
+	.p2align 4,,10
+	.p2align 3
+.L892:
+	movq	96(%rsp), %r15
+.L653:
+	movzbl	%r13b, %eax
+	movzbl	128(%rsp,%rax), %eax
+	movb	%al, (%r15,%rdx)
+	movzbl	%r13b, %eax
+	movzbl	153(%rsp), %edx
+	addl	$1, %eax
+	cmpl	%edx, %eax
+	je	.L890
+	movq	144(%rsp), %rcx
+	jge	.L891
+	addl	$1, %r13d
+	addq	$1, %r8
+	movb	%r13b, 152(%rsp)
+.L650:
+	movq	%r12, %rdx
+.L608:
+	leaq	1(%rdx), %r12
+	cmpq	%r8, %r9
+	jne	.L892
+	testq	%r12, %r12
+	js	.L893
+	cmpq	%r12, %r9
+	jnb	.L627
+	addq	%r9, %r9
+	cmpq	%r9, %r12
+	jnb	.L628
+	testq	%r9, %r9
+	js	.L629
+	leaq	-1(%r12,%r12), %rdi
+.L630:
+	movq	%rdx, 64(%rsp)
+	movq	%r9, 56(%rsp)
+	movq	%rcx, 40(%rsp)
+	movq	%r8, 8(%rsp)
+.LEHB5:
+	call	_Znwm@PLT
+	movq	8(%rsp), %r8
+	movq	96(%rsp), %r11
+	movq	%rax, %r15
+	movq	40(%rsp), %rcx
+	movq	56(%rsp), %r9
+	cmpq	$1, %r8
+	movq	64(%rsp), %rdx
+	je	.L894
+	testq	%r8, %r8
+	jne	.L632
+.L634:
+	movq	48(%rsp), %rax
+	cmpq	%rax, %r11
+	je	.L636
+	movq	112(%rsp), %rax
+	movq	%r11, %rdi
+	movq	%rdx, 64(%rsp)
+	movq	%r9, 56(%rsp)
+	leaq	1(%rax), %rsi
+	movq	%rcx, 40(%rsp)
+	movq	%r8, 8(%rsp)
+	call	_ZdlPvm@PLT
+	movq	64(%rsp), %rdx
+	movq	56(%rsp), %r9
+	movq	40(%rsp), %rcx
+	movq	8(%rsp), %r8
+.L636:
+	movq	%r15, 96(%rsp)
+	movq	%r9, 112(%rsp)
+	jmp	.L653
+	.p2align 4,,10
+	.p2align 3
+.L890:
+	movq	32(%rsp), %rax
+	cmpq	%rax, %rcx
+	je	.L895
+	movq	32(%rsp), %rax
+	leaq	4(%rcx), %rdx
+	cmpq	%rax, %rdx
+	je	.L651
+	leaq	8(%rcx), %rax
+	movq	%rax, 144(%rsp)
+	movl	4(%rcx), %eax
+	cmpl	$55295, %eax
+	ja	.L896
+	movb	$0, 152(%rsp)
+	testl	%eax, %eax
+	je	.L737
+	bsrl	%eax, %esi
+	addl	$1, %esi
+	cmpl	$7, %esi
+	jg	.L648
+.L647:
+	xorl	%ecx, %ecx
+	movb	$0, 129(%rsp)
+	movw	%cx, 130(%rsp)
+	movb	%al, 128(%rsp)
+	movl	$1, %eax
+.L649:
+	movb	%al, 153(%rsp)
+	addq	$1, %r8
+	movq	%rdx, %rcx
+	xorl	%r13d, %r13d
+	movq	%rdx, 144(%rsp)
+	jmp	.L650
+	.p2align 4,,10
+	.p2align 3
+.L891:
+	movzbl	152(%rsp), %r13d
+	movq	32(%rsp), %rax
+.L875:
+	cmpq	%rax, %rcx
+	sete	%al
+	testb	%r13b, %r13b
+	sete	%dl
+	addq	$1, %r8
+	andl	%edx, %eax
+	testb	%al, %al
+	je	.L650
+.L651:
+	movq	96(%rsp), %rax
+	jmp	.L602
+.L627:
+	movl	$1, %edi
+	movq	%rdx, 56(%rsp)
+	movq	%rcx, 40(%rsp)
+	movq	%r8, 8(%rsp)
+	call	_Znwm@PLT
+.LEHE5:
+	movq	96(%rsp), %r11
+	movq	8(%rsp), %r8
+	movq	%rax, %r15
+	xorl	%r9d, %r9d
+	movq	40(%rsp), %rcx
+	movq	56(%rsp), %rdx
+.L632:
+	movq	%r11, %rsi
+	movq	%r15, %rdi
+	movq	%r9, 72(%rsp)
+	movq	%rcx, 64(%rsp)
+	movq	%r8, 56(%rsp)
+	movq	%rdx, 40(%rsp)
+	movq	%r11, 8(%rsp)
+	call	memcpy@PLT
+	movq	72(%rsp), %r9
+	movq	64(%rsp), %rcx
+	movq	56(%rsp), %r8
+	movq	40(%rsp), %rdx
+	movq	8(%rsp), %r11
+	jmp	.L634
+.L895:
+	movzbl	152(%rsp), %r13d
+	movq	144(%rsp), %rcx
+	jmp	.L875
+.L894:
+	movzbl	(%r11), %eax
+	movb	%al, (%r15)
+	jmp	.L634
+.L628:
+	movq	%rdx, %rdi
+	addq	$2, %rdi
+	js	.L629
+	movq	%r12, %r9
+	jmp	.L630
+.L889:
+	movq	24(%r14), %rdi
+	movq	16(%r14), %r13
+	movq	24(%rsp), %r12
+	movq	%rdi, %rax
+	subq	8(%r14), %rax
+	subq	%rax, %r13
+	cmpq	%r13, %rbp
+	jb	.L667
+	.p2align 4
+	.p2align 3
+.L669:
+	cmpq	%r13, %rbp
+	movq	%r13, %rdx
+	cmovbe	%rbp, %rdx
+	testq	%rdx, %rdx
+	je	.L668
+	movq	%r12, %rsi
+	call	memcpy@PLT
+.L668:
+	movq	(%r14), %rax
+	addq	%r13, 24(%r14)
+	addq	%r13, %r12
+	subq	%r13, %rbp
+	movq	%r14, %rdi
+.LEHB6:
+	call	*(%rax)
+.LEHE6:
+	movq	24(%r14), %rdi
+	movq	16(%r14), %rax
+	movq	%rdi, %rdx
+	subq	8(%r14), %rdx
+	subq	%rdx, %rax
+	movq	%rax, %r13
+	cmpq	%rax, %rbp
+	jnb	.L669
+	testq	%rbp, %rbp
+	je	.L656
+.L667:
+	movq	%rbp, %rdx
+	movq	%r12, %rsi
+	call	memcpy@PLT
+	addq	%rbp, 24(%r14)
+	jmp	.L656
+.L629:
+	movq	216(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L867
+.LEHB7:
+	call	_ZSt17__throw_bad_allocv@PLT
+.L888:
+	movl	$1, %edi
+.L619:
+	movb	$0, 152(%rsp)
+	movq	144(%rsp), %rcx
+	xorl	%r13d, %r13d
+	movl	$1, %eax
+.L722:
+	movb	%dil, 153(%rsp)
+	jmp	.L606
+.L737:
+	xorl	%eax, %eax
+	jmp	.L647
+.L730:
+	movl	$1, %eax
+	xorl	%r13d, %r13d
+	jmp	.L605
+.L595:
+	leal	-57344(%r9), %eax
+	cmpl	$1056767, %eax
+	ja	.L728
+	bsrl	%r9d, %eax
+	cmpl	$15, %eax
+	je	.L598
+	movl	%r9d, %r8d
+	movl	%r9d, %esi
+	movl	%r9d, %edx
+	movl	%r9d, %eax
+	shrl	$6, %r8d
+	shrl	$12, %esi
+	andl	$63, %edx
+	movl	$4, %edi
+	andl	$63, %r8d
+	shrl	$18, %eax
+	andl	$63, %esi
+	orl	$-128, %edx
+	orl	$-128, %r8d
+	orl	$-16, %eax
+	orl	$-128, %esi
+	jmp	.L600
+.L734:
+	xorl	%eax, %eax
+	jmp	.L616
+.L896:
+	leal	-57344(%rax), %esi
+	movb	$0, 152(%rsp)
+	cmpl	$1056767, %esi
+	ja	.L897
+	bsrl	%eax, %esi
+	cmpl	$15, %esi
+	je	.L644
+	movl	%eax, %r11d
+	movl	%eax, %esi
+	movl	%eax, %edi
+	andl	$63, %eax
+	shrl	$6, %r11d
+	sall	$8, %eax
+	movl	.LC30(%rip), %ecx
+	shrl	$12, %edi
+	andl	$63, %r11d
+	shrl	$18, %esi
+	orl	%r11d, %eax
+	andl	$63, %edi
+	movzbl	%sil, %esi
+	sall	$8, %eax
+	orl	%edi, %eax
+	sall	$8, %eax
+	orl	%esi, %eax
+	orl	%ecx, %eax
+	movl	%eax, 128(%rsp)
+	movl	$4, %eax
+	jmp	.L649
+.L728:
+	movl	$65533, %r9d
+.L598:
+	movl	%r9d, %esi
+	movl	%r9d, %eax
+	movl	%r9d, %r8d
+	movl	$3, %edi
+	shrl	$6, %esi
+	shrl	$12, %eax
+	andl	$63, %r8d
+	xorl	%edx, %edx
+	andl	$63, %esi
+	orl	$-32, %eax
+	orl	$-128, %r8d
+	orl	$-128, %esi
+	jmp	.L600
+.L897:
+	movl	$65533, %eax
+.L644:
+	movl	%eax, %esi
+	movb	$0, 131(%rsp)
+	shrl	$12, %esi
+	orl	$-32, %esi
+	movb	%sil, 128(%rsp)
+	movl	%eax, %esi
+	andl	$63, %eax
+	shrl	$6, %esi
+	orl	$-128, %eax
+	andl	$63, %esi
+	movb	%al, 130(%rsp)
+	movl	$3, %eax
+	orl	$-128, %esi
+	movb	%sil, 129(%rsp)
+	jmp	.L649
+.L741:
+	movq	16(%rsp), %r15
+	jmp	.L588
+.L733:
+	movl	$65533, %eax
+.L614:
+	movl	%eax, %edx
+	movl	%eax, %edi
+	andl	$63, %eax
+	movb	$0, 131(%rsp)
+	shrl	$6, %edx
+	shrl	$12, %edi
+	orl	$-128, %eax
+	movq	%rcx, 144(%rsp)
+	andl	$63, %edx
+	orl	$-32, %edi
+	movb	%al, 130(%rsp)
+	orl	$-128, %edx
+	movb	%dil, 128(%rsp)
+	movb	%dl, 129(%rsp)
+	cmpq	$15, %r12
+	je	.L898
+	addq	$1, %r12
+	movb	%dil, (%r8,%r12)
+	movl	$3, %edi
+	jmp	.L622
+.L745:
+	movq	%rbx, %r8
+	leaq	176(%rsp), %r13
+	jmp	.L591
+.L735:
+	movl	$4, %edi
+	jmp	.L619
+.L731:
+	movq	48(%rsp), %rax
+	movl	$15, %r12d
+	jmp	.L602
+.L885:
+	movl	%r9d, %esi
+	movl	%r9d, %eax
+	andl	$63, %esi
+	shrl	$6, %eax
+	orl	$-128, %esi
+	cmpl	$11, %edx
+	jg	.L598
+	orl	$-64, %eax
+	movl	$2, %edi
+	xorl	%edx, %edx
+	xorl	%r8d, %r8d
+	jmp	.L600
+.L648:
+	movl	%eax, %edi
+	movl	%eax, %r11d
+	andl	$63, %edi
+	shrl	$6, %r11d
+	orl	$-128, %edi
+	cmpl	$11, %esi
+	jg	.L644
+	movl	%r11d, %eax
+	movb	%dil, 129(%rsp)
+	orl	$-64, %eax
+	movb	%al, 128(%rsp)
+	xorl	%eax, %eax
+	movw	%ax, 130(%rsp)
+	movl	$2, %eax
+	jmp	.L649
+.L617:
+	movl	%eax, %r9d
+	movl	%eax, %edx
+	andl	$63, %r9d
+	shrl	$6, %edx
+	orl	$-128, %r9d
+	cmpl	$11, %edi
+	jg	.L614
+	movl	%edx, %eax
+	xorl	%edi, %edi
+	movb	%r9b, 129(%rsp)
+	orl	$-64, %eax
+	movw	%di, 130(%rsp)
+	movb	%al, 128(%rsp)
+	movq	%rcx, 144(%rsp)
+	cmpq	$15, %r12
+	je	.L899
+	addq	$1, %r12
+	movl	$2, %edi
+	movb	%al, (%r8,%r12)
+	jmp	.L622
+.L893:
+	movq	216(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L626
+.L867:
+	call	__stack_chk_fail@PLT
+.L898:
+	movl	$3, %edi
+	jmp	.L619
+.L899:
+	movl	$2, %edi
+	jmp	.L619
+.L748:
+	endbr64
+.L879:
+	movq	%rax, %rbx
+	jmp	.L720
+.L749:
+	endbr64
+	jmp	.L879
+.L626:
+	leaq	.LC22(%rip), %rdi
+	call	_ZSt20__throw_length_errorPKc@PLT
+.LEHE7:
+.L720:
+	movq	32(%rsp), %rdi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+	movq	216(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L867
+	movq	%rbx, %rdi
+.LEHB8:
+	call	_Unwind_Resume@PLT
+.LEHE8:
+	.cfi_endproc
+.LFE5562:
+	.section	.gcc_except_table._ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi,"aG",@progbits,_ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi,comdat
+.LLSDA5562:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x1
+	.uleb128 .LLSDACSE5562-.LLSDACSB5562
+.LLSDACSB5562:
+	.uleb128 .LEHB2-.LFB5562
+	.uleb128 .LEHE2-.LEHB2
+	.uleb128 0
+	.uleb128 0
+	.uleb128 .LEHB3-.LFB5562
+	.uleb128 .LEHE3-.LEHB3
+	.uleb128 .L748-.LFB5562
+	.uleb128 0
+	.uleb128 .LEHB4-.LFB5562
+	.uleb128 .LEHE4-.LEHB4
+	.uleb128 0
+	.uleb128 0
+	.uleb128 .LEHB5-.LFB5562
+	.uleb128 .LEHE5-.LEHB5
+	.uleb128 .L749-.LFB5562
+	.uleb128 0
+	.uleb128 .LEHB6-.LFB5562
+	.uleb128 .LEHE6-.LEHB6
+	.uleb128 .L748-.LFB5562
+	.uleb128 0
+	.uleb128 .LEHB7-.LFB5562
+	.uleb128 .LEHE7-.LEHB7
+	.uleb128 .L749-.LFB5562
+	.uleb128 0
+	.uleb128 .LEHB8-.LFB5562
+	.uleb128 .LEHE8-.LEHB8
+	.uleb128 0
+	.uleb128 0
+.LLSDACSE5562:
+	.section	.text._ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi,"axG",@progbits,_ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi,comdat
+	.size	_ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi, .-_ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi
+	.section	.text._ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE,"axG",@progbits,_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE,comdat
+	.p2align 4
+	.weak	_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE
+	.type	_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE, @function
+_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE:
+.LFB5431:
+	.cfi_startproc
+	endbr64
+	pushq	%r14
+	.cfi_def_cfa_offset 16
+	.cfi_offset 14, -16
+	movq	%rcx, %r14
+	movl	%r9d, %ecx
+	pushq	%r13
+	.cfi_def_cfa_offset 24
+	.cfi_offset 13, -24
+	movq	%rdx, %r13
+	pushq	%r12
+	.cfi_def_cfa_offset 32
+	.cfi_offset 12, -32
+	movq	%rdi, %r12
+	pushq	%rbp
+	.cfi_def_cfa_offset 40
+	.cfi_offset 6, -40
+	movq	%r8, %rbp
+	pushq	%rbx
+	.cfi_def_cfa_offset 48
+	.cfi_offset 3, -48
+	movq	%rsi, %rbx
+	subq	$16, %rsp
+	.cfi_def_cfa_offset 64
+	movzwl	(%r8), %eax
+	andw	$384, %ax
+	cmpw	$128, %ax
+	je	.L925
+	cmpw	$256, %ax
+	je	.L903
+.L906:
+	movq	16(%r14), %rbp
+	testq	%r12, %r12
+	jne	.L926
+.L916:
+	addq	$16, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 48
+	movq	%rbp, %rax
+	popq	%rbx
+	.cfi_def_cfa_offset 40
+	popq	%rbp
+	.cfi_def_cfa_offset 32
+	popq	%r12
+	.cfi_def_cfa_offset 24
+	popq	%r13
+	.cfi_def_cfa_offset 16
+	popq	%r14
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L925:
+	.cfi_restore_state
+	movzwl	4(%r8), %r8d
+.L902:
+	cmpq	%r8, %r13
+	jnb	.L906
+	movzbl	0(%rbp), %edx
+	movq	16(%r14), %rdi
+	movq	%r12, %rsi
+	movl	8(%rbp), %r9d
+	movl	%edx, %eax
+	andl	$3, %eax
+	andl	$3, %edx
+	movq	%rbx, %rdx
+	cmovne	%eax, %ecx
+	addq	$16, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 48
+	subq	%r13, %r8
+	popq	%rbx
+	.cfi_def_cfa_offset 40
+	popq	%rbp
+	.cfi_def_cfa_offset 32
+	popq	%r12
+	.cfi_def_cfa_offset 24
+	popq	%r13
+	.cfi_def_cfa_offset 16
+	popq	%r14
+	.cfi_def_cfa_offset 8
+	jmp	_ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi
+	.p2align 4,,10
+	.p2align 3
+.L926:
+	.cfi_restore_state
+	movq	24(%rbp), %rdi
+	movq	%rbx, %r13
+	movq	16(%rbp), %rbx
+	movq	%rdi, %rax
+	subq	8(%rbp), %rax
+	subq	%rax, %rbx
+	cmpq	%rbx, %r12
+	jb	.L908
+	.p2align 4
+	.p2align 3
+.L910:
+	cmpq	%r12, %rbx
+	movq	%r12, %rdx
+	cmovbe	%rbx, %rdx
+	testq	%rdx, %rdx
+	je	.L909
+	movq	%r13, %rsi
+	call	memcpy@PLT
+.L909:
+	movq	0(%rbp), %rax
+	addq	%rbx, 24(%rbp)
+	movq	%rbp, %rdi
+	addq	%rbx, %r13
+	subq	%rbx, %r12
+	call	*(%rax)
+	movq	24(%rbp), %rdi
+	movq	16(%rbp), %rbx
+	movq	%rdi, %rax
+	subq	8(%rbp), %rax
+	subq	%rax, %rbx
+	cmpq	%rbx, %r12
+	jnb	.L910
+	testq	%r12, %r12
+	je	.L916
+.L908:
+	movq	%r12, %rdx
+	movq	%r13, %rsi
+	call	memcpy@PLT
+	addq	%r12, 24(%rbp)
+	jmp	.L916
+	.p2align 4,,10
+	.p2align 3
+.L903:
+	movzwl	4(%r8), %edi
+	movq	%r14, %rsi
+	movl	%r9d, 12(%rsp)
+	call	_ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+	movl	12(%rsp), %ecx
+	movq	%rax, %r8
+	jmp	.L902
+	.cfi_endproc
+.LFE5431:
+	.size	_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE, .-_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE
+	.section	.text._ZZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEmENKUlRT_E_clIPKvEEDaS5_,"axG",@progbits,_ZZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEmENKUlRT_E_clIPKvEEDaS5_,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEmENKUlRT_E_clIPKvEEDaS5_
+	.type	_ZZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEmENKUlRT_E_clIPKvEEDaS5_, @function
+_ZZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEmENKUlRT_E_clIPKvEEDaS5_:
+.LFB5199:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$88, %rsp
+	.cfi_def_cfa_offset 144
+	movq	(%rdi), %r12
+	movq	%fs:40, %r14
+	movq	%r14, 72(%rsp)
+	movq	%rsi, %r14
+	movl	$32, 28(%rsp)
+	movq	16(%r12), %r15
+	movq	8(%r12), %rbx
+	movq	$0, 20(%rsp)
+	cmpq	%rbx, %r15
+	je	.L929
+	cmpb	$125, (%rbx)
+	je	.L929
+	movq	%rbx, %rsi
+	movq	%rdi, %r13
+	leaq	20(%rsp), %rdi
+	movq	%r15, %rdx
+	call	_ZNSt8__format5_SpecIcE23_M_parse_fill_and_alignEPKcS3_
+	movq	%rax, %rbx
+	cmpq	%rax, %r15
+	je	.L929
+	movzbl	(%rax), %eax
+	cmpb	$125, %al
+	je	.L929
+	movb	$0, 8(%rsp)
+	cmpb	$48, %al
+	je	.L953
+	leaq	8(%rsp), %rbp
+	leaq	24(%rsp), %rdx
+	movq	%r15, %rsi
+	movq	%rbx, %rdi
+	leaq	8(%r12), %r8
+	movq	%rbp, %rcx
+	call	_ZNSt8__format5_SpecIcE27_S_parse_width_or_precisionEPKcS3_RtRbRSt26basic_format_parse_contextIcE
+	movq	%rax, %rdx
+	cmpq	%rax, %rbx
+	je	.L935
+	movzbl	8(%rsp), %eax
+	movzwl	20(%rsp), %ecx
+	addl	$1, %eax
+	andw	$-385, %cx
+	andl	$3, %eax
+	sall	$7, %eax
+	orl	%ecx, %eax
+	movw	%ax, 20(%rsp)
+.L935:
+	cmpq	%rdx, %r15
+	je	.L936
+	movzbl	(%rdx), %eax
+	cmpb	$112, %al
+	je	.L954
+.L937:
+	cmpb	$125, %al
+	je	.L936
+	movq	72(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L952
+	call	_ZNSt8__format29__failed_to_parse_format_specEv
+	.p2align 4,,10
+	.p2align 3
+.L929:
+	movq	20(%rsp), %rax
+	leaq	8(%rsp), %rbp
+	movq	%rax, 8(%rsp)
+	movl	28(%rsp), %eax
+	movl	%eax, 16(%rsp)
+	movq	%r12, %rax
+.L931:
+	movq	%rbx, 8(%r12)
+	movq	48(%rax), %rbx
+	movq	(%r14), %rax
+	testq	%rax, %rax
+	jne	.L940
+	movb	$48, 50(%rsp)
+	movl	$3, %edx
+.L941:
+	movl	$30768, %eax
+	leaq	48(%rsp), %rsi
+	movq	%rbp, %r8
+	movq	%rbx, %rcx
+	movl	$2, %r9d
+	movq	%rdx, %rdi
+	movw	%ax, 48(%rsp)
+	call	_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE
+	movq	%rax, 16(%rbx)
+	movq	72(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L952
+	addq	$88, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L940:
+	.cfi_restore_state
+	bsrq	%rax, %rdx
+	movdqa	.LC32(%rip), %xmm0
+	addl	$4, %edx
+	shrl	$2, %edx
+	movaps	%xmm0, 32(%rsp)
+	leal	-1(%rdx), %ecx
+	cmpq	$255, %rax
+	jbe	.L942
+	.p2align 6
+	.p2align 4
+	.p2align 3
+.L943:
+	movq	%rax, %rdi
+	movl	%ecx, %esi
+	andl	$15, %edi
+	movzbl	32(%rsp,%rdi), %edi
+	movb	%dil, 50(%rsp,%rsi)
+	movq	%rax, %rsi
+	leal	-1(%rcx), %edi
+	shrq	$8, %rax
+	shrq	$4, %rsi
+	subl	$2, %ecx
+	andl	$15, %esi
+	movzbl	32(%rsp,%rsi), %esi
+	movb	%sil, 50(%rsp,%rdi)
+	cmpq	$255, %rax
+	ja	.L943
+.L942:
+	cmpq	$15, %rax
+	jbe	.L944
+	movq	%rax, %rcx
+	shrq	$4, %rax
+	andl	$15, %ecx
+	movzbl	32(%rsp,%rcx), %ecx
+	movb	%cl, 51(%rsp)
+	movzbl	32(%rsp,%rax), %eax
+.L945:
+	addl	$2, %edx
+	movb	%al, 50(%rsp)
+	movslq	%edx, %rdx
+	jmp	.L941
+	.p2align 4,,10
+	.p2align 3
+.L944:
+	movzbl	32(%rsp,%rax), %eax
+	jmp	.L945
+	.p2align 4,,10
+	.p2align 3
+.L954:
+	leaq	1(%rdx), %rcx
+	cmpq	%rcx, %r15
+	je	.L947
+	movzbl	1(%rdx), %eax
+	movq	%rcx, %rdx
+	jmp	.L937
+.L947:
+	movq	%r15, %rdx
+	.p2align 4
+	.p2align 3
+.L936:
+	movq	20(%rsp), %rax
+	movq	%rdx, %rbx
+	movq	%rax, 8(%rsp)
+	movl	28(%rsp), %eax
+	movl	%eax, 16(%rsp)
+	movq	0(%r13), %rax
+	jmp	.L931
+.L953:
+	movq	72(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L934
+.L952:
+	call	__stack_chk_fail@PLT
+.L934:
+	leaq	.LC28(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE5199:
+	.size	_ZZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEmENKUlRT_E_clIPKvEEDaS5_, .-_ZZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEmENKUlRT_E_clIPKvEEDaS5_
+	.section	.text._ZNKSt8__format15__formatter_intIcE19_M_format_characterINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEcRS7_,"axG",@progbits,_ZNKSt8__format15__formatter_intIcE19_M_format_characterINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEcRS7_,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNKSt8__format15__formatter_intIcE19_M_format_characterINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEcRS7_
+	.type	_ZNKSt8__format15__formatter_intIcE19_M_format_characterINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEcRS7_, @function
+_ZNKSt8__format15__formatter_intIcE19_M_format_characterINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEcRS7_:
+.LFB5414:
+	.cfi_startproc
+	endbr64
+	pushq	%r13
+	.cfi_def_cfa_offset 16
+	.cfi_offset 13, -16
+	pushq	%r12
+	.cfi_def_cfa_offset 24
+	.cfi_offset 12, -24
+	pushq	%rbp
+	.cfi_def_cfa_offset 32
+	.cfi_offset 6, -32
+	movq	%rdx, %rbp
+	pushq	%rbx
+	.cfi_def_cfa_offset 40
+	.cfi_offset 3, -40
+	movq	%rdi, %rbx
+	subq	$24, %rsp
+	.cfi_def_cfa_offset 64
+	movzwl	(%rdi), %eax
+	movb	%sil, 12(%rsp)
+	andw	$384, %ax
+	cmpw	$128, %ax
+	je	.L979
+	cmpw	$256, %ax
+	je	.L958
+.L961:
+	movq	16(%rbp), %rbx
+	leaq	12(%rsp), %r13
+	movl	$1, %r12d
+	movq	24(%rbx), %rdi
+	movq	16(%rbx), %rbp
+	movq	%rdi, %rax
+	subq	8(%rbx), %rax
+	subq	%rax, %rbp
+	cmpq	$1, %rbp
+	ja	.L960
+.L959:
+	cmpq	%rbp, %r12
+	movq	%rbp, %rdx
+	cmovbe	%r12, %rdx
+	testq	%rdx, %rdx
+	jne	.L980
+.L963:
+	movq	(%rbx), %rax
+	addq	%rbp, 24(%rbx)
+	movq	%rbx, %rdi
+	addq	%rbp, %r13
+	subq	%rbp, %r12
+	call	*(%rax)
+	movq	24(%rbx), %rdi
+	movq	16(%rbx), %rbp
+	movq	%rdi, %rax
+	subq	8(%rbx), %rax
+	subq	%rax, %rbp
+	cmpq	%rbp, %r12
+	jnb	.L959
+	testq	%r12, %r12
+	je	.L965
+	.p2align 4
+	.p2align 3
+.L960:
+	movq	%r12, %rdx
+	movq	%r13, %rsi
+	call	memcpy@PLT
+	addq	%r12, 24(%rbx)
+	jmp	.L965
+	.p2align 4,,10
+	.p2align 3
+.L980:
+	movq	%r13, %rsi
+	call	memcpy@PLT
+	jmp	.L963
+	.p2align 4,,10
+	.p2align 3
+.L979:
+	movzwl	4(%rdi), %eax
+.L957:
+	cmpq	$1, %rax
+	jbe	.L961
+	movzbl	(%rbx), %edx
+	movq	16(%rbp), %r10
+	movl	$1, %edi
+	leaq	-1(%rax), %r8
+	movl	8(%rbx), %r9d
+	movq	%rdi, %rsi
+	movl	%edx, %ecx
+	movq	%r10, %rdi
+	andl	$3, %ecx
+	andl	$3, %edx
+	movl	$1, %edx
+	cmove	%edx, %ecx
+	leaq	12(%rsp), %rdx
+	call	_ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi
+	movq	%rax, %rbx
+.L965:
+	addq	$24, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 40
+	movq	%rbx, %rax
+	popq	%rbx
+	.cfi_def_cfa_offset 32
+	popq	%rbp
+	.cfi_def_cfa_offset 24
+	popq	%r12
+	.cfi_def_cfa_offset 16
+	popq	%r13
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L958:
+	.cfi_restore_state
+	movzwl	4(%rdi), %edi
+	movq	%rdx, %rsi
+	call	_ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+	jmp	.L957
+	.cfi_endproc
+.LFE5414:
+	.size	_ZNKSt8__format15__formatter_intIcE19_M_format_characterINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEcRS7_, .-_ZNKSt8__format15__formatter_intIcE19_M_format_characterINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEcRS7_
+	.section	.text._ZSt14__add_groupingIcEPT_S1_S0_PKcmPKS0_S5_,"axG",@progbits,_ZSt14__add_groupingIcEPT_S1_S0_PKcmPKS0_S5_,comdat
+	.p2align 4
+	.weak	_ZSt14__add_groupingIcEPT_S1_S0_PKcmPKS0_S5_
+	.type	_ZSt14__add_groupingIcEPT_S1_S0_PKcmPKS0_S5_, @function
+_ZSt14__add_groupingIcEPT_S1_S0_PKcmPKS0_S5_:
+.LFB5674:
+	.cfi_startproc
+	endbr64
+	pushq	%r13
+	.cfi_def_cfa_offset 16
+	.cfi_offset 13, -16
+	movl	%esi, %r10d
+	movq	%r8, %rsi
+	pushq	%r12
+	.cfi_def_cfa_offset 24
+	.cfi_offset 12, -24
+	pushq	%rbp
+	.cfi_def_cfa_offset 32
+	.cfi_offset 6, -32
+	movq	%rdi, %rbp
+	movq	%rdx, %rdi
+	pushq	%rbx
+	.cfi_def_cfa_offset 40
+	.cfi_offset 3, -40
+	movsbq	(%rdx), %rax
+	leal	-1(%rax), %edx
+	cmpb	$125, %dl
+	ja	.L982
+	movq	%r9, %rdx
+	subq	%r8, %rdx
+	cmpq	%rax, %rdx
+	jle	.L982
+	leaq	-1(%rcx), %r11
+	xorl	%r8d, %r8d
+	xorl	%ecx, %ecx
+	jmp	.L985
+	.p2align 4,,10
+	.p2align 3
+.L1025:
+	addq	$1, %r8
+	leaq	(%rdi,%r8), %rbx
+	movsbq	(%rbx), %rax
+	leal	-1(%rax), %edx
+	cmpb	$125, %dl
+	ja	.L987
+.L1026:
+	movq	%r9, %rdx
+	subq	%rsi, %rdx
+	cmpq	%rax, %rdx
+	jle	.L987
+.L985:
+	subq	%rax, %r9
+	cmpq	%r11, %r8
+	jb	.L1025
+	leaq	(%rdi,%r8), %rbx
+	addq	$1, %rcx
+	movsbq	(%rbx), %rax
+	leal	-1(%rax), %edx
+	cmpb	$125, %dl
+	jbe	.L1026
+.L987:
+	leaq	-1(%rcx), %r12
+	leaq	-1(%r8), %r11
+	cmpq	%r9, %rsi
+	je	.L1027
+.L988:
+	movq	%r9, %r13
+	xorl	%eax, %eax
+	subq	%rsi, %r13
+	.p2align 5
+	.p2align 4
+	.p2align 3
+.L991:
+	movzbl	(%rsi,%rax), %edx
+	movb	%dl, 0(%rbp,%rax)
+	addq	$1, %rax
+	cmpq	%r13, %rax
+	jne	.L991
+	movq	%rbp, %rdx
+	subq	%rsi, %rdx
+	addq	%r9, %rdx
+.L990:
+	testq	%rcx, %rcx
+	je	.L992
+	.p2align 4
+	.p2align 3
+.L995:
+	movb	%r10b, (%rdx)
+	movzbl	(%rbx), %esi
+	leaq	1(%rdx), %rbp
+	testb	%sil, %sil
+	jle	.L1001
+	xorl	%eax, %eax
+	.p2align 5
+	.p2align 4
+	.p2align 3
+.L994:
+	movzbl	(%r9,%rax), %ecx
+	movb	%cl, 1(%rdx,%rax)
+	addq	$1, %rax
+	cmpq	%rsi, %rax
+	jne	.L994
+	leaq	0(%rbp,%rax), %rdx
+	addq	%rax, %r9
+.L993:
+	subq	$1, %r12
+	jnb	.L995
+.L992:
+	testq	%r8, %r8
+	je	.L981
+	.p2align 4
+	.p2align 3
+.L998:
+	movb	%r10b, (%rdx)
+	movzbl	(%rdi,%r11), %esi
+	leaq	1(%rdx), %rbx
+	testb	%sil, %sil
+	jle	.L1002
+	leal	-1(%rsi), %r8d
+	xorl	%eax, %eax
+	movzbl	%r8b, %r8d
+	.p2align 5
+	.p2align 4
+	.p2align 3
+.L997:
+	movzbl	(%r9,%rax), %ecx
+	movb	%cl, 1(%rdx,%rax)
+	addq	$1, %rax
+	cmpq	%rax, %rsi
+	jne	.L997
+	leaq	1(%rbx,%r8), %rdx
+	leaq	1(%r9,%r8), %r9
+.L996:
+	subq	$1, %r11
+	jnb	.L998
+.L981:
+	popq	%rbx
+	.cfi_remember_state
+	.cfi_def_cfa_offset 32
+	movq	%rdx, %rax
+	popq	%rbp
+	.cfi_def_cfa_offset 24
+	popq	%r12
+	.cfi_def_cfa_offset 16
+	popq	%r13
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L1002:
+	.cfi_restore_state
+	movq	%rbx, %rdx
+	jmp	.L996
+	.p2align 4,,10
+	.p2align 3
+.L1001:
+	movq	%rbp, %rdx
+	jmp	.L993
+.L982:
+	movq	%rbp, %rdx
+	cmpq	%rsi, %r9
+	je	.L981
+	movq	%rdi, %rbx
+	movq	$-1, %r11
+	xorl	%ecx, %ecx
+	xorl	%r8d, %r8d
+	movq	$-1, %r12
+	jmp	.L988
+.L1027:
+	movq	%rbp, %rdx
+	jmp	.L990
+	.cfi_endproc
+.LFE5674:
+	.size	_ZSt14__add_groupingIcEPT_S1_S0_PKcmPKS0_S5_, .-_ZSt14__add_groupingIcEPT_S1_S0_PKcmPKS0_S5_
+	.section	.text._ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_,"axG",@progbits,_ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_
+	.type	_ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_, @function
+_ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_:
+.LFB5547:
+	.cfi_startproc
+	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
+	.cfi_lsda 0x1b,.LLSDA5547
+	endbr64
+	pushq	%rbp
+	.cfi_def_cfa_offset 16
+	.cfi_offset 6, -16
+	movq	%rsp, %rbp
+	.cfi_def_cfa_register 6
+	pushq	%r15
+	.cfi_offset 15, -24
+	movq	%rsi, %r15
+	pushq	%r14
+	pushq	%r13
+	.cfi_offset 14, -32
+	.cfi_offset 13, -40
+	movq	%rdi, %r13
+	pushq	%r12
+	.cfi_offset 12, -48
+	movq	%rdx, %r12
+	pushq	%rbx
+	subq	$152, %rsp
+	.cfi_offset 3, -56
+	movq	%rcx, -120(%rbp)
+	movzwl	(%rdi), %eax
+	movq	%rsi, -136(%rbp)
+	movq	%rdx, -144(%rbp)
+	andw	$384, %ax
+	movq	%fs:40, %rbx
+	movq	%rbx, -56(%rbp)
+	movq	%r8, %rbx
+	cmpw	$128, %ax
+	je	.L1114
+	cmpw	$256, %ax
+	je	.L1031
+	testb	$32, (%rdi)
+	jne	.L1069
+	movq	16(%rbx), %rbx
+.L1033:
+	testq	%r15, %r15
+	jne	.L1115
+.L1053:
+	movq	%rbx, %rax
+.L1057:
+	movq	-56(%rbp), %rdx
+	subq	%fs:40, %rdx
+	jne	.L1110
+	leaq	-40(%rbp), %rsp
+	popq	%rbx
+	popq	%r12
+	popq	%r13
+	popq	%r14
+	popq	%r15
+	popq	%rbp
+	.cfi_remember_state
+	.cfi_def_cfa 7, 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L1114:
+	.cfi_restore_state
+	movzwl	4(%rdi), %r14d
+.L1030:
+	testb	$32, 0(%r13)
+	jne	.L1032
+.L1034:
+	movq	16(%rbx), %rbx
+	cmpq	%r14, %r15
+	jnb	.L1033
+	movzbl	0(%r13), %eax
+	subq	%r15, %r14
+	movl	%eax, %ecx
+	andl	$3, %ecx
+	je	.L1058
+	movl	8(%r13), %eax
+.L1059:
+	movq	%r15, %rsi
+	movq	%r12, %rdx
+	movl	%eax, %r9d
+	movq	%r14, %r8
+	movq	%rbx, %rdi
+.LEHB9:
+	call	_ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi
+.LEHE9:
+	jmp	.L1057
+	.p2align 4,,10
+	.p2align 3
+.L1058:
+	movl	$2, %ecx
+	testb	$64, %al
+	je	.L1071
+	cmpq	$0, -120(%rbp)
+	movl	$48, %eax
+	je	.L1059
+	movq	-120(%rbp), %rax
+	cmpq	%r15, %rax
+	movq	%rax, %r13
+	cmova	%r15, %r13
+	testq	%r13, %r13
+	jne	.L1116
+.L1060:
+	movq	-120(%rbp), %rax
+	movl	$2, %ecx
+	addq	%rax, %r12
+	subq	%rax, %r15
+	movl	$48, %eax
+	jmp	.L1059
+	.p2align 4,,10
+	.p2align 3
+.L1069:
+	xorl	%r14d, %r14d
+.L1032:
+	cmpb	$0, 32(%rbx)
+	leaq	24(%rbx), %rsi
+	je	.L1117
+.L1035:
+	leaq	-104(%rbp), %rax
+	movq	%rax, %rdi
+	movq	%rax, -128(%rbp)
+	call	_ZNSt6localeC1ERKS_@PLT
+	leaq	-96(%rbp), %rax
+	movq	-128(%rbp), %rsi
+	movq	%rax, %rdi
+	movq	%rax, -152(%rbp)
+.LEHB10:
+	call	_ZNKSt6locale4nameB5cxx11Ev@PLT
+	cmpq	$1, -88(%rbp)
+	movq	-96(%rbp), %rdi
+	leaq	-80(%rbp), %rax
+	je	.L1118
+.L1037:
+	movq	%rax, -160(%rbp)
+	cmpq	%rax, %rdi
+	je	.L1040
+	movq	-80(%rbp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L1040:
+	leaq	_ZNSt7__cxx118numpunctIcE2idE(%rip), %rdi
+	call	_ZNKSt6locale2id5_M_idEv@PLT
+	movq	%rax, %rdx
+	movq	-104(%rbp), %rax
+	movq	8(%rax), %rax
+	movq	(%rax,%rdx,8), %rcx
+	testq	%rcx, %rcx
+	je	.L1043
+	movq	(%rcx), %rax
+	movq	%rcx, -168(%rbp)
+	movq	%rcx, %rsi
+	movq	-152(%rbp), %rdi
+	call	*32(%rax)
+.LEHE10:
+	movq	-88(%rbp), %r10
+	movq	-168(%rbp), %rcx
+	movq	-96(%rbp), %r11
+	testq	%r10, %r10
+	je	.L1046
+	movq	-120(%rbp), %rdi
+	movq	-136(%rbp), %rax
+	movq	%rsp, %rsi
+	subq	%rdi, %rax
+	leaq	23(%rdi,%rax,2), %rax
+	movq	%rax, %rdx
+	andq	$-4096, %rax
+	subq	%rax, %rsi
+	andq	$-16, %rdx
+	cmpq	%rsi, %rsp
+	je	.L1048
+.L1119:
+	subq	$4096, %rsp
+	orq	$0, 4088(%rsp)
+	cmpq	%rsi, %rsp
+	jne	.L1119
+.L1048:
+	andl	$4095, %edx
+	subq	%rdx, %rsp
+	testq	%rdx, %rdx
+	je	.L1049
+	orq	$0, -8(%rsp,%rdx)
+.L1049:
+	leaq	15(%rsp), %rax
+	movq	-120(%rbp), %rdx
+	andq	$-16, %rax
+	movq	%rax, -184(%rbp)
+	movq	%rax, %r12
+	testq	%rdx, %rdx
+	je	.L1050
+	movq	-144(%rbp), %rsi
+	movq	%rax, %rdi
+	movq	%r11, -192(%rbp)
+	movq	%rcx, -176(%rbp)
+	movq	%r10, -168(%rbp)
+	call	memcpy@PLT
+	movq	-192(%rbp), %r11
+	movq	-176(%rbp), %rcx
+	movq	-168(%rbp), %r10
+.L1050:
+	movq	-144(%rbp), %rax
+	movq	-120(%rbp), %rsi
+	movq	%r11, -176(%rbp)
+	movq	%rcx, %rdi
+	movq	-136(%rbp), %r9
+	movq	%r10, -168(%rbp)
+	leaq	(%rax,%rsi), %r15
+	addq	%rax, %r9
+	movq	(%rcx), %rax
+	movq	%r9, -136(%rbp)
+.LEHB11:
+	call	*24(%rax)
+.LEHE11:
+	movsbl	%al, %esi
+	movq	-120(%rbp), %rax
+	movq	-136(%rbp), %r9
+	movq	%r15, %r8
+	movq	-168(%rbp), %rcx
+	movq	-176(%rbp), %rdx
+	leaq	(%r12,%rax), %rdi
+	call	_ZSt14__add_groupingIcEPT_S1_S0_PKcmPKS0_S5_
+	movq	-96(%rbp), %r11
+	subq	%r12, %rax
+	movq	%rax, %r15
+	movq	-160(%rbp), %rax
+	cmpq	%rax, %r11
+	jne	.L1067
+	jmp	.L1042
+	.p2align 4,,10
+	.p2align 3
+.L1071:
+	movl	$32, %eax
+	jmp	.L1059
+	.p2align 4,,10
+	.p2align 3
+.L1031:
+	movzwl	4(%rdi), %edi
+	movq	%rbx, %rsi
+.LEHB12:
+	call	_ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+	movq	%rax, %r14
+	jmp	.L1030
+	.p2align 4,,10
+	.p2align 3
+.L1118:
+	cmpb	$67, (%rdi)
+	jne	.L1037
+	cmpq	%rax, %rdi
+	je	.L1042
+	movq	-80(%rbp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L1042:
+	movq	-128(%rbp), %rdi
+	call	_ZNSt6localeD1Ev@PLT
+	jmp	.L1034
+	.p2align 4,,10
+	.p2align 3
+.L1117:
+	movq	%rsi, %rdi
+	movq	%rsi, -128(%rbp)
+	call	_ZNSt6localeC1Ev@PLT
+	movb	$1, 32(%rbx)
+	movq	-128(%rbp), %rsi
+	jmp	.L1035
+	.p2align 4,,10
+	.p2align 3
+.L1115:
+	movq	24(%rbx), %rdi
+	movq	16(%rbx), %r13
+	movq	%rdi, %rax
+	subq	8(%rbx), %rax
+	subq	%rax, %r13
+	cmpq	%r13, %r15
+	jb	.L1054
+	.p2align 4
+	.p2align 3
+.L1056:
+	cmpq	%r13, %r15
+	movq	%r13, %rdx
+	cmovbe	%r15, %rdx
+	testq	%rdx, %rdx
+	je	.L1055
+	movq	%r12, %rsi
+	call	memcpy@PLT
+.L1055:
+	movq	(%rbx), %rax
+	addq	%r13, 24(%rbx)
+	movq	%rbx, %rdi
+	addq	%r13, %r12
+	subq	%r13, %r15
+	call	*(%rax)
+	movq	24(%rbx), %rdi
+	movq	16(%rbx), %r13
+	movq	%rdi, %rax
+	subq	8(%rbx), %rax
+	subq	%rax, %r13
+	cmpq	%r13, %r15
+	jnb	.L1056
+	testq	%r15, %r15
+	je	.L1053
+.L1054:
+	movq	%r15, %rdx
+	movq	%r12, %rsi
+	call	memcpy@PLT
+	addq	%r15, 24(%rbx)
+	jmp	.L1053
+	.p2align 4,,10
+	.p2align 3
+.L1046:
+	movq	-160(%rbp), %rax
+	cmpq	%rax, %r11
+	je	.L1042
+	movq	-144(%rbp), %rax
+	movq	%rax, -184(%rbp)
+.L1067:
+	movq	-80(%rbp), %rax
+	movq	%r11, %rdi
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+	movq	-184(%rbp), %r12
+	jmp	.L1042
+	.p2align 4,,10
+	.p2align 3
+.L1116:
+	movq	24(%rbx), %rdi
+	movq	16(%rbx), %rcx
+	movq	%rdi, %rax
+	subq	8(%rbx), %rax
+	subq	%rax, %rcx
+	cmpq	%rcx, %r13
+	jb	.L1073
+	movq	%r12, -136(%rbp)
+	movq	%r14, -128(%rbp)
+	movq	%rbx, %r14
+	movq	%rcx, %rbx
+	.p2align 4
+	.p2align 3
+.L1063:
+	cmpq	%r13, %rbx
+	movq	%r13, %rdx
+	cmovbe	%rbx, %rdx
+	testq	%rdx, %rdx
+	je	.L1062
+	movq	%r12, %rsi
+	call	memcpy@PLT
+.L1062:
+	movq	(%r14), %rax
+	addq	%rbx, 24(%r14)
+	movq	%r14, %rdi
+	addq	%rbx, %r12
+	subq	%rbx, %r13
+	call	*(%rax)
+.LEHE12:
+	movq	24(%r14), %rdi
+	movq	16(%r14), %rbx
+	movq	%rdi, %rax
+	subq	8(%r14), %rax
+	subq	%rax, %rbx
+	cmpq	%rbx, %r13
+	jnb	.L1063
+	movq	%r12, %rsi
+	movq	%r14, %rbx
+	movq	-136(%rbp), %r12
+	movq	-128(%rbp), %r14
+	testq	%r13, %r13
+	je	.L1060
+.L1061:
+	movq	%r13, %rdx
+	call	memcpy@PLT
+	addq	%r13, 24(%rbx)
+	jmp	.L1060
+.L1073:
+	movq	%r12, %rsi
+	jmp	.L1061
+.L1064:
+	movq	-152(%rbp), %rdi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+.L1065:
+	movq	-128(%rbp), %rdi
+	call	_ZNSt6localeD1Ev@PLT
+	movq	-56(%rbp), %rax
+	subq	%fs:40, %rax
+	je	.L1066
+.L1110:
+	call	__stack_chk_fail@PLT
+.L1043:
+	movq	-56(%rbp), %rax
+	subq	%fs:40, %rax
+	jne	.L1110
+.LEHB13:
+	call	_ZSt16__throw_bad_castv@PLT
+.LEHE13:
+.L1074:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L1065
+.L1075:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L1064
+.L1066:
+	movq	%rbx, %rdi
+.LEHB14:
+	call	_Unwind_Resume@PLT
+.LEHE14:
+	.cfi_endproc
+.LFE5547:
+	.section	.gcc_except_table._ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_,"aG",@progbits,_ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_,comdat
+.LLSDA5547:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x1
+	.uleb128 .LLSDACSE5547-.LLSDACSB5547
+.LLSDACSB5547:
+	.uleb128 .LEHB9-.LFB5547
+	.uleb128 .LEHE9-.LEHB9
+	.uleb128 0
+	.uleb128 0
+	.uleb128 .LEHB10-.LFB5547
+	.uleb128 .LEHE10-.LEHB10
+	.uleb128 .L1074-.LFB5547
+	.uleb128 0
+	.uleb128 .LEHB11-.LFB5547
+	.uleb128 .LEHE11-.LEHB11
+	.uleb128 .L1075-.LFB5547
+	.uleb128 0
+	.uleb128 .LEHB12-.LFB5547
+	.uleb128 .LEHE12-.LEHB12
+	.uleb128 0
+	.uleb128 0
+	.uleb128 .LEHB13-.LFB5547
+	.uleb128 .LEHE13-.LEHB13
+	.uleb128 .L1074-.LFB5547
+	.uleb128 0
+	.uleb128 .LEHB14-.LFB5547
+	.uleb128 .LEHE14-.LEHB14
+	.uleb128 0
+	.uleb128 0
+.LLSDACSE5547:
+	.section	.text._ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_,"axG",@progbits,_ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_,comdat
+	.size	_ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_, .-_ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_
+	.section	.rodata._ZNKSt8__format15__formatter_intIcE6formatIhNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_.str1.1,"aMS",@progbits,1
+.LC33:
+	.string	"0b"
+.LC34:
+	.string	"0B"
+.LC35:
+	.string	"0X"
+.LC36:
+	.string	"0x"
+.LC37:
+	.string	"0"
+	.section	.rodata._ZNKSt8__format15__formatter_intIcE6formatIhNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_.str1.8,"aMS",@progbits,1
+	.align 8
+.LC38:
+	.string	"format error: integer not representable as character"
+	.section	.text._ZNKSt8__format15__formatter_intIcE6formatIhNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format15__formatter_intIcE6formatIhNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNKSt8__format15__formatter_intIcE6formatIhNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.type	_ZNKSt8__format15__formatter_intIcE6formatIhNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, @function
+_ZNKSt8__format15__formatter_intIcE6formatIhNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_:
+.LFB5415:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	movl	%esi, %eax
+	movl	%esi, %ecx
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	movq	%rdx, %r12
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	movq	%rdi, %rbp
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$248, %rsp
+	.cfi_def_cfa_offset 304
+	movq	%fs:40, %rdx
+	movq	%rdx, 232(%rsp)
+	xorl	%edx, %edx
+	movzbl	1(%rdi), %edx
+	movl	%edx, %esi
+	andl	$120, %esi
+	cmpb	$56, %sil
+	je	.L1181
+	shrb	$3, %dl
+	andl	$15, %edx
+	cmpb	$4, %dl
+	je	.L1125
+	ja	.L1126
+	cmpb	$1, %dl
+	jbe	.L1127
+	cmpb	$16, %sil
+	leaq	.LC33(%rip), %r13
+	leaq	.LC34(%rip), %rdx
+	cmovne	%rdx, %r13
+	testb	%al, %al
+	jne	.L1182
+	leaq	8(%rsp), %rbx
+	leaq	7(%rsp), %r14
+	movl	$48, %eax
+.L1132:
+	movb	%al, 7(%rsp)
+	movzbl	0(%rbp), %eax
+	testb	$16, %al
+	je	.L1179
+.L1167:
+	movq	$-2, %rsi
+	movl	$2, %edx
+.L1136:
+	addq	%r14, %rsi
+	movl	%edx, %edi
+	testl	%edx, %edx
+	je	.L1137
+	xorl	%edx, %edx
+.L1155:
+	movl	%edx, %ecx
+	addl	$1, %edx
+	movzbl	0(%r13,%rcx), %r8d
+	movb	%r8b, (%rsi,%rcx)
+	cmpl	%edi, %edx
+	jb	.L1155
+	jmp	.L1137
+	.p2align 4,,10
+	.p2align 3
+.L1181:
+	testb	%al, %al
+	js	.L1122
+	leaq	3(%rsp), %rcx
+	movb	%al, 3(%rsp)
+	movl	$1, %eax
+	movq	%rbp, %r8
+	movq	%rcx, %rsi
+	movq	%rax, %rdi
+	movq	%r12, %rcx
+	movl	$1, %edx
+	movl	$1, %r9d
+	call	_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE
+.L1123:
+	movq	232(%rsp), %rdx
+	subq	%fs:40, %rdx
+	jne	.L1180
+	addq	$248, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L1127:
+	.cfi_restore_state
+	testb	%al, %al
+	je	.L1143
+	movzbl	%al, %edx
+	cmpb	$9, %al
+	jbe	.L1163
+	movdqa	.LC8(%rip), %xmm0
+	movaps	%xmm0, 16(%rsp)
+	movdqa	.LC9(%rip), %xmm0
+	movaps	%xmm0, 32(%rsp)
+	movdqa	.LC10(%rip), %xmm0
+	movaps	%xmm0, 48(%rsp)
+	movdqa	.LC11(%rip), %xmm0
+	movaps	%xmm0, 64(%rsp)
+	movdqa	.LC12(%rip), %xmm0
+	movaps	%xmm0, 80(%rsp)
+	movdqa	.LC13(%rip), %xmm0
+	movaps	%xmm0, 96(%rsp)
+	movdqa	.LC14(%rip), %xmm0
+	movaps	%xmm0, 112(%rsp)
+	movdqa	.LC15(%rip), %xmm0
+	movaps	%xmm0, 128(%rsp)
+	movdqa	.LC16(%rip), %xmm0
+	movaps	%xmm0, 144(%rsp)
+	movdqa	.LC17(%rip), %xmm0
+	movaps	%xmm0, 160(%rsp)
+	movdqa	.LC18(%rip), %xmm0
+	movaps	%xmm0, 176(%rsp)
+	movdqa	.LC19(%rip), %xmm0
+	movaps	%xmm0, 192(%rsp)
+	movdqa	.LC20(%rip), %xmm0
+	movups	%xmm0, 201(%rsp)
+	cmpl	$99, %edx
+	jbe	.L1183
+	movl	%edx, %ecx
+	movl	$3, %ebx
+	imulq	$1374389535, %rcx, %rcx
+	shrq	$37, %rcx
+	imull	$100, %ecx, %eax
+	subl	%eax, %edx
+	leal	1(%rdx,%rdx), %eax
+	movzwl	15(%rsp,%rax), %eax
+	movw	%ax, 8(%rsp)
+.L1140:
+	addl	$48, %ecx
+.L1142:
+	movb	%cl, 7(%rsp)
+	leaq	7(%rsp), %r14
+	addq	%r14, %rbx
+.L1178:
+	movzbl	0(%rbp), %eax
+	movq	%r14, %rsi
+.L1137:
+	shrb	$2, %al
+	andl	$3, %eax
+	cmpl	$1, %eax
+	je	.L1184
+	cmpl	$3, %eax
+	je	.L1169
+.L1158:
+	subq	%rsi, %rbx
+	movq	%r14, %rcx
+	movq	%rsi, %rdx
+	movq	%r12, %r8
+	subq	%rsi, %rcx
+	movq	%rbp, %rdi
+	movq	%rbx, %rsi
+	call	_ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_
+	jmp	.L1123
+	.p2align 4,,10
+	.p2align 3
+.L1125:
+	testb	%al, %al
+	je	.L1143
+	movzbl	%al, %ecx
+	bsrl	%ecx, %edx
+	leal	3(%rdx), %ebx
+	movl	$2863311531, %edx
+	imulq	%rdx, %rbx
+	shrq	$33, %rbx
+	cmpl	$63, %ecx
+	jbe	.L1185
+	movl	%ecx, %edx
+	andl	$7, %eax
+	shrl	$6, %ecx
+	shrl	$3, %edx
+	addl	$48, %eax
+	andl	$7, %edx
+	movb	%al, 9(%rsp)
+	addl	$48, %edx
+	movb	%dl, 8(%rsp)
+.L1146:
+	addl	$48, %ecx
+.L1147:
+	movb	%cl, 7(%rsp)
+	leaq	7(%rsp), %r14
+	movl	%ebx, %ebx
+	movl	$1, %edx
+	addq	%r14, %rbx
+	leaq	.LC37(%rip), %r13
+.L1148:
+	movzbl	0(%rbp), %eax
+	movq	%r14, %rsi
+	testb	$16, %al
+	je	.L1137
+	movq	%rdx, %rsi
+	negq	%rsi
+	jmp	.L1136
+	.p2align 4,,10
+	.p2align 3
+.L1184:
+	movl	$43, %eax
+.L1159:
+	movb	%al, -1(%rsi)
+	subq	$1, %rsi
+	jmp	.L1158
+	.p2align 4,,10
+	.p2align 3
+.L1126:
+	cmpb	$40, %sil
+	je	.L1186
+	testb	%al, %al
+	jne	.L1165
+	movb	$48, 7(%rsp)
+	leaq	8(%rsp), %rbx
+	leaq	7(%rsp), %r14
+	leaq	.LC35(%rip), %r13
+	cmpb	$48, %sil
+	je	.L1151
+.L1150:
+	movzbl	0(%rbp), %eax
+	testb	$16, %al
+	jne	.L1167
+.L1179:
+	movq	%r14, %rsi
+	jmp	.L1137
+	.p2align 4,,10
+	.p2align 3
+.L1143:
+	movb	$48, 7(%rsp)
+	leaq	8(%rsp), %rbx
+	leaq	7(%rsp), %r14
+	jmp	.L1178
+	.p2align 4,,10
+	.p2align 3
+.L1169:
+	movl	$32, %eax
+	jmp	.L1159
+	.p2align 4,,10
+	.p2align 3
+.L1182:
+	movzbl	%al, %eax
+	movl	$32, %ebx
+	movl	$31, %edx
+	bsrl	%eax, %edi
+	xorl	$31, %edi
+	subl	%edi, %ebx
+	subl	%edi, %edx
+	je	.L1135
+	movl	%edx, %ecx
+	leaq	6(%rsp,%rcx), %rsi
+	leaq	7(%rsp,%rcx), %rdx
+	movl	$30, %ecx
+	subl	%edi, %ecx
+	subq	%rcx, %rsi
+	.p2align 5
+	.p2align 4
+	.p2align 3
+.L1134:
+	movl	%eax, %ecx
+	subq	$1, %rdx
+	shrl	%eax
+	andl	$1, %ecx
+	addl	$48, %ecx
+	movb	%cl, 1(%rdx)
+	cmpq	%rsi, %rdx
+	jne	.L1134
+.L1135:
+	leaq	7(%rsp), %r14
+	movslq	%ebx, %rbx
+	movl	$49, %eax
+	addq	%r14, %rbx
+	jmp	.L1132
+	.p2align 4,,10
+	.p2align 3
+.L1186:
+	testb	%al, %al
+	jne	.L1164
+	movb	$48, 7(%rsp)
+	leaq	8(%rsp), %rbx
+	leaq	7(%rsp), %r14
+	leaq	.LC36(%rip), %r13
+	jmp	.L1150
+	.p2align 4,,10
+	.p2align 3
+.L1165:
+	leaq	.LC35(%rip), %r13
+.L1149:
+	movzbl	%al, %edx
+	movdqa	.LC32(%rip), %xmm0
+	bsrl	%edx, %ecx
+	leal	4(%rcx), %ebx
+	movaps	%xmm0, 16(%rsp)
+	shrl	$2, %ebx
+	cmpl	$15, %edx
+	ja	.L1187
+	movzbl	16(%rsp,%rdx), %eax
+.L1153:
+	leaq	7(%rsp), %r14
+	movb	%al, 7(%rsp)
+	addq	%r14, %rbx
+	cmpb	$48, %sil
+	jne	.L1150
+.L1151:
+	movq	%r14, %r15
+	.p2align 4
+	.p2align 3
+.L1154:
+	movsbl	(%r15), %edi
+	addq	$1, %r15
+	call	toupper@PLT
+	movb	%al, -1(%r15)
+	cmpq	%rbx, %r15
+	jne	.L1154
+	movl	$2, %edx
+	jmp	.L1148
+	.p2align 4,,10
+	.p2align 3
+.L1187:
+	andl	$15, %eax
+	shrl	$4, %edx
+	movzbl	16(%rsp,%rax), %eax
+	movb	%al, 8(%rsp)
+	movzbl	16(%rsp,%rdx), %eax
+	jmp	.L1153
+	.p2align 4,,10
+	.p2align 3
+.L1164:
+	leaq	.LC36(%rip), %r13
+	jmp	.L1149
+.L1183:
+	addl	%edx, %edx
+	movl	$2, %ebx
+	leal	1(%rdx), %eax
+	movzbl	16(%rsp,%rdx), %ecx
+	movzbl	16(%rsp,%rax), %eax
+	movb	%al, 8(%rsp)
+	jmp	.L1142
+.L1163:
+	movl	$1, %ebx
+	jmp	.L1140
+.L1122:
+	movq	232(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L1124
+.L1180:
+	call	__stack_chk_fail@PLT
+.L1185:
+	cmpl	$7, %ecx
+	jbe	.L1146
+	andl	$7, %eax
+	shrl	$3, %ecx
+	addl	$48, %eax
+	addl	$48, %ecx
+	movb	%al, 8(%rsp)
+	jmp	.L1147
+.L1124:
+	leaq	.LC38(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE5415:
+	.size	_ZNKSt8__format15__formatter_intIcE6formatIhNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, .-_ZNKSt8__format15__formatter_intIcE6formatIhNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.section	.text._ZNKSt8__format15__formatter_intIcE6formatINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEbRS7_,"axG",@progbits,_ZNKSt8__format15__formatter_intIcE6formatINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEbRS7_,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNKSt8__format15__formatter_intIcE6formatINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEbRS7_
+	.type	_ZNKSt8__format15__formatter_intIcE6formatINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEbRS7_, @function
+_ZNKSt8__format15__formatter_intIcE6formatINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEbRS7_:
+.LFB5395:
+	.cfi_startproc
+	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
+	.cfi_lsda 0x1b,.LLSDA5395
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	movl	%esi, %ebp
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	movq	%rdi, %rbx
+	subq	$104, %rsp
+	.cfi_def_cfa_offset 160
+	movzbl	1(%rdi), %eax
+	movq	%fs:40, %r12
+	movq	%r12, 88(%rsp)
+	movq	%rdx, %r12
+	andl	$120, %eax
+	cmpb	$56, %al
+	je	.L1259
+	testb	%al, %al
+	jne	.L1260
+	leaq	32(%rsp), %r13
+	movb	$0, 32(%rsp)
+	movq	%r13, 16(%rsp)
+	movq	$0, 24(%rsp)
+	testb	$32, (%rdi)
+	jne	.L1261
+	movl	$4, %r14d
+	leaq	.LC7(%rip), %rax
+	testb	%sil, %sil
+	jne	.L1215
+	movl	$5, %r14d
+	leaq	.LC6(%rip), %rax
+.L1215:
+	leaq	16(%rsp), %rbp
+	cmpq	%r13, %rax
+	je	.L1262
+	movl	%r14d, %ecx
+	xorl	%edx, %edx
+	testb	$4, %r14b
+	jne	.L1263
+	andl	$1, %ecx
+	jne	.L1264
+.L1220:
+	movq	%r13, %rax
+.L1217:
+	movq	%r14, 24(%rsp)
+	movb	$0, (%rax,%r14)
+.L1257:
+	movq	16(%rsp), %rdi
+	movq	24(%rsp), %rdx
+	movq	%rbx, %r8
+	movq	%r12, %rcx
+	movl	$1, %r9d
+	leaq	16(%rsp), %rbp
+	movq	%rdi, %rsi
+	movq	%rdx, %rdi
+.LEHB15:
+	call	_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE
+.LEHE15:
+	movq	16(%rsp), %rdi
+	movq	%rax, %rbx
+	cmpq	%r13, %rdi
+	je	.L1190
+	movq	32(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L1190:
+	movq	88(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L1253
+	addq	$104, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	movq	%rbx, %rax
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L1260:
+	.cfi_restore_state
+	movq	88(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L1253
+	addq	$104, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	movq	%r12, %rdx
+	movzbl	%sil, %esi
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+.LEHB16:
+	jmp	_ZNKSt8__format15__formatter_intIcE6formatIhNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.p2align 4,,10
+	.p2align 3
+.L1259:
+	.cfi_restore_state
+	movl	$1, %eax
+	leaq	8(%rsp), %rcx
+	movb	%sil, 8(%rsp)
+	movq	%rbx, %r8
+	movq	%rcx, %rsi
+	movq	%rax, %rdi
+	movq	%r12, %rcx
+	movl	$1, %edx
+	movl	$1, %r9d
+	call	_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE
+.LEHE16:
+	movq	%rax, %rbx
+	jmp	.L1190
+	.p2align 4,,10
+	.p2align 3
+.L1264:
+	movzbl	(%rax,%rdx), %eax
+	movb	%al, 32(%rsp,%rdx)
+	jmp	.L1220
+	.p2align 4,,10
+	.p2align 3
+.L1263:
+	movl	(%rax), %edx
+	andl	$1, %ecx
+	movl	%edx, 32(%rsp)
+	movl	$4, %edx
+	je	.L1220
+	jmp	.L1264
+	.p2align 4,,10
+	.p2align 3
+.L1261:
+	cmpb	$0, 32(%r12)
+	leaq	24(%r12), %r14
+	je	.L1265
+.L1194:
+	leaq	8(%rsp), %r15
+	movq	%r14, %rsi
+	movq	%r15, %rdi
+	call	_ZNSt6localeC1ERKS_@PLT
+	leaq	_ZNSt7__cxx118numpunctIcE2idE(%rip), %rdi
+	call	_ZNKSt6locale2id5_M_idEv@PLT
+	movq	%rax, %rdx
+	movq	8(%rsp), %rax
+	movq	8(%rax), %rax
+	movq	(%rax,%rdx,8), %r14
+	testq	%r14, %r14
+	je	.L1195
+	movq	%r15, %rdi
+	call	_ZNSt6localeD1Ev@PLT
+	movq	(%r14), %rax
+	testb	%bpl, %bpl
+	jne	.L1196
+	leaq	48(%rsp), %rdi
+	leaq	16(%rsp), %rbp
+	movq	%r14, %rsi
+.LEHB17:
+	call	*48(%rax)
+.L1199:
+	movq	16(%rsp), %rax
+	movq	%rax, %rdi
+	cmpq	%r13, %rax
+	je	.L1266
+	movq	56(%rsp), %rdx
+	movq	48(%rsp), %rcx
+	leaq	64(%rsp), %rsi
+	movq	%rdx, %r8
+	cmpq	%rsi, %rcx
+	je	.L1225
+	movq	%rdx, %xmm0
+	movq	%rcx, 16(%rsp)
+	movq	32(%rsp), %rdx
+	movhps	64(%rsp), %xmm0
+	movups	%xmm0, 24(%rsp)
+	testq	%rax, %rax
+	je	.L1203
+	movq	%rax, 48(%rsp)
+	movq	%rdx, 64(%rsp)
+.L1212:
+	movq	$0, 56(%rsp)
+	movb	$0, (%rax)
+	movq	48(%rsp), %rdi
+	cmpq	%rsi, %rdi
+	je	.L1257
+	movq	64(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+	jmp	.L1257
+	.p2align 4,,10
+	.p2align 3
+.L1196:
+	leaq	48(%rsp), %rdi
+	leaq	16(%rsp), %rbp
+	movq	%r14, %rsi
+	call	*40(%rax)
+	jmp	.L1199
+	.p2align 4,,10
+	.p2align 3
+.L1265:
+	movq	%r14, %rdi
+	call	_ZNSt6localeC1Ev@PLT
+	movb	$1, 32(%r12)
+	jmp	.L1194
+.L1266:
+	movq	48(%rsp), %rdx
+	leaq	64(%rsp), %rsi
+	cmpq	%rsi, %rdx
+	je	.L1267
+	movdqu	56(%rsp), %xmm0
+	movq	%rdx, 16(%rsp)
+	movups	%xmm0, 24(%rsp)
+.L1203:
+	movq	%rsi, 48(%rsp)
+	leaq	64(%rsp), %rsi
+	movq	%rsi, %rax
+	jmp	.L1212
+.L1267:
+	movq	56(%rsp), %rdx
+	movq	%rdx, %r8
+.L1225:
+	testq	%rdx, %rdx
+	je	.L1204
+	cmpq	$1, %rdx
+	je	.L1268
+	movl	%edx, %eax
+	cmpl	$8, %edx
+	jnb	.L1206
+	testb	$4, %dl
+	jne	.L1269
+	testl	%edx, %edx
+	je	.L1207
+	movzbl	64(%rsp), %edx
+	movb	%dl, (%rdi)
+	testb	$2, %al
+	jne	.L1251
+.L1256:
+	movq	16(%rsp), %rdi
+	movq	56(%rsp), %rdx
+.L1207:
+	movq	%rdx, %r8
+	movq	%rdi, %rax
+.L1204:
+	movq	%r8, 24(%rsp)
+	movb	$0, (%rax,%r8)
+	movq	48(%rsp), %rax
+	jmp	.L1212
+.L1268:
+	movzbl	64(%rsp), %eax
+	movb	%al, (%rdi)
+	movq	56(%rsp), %r8
+	movq	16(%rsp), %rax
+	jmp	.L1204
+.L1206:
+	movq	64(%rsp), %rax
+	movq	%rsi, %r8
+	movq	%rax, (%rdi)
+	movl	%edx, %eax
+	movq	-8(%rsi,%rax), %rcx
+	movq	%rcx, -8(%rdi,%rax)
+	leaq	8(%rdi), %rcx
+	movq	%rdi, %rax
+	andq	$-8, %rcx
+	subq	%rcx, %rax
+	subq	%rax, %r8
+	addl	%edx, %eax
+	andl	$-8, %eax
+	cmpl	$8, %eax
+	jb	.L1256
+	andl	$-8, %eax
+	xorl	%edx, %edx
+.L1210:
+	movl	%edx, %edi
+	addl	$8, %edx
+	movq	(%r8,%rdi), %r9
+	movq	%r9, (%rcx,%rdi)
+	cmpl	%eax, %edx
+	jb	.L1210
+	jmp	.L1256
+.L1195:
+	movq	88(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L1198
+.L1253:
+	call	__stack_chk_fail@PLT
+.L1269:
+	movl	64(%rsp), %edx
+	movl	%edx, (%rdi)
+	movl	-4(%rsi,%rax), %edx
+	movl	%edx, -4(%rdi,%rax)
+	movq	16(%rsp), %rdi
+	movq	56(%rsp), %rdx
+	jmp	.L1207
+.L1251:
+	movzwl	-2(%rsi,%rax), %edx
+	movw	%dx, -2(%rdi,%rax)
+	movq	16(%rsp), %rdi
+	movq	56(%rsp), %rdx
+	jmp	.L1207
+.L1262:
+	xorl	%r9d, %r9d
+	movq	%r14, %r8
+	movq	%r13, %rcx
+	xorl	%edx, %edx
+	movq	%r13, %rsi
+	movq	%rbp, %rdi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_replace_coldEPcmPKcmm@PLT
+.LEHE17:
+	movq	16(%rsp), %rax
+	jmp	.L1217
+.L1231:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L1223
+.L1222:
+	movq	%r15, %rdi
+	leaq	16(%rsp), %rbp
+	call	_ZNSt6localeD1Ev@PLT
+.L1223:
+	movq	%rbp, %rdi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+	movq	88(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L1253
+	movq	%rbx, %rdi
+.LEHB18:
+	call	_Unwind_Resume@PLT
+.LEHE18:
+.L1198:
+.LEHB19:
+	call	_ZSt16__throw_bad_castv@PLT
+.LEHE19:
+.L1230:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L1222
+	.cfi_endproc
+.LFE5395:
+	.section	.gcc_except_table._ZNKSt8__format15__formatter_intIcE6formatINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEbRS7_,"aG",@progbits,_ZNKSt8__format15__formatter_intIcE6formatINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEbRS7_,comdat
+.LLSDA5395:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x1
+	.uleb128 .LLSDACSE5395-.LLSDACSB5395
+.LLSDACSB5395:
+	.uleb128 .LEHB15-.LFB5395
+	.uleb128 .LEHE15-.LEHB15
+	.uleb128 .L1231-.LFB5395
+	.uleb128 0
+	.uleb128 .LEHB16-.LFB5395
+	.uleb128 .LEHE16-.LEHB16
+	.uleb128 0
+	.uleb128 0
+	.uleb128 .LEHB17-.LFB5395
+	.uleb128 .LEHE17-.LEHB17
+	.uleb128 .L1231-.LFB5395
+	.uleb128 0
+	.uleb128 .LEHB18-.LFB5395
+	.uleb128 .LEHE18-.LEHB18
+	.uleb128 0
+	.uleb128 0
+	.uleb128 .LEHB19-.LFB5395
+	.uleb128 .LEHE19-.LEHB19
+	.uleb128 .L1230-.LFB5395
+	.uleb128 0
+.LLSDACSE5395:
+	.section	.text._ZNKSt8__format15__formatter_intIcE6formatINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEbRS7_,"axG",@progbits,_ZNKSt8__format15__formatter_intIcE6formatINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEbRS7_,comdat
+	.size	_ZNKSt8__format15__formatter_intIcE6formatINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEbRS7_, .-_ZNKSt8__format15__formatter_intIcE6formatINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEbRS7_
+	.section	.text._ZNKSt8__format15__formatter_intIcE6formatIiNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format15__formatter_intIcE6formatIiNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNKSt8__format15__formatter_intIcE6formatIiNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.type	_ZNKSt8__format15__formatter_intIcE6formatIiNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, @function
+_ZNKSt8__format15__formatter_intIcE6formatIiNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_:
+.LFB5416:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	movl	%esi, %r14d
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	movq	%rdi, %rbp
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$312, %rsp
+	.cfi_def_cfa_offset 368
+	movzbl	1(%rdi), %eax
+	movq	%fs:40, %r12
+	movq	%r12, 296(%rsp)
+	movq	%rdx, %r12
+	movl	%eax, %edi
+	andl	$120, %edi
+	cmpb	$56, %dil
+	je	.L1355
+	shrb	$3, %al
+	andl	$15, %eax
+	testl	%esi, %esi
+	js	.L1356
+	movl	%esi, %esi
+	cmpb	$4, %al
+	je	.L1281
+	ja	.L1282
+	cmpb	$1, %al
+	jbe	.L1283
+	cmpb	$16, %dil
+	leaq	.LC33(%rip), %r13
+	leaq	.LC34(%rip), %rax
+	cmove	%r13, %rax
+	movq	%rax, 8(%rsp)
+	testl	%r14d, %r14d
+	jne	.L1279
+	movl	$48, %eax
+	leaq	36(%rsp), %rbx
+	leaq	35(%rsp), %r15
+.L1288:
+	movb	%al, 35(%rsp)
+	testb	$16, 0(%rbp)
+	je	.L1352
+.L1336:
+	movq	$-2, %rsi
+	movl	$2, %eax
+.L1292:
+	addq	%r15, %rsi
+	movl	%eax, %ecx
+	testl	%eax, %eax
+	je	.L1293
+	xorl	%eax, %eax
+.L1317:
+	movq	8(%rsp), %rdi
+	movl	%eax, %edx
+	addl	$1, %eax
+	movzbl	(%rdi,%rdx), %edi
+	movb	%dil, (%rsi,%rdx)
+	cmpl	%ecx, %eax
+	jb	.L1317
+	.p2align 4
+	.p2align 3
+.L1293:
+	leaq	-1(%rsi), %rdx
+	testl	%r14d, %r14d
+	js	.L1350
+.L1361:
+	movzbl	0(%rbp), %eax
+.L1319:
+	shrb	$2, %al
+	andl	$3, %eax
+	cmpl	$1, %eax
+	je	.L1357
+	cmpl	$3, %eax
+	je	.L1358
+.L1320:
+	subq	%rsi, %rbx
+	movq	%r15, %rcx
+	movq	%rsi, %rdx
+	movq	%r12, %r8
+	subq	%rsi, %rcx
+	movq	%rbp, %rdi
+	movq	%rbx, %rsi
+	call	_ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_
+	jmp	.L1273
+	.p2align 4,,10
+	.p2align 3
+.L1356:
+	negl	%esi
+	cmpb	$4, %al
+	je	.L1276
+	ja	.L1277
+	cmpb	$1, %al
+	jbe	.L1278
+	cmpb	$16, %dil
+	leaq	.LC34(%rip), %r13
+	leaq	.LC33(%rip), %rax
+	cmovne	%r13, %rax
+	movq	%rax, 8(%rsp)
+.L1279:
+	bsrl	%esi, %r8d
+	movl	$32, %ebx
+	movl	$31, %edx
+	xorl	$31, %r8d
+	subl	%r8d, %ebx
+	subl	%r8d, %edx
+	je	.L1291
+	movl	%edx, %ecx
+	movl	$30, %eax
+	leaq	31(%rsp,%rcx), %rdi
+	subl	%r8d, %eax
+	leaq	32(%rsp,%rcx), %rdx
+	subq	%rax, %rdi
+	.p2align 5
+	.p2align 4
+	.p2align 3
+.L1290:
+	movl	%esi, %ecx
+	subq	$1, %rdx
+	shrl	%esi
+	andl	$1, %ecx
+	addl	$48, %ecx
+	movb	%cl, 4(%rdx)
+	cmpq	%rdx, %rdi
+	jne	.L1290
+.L1291:
+	leaq	35(%rsp), %r15
+	movslq	%ebx, %rbx
+	movl	$49, %eax
+	addq	%r15, %rbx
+	jmp	.L1288
+	.p2align 4,,10
+	.p2align 3
+.L1355:
+	leal	128(%rsi), %eax
+	cmpl	$255, %eax
+	ja	.L1272
+	leaq	31(%rsp), %rcx
+	movl	$1, %eax
+	movb	%sil, 31(%rsp)
+	movl	$1, %r9d
+	movq	%rcx, %rsi
+	movq	%rax, %rdi
+	movq	%rbp, %r8
+	movq	%r12, %rcx
+	movl	$1, %edx
+	call	_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE
+.L1273:
+	movq	296(%rsp), %rdx
+	subq	%fs:40, %rdx
+	jne	.L1354
+	addq	$312, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L1282:
+	.cfi_restore_state
+	cmpb	$40, %dil
+	je	.L1359
+	testl	%r14d, %r14d
+	jne	.L1334
+	movb	$48, 35(%rsp)
+	cmpb	$48, %dil
+	je	.L1335
+	leaq	.LC35(%rip), %rax
+	leaq	36(%rsp), %rbx
+	movq	%rax, 8(%rsp)
+	leaq	35(%rsp), %r15
+	jmp	.L1311
+	.p2align 4,,10
+	.p2align 3
+.L1277:
+	cmpb	$40, %dil
+	leaq	.LC36(%rip), %r13
+	leaq	.LC35(%rip), %rax
+	cmove	%r13, %rax
+	movq	%rax, 8(%rsp)
+.L1280:
+	bsrl	%esi, %eax
+	movdqa	.LC32(%rip), %xmm0
+	leal	4(%rax), %ebx
+	shrl	$2, %ebx
+	movaps	%xmm0, 80(%rsp)
+	leal	-1(%rbx), %edx
+	cmpl	$255, %esi
+	jbe	.L1312
+	.p2align 6
+	.p2align 4
+	.p2align 3
+.L1313:
+	movl	%esi, %ecx
+	movl	%edx, %eax
+	andl	$15, %ecx
+	movzbl	80(%rsp,%rcx), %ecx
+	movb	%cl, 35(%rsp,%rax)
+	movl	%esi, %ecx
+	leal	-1(%rdx), %eax
+	shrl	$8, %esi
+	shrl	$4, %ecx
+	subl	$2, %edx
+	andl	$15, %ecx
+	movzbl	80(%rsp,%rcx), %ecx
+	movb	%cl, 35(%rsp,%rax)
+	cmpl	$255, %esi
+	ja	.L1313
+.L1312:
+	cmpl	$15, %esi
+	ja	.L1360
+	movzbl	80(%rsp,%rsi), %eax
+.L1315:
+	leaq	35(%rsp), %r15
+	movb	%al, 35(%rsp)
+	addq	%r15, %rbx
+	cmpb	$48, %dil
+	je	.L1310
+.L1311:
+	testb	$16, 0(%rbp)
+	jne	.L1336
+	.p2align 4
+	.p2align 3
+.L1352:
+	movq	%r15, %rsi
+	leaq	-1(%rsi), %rdx
+	testl	%r14d, %r14d
+	jns	.L1361
+.L1350:
+	movb	$45, -1(%rsi)
+.L1322:
+	movq	%rdx, %rsi
+	jmp	.L1320
+	.p2align 4,,10
+	.p2align 3
+.L1357:
+	movb	$43, -1(%rsi)
+	jmp	.L1322
+	.p2align 4,,10
+	.p2align 3
+.L1283:
+	testl	%r14d, %r14d
+	jne	.L1278
+.L1353:
+	movb	$48, 35(%rsp)
+	movzbl	0(%rbp), %eax
+.L1294:
+	leaq	35(%rsp), %r15
+	leaq	36(%rsp), %rbx
+	movq	%r15, %rsi
+	leaq	34(%rsp), %rdx
+	jmp	.L1319
+	.p2align 4,,10
+	.p2align 3
+.L1281:
+	testl	%r14d, %r14d
+	je	.L1353
+	.p2align 4
+	.p2align 3
+.L1276:
+	bsrl	%esi, %eax
+	leal	3(%rax), %ebx
+	movl	$2863311531, %eax
+	imulq	%rax, %rbx
+	shrq	$33, %rbx
+	leal	-1(%rbx), %ecx
+	cmpl	$63, %esi
+	jbe	.L1305
+	.p2align 6
+	.p2align 4
+	.p2align 3
+.L1306:
+	movl	%esi, %edx
+	movl	%ecx, %edi
+	andl	$7, %edx
+	addl	$48, %edx
+	movb	%dl, 35(%rsp,%rdi)
+	movl	%esi, %edx
+	leal	-1(%rcx), %edi
+	shrl	$6, %esi
+	shrl	$3, %edx
+	subl	$2, %ecx
+	andl	$7, %edx
+	addl	$48, %edx
+	movb	%dl, 35(%rsp,%rdi)
+	cmpl	$63, %esi
+	ja	.L1306
+.L1305:
+	leal	48(%rsi), %eax
+	cmpl	$7, %esi
+	ja	.L1362
+.L1308:
+	movb	%al, 35(%rsp)
+	leaq	35(%rsp), %r15
+	movl	%ebx, %ebx
+	leaq	.LC37(%rip), %rax
+	movq	%rax, 8(%rsp)
+	addq	%r15, %rbx
+	movl	$1, %eax
+.L1309:
+	movq	%r15, %rsi
+	testb	$16, 0(%rbp)
+	je	.L1293
+	movq	%rax, %rsi
+	negq	%rsi
+	jmp	.L1292
+	.p2align 4,,10
+	.p2align 3
+.L1358:
+	movb	$32, -1(%rsi)
+	jmp	.L1322
+	.p2align 4,,10
+	.p2align 3
+.L1278:
+	cmpl	$9, %esi
+	jbe	.L1329
+	movl	%esi, %ecx
+	movl	$1, %ebx
+	movabsq	$3777893186295716171, %rdi
+	jmp	.L1300
+	.p2align 4,,10
+	.p2align 3
+.L1296:
+	cmpl	$999, %ecx
+	jbe	.L1363
+	cmpl	$9999, %ecx
+	jbe	.L1364
+	movl	%ecx, %edx
+	addl	$4, %ebx
+	movq	%rdx, %rax
+	mulq	%rdi
+	shrq	$11, %rdx
+	cmpl	$99999, %ecx
+	jbe	.L1297
+	movl	%edx, %ecx
+.L1300:
+	cmpl	$99, %ecx
+	ja	.L1296
+	addl	$1, %ebx
+.L1297:
+	cmpl	$32, %ebx
+	ja	.L1331
+	movdqa	.LC8(%rip), %xmm0
+	leal	-1(%rbx), %eax
+	movaps	%xmm0, 80(%rsp)
+	movdqa	.LC9(%rip), %xmm0
+	movaps	%xmm0, 96(%rsp)
+	movdqa	.LC10(%rip), %xmm0
+	movaps	%xmm0, 112(%rsp)
+	movdqa	.LC11(%rip), %xmm0
+	movaps	%xmm0, 128(%rsp)
+	movdqa	.LC12(%rip), %xmm0
+	movaps	%xmm0, 144(%rsp)
+	movdqa	.LC13(%rip), %xmm0
+	movaps	%xmm0, 160(%rsp)
+	movdqa	.LC14(%rip), %xmm0
+	movaps	%xmm0, 176(%rsp)
+	movdqa	.LC15(%rip), %xmm0
+	movaps	%xmm0, 192(%rsp)
+	movdqa	.LC16(%rip), %xmm0
+	movaps	%xmm0, 208(%rsp)
+	movdqa	.LC17(%rip), %xmm0
+	movaps	%xmm0, 224(%rsp)
+	movdqa	.LC18(%rip), %xmm0
+	movaps	%xmm0, 240(%rsp)
+	movdqa	.LC19(%rip), %xmm0
+	movaps	%xmm0, 256(%rsp)
+	movdqa	.LC20(%rip), %xmm0
+	movups	%xmm0, 265(%rsp)
+	cmpl	$99, %esi
+	jbe	.L1302
+	.p2align 4
+	.p2align 3
+.L1303:
+	movl	%esi, %ecx
+	movl	%esi, %edx
+	imulq	$1374389535, %rcx, %rcx
+	shrq	$37, %rcx
+	imull	$100, %ecx, %edi
+	subl	%edi, %edx
+	movl	%esi, %edi
+	movl	%ecx, %esi
+	movl	%eax, %ecx
+	addl	%edx, %edx
+	leal	1(%rdx), %r8d
+	movzbl	80(%rsp,%rdx), %edx
+	movzbl	80(%rsp,%r8), %r8d
+	movb	%r8b, 35(%rsp,%rcx)
+	leal	-1(%rax), %ecx
+	subl	$2, %eax
+	movb	%dl, 35(%rsp,%rcx)
+	cmpl	$9999, %edi
+	ja	.L1303
+	cmpl	$999, %edi
+	ja	.L1302
+.L1295:
+	addl	$48, %esi
+.L1304:
+	leaq	35(%rsp), %r15
+	movb	%sil, 35(%rsp)
+	addq	%r15, %rbx
+	jmp	.L1352
+	.p2align 4,,10
+	.p2align 3
+.L1362:
+	movl	%esi, %eax
+	andl	$7, %eax
+	addl	$48, %eax
+	movb	%al, 36(%rsp)
+	movl	%esi, %eax
+	shrl	$3, %eax
+	addl	$48, %eax
+	jmp	.L1308
+	.p2align 4,,10
+	.p2align 3
+.L1360:
+	movl	%esi, %eax
+	shrl	$4, %esi
+	andl	$15, %eax
+	movzbl	80(%rsp,%rax), %eax
+	movb	%al, 36(%rsp)
+	movzbl	80(%rsp,%rsi), %eax
+	jmp	.L1315
+	.p2align 4,,10
+	.p2align 3
+.L1302:
+	addl	%esi, %esi
+	leal	1(%rsi), %eax
+	movzbl	80(%rsp,%rsi), %esi
+	movzbl	80(%rsp,%rax), %eax
+	movb	%al, 36(%rsp)
+	jmp	.L1304
+	.p2align 4,,10
+	.p2align 3
+.L1335:
+	leaq	.LC35(%rip), %rax
+	leaq	36(%rsp), %rbx
+	movq	%rax, 8(%rsp)
+	leaq	35(%rsp), %r15
+.L1310:
+	movq	%r15, %r13
+	.p2align 4
+	.p2align 3
+.L1316:
+	movsbl	0(%r13), %edi
+	addq	$1, %r13
+	call	toupper@PLT
+	movb	%al, -1(%r13)
+	cmpq	%r13, %rbx
+	jne	.L1316
+	movl	$2, %eax
+	jmp	.L1309
+	.p2align 4,,10
+	.p2align 3
+.L1359:
+	testl	%r14d, %r14d
+	jne	.L1332
+	movzbl	0(%rbp), %eax
+	movb	$48, 35(%rsp)
+	testb	$16, %al
+	je	.L1294
+	leaq	.LC36(%rip), %rax
+	movq	$-2, %rsi
+	leaq	36(%rsp), %rbx
+	movq	%rax, 8(%rsp)
+	leaq	35(%rsp), %r15
+	movl	$2, %eax
+	jmp	.L1292
+	.p2align 4,,10
+	.p2align 3
+.L1363:
+	addl	$2, %ebx
+	jmp	.L1297
+	.p2align 4,,10
+	.p2align 3
+.L1364:
+	addl	$3, %ebx
+	jmp	.L1297
+.L1334:
+	leaq	.LC35(%rip), %rax
+	movq	%rax, 8(%rsp)
+	jmp	.L1280
+.L1331:
+	leaq	67(%rsp), %rbx
+	leaq	35(%rsp), %r15
+	jmp	.L1352
+.L1332:
+	leaq	.LC36(%rip), %rax
+	movq	%rax, 8(%rsp)
+	jmp	.L1280
+.L1329:
+	movl	$1, %ebx
+	jmp	.L1295
+.L1272:
+	movq	296(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L1274
+.L1354:
+	call	__stack_chk_fail@PLT
+.L1274:
+	leaq	.LC38(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE5416:
+	.size	_ZNKSt8__format15__formatter_intIcE6formatIiNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, .-_ZNKSt8__format15__formatter_intIcE6formatIiNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.section	.text._ZNKSt8__format15__formatter_intIcE6formatIjNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format15__formatter_intIcE6formatIjNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNKSt8__format15__formatter_intIcE6formatIjNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.type	_ZNKSt8__format15__formatter_intIcE6formatIjNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, @function
+_ZNKSt8__format15__formatter_intIcE6formatIjNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_:
+.LFB5417:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	movq	%rdi, %rbp
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$296, %rsp
+	.cfi_def_cfa_offset 352
+	movzbl	1(%rdi), %eax
+	movq	%fs:40, %r12
+	movq	%r12, 280(%rsp)
+	movq	%rdx, %r12
+	movl	%eax, %edi
+	andl	$120, %edi
+	cmpb	$56, %dil
+	je	.L1438
+	shrb	$3, %al
+	andl	$15, %eax
+	cmpb	$4, %al
+	je	.L1370
+	ja	.L1371
+	cmpb	$1, %al
+	jbe	.L1372
+	cmpb	$16, %dil
+	leaq	.LC33(%rip), %r13
+	leaq	.LC34(%rip), %rax
+	cmovne	%rax, %r13
+	testl	%esi, %esi
+	jne	.L1439
+	leaq	20(%rsp), %rbx
+	leaq	19(%rsp), %r15
+	movl	$48, %eax
+.L1377:
+	movb	%al, 19(%rsp)
+	movzbl	0(%rbp), %eax
+	testb	$16, %al
+	je	.L1436
+.L1423:
+	movq	$-2, %rsi
+	movl	$2, %edx
+.L1381:
+	addq	%r15, %rsi
+	movl	%edx, %edi
+	testl	%edx, %edx
+	je	.L1382
+	xorl	%edx, %edx
+.L1409:
+	movl	%edx, %ecx
+	addl	$1, %edx
+	movzbl	0(%r13,%rcx), %r8d
+	movb	%r8b, (%rsi,%rcx)
+	cmpl	%edi, %edx
+	jb	.L1409
+	jmp	.L1382
+	.p2align 4,,10
+	.p2align 3
+.L1438:
+	cmpl	$127, %esi
+	ja	.L1367
+	leaq	15(%rsp), %rcx
+	movl	$1, %eax
+	movb	%sil, 15(%rsp)
+	movl	$1, %r9d
+	movq	%rcx, %rsi
+	movq	%rax, %rdi
+	movq	%rbp, %r8
+	movq	%r12, %rcx
+	movl	$1, %edx
+	call	_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE
+.L1368:
+	movq	280(%rsp), %rdx
+	subq	%fs:40, %rdx
+	jne	.L1437
+	addq	$296, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L1372:
+	.cfi_restore_state
+	testl	%esi, %esi
+	jne	.L1383
+	movb	$48, 19(%rsp)
+	leaq	20(%rsp), %rbx
+	leaq	19(%rsp), %r15
+.L1384:
+	movzbl	0(%rbp), %eax
+	movq	%r15, %rsi
+.L1382:
+	shrb	$2, %al
+	andl	$3, %eax
+	cmpl	$1, %eax
+	je	.L1440
+	cmpl	$3, %eax
+	je	.L1425
+.L1412:
+	subq	%rsi, %rbx
+	movq	%r15, %rcx
+	movq	%rsi, %rdx
+	movq	%r12, %r8
+	subq	%rsi, %rcx
+	movq	%rbp, %rdi
+	movq	%rbx, %rsi
+	call	_ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_
+	jmp	.L1368
+	.p2align 4,,10
+	.p2align 3
+.L1370:
+	testl	%esi, %esi
+	jne	.L1395
+	leaq	19(%rsp), %r15
+	movb	$48, 19(%rsp)
+	movzbl	0(%rbp), %eax
+	leaq	20(%rsp), %rbx
+	movq	%r15, %rsi
+	jmp	.L1382
+	.p2align 4,,10
+	.p2align 3
+.L1440:
+	movl	$43, %eax
+.L1413:
+	movb	%al, -1(%rsi)
+	subq	$1, %rsi
+	jmp	.L1412
+	.p2align 4,,10
+	.p2align 3
+.L1371:
+	cmpb	$40, %dil
+	je	.L1441
+	testl	%esi, %esi
+	jne	.L1421
+	movb	$48, 19(%rsp)
+	cmpb	$48, %dil
+	je	.L1422
+	leaq	20(%rsp), %rbx
+	leaq	.LC35(%rip), %r13
+	leaq	19(%rsp), %r15
+	jmp	.L1402
+	.p2align 4,,10
+	.p2align 3
+.L1425:
+	movl	$32, %eax
+	jmp	.L1413
+	.p2align 4,,10
+	.p2align 3
+.L1421:
+	leaq	.LC35(%rip), %r13
+.L1401:
+	bsrl	%esi, %eax
+	movdqa	.LC32(%rip), %xmm0
+	leal	4(%rax), %ebx
+	shrl	$2, %ebx
+	movaps	%xmm0, 64(%rsp)
+	leal	-1(%rbx), %edx
+	cmpl	$255, %esi
+	jbe	.L1404
+	.p2align 6
+	.p2align 4
+	.p2align 3
+.L1405:
+	movl	%esi, %ecx
+	movl	%edx, %eax
+	andl	$15, %ecx
+	movzbl	64(%rsp,%rcx), %ecx
+	movb	%cl, 19(%rsp,%rax)
+	movl	%esi, %ecx
+	leal	-1(%rdx), %eax
+	shrl	$8, %esi
+	shrl	$4, %ecx
+	subl	$2, %edx
+	andl	$15, %ecx
+	movzbl	64(%rsp,%rcx), %ecx
+	movb	%cl, 19(%rsp,%rax)
+	cmpl	$255, %esi
+	ja	.L1405
+.L1404:
+	cmpl	$15, %esi
+	ja	.L1442
+	movl	%esi, %esi
+	movzbl	64(%rsp,%rsi), %eax
+.L1407:
+	leaq	19(%rsp), %r15
+	movb	%al, 19(%rsp)
+	addq	%r15, %rbx
+	cmpb	$48, %dil
+	je	.L1403
+.L1402:
+	movzbl	0(%rbp), %eax
+	testb	$16, %al
+	jne	.L1423
+.L1436:
+	movq	%r15, %rsi
+	jmp	.L1382
+	.p2align 4,,10
+	.p2align 3
+.L1439:
+	bsrl	%esi, %r8d
+	movl	$32, %ebx
+	movl	$31, %edx
+	xorl	$31, %r8d
+	subl	%r8d, %ebx
+	subl	%r8d, %edx
+	je	.L1380
+	movl	%edx, %ecx
+	movl	$30, %eax
+	leaq	15(%rsp,%rcx), %rdi
+	subl	%r8d, %eax
+	leaq	16(%rsp,%rcx), %rdx
+	subq	%rax, %rdi
+	.p2align 5
+	.p2align 4
+	.p2align 3
+.L1379:
+	movl	%esi, %ecx
+	subq	$1, %rdx
+	shrl	%esi
+	andl	$1, %ecx
+	addl	$48, %ecx
+	movb	%cl, 4(%rdx)
+	cmpq	%rdx, %rdi
+	jne	.L1379
+.L1380:
+	leaq	19(%rsp), %r15
+	movslq	%ebx, %rbx
+	movl	$49, %eax
+	addq	%r15, %rbx
+	jmp	.L1377
+	.p2align 4,,10
+	.p2align 3
+.L1383:
+	cmpl	$9, %esi
+	jbe	.L1417
+	movl	%esi, %ecx
+	movl	$1, %ebx
+	movabsq	$3777893186295716171, %rdi
+	jmp	.L1390
+	.p2align 4,,10
+	.p2align 3
+.L1386:
+	cmpl	$999, %ecx
+	jbe	.L1443
+	cmpl	$9999, %ecx
+	jbe	.L1444
+	movl	%ecx, %edx
+	addl	$4, %ebx
+	movq	%rdx, %rax
+	mulq	%rdi
+	shrq	$11, %rdx
+	cmpl	$99999, %ecx
+	jbe	.L1387
+	movl	%edx, %ecx
+.L1390:
+	cmpl	$99, %ecx
+	ja	.L1386
+	addl	$1, %ebx
+.L1387:
+	cmpl	$32, %ebx
+	ja	.L1419
+	movdqa	.LC8(%rip), %xmm0
+	leal	-1(%rbx), %eax
+	movaps	%xmm0, 64(%rsp)
+	movdqa	.LC9(%rip), %xmm0
+	movaps	%xmm0, 80(%rsp)
+	movdqa	.LC10(%rip), %xmm0
+	movaps	%xmm0, 96(%rsp)
+	movdqa	.LC11(%rip), %xmm0
+	movaps	%xmm0, 112(%rsp)
+	movdqa	.LC12(%rip), %xmm0
+	movaps	%xmm0, 128(%rsp)
+	movdqa	.LC13(%rip), %xmm0
+	movaps	%xmm0, 144(%rsp)
+	movdqa	.LC14(%rip), %xmm0
+	movaps	%xmm0, 160(%rsp)
+	movdqa	.LC15(%rip), %xmm0
+	movaps	%xmm0, 176(%rsp)
+	movdqa	.LC16(%rip), %xmm0
+	movaps	%xmm0, 192(%rsp)
+	movdqa	.LC17(%rip), %xmm0
+	movaps	%xmm0, 208(%rsp)
+	movdqa	.LC18(%rip), %xmm0
+	movaps	%xmm0, 224(%rsp)
+	movdqa	.LC19(%rip), %xmm0
+	movaps	%xmm0, 240(%rsp)
+	movdqa	.LC20(%rip), %xmm0
+	movups	%xmm0, 249(%rsp)
+	cmpl	$99, %esi
+	jbe	.L1392
+	.p2align 4
+	.p2align 3
+.L1393:
+	movl	%esi, %ecx
+	movl	%esi, %edx
+	imulq	$1374389535, %rcx, %rcx
+	shrq	$37, %rcx
+	imull	$100, %ecx, %edi
+	subl	%edi, %edx
+	movl	%esi, %edi
+	movl	%ecx, %esi
+	movl	%eax, %ecx
+	addl	%edx, %edx
+	leal	1(%rdx), %r8d
+	movzbl	64(%rsp,%rdx), %edx
+	movzbl	64(%rsp,%r8), %r8d
+	movb	%r8b, 19(%rsp,%rcx)
+	leal	-1(%rax), %ecx
+	subl	$2, %eax
+	movb	%dl, 19(%rsp,%rcx)
+	cmpl	$9999, %edi
+	ja	.L1393
+	cmpl	$999, %edi
+	ja	.L1392
+.L1385:
+	addl	$48, %esi
+.L1394:
+	leaq	19(%rsp), %r15
+	movb	%sil, 19(%rsp)
+	addq	%r15, %rbx
+	jmp	.L1384
+	.p2align 4,,10
+	.p2align 3
+.L1395:
+	bsrl	%esi, %eax
+	leal	3(%rax), %ebx
+	movl	$2863311531, %eax
+	imulq	%rax, %rbx
+	shrq	$33, %rbx
+	leal	-1(%rbx), %ecx
+	cmpl	$63, %esi
+	jbe	.L1396
+	.p2align 6
+	.p2align 4
+	.p2align 3
+.L1397:
+	movl	%esi, %edx
+	movl	%ecx, %edi
+	andl	$7, %edx
+	addl	$48, %edx
+	movb	%dl, 19(%rsp,%rdi)
+	movl	%esi, %edx
+	leal	-1(%rcx), %edi
+	shrl	$6, %esi
+	shrl	$3, %edx
+	subl	$2, %ecx
+	andl	$7, %edx
+	addl	$48, %edx
+	movb	%dl, 19(%rsp,%rdi)
+	cmpl	$63, %esi
+	ja	.L1397
+.L1396:
+	leal	48(%rsi), %eax
+	cmpl	$7, %esi
+	ja	.L1445
+.L1399:
+	movb	%al, 19(%rsp)
+	leaq	19(%rsp), %r15
+	movl	%ebx, %ebx
+	movl	$1, %edx
+	addq	%r15, %rbx
+	leaq	.LC37(%rip), %r13
+.L1400:
+	movzbl	0(%rbp), %eax
+	movq	%r15, %rsi
+	testb	$16, %al
+	je	.L1382
+	movq	%rdx, %rsi
+	negq	%rsi
+	jmp	.L1381
+	.p2align 4,,10
+	.p2align 3
+.L1441:
+	testl	%esi, %esi
+	jne	.L1420
+	movb	$48, 19(%rsp)
+	leaq	20(%rsp), %rbx
+	leaq	19(%rsp), %r15
+	leaq	.LC36(%rip), %r13
+	jmp	.L1402
+	.p2align 4,,10
+	.p2align 3
+.L1442:
+	movl	%esi, %eax
+	shrl	$4, %esi
+	andl	$15, %eax
+	movzbl	64(%rsp,%rax), %eax
+	movb	%al, 20(%rsp)
+	movzbl	64(%rsp,%rsi), %eax
+	jmp	.L1407
+	.p2align 4,,10
+	.p2align 3
+.L1445:
+	movl	%esi, %eax
+	andl	$7, %eax
+	addl	$48, %eax
+	movb	%al, 20(%rsp)
+	movl	%esi, %eax
+	shrl	$3, %eax
+	addl	$48, %eax
+	jmp	.L1399
+	.p2align 4,,10
+	.p2align 3
+.L1392:
+	addl	%esi, %esi
+	leal	1(%rsi), %eax
+	movzbl	64(%rsp,%rsi), %esi
+	movzbl	64(%rsp,%rax), %eax
+	movb	%al, 20(%rsp)
+	jmp	.L1394
+	.p2align 4,,10
+	.p2align 3
+.L1420:
+	leaq	.LC36(%rip), %r13
+	jmp	.L1401
+	.p2align 4,,10
+	.p2align 3
+.L1422:
+	leaq	.LC35(%rip), %r13
+	leaq	20(%rsp), %rbx
+	leaq	19(%rsp), %r15
+.L1403:
+	movq	%r15, %r14
+	.p2align 4
+	.p2align 3
+.L1408:
+	movsbl	(%r14), %edi
+	addq	$1, %r14
+	call	toupper@PLT
+	movb	%al, -1(%r14)
+	cmpq	%rbx, %r14
+	jne	.L1408
+	movl	$2, %edx
+	jmp	.L1400
+	.p2align 4,,10
+	.p2align 3
+.L1443:
+	addl	$2, %ebx
+	jmp	.L1387
+	.p2align 4,,10
+	.p2align 3
+.L1444:
+	addl	$3, %ebx
+	jmp	.L1387
+.L1419:
+	leaq	51(%rsp), %rbx
+	leaq	19(%rsp), %r15
+	jmp	.L1384
+.L1417:
+	movl	$1, %ebx
+	jmp	.L1385
+.L1367:
+	movq	280(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L1369
+.L1437:
+	call	__stack_chk_fail@PLT
+.L1369:
+	leaq	.LC38(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE5417:
+	.size	_ZNKSt8__format15__formatter_intIcE6formatIjNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, .-_ZNKSt8__format15__formatter_intIcE6formatIjNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.section	.text._ZNKSt8__format15__formatter_intIcE6formatIxNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format15__formatter_intIcE6formatIxNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNKSt8__format15__formatter_intIcE6formatIxNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.type	_ZNKSt8__format15__formatter_intIcE6formatIxNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, @function
+_ZNKSt8__format15__formatter_intIcE6formatIxNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_:
+.LFB5418:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	movq	%rsi, %r13
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	movq	%rdi, %rbx
+	subq	$344, %rsp
+	.cfi_def_cfa_offset 400
+	movzbl	1(%rdi), %eax
+	movq	%fs:40, %rbp
+	movq	%rbp, 328(%rsp)
+	movq	%rdx, %rbp
+	movl	%eax, %ecx
+	andl	$120, %ecx
+	cmpb	$56, %cl
+	je	.L1531
+	shrb	$3, %al
+	andl	$15, %eax
+	testq	%rsi, %rsi
+	js	.L1532
+	cmpb	$4, %al
+	je	.L1457
+	ja	.L1458
+	cmpb	$1, %al
+	jbe	.L1459
+	cmpb	$16, %cl
+	leaq	.LC33(%rip), %r14
+	leaq	.LC34(%rip), %rax
+	cmove	%r14, %rax
+	movq	%rax, 8(%rsp)
+	testq	%rsi, %rsi
+	jne	.L1455
+	movl	$48, %eax
+	leaq	36(%rsp), %r12
+	leaq	35(%rsp), %r15
+.L1464:
+	movb	%al, 35(%rsp)
+	testb	$16, (%rbx)
+	je	.L1528
+.L1512:
+	movq	$-2, %rsi
+	movl	$2, %eax
+.L1468:
+	addq	%r15, %rsi
+	movl	%eax, %ecx
+	testl	%eax, %eax
+	je	.L1469
+	xorl	%eax, %eax
+.L1493:
+	movq	8(%rsp), %rdi
+	movl	%eax, %edx
+	addl	$1, %eax
+	movzbl	(%rdi,%rdx), %edi
+	movb	%dil, (%rsi,%rdx)
+	cmpl	%ecx, %eax
+	jb	.L1493
+	.p2align 4
+	.p2align 3
+.L1469:
+	leaq	-1(%rsi), %rdx
+	testq	%r13, %r13
+	js	.L1526
+.L1537:
+	movzbl	(%rbx), %eax
+.L1495:
+	shrb	$2, %al
+	andl	$3, %eax
+	cmpl	$1, %eax
+	je	.L1533
+	cmpl	$3, %eax
+	je	.L1534
+.L1496:
+	movq	%rsi, %r13
+	subq	%rsi, %r12
+	movq	%r15, %rcx
+	movq	%rbp, %r8
+	subq	%rsi, %rcx
+	movq	%r13, %rdx
+	movq	%r12, %rsi
+	movq	%rbx, %rdi
+	call	_ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_
+	jmp	.L1449
+	.p2align 4,,10
+	.p2align 3
+.L1532:
+	negq	%rsi
+	cmpb	$4, %al
+	je	.L1452
+	ja	.L1453
+	cmpb	$1, %al
+	jbe	.L1454
+	cmpb	$16, %cl
+	leaq	.LC34(%rip), %r14
+	leaq	.LC33(%rip), %rax
+	cmovne	%r14, %rax
+	movq	%rax, 8(%rsp)
+.L1455:
+	bsrq	%rsi, %r8
+	movl	$64, %r12d
+	movl	$63, %edx
+	xorq	$63, %r8
+	subl	%r8d, %r12d
+	subl	%r8d, %edx
+	je	.L1467
+	movl	%edx, %ecx
+	movl	$62, %eax
+	leaq	31(%rsp,%rcx), %rdi
+	subl	%r8d, %eax
+	leaq	32(%rsp,%rcx), %rdx
+	subq	%rax, %rdi
+	.p2align 5
+	.p2align 4
+	.p2align 3
+.L1466:
+	movl	%esi, %ecx
+	subq	$1, %rdx
+	shrq	%rsi
+	andl	$1, %ecx
+	addl	$48, %ecx
+	movb	%cl, 4(%rdx)
+	cmpq	%rdi, %rdx
+	jne	.L1466
+.L1467:
+	leaq	35(%rsp), %r15
+	movslq	%r12d, %r12
+	movl	$49, %eax
+	addq	%r15, %r12
+	jmp	.L1464
+	.p2align 4,,10
+	.p2align 3
+.L1531:
+	leaq	128(%rsi), %rax
+	cmpq	$255, %rax
+	ja	.L1448
+	leaq	31(%rsp), %rcx
+	movl	$1, %eax
+	movb	%sil, 31(%rsp)
+	movl	$1, %r9d
+	movq	%rcx, %rsi
+	movq	%rax, %rdi
+	movq	%rbx, %r8
+	movq	%rbp, %rcx
+	movl	$1, %edx
+	call	_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE
+.L1449:
+	movq	328(%rsp), %rdx
+	subq	%fs:40, %rdx
+	jne	.L1530
+	addq	$344, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L1458:
+	.cfi_restore_state
+	cmpb	$40, %cl
+	je	.L1535
+	testq	%rsi, %rsi
+	jne	.L1510
+	movb	$48, 35(%rsp)
+	cmpb	$48, %cl
+	je	.L1511
+	leaq	.LC35(%rip), %rax
+	leaq	36(%rsp), %r12
+	movq	%rax, 8(%rsp)
+	leaq	35(%rsp), %r15
+	jmp	.L1487
+	.p2align 4,,10
+	.p2align 3
+.L1453:
+	cmpb	$40, %cl
+	leaq	.LC36(%rip), %r14
+	leaq	.LC35(%rip), %rax
+	cmove	%r14, %rax
+	movq	%rax, 8(%rsp)
+.L1456:
+	bsrq	%rsi, %rax
+	movdqa	.LC32(%rip), %xmm0
+	leal	4(%rax), %r12d
+	shrl	$2, %r12d
+	movaps	%xmm0, 112(%rsp)
+	leal	-1(%r12), %eax
+	cmpq	$255, %rsi
+	jbe	.L1488
+	.p2align 6
+	.p2align 4
+	.p2align 3
+.L1489:
+	movq	%rsi, %rdi
+	movl	%eax, %edx
+	andl	$15, %edi
+	movzbl	112(%rsp,%rdi), %edi
+	movb	%dil, 35(%rsp,%rdx)
+	movq	%rsi, %rdx
+	leal	-1(%rax), %edi
+	shrq	$8, %rsi
+	shrq	$4, %rdx
+	subl	$2, %eax
+	andl	$15, %edx
+	movzbl	112(%rsp,%rdx), %edx
+	movb	%dl, 35(%rsp,%rdi)
+	cmpq	$255, %rsi
+	ja	.L1489
+.L1488:
+	cmpq	$15, %rsi
+	ja	.L1536
+	movzbl	112(%rsp,%rsi), %eax
+.L1491:
+	leaq	35(%rsp), %r15
+	movb	%al, 35(%rsp)
+	addq	%r15, %r12
+	cmpb	$48, %cl
+	je	.L1486
+.L1487:
+	testb	$16, (%rbx)
+	jne	.L1512
+	.p2align 4
+	.p2align 3
+.L1528:
+	movq	%r15, %rsi
+	leaq	-1(%rsi), %rdx
+	testq	%r13, %r13
+	jns	.L1537
+.L1526:
+	movb	$45, -1(%rsi)
+.L1498:
+	movq	%rdx, %rsi
+	jmp	.L1496
+	.p2align 4,,10
+	.p2align 3
+.L1533:
+	movb	$43, -1(%rsi)
+	jmp	.L1498
+	.p2align 4,,10
+	.p2align 3
+.L1459:
+	testq	%rsi, %rsi
+	jne	.L1454
+.L1529:
+	movb	$48, 35(%rsp)
+	movzbl	(%rbx), %eax
+.L1470:
+	leaq	35(%rsp), %r15
+	leaq	36(%rsp), %r12
+	movq	%r15, %rsi
+	leaq	34(%rsp), %rdx
+	jmp	.L1495
+	.p2align 4,,10
+	.p2align 3
+.L1457:
+	testq	%rsi, %rsi
+	je	.L1529
+	.p2align 4
+	.p2align 3
+.L1452:
+	bsrq	%rsi, %rax
+	leal	3(%rax), %r12d
+	movl	$2863311531, %eax
+	imulq	%rax, %r12
+	shrq	$33, %r12
+	leal	-1(%r12), %ecx
+	cmpq	$63, %rsi
+	jbe	.L1481
+	.p2align 6
+	.p2align 4
+	.p2align 3
+.L1482:
+	movq	%rsi, %rdx
+	movl	%ecx, %edi
+	andl	$7, %edx
+	addl	$48, %edx
+	movb	%dl, 35(%rsp,%rdi)
+	movq	%rsi, %rdx
+	leal	-1(%rcx), %edi
+	shrq	$6, %rsi
+	shrq	$3, %rdx
+	subl	$2, %ecx
+	andl	$7, %edx
+	addl	$48, %edx
+	movb	%dl, 35(%rsp,%rdi)
+	cmpq	$63, %rsi
+	ja	.L1482
+.L1481:
+	leal	48(%rsi), %eax
+	cmpq	$7, %rsi
+	ja	.L1538
+.L1484:
+	movb	%al, 35(%rsp)
+	leaq	35(%rsp), %r15
+	movl	%r12d, %r12d
+	leaq	.LC37(%rip), %rax
+	movq	%rax, 8(%rsp)
+	addq	%r15, %r12
+	movl	$1, %eax
+.L1485:
+	movq	%r15, %rsi
+	testb	$16, (%rbx)
+	je	.L1469
+	movq	%rax, %rsi
+	negq	%rsi
+	jmp	.L1468
+	.p2align 4,,10
+	.p2align 3
+.L1534:
+	movb	$32, -1(%rsi)
+	jmp	.L1498
+	.p2align 4,,10
+	.p2align 3
+.L1454:
+	cmpq	$9, %rsi
+	jbe	.L1505
+	movq	%rsi, %rcx
+	movl	$1, %r12d
+	movabsq	$3777893186295716171, %rdi
+	jmp	.L1476
+	.p2align 4,,10
+	.p2align 3
+.L1472:
+	cmpq	$999, %rcx
+	jbe	.L1539
+	cmpq	$9999, %rcx
+	jbe	.L1540
+	movq	%rcx, %rax
+	addl	$4, %r12d
+	mulq	%rdi
+	shrq	$11, %rdx
+	cmpq	$99999, %rcx
+	jbe	.L1473
+	movq	%rdx, %rcx
+.L1476:
+	cmpq	$99, %rcx
+	ja	.L1472
+	addl	$1, %r12d
+.L1473:
+	cmpl	$64, %r12d
+	ja	.L1507
+	movdqa	.LC8(%rip), %xmm0
+	leal	-1(%r12), %ecx
+	movaps	%xmm0, 112(%rsp)
+	movdqa	.LC9(%rip), %xmm0
+	movaps	%xmm0, 128(%rsp)
+	movdqa	.LC10(%rip), %xmm0
+	movaps	%xmm0, 144(%rsp)
+	movdqa	.LC11(%rip), %xmm0
+	movaps	%xmm0, 160(%rsp)
+	movdqa	.LC12(%rip), %xmm0
+	movaps	%xmm0, 176(%rsp)
+	movdqa	.LC13(%rip), %xmm0
+	movaps	%xmm0, 192(%rsp)
+	movdqa	.LC14(%rip), %xmm0
+	movaps	%xmm0, 208(%rsp)
+	movdqa	.LC15(%rip), %xmm0
+	movaps	%xmm0, 224(%rsp)
+	movdqa	.LC16(%rip), %xmm0
+	movaps	%xmm0, 240(%rsp)
+	movdqa	.LC17(%rip), %xmm0
+	movaps	%xmm0, 256(%rsp)
+	movdqa	.LC18(%rip), %xmm0
+	movaps	%xmm0, 272(%rsp)
+	movdqa	.LC19(%rip), %xmm0
+	movaps	%xmm0, 288(%rsp)
+	movdqa	.LC20(%rip), %xmm0
+	movups	%xmm0, 297(%rsp)
+	cmpq	$99, %rsi
+	jbe	.L1478
+	movabsq	$2951479051793528259, %rdi
+	.p2align 4
+	.p2align 3
+.L1479:
+	movq	%rsi, %rdx
+	shrq	$2, %rdx
+	movq	%rdx, %rax
+	mulq	%rdi
+	movq	%rsi, %rax
+	movq	%rdx, %r8
+	andq	$-4, %rdx
+	shrq	$2, %r8
+	addq	%r8, %rdx
+	leaq	(%rdx,%rdx,4), %rdx
+	salq	$2, %rdx
+	subq	%rdx, %rax
+	movq	%rsi, %rdx
+	movq	%r8, %rsi
+	movl	%ecx, %r8d
+	addq	%rax, %rax
+	movzbl	113(%rsp,%rax), %r9d
+	movzbl	112(%rsp,%rax), %eax
+	movb	%r9b, 35(%rsp,%r8)
+	leal	-1(%rcx), %r8d
+	subl	$2, %ecx
+	movb	%al, 35(%rsp,%r8)
+	cmpq	$9999, %rdx
+	ja	.L1479
+	cmpq	$999, %rdx
+	ja	.L1478
+.L1471:
+	addl	$48, %esi
+.L1480:
+	leaq	35(%rsp), %r15
+	movb	%sil, 35(%rsp)
+	addq	%r15, %r12
+	jmp	.L1528
+	.p2align 4,,10
+	.p2align 3
+.L1538:
+	movq	%rsi, %rax
+	andl	$7, %eax
+	addl	$48, %eax
+	movb	%al, 36(%rsp)
+	movq	%rsi, %rax
+	shrq	$3, %rax
+	addl	$48, %eax
+	jmp	.L1484
+	.p2align 4,,10
+	.p2align 3
+.L1536:
+	movq	%rsi, %rax
+	shrq	$4, %rsi
+	andl	$15, %eax
+	movzbl	112(%rsp,%rax), %eax
+	movb	%al, 36(%rsp)
+	movzbl	112(%rsp,%rsi), %eax
+	jmp	.L1491
+	.p2align 4,,10
+	.p2align 3
+.L1478:
+	addq	%rsi, %rsi
+	movzbl	113(%rsp,%rsi), %eax
+	movzbl	112(%rsp,%rsi), %esi
+	movb	%al, 36(%rsp)
+	jmp	.L1480
+	.p2align 4,,10
+	.p2align 3
+.L1511:
+	leaq	.LC35(%rip), %rax
+	leaq	36(%rsp), %r12
+	movq	%rax, 8(%rsp)
+	leaq	35(%rsp), %r15
+.L1486:
+	movq	%r15, %r14
+	.p2align 4
+	.p2align 3
+.L1492:
+	movsbl	(%r14), %edi
+	addq	$1, %r14
+	call	toupper@PLT
+	movb	%al, -1(%r14)
+	cmpq	%r14, %r12
+	jne	.L1492
+	movl	$2, %eax
+	jmp	.L1485
+	.p2align 4,,10
+	.p2align 3
+.L1535:
+	testq	%rsi, %rsi
+	jne	.L1508
+	movzbl	(%rdi), %eax
+	movb	$48, 35(%rsp)
+	testb	$16, %al
+	je	.L1470
+	leaq	.LC36(%rip), %rax
+	movq	$-2, %rsi
+	leaq	36(%rsp), %r12
+	movq	%rax, 8(%rsp)
+	leaq	35(%rsp), %r15
+	movl	$2, %eax
+	jmp	.L1468
+	.p2align 4,,10
+	.p2align 3
+.L1539:
+	addl	$2, %r12d
+	jmp	.L1473
+	.p2align 4,,10
+	.p2align 3
+.L1540:
+	addl	$3, %r12d
+	jmp	.L1473
+.L1510:
+	leaq	.LC35(%rip), %rax
+	movq	%rax, 8(%rsp)
+	jmp	.L1456
+.L1507:
+	leaq	99(%rsp), %r12
+	leaq	35(%rsp), %r15
+	jmp	.L1528
+.L1508:
+	leaq	.LC36(%rip), %rax
+	movq	%rax, 8(%rsp)
+	jmp	.L1456
+.L1505:
+	movl	$1, %r12d
+	jmp	.L1471
+.L1448:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L1450
+.L1530:
+	call	__stack_chk_fail@PLT
+.L1450:
+	leaq	.LC38(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE5418:
+	.size	_ZNKSt8__format15__formatter_intIcE6formatIxNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, .-_ZNKSt8__format15__formatter_intIcE6formatIxNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.section	.text._ZNKSt8__format15__formatter_intIcE6formatIyNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format15__formatter_intIcE6formatIyNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNKSt8__format15__formatter_intIcE6formatIyNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.type	_ZNKSt8__format15__formatter_intIcE6formatIyNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, @function
+_ZNKSt8__format15__formatter_intIcE6formatIyNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_:
+.LFB5419:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	movq	%rdi, %rbx
+	subq	$328, %rsp
+	.cfi_def_cfa_offset 384
+	movzbl	1(%rdi), %eax
+	movq	%fs:40, %rbp
+	movq	%rbp, 312(%rsp)
+	movq	%rdx, %rbp
+	movl	%eax, %edi
+	andl	$120, %edi
+	cmpb	$56, %dil
+	je	.L1614
+	shrb	$3, %al
+	andl	$15, %eax
+	cmpb	$4, %al
+	je	.L1546
+	ja	.L1547
+	cmpb	$1, %al
+	jbe	.L1548
+	cmpb	$16, %dil
+	leaq	.LC33(%rip), %r13
+	leaq	.LC34(%rip), %rax
+	cmovne	%rax, %r13
+	testq	%rsi, %rsi
+	jne	.L1615
+	leaq	20(%rsp), %r12
+	leaq	19(%rsp), %r14
+	movl	$48, %eax
+.L1553:
+	movb	%al, 19(%rsp)
+	movzbl	(%rbx), %eax
+	testb	$16, %al
+	je	.L1612
+.L1599:
+	movq	$-2, %rsi
+	movl	$2, %edx
+.L1557:
+	addq	%r14, %rsi
+	movl	%edx, %edi
+	testl	%edx, %edx
+	je	.L1558
+	xorl	%edx, %edx
+.L1585:
+	movl	%edx, %ecx
+	addl	$1, %edx
+	movzbl	0(%r13,%rcx), %r8d
+	movb	%r8b, (%rsi,%rcx)
+	cmpl	%edi, %edx
+	jb	.L1585
+	jmp	.L1558
+	.p2align 4,,10
+	.p2align 3
+.L1614:
+	cmpq	$127, %rsi
+	ja	.L1543
+	leaq	15(%rsp), %rcx
+	movl	$1, %eax
+	movb	%sil, 15(%rsp)
+	movl	$1, %r9d
+	movq	%rcx, %rsi
+	movq	%rax, %rdi
+	movq	%rbx, %r8
+	movq	%rbp, %rcx
+	movl	$1, %edx
+	call	_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE
+.L1544:
+	movq	312(%rsp), %rdx
+	subq	%fs:40, %rdx
+	jne	.L1613
+	addq	$328, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L1548:
+	.cfi_restore_state
+	testq	%rsi, %rsi
+	jne	.L1559
+	movb	$48, 19(%rsp)
+	leaq	20(%rsp), %r12
+	leaq	19(%rsp), %r14
+.L1560:
+	movzbl	(%rbx), %eax
+	movq	%r14, %rsi
+.L1558:
+	shrb	$2, %al
+	andl	$3, %eax
+	cmpl	$1, %eax
+	je	.L1616
+	cmpl	$3, %eax
+	je	.L1601
+.L1588:
+	movq	%rsi, %r13
+	subq	%rsi, %r12
+	movq	%r14, %rcx
+	movq	%rbp, %r8
+	subq	%rsi, %rcx
+	movq	%r13, %rdx
+	movq	%r12, %rsi
+	movq	%rbx, %rdi
+	call	_ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_
+	jmp	.L1544
+	.p2align 4,,10
+	.p2align 3
+.L1546:
+	testq	%rsi, %rsi
+	jne	.L1571
+	leaq	19(%rsp), %r14
+	movb	$48, 19(%rsp)
+	movzbl	(%rbx), %eax
+	leaq	20(%rsp), %r12
+	movq	%r14, %rsi
+	jmp	.L1558
+	.p2align 4,,10
+	.p2align 3
+.L1616:
+	movl	$43, %eax
+.L1589:
+	movb	%al, -1(%rsi)
+	subq	$1, %rsi
+	jmp	.L1588
+	.p2align 4,,10
+	.p2align 3
+.L1547:
+	cmpb	$40, %dil
+	je	.L1617
+	testq	%rsi, %rsi
+	jne	.L1597
+	movb	$48, 19(%rsp)
+	cmpb	$48, %dil
+	je	.L1598
+	leaq	20(%rsp), %r12
+	leaq	.LC35(%rip), %r13
+	leaq	19(%rsp), %r14
+	jmp	.L1578
+	.p2align 4,,10
+	.p2align 3
+.L1601:
+	movl	$32, %eax
+	jmp	.L1589
+	.p2align 4,,10
+	.p2align 3
+.L1597:
+	leaq	.LC35(%rip), %r13
+.L1577:
+	bsrq	%rsi, %rax
+	movdqa	.LC32(%rip), %xmm0
+	leal	4(%rax), %r12d
+	shrl	$2, %r12d
+	movaps	%xmm0, 96(%rsp)
+	leal	-1(%r12), %edx
+	cmpq	$255, %rsi
+	jbe	.L1580
+	.p2align 6
+	.p2align 4
+	.p2align 3
+.L1581:
+	movq	%rsi, %r8
+	movl	%edx, %ecx
+	andl	$15, %r8d
+	movzbl	96(%rsp,%r8), %r8d
+	movb	%r8b, 19(%rsp,%rcx)
+	movq	%rsi, %rcx
+	leal	-1(%rdx), %r8d
+	shrq	$8, %rsi
+	shrq	$4, %rcx
+	subl	$2, %edx
+	andl	$15, %ecx
+	movzbl	96(%rsp,%rcx), %ecx
+	movb	%cl, 19(%rsp,%r8)
+	cmpq	$255, %rsi
+	ja	.L1581
+.L1580:
+	cmpq	$15, %rsi
+	ja	.L1618
+	movzbl	96(%rsp,%rsi), %eax
+.L1583:
+	leaq	19(%rsp), %r14
+	movb	%al, 19(%rsp)
+	addq	%r14, %r12
+	cmpb	$48, %dil
+	je	.L1579
+.L1578:
+	movzbl	(%rbx), %eax
+	testb	$16, %al
+	jne	.L1599
+.L1612:
+	movq	%r14, %rsi
+	jmp	.L1558
+	.p2align 4,,10
+	.p2align 3
+.L1615:
+	bsrq	%rsi, %r8
+	movl	$64, %r12d
+	movl	$63, %edx
+	xorq	$63, %r8
+	subl	%r8d, %r12d
+	subl	%r8d, %edx
+	je	.L1556
+	movl	%edx, %ecx
+	movl	$62, %eax
+	leaq	15(%rsp,%rcx), %rdi
+	subl	%r8d, %eax
+	leaq	16(%rsp,%rcx), %rdx
+	subq	%rax, %rdi
+	.p2align 5
+	.p2align 4
+	.p2align 3
+.L1555:
+	movl	%esi, %ecx
+	subq	$1, %rdx
+	shrq	%rsi
+	andl	$1, %ecx
+	addl	$48, %ecx
+	movb	%cl, 4(%rdx)
+	cmpq	%rdx, %rdi
+	jne	.L1555
+.L1556:
+	leaq	19(%rsp), %r14
+	movslq	%r12d, %r12
+	movl	$49, %eax
+	addq	%r14, %r12
+	jmp	.L1553
+	.p2align 4,,10
+	.p2align 3
+.L1559:
+	cmpq	$9, %rsi
+	jbe	.L1593
+	movq	%rsi, %rcx
+	movl	$1, %r12d
+	movabsq	$3777893186295716171, %rdi
+	jmp	.L1566
+	.p2align 4,,10
+	.p2align 3
+.L1562:
+	cmpq	$999, %rcx
+	jbe	.L1619
+	cmpq	$9999, %rcx
+	jbe	.L1620
+	movq	%rcx, %rax
+	addl	$4, %r12d
+	mulq	%rdi
+	shrq	$11, %rdx
+	cmpq	$99999, %rcx
+	jbe	.L1563
+	movq	%rdx, %rcx
+.L1566:
+	cmpq	$99, %rcx
+	ja	.L1562
+	addl	$1, %r12d
+.L1563:
+	cmpl	$64, %r12d
+	ja	.L1595
+	movdqa	.LC8(%rip), %xmm0
+	leal	-1(%r12), %ecx
+	movaps	%xmm0, 96(%rsp)
+	movdqa	.LC9(%rip), %xmm0
+	movaps	%xmm0, 112(%rsp)
+	movdqa	.LC10(%rip), %xmm0
+	movaps	%xmm0, 128(%rsp)
+	movdqa	.LC11(%rip), %xmm0
+	movaps	%xmm0, 144(%rsp)
+	movdqa	.LC12(%rip), %xmm0
+	movaps	%xmm0, 160(%rsp)
+	movdqa	.LC13(%rip), %xmm0
+	movaps	%xmm0, 176(%rsp)
+	movdqa	.LC14(%rip), %xmm0
+	movaps	%xmm0, 192(%rsp)
+	movdqa	.LC15(%rip), %xmm0
+	movaps	%xmm0, 208(%rsp)
+	movdqa	.LC16(%rip), %xmm0
+	movaps	%xmm0, 224(%rsp)
+	movdqa	.LC17(%rip), %xmm0
+	movaps	%xmm0, 240(%rsp)
+	movdqa	.LC18(%rip), %xmm0
+	movaps	%xmm0, 256(%rsp)
+	movdqa	.LC19(%rip), %xmm0
+	movaps	%xmm0, 272(%rsp)
+	movdqa	.LC20(%rip), %xmm0
+	movups	%xmm0, 281(%rsp)
+	cmpq	$99, %rsi
+	jbe	.L1568
+	movabsq	$2951479051793528259, %rdi
+	.p2align 4
+	.p2align 3
+.L1569:
+	movq	%rsi, %rdx
+	shrq	$2, %rdx
+	movq	%rdx, %rax
+	mulq	%rdi
+	movq	%rsi, %rax
+	movq	%rdx, %r8
+	andq	$-4, %rdx
+	shrq	$2, %r8
+	addq	%r8, %rdx
+	leaq	(%rdx,%rdx,4), %rdx
+	salq	$2, %rdx
+	subq	%rdx, %rax
+	movq	%rsi, %rdx
+	movq	%r8, %rsi
+	movl	%ecx, %r8d
+	addq	%rax, %rax
+	movzbl	97(%rsp,%rax), %r9d
+	movzbl	96(%rsp,%rax), %eax
+	movb	%r9b, 19(%rsp,%r8)
+	leal	-1(%rcx), %r8d
+	subl	$2, %ecx
+	movb	%al, 19(%rsp,%r8)
+	cmpq	$9999, %rdx
+	ja	.L1569
+	cmpq	$999, %rdx
+	ja	.L1568
+.L1561:
+	addl	$48, %esi
+.L1570:
+	leaq	19(%rsp), %r14
+	movb	%sil, 19(%rsp)
+	addq	%r14, %r12
+	jmp	.L1560
+	.p2align 4,,10
+	.p2align 3
+.L1571:
+	bsrq	%rsi, %rax
+	leal	3(%rax), %r12d
+	movl	$2863311531, %eax
+	imulq	%rax, %r12
+	shrq	$33, %r12
+	leal	-1(%r12), %ecx
+	cmpq	$63, %rsi
+	jbe	.L1572
+	.p2align 6
+	.p2align 4
+	.p2align 3
+.L1573:
+	movq	%rsi, %rdx
+	movl	%ecx, %edi
+	andl	$7, %edx
+	addl	$48, %edx
+	movb	%dl, 19(%rsp,%rdi)
+	movq	%rsi, %rdx
+	leal	-1(%rcx), %edi
+	shrq	$6, %rsi
+	shrq	$3, %rdx
+	subl	$2, %ecx
+	andl	$7, %edx
+	addl	$48, %edx
+	movb	%dl, 19(%rsp,%rdi)
+	cmpq	$63, %rsi
+	ja	.L1573
+.L1572:
+	leal	48(%rsi), %eax
+	cmpq	$7, %rsi
+	ja	.L1621
+.L1575:
+	movb	%al, 19(%rsp)
+	leaq	19(%rsp), %r14
+	movl	%r12d, %r12d
+	leaq	.LC37(%rip), %r13
+	addq	%r14, %r12
+	movl	$1, %edx
+.L1576:
+	movzbl	(%rbx), %eax
+	movq	%r14, %rsi
+	testb	$16, %al
+	je	.L1558
+	movq	%rdx, %rsi
+	negq	%rsi
+	jmp	.L1557
+	.p2align 4,,10
+	.p2align 3
+.L1617:
+	testq	%rsi, %rsi
+	jne	.L1596
+	movb	$48, 19(%rsp)
+	leaq	20(%rsp), %r12
+	leaq	19(%rsp), %r14
+	leaq	.LC36(%rip), %r13
+	jmp	.L1578
+	.p2align 4,,10
+	.p2align 3
+.L1618:
+	movq	%rsi, %rax
+	shrq	$4, %rsi
+	andl	$15, %eax
+	movzbl	96(%rsp,%rax), %eax
+	movb	%al, 20(%rsp)
+	movzbl	96(%rsp,%rsi), %eax
+	jmp	.L1583
+	.p2align 4,,10
+	.p2align 3
+.L1621:
+	movq	%rsi, %rax
+	andl	$7, %eax
+	addl	$48, %eax
+	movb	%al, 20(%rsp)
+	movq	%rsi, %rax
+	shrq	$3, %rax
+	addl	$48, %eax
+	jmp	.L1575
+	.p2align 4,,10
+	.p2align 3
+.L1568:
+	addq	%rsi, %rsi
+	movzbl	97(%rsp,%rsi), %eax
+	movzbl	96(%rsp,%rsi), %esi
+	movb	%al, 20(%rsp)
+	jmp	.L1570
+	.p2align 4,,10
+	.p2align 3
+.L1596:
+	leaq	.LC36(%rip), %r13
+	jmp	.L1577
+	.p2align 4,,10
+	.p2align 3
+.L1598:
+	leaq	.LC35(%rip), %r13
+	leaq	20(%rsp), %r12
+	leaq	19(%rsp), %r14
+.L1579:
+	movq	%r14, %r15
+	.p2align 4
+	.p2align 3
+.L1584:
+	movsbl	(%r15), %edi
+	addq	$1, %r15
+	call	toupper@PLT
+	movb	%al, -1(%r15)
+	cmpq	%r12, %r15
+	jne	.L1584
+	movl	$2, %edx
+	jmp	.L1576
+	.p2align 4,,10
+	.p2align 3
+.L1619:
+	addl	$2, %r12d
+	jmp	.L1563
+	.p2align 4,,10
+	.p2align 3
+.L1620:
+	addl	$3, %r12d
+	jmp	.L1563
+.L1595:
+	leaq	83(%rsp), %r12
+	leaq	19(%rsp), %r14
+	jmp	.L1560
+.L1593:
+	movl	$1, %r12d
+	jmp	.L1561
+.L1543:
+	movq	312(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L1545
+.L1613:
+	call	__stack_chk_fail@PLT
+.L1545:
+	leaq	.LC38(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE5419:
+	.size	_ZNKSt8__format15__formatter_intIcE6formatIyNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, .-_ZNKSt8__format15__formatter_intIcE6formatIyNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.section	.text._ZNKSt8__format15__formatter_intIcE6formatInNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format15__formatter_intIcE6formatInNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNKSt8__format15__formatter_intIcE6formatInNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.type	_ZNKSt8__format15__formatter_intIcE6formatInNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, @function
+_ZNKSt8__format15__formatter_intIcE6formatInNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_:
+.LFB5432:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	movq	%rdi, %r10
+	movq	%rdx, %r9
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$440, %rsp
+	.cfi_def_cfa_offset 496
+	movq	%rcx, 8(%rsp)
+	movzbl	1(%rdi), %ecx
+	movl	%ecx, %edi
+	movq	%fs:40, %r8
+	movq	%r8, 424(%rsp)
+	xorl	%r8d, %r8d
+	andl	$120, %edi
+	cmpb	$56, %dil
+	je	.L1716
+	shrb	$3, %cl
+	movq	%rsi, %r12
+	movq	%rdx, %r13
+	andl	$15, %ecx
+	testq	%rdx, %rdx
+	js	.L1717
+	cmpb	$4, %cl
+	je	.L1633
+	ja	.L1634
+	cmpb	$1, %cl
+	jbe	.L1635
+	cmpb	$16, %dil
+	leaq	.LC33(%rip), %rbp
+	leaq	.LC34(%rip), %rcx
+	movq	%rsi, %rax
+	cmovne	%rcx, %rbp
+	orq	%rdx, %rax
+	jne	.L1631
+	movl	$48, %eax
+	leaq	68(%rsp), %rbx
+	leaq	67(%rsp), %r13
+.L1640:
+	movb	%al, 67(%rsp)
+	testb	$16, (%r10)
+	je	.L1713
+.L1694:
+	movq	$-2, %rsi
+	movl	$2, %eax
+.L1645:
+	addq	%r13, %rsi
+	movl	%eax, %ecx
+	testl	%eax, %eax
+	je	.L1646
+	xorl	%eax, %eax
+.L1674:
+	movl	%eax, %edx
+	addl	$1, %eax
+	movzbl	0(%rbp,%rdx), %edi
+	movb	%dil, (%rsi,%rdx)
+	cmpl	%ecx, %eax
+	jb	.L1674
+	.p2align 4
+	.p2align 3
+.L1646:
+	leaq	-1(%rsi), %rdx
+	testq	%r9, %r9
+	js	.L1711
+.L1724:
+	movzbl	(%r10), %eax
+.L1676:
+	shrb	$2, %al
+	andl	$3, %eax
+	cmpl	$1, %eax
+	je	.L1718
+	cmpl	$3, %eax
+	je	.L1719
+.L1677:
+	subq	%rsi, %rbx
+	movq	%r13, %rcx
+	movq	8(%rsp), %r8
+	movq	%rsi, %rdx
+	subq	%rsi, %rcx
+	movq	%r10, %rdi
+	movq	%rbx, %rsi
+	call	_ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_
+	jmp	.L1625
+	.p2align 4,,10
+	.p2align 3
+.L1717:
+	negq	%r12
+	adcq	$0, %r13
+	negq	%r13
+	cmpb	$4, %cl
+	je	.L1628
+	ja	.L1629
+	cmpb	$1, %cl
+	jbe	.L1630
+	cmpb	$16, %dil
+	leaq	.LC34(%rip), %rbp
+	leaq	.LC33(%rip), %rax
+	cmove	%rax, %rbp
+.L1631:
+	testq	%r13, %r13
+	jne	.L1720
+	bsrq	%r12, %rdx
+	movl	$128, %ebx
+	movl	$127, %eax
+	xorq	$63, %rdx
+	addl	$64, %edx
+	subl	%edx, %ebx
+	subl	%edx, %eax
+	je	.L1685
+.L1642:
+	movl	%eax, %ecx
+	subl	$1, %eax
+	leaq	63(%rsp,%rcx), %rsi
+	leaq	64(%rsp,%rcx), %rdx
+	subq	%rax, %rsi
+	.p2align 5
+	.p2align 4
+	.p2align 3
+.L1644:
+	movl	%r12d, %eax
+	subq	$1, %rdx
+	shrdq	$1, %r13, %r12
+	andl	$1, %eax
+	shrq	%r13
+	addl	$48, %eax
+	movb	%al, 4(%rdx)
+	cmpq	%rsi, %rdx
+	jne	.L1644
+.L1643:
+	leaq	67(%rsp), %r13
+	movslq	%ebx, %rbx
+	movl	$49, %eax
+	addq	%r13, %rbx
+	jmp	.L1640
+	.p2align 4,,10
+	.p2align 3
+.L1716:
+	movl	$127, %ecx
+	cmpq	%rsi, %rcx
+	sbbq	%rdx, %r8
+	jl	.L1624
+	leaq	63(%rsp), %rcx
+	movb	%sil, 63(%rsp)
+	movl	$1, %eax
+	movl	$1, %r9d
+	movq	%rcx, %rsi
+	movq	8(%rsp), %rcx
+	movq	%rax, %rdi
+	movq	%r10, %r8
+	movl	$1, %edx
+	call	_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE
+.L1625:
+	movq	424(%rsp), %rdx
+	subq	%fs:40, %rdx
+	jne	.L1715
+	addq	$440, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L1634:
+	.cfi_restore_state
+	cmpb	$40, %dil
+	je	.L1721
+	movq	%rsi, %rax
+	orq	%rdx, %rax
+	jne	.L1692
+	movb	$48, 67(%rsp)
+	cmpb	$48, %dil
+	je	.L1693
+	leaq	68(%rsp), %rbx
+	leaq	.LC35(%rip), %rbp
+	leaq	67(%rsp), %r13
+	jmp	.L1666
+	.p2align 4,,10
+	.p2align 3
+.L1629:
+	cmpb	$40, %dil
+	leaq	.LC36(%rip), %rbp
+	leaq	.LC35(%rip), %rax
+	cmovne	%rax, %rbp
+.L1632:
+	testq	%r13, %r13
+	jne	.L1722
+	bsrq	%r12, %rax
+	movdqa	.LC32(%rip), %xmm0
+	movl	$255, %ecx
+	leaq	208(%rsp), %r11
+	addl	$4, %eax
+	shrl	$2, %eax
+	movaps	%xmm0, 208(%rsp)
+	leal	-1(%rax), %edx
+	cmpq	%r12, %rcx
+	jnb	.L1669
+.L1668:
+	leaq	208(%rsp), %r11
+	movl	$255, %r8d
+	xorl	%esi, %esi
+	.p2align 4
+	.p2align 3
+.L1670:
+	movq	%r12, %rcx
+	movl	%edx, %r14d
+	leal	-1(%rdx), %ebx
+	subl	$2, %edx
+	andl	$15, %ecx
+	addq	%r11, %rcx
+	movzbl	(%rcx), %ecx
+	movb	%cl, 67(%rsp,%r14)
+	movq	%r12, %rcx
+	shrdq	$8, %r13, %r12
+	shrdq	$4, %r13, %rcx
+	shrq	$8, %r13
+	andl	$15, %ecx
+	cmpq	%r12, %r8
+	leaq	(%rcx,%r11), %rcx
+	movzbl	(%rcx), %ecx
+	movb	%cl, 67(%rsp,%rbx)
+	movq	%rsi, %rbx
+	sbbq	%r13, %rbx
+	jc	.L1670
+.L1669:
+	movl	$15, %edx
+	cmpq	%r12, %rdx
+	movl	$0, %edx
+	sbbq	%r13, %rdx
+	jc	.L1723
+	addq	%r12, %r11
+	movzbl	(%r11), %edx
+.L1672:
+	leaq	67(%rsp), %r13
+	movb	%dl, 67(%rsp)
+	leaq	0(%r13,%rax), %rbx
+	cmpb	$48, %dil
+	je	.L1665
+.L1666:
+	testb	$16, (%r10)
+	jne	.L1694
+	.p2align 4
+	.p2align 3
+.L1713:
+	movq	%r13, %rsi
+	leaq	-1(%rsi), %rdx
+	testq	%r9, %r9
+	jns	.L1724
+.L1711:
+	movb	$45, -1(%rsi)
+.L1679:
+	movq	%rdx, %rsi
+	jmp	.L1677
+	.p2align 4,,10
+	.p2align 3
+.L1718:
+	movb	$43, -1(%rsi)
+	jmp	.L1679
+	.p2align 4,,10
+	.p2align 3
+.L1635:
+	movq	%rsi, %rax
+	orq	%rdx, %rax
+	jne	.L1630
+.L1714:
+	movb	$48, 67(%rsp)
+	movzbl	(%r10), %eax
+.L1647:
+	leaq	67(%rsp), %r13
+	leaq	68(%rsp), %rbx
+	movq	%r13, %rsi
+	leaq	66(%rsp), %rdx
+	jmp	.L1676
+	.p2align 4,,10
+	.p2align 3
+.L1633:
+	movq	%rsi, %rax
+	orq	%rdx, %rax
+	je	.L1714
+	.p2align 4
+	.p2align 3
+.L1628:
+	testq	%r13, %r13
+	jne	.L1725
+	bsrq	%r12, %rax
+	movl	$63, %edx
+	leal	3(%rax), %ebx
+	movl	$2863311531, %eax
+	imulq	%rax, %rbx
+	shrq	$33, %rbx
+	leal	-1(%rbx), %eax
+	cmpq	%r12, %rdx
+	jnb	.L1660
+.L1659:
+	movl	$63, %esi
+	xorl	%edx, %edx
+	movl	%ebx, %edi
+	.p2align 6
+	.p2align 4
+	.p2align 3
+.L1661:
+	movq	%r12, %rcx
+	movl	%eax, %r8d
+	movq	%rdx, %rbx
+	andl	$7, %ecx
+	addl	$48, %ecx
+	movb	%cl, 67(%rsp,%r8)
+	movq	%r12, %rcx
+	shrdq	$6, %r13, %r12
+	leal	-1(%rax), %r8d
+	shrdq	$3, %r13, %rcx
+	subl	$2, %eax
+	shrq	$6, %r13
+	andl	$7, %ecx
+	addl	$48, %ecx
+	cmpq	%r12, %rsi
+	sbbq	%r13, %rbx
+	movb	%cl, 67(%rsp,%r8)
+	jc	.L1661
+	movl	%edi, %ebx
+.L1660:
+	movl	$7, %eax
+	cmpq	%r12, %rax
+	movl	$0, %eax
+	sbbq	%r13, %rax
+	jc	.L1726
+	addl	$48, %r12d
+.L1663:
+	movb	%r12b, 67(%rsp)
+	leaq	67(%rsp), %r13
+	movl	%ebx, %ebx
+	leaq	.LC37(%rip), %rbp
+	addq	%r13, %rbx
+	movl	$1, %eax
+.L1664:
+	movq	%r13, %rsi
+	testb	$16, (%r10)
+	je	.L1646
+	movq	%rax, %rsi
+	negq	%rsi
+	jmp	.L1645
+	.p2align 4,,10
+	.p2align 3
+.L1719:
+	movb	$32, -1(%rsi)
+	jmp	.L1679
+	.p2align 4,,10
+	.p2align 3
+.L1630:
+	movl	$9, %eax
+	cmpq	%r12, %rax
+	movl	$0, %eax
+	sbbq	%r13, %rax
+	jnc	.L1687
+	movq	%r13, %rbp
+	movl	$1, %esi
+	movq	%r13, 24(%rsp)
+	xorl	%r15d, %r15d
+	movq	%rbp, %r14
+	movq	%r12, 16(%rsp)
+	movl	$99999, %ebx
+	movq	%r12, %r13
+	movq	%r10, 32(%rsp)
+	movl	%esi, %ebp
+	movq	%r9, 40(%rsp)
+	jmp	.L1653
+	.p2align 4,,10
+	.p2align 3
+.L1649:
+	movl	$999, %eax
+	cmpq	%r13, %rax
+	movq	%r15, %rax
+	sbbq	%r14, %rax
+	jnc	.L1727
+	movl	$9999, %eax
+	cmpq	%r13, %rax
+	movq	%r15, %rax
+	sbbq	%r14, %rax
+	jnc	.L1728
+	xorl	%ecx, %ecx
+	movq	%r13, %rdi
+	movl	$10000, %edx
+	movq	%r14, %rsi
+	call	__udivti3@PLT
+	addl	$4, %ebp
+	movq	%r15, %rdi
+	cmpq	%r13, %rbx
+	sbbq	%r14, %rdi
+	movq	%rax, %rcx
+	movq	%rdx, %rax
+	jnc	.L1729
+	movq	%rcx, %r13
+	movq	%rax, %r14
+.L1653:
+	movl	$99, %eax
+	cmpq	%r13, %rax
+	movq	%r15, %rax
+	sbbq	%r14, %rax
+	jc	.L1649
+	movl	%ebp, %esi
+	movq	16(%rsp), %r12
+	movq	24(%rsp), %r13
+	movq	32(%rsp), %r10
+	movq	40(%rsp), %r9
+	addl	$1, %esi
+.L1650:
+	cmpl	$128, %esi
+	ja	.L1689
+	movdqa	.LC8(%rip), %xmm0
+	movl	$99, %eax
+	leal	-1(%rsi), %ebp
+	leaq	208(%rsp), %r11
+	cmpq	%r12, %rax
+	movl	$0, %eax
+	movaps	%xmm0, 208(%rsp)
+	movdqa	.LC9(%rip), %xmm0
+	sbbq	%r13, %rax
+	movaps	%xmm0, 224(%rsp)
+	movdqa	.LC10(%rip), %xmm0
+	movaps	%xmm0, 240(%rsp)
+	movdqa	.LC11(%rip), %xmm0
+	movaps	%xmm0, 256(%rsp)
+	movdqa	.LC12(%rip), %xmm0
+	movaps	%xmm0, 272(%rsp)
+	movdqa	.LC13(%rip), %xmm0
+	movaps	%xmm0, 288(%rsp)
+	movdqa	.LC14(%rip), %xmm0
+	movaps	%xmm0, 304(%rsp)
+	movdqa	.LC15(%rip), %xmm0
+	movaps	%xmm0, 320(%rsp)
+	movdqa	.LC16(%rip), %xmm0
+	movaps	%xmm0, 336(%rsp)
+	movdqa	.LC17(%rip), %xmm0
+	movaps	%xmm0, 352(%rsp)
+	movdqa	.LC18(%rip), %xmm0
+	movaps	%xmm0, 368(%rsp)
+	movdqa	.LC19(%rip), %xmm0
+	movaps	%xmm0, 384(%rsp)
+	movdqa	.LC20(%rip), %xmm0
+	movups	%xmm0, 393(%rsp)
+	jnc	.L1655
+	movabsq	$1152921504606846975, %r14
+	movl	%esi, 16(%rsp)
+	movabsq	$-8116567392432202711, %r15
+	movq	%r9, 32(%rsp)
+	.p2align 4
+	.p2align 3
+.L1656:
+	movq	%r12, %rax
+	movq	%r12, %rcx
+	movq	%r12, %rsi
+	xorl	%ebx, %ebx
+	shrdq	$60, %r13, %rax
+	andq	%r14, %rcx
+	movq	%r13, %rdi
+	movl	$25, %r9d
+	andq	%r14, %rax
+	addq	%rax, %rcx
+	movq	%r13, %rax
+	shrq	$56, %rax
+	addq	%rax, %rcx
+	movabsq	$5165088340638674453, %rax
+	mulq	%rcx
+	movq	%rcx, %rax
+	subq	%rdx, %rax
+	shrq	%rax
+	addq	%rax, %rdx
+	shrq	$4, %rdx
+	leaq	(%rdx,%rdx,4), %rax
+	leaq	(%rax,%rax,4), %rax
+	subq	%rax, %rcx
+	movabsq	$2951479051793528258, %rax
+	subq	%rcx, %rsi
+	sbbq	%rbx, %rdi
+	imulq	%rsi, %rax
+	movq	%rdi, %r8
+	imulq	%r15, %r8
+	addq	%rax, %r8
+	movq	%rsi, %rax
+	mulq	%r15
+	movq	%rax, %rsi
+	andl	$3, %eax
+	addq	%rdx, %r8
+	mulq	%r9
+	movq	%r8, %rdi
+	movq	%r13, %rdx
+	addq	%rcx, %rax
+	movq	%r12, %rcx
+	addq	%rax, %rax
+	shrq	$2, %rdi
+	movq	%rdi, %r13
+	leaq	(%r11,%rax), %rdi
+	shrdq	$2, %r8, %rsi
+	leaq	(%rax,%r11), %rax
+	movzbl	1(%rdi), %edi
+	movzbl	(%rax), %eax
+	movq	%rsi, %r12
+	movl	%ebp, %esi
+	movb	%dil, 67(%rsp,%rsi)
+	leal	-1(%rbp), %esi
+	subl	$2, %ebp
+	movb	%al, 67(%rsp,%rsi)
+	movl	$9999, %eax
+	cmpq	%rcx, %rax
+	movl	$0, %eax
+	sbbq	%rdx, %rax
+	jc	.L1656
+	movl	$999, %eax
+	movl	16(%rsp), %esi
+	movq	32(%rsp), %r9
+	cmpq	%rcx, %rax
+	movl	$0, %eax
+	sbbq	%rdx, %rax
+	movl	%esi, %ebx
+	jc	.L1655
+.L1648:
+	addl	$48, %r12d
+.L1657:
+	leaq	67(%rsp), %r13
+	movb	%r12b, 67(%rsp)
+	addq	%r13, %rbx
+	jmp	.L1713
+	.p2align 4,,10
+	.p2align 3
+.L1726:
+	movq	%r12, %rax
+	shrdq	$3, %r13, %r12
+	andl	$7, %eax
+	addl	$48, %r12d
+	addl	$48, %eax
+	movb	%al, 68(%rsp)
+	jmp	.L1663
+	.p2align 4,,10
+	.p2align 3
+.L1723:
+	movq	%r12, %rcx
+	andl	$15, %ecx
+	addq	%r11, %rcx
+	movzbl	(%rcx), %edx
+	movb	%dl, 68(%rsp)
+	movq	%r12, %rdx
+	shrdq	$4, %r13, %rdx
+	movzbl	(%rdx,%r11), %edx
+	jmp	.L1672
+	.p2align 4,,10
+	.p2align 3
+.L1693:
+	leaq	.LC35(%rip), %rbp
+	leaq	68(%rsp), %rbx
+	leaq	67(%rsp), %r13
+.L1665:
+	movq	%r13, %r12
+	movq	%r10, %r14
+	movq	%r9, %r15
+	.p2align 4
+	.p2align 3
+.L1673:
+	movsbl	(%r12), %edi
+	addq	$1, %r12
+	call	toupper@PLT
+	movb	%al, -1(%r12)
+	cmpq	%rbx, %r12
+	jne	.L1673
+	movq	%r14, %r10
+	movq	%r15, %r9
+	movl	$2, %eax
+	jmp	.L1664
+	.p2align 4,,10
+	.p2align 3
+.L1722:
+	bsrq	%r13, %rax
+	movdqa	.LC32(%rip), %xmm0
+	addl	$68, %eax
+	shrl	$2, %eax
+	movaps	%xmm0, 208(%rsp)
+	leal	-1(%rax), %edx
+	jmp	.L1668
+	.p2align 4,,10
+	.p2align 3
+.L1720:
+	bsrq	%r13, %rdx
+	movl	$128, %ebx
+	movl	$127, %eax
+	xorq	$63, %rdx
+	subl	%edx, %ebx
+	subl	%edx, %eax
+	jmp	.L1642
+.L1685:
+	movl	$1, %ebx
+	jmp	.L1643
+	.p2align 4,,10
+	.p2align 3
+.L1655:
+	addq	%r12, %r12
+	movl	%esi, %ebx
+	leaq	(%r11,%r12), %rax
+	addq	%r11, %r12
+	movzbl	1(%rax), %eax
+	movzbl	(%r12), %r12d
+	movb	%al, 68(%rsp)
+	jmp	.L1657
+	.p2align 4,,10
+	.p2align 3
+.L1721:
+	movq	%rsi, %rax
+	orq	%rdx, %rax
+	jne	.L1690
+	movzbl	(%r10), %eax
+	movb	$48, 67(%rsp)
+	testb	$16, %al
+	je	.L1647
+	leaq	68(%rsp), %rbx
+	movl	$2, %eax
+	leaq	67(%rsp), %r13
+	movq	$-2, %rsi
+	leaq	.LC36(%rip), %rbp
+	jmp	.L1645
+	.p2align 4,,10
+	.p2align 3
+.L1725:
+	bsrq	%r13, %rax
+	leal	67(%rax), %ebx
+	movl	$2863311531, %eax
+	imulq	%rax, %rbx
+	shrq	$33, %rbx
+	leal	-1(%rbx), %eax
+	jmp	.L1659
+	.p2align 4,,10
+	.p2align 3
+.L1727:
+	movl	%ebp, %esi
+	movq	16(%rsp), %r12
+	movq	24(%rsp), %r13
+	movq	32(%rsp), %r10
+	movq	40(%rsp), %r9
+	addl	$2, %esi
+	jmp	.L1650
+	.p2align 4,,10
+	.p2align 3
+.L1728:
+	movl	%ebp, %esi
+	movq	16(%rsp), %r12
+	movq	24(%rsp), %r13
+	movq	32(%rsp), %r10
+	movq	40(%rsp), %r9
+	addl	$3, %esi
+	jmp	.L1650
+	.p2align 4,,10
+	.p2align 3
+.L1729:
+	movq	16(%rsp), %r12
+	movq	24(%rsp), %r13
+	movl	%ebp, %esi
+	movq	32(%rsp), %r10
+	movq	40(%rsp), %r9
+	jmp	.L1650
+.L1692:
+	leaq	.LC35(%rip), %rbp
+	jmp	.L1632
+.L1689:
+	leaq	195(%rsp), %rbx
+	leaq	67(%rsp), %r13
+	jmp	.L1713
+.L1690:
+	leaq	.LC36(%rip), %rbp
+	jmp	.L1632
+.L1687:
+	movl	$1, %ebx
+	jmp	.L1648
+.L1624:
+	movq	424(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L1626
+.L1715:
+	call	__stack_chk_fail@PLT
+.L1626:
+	leaq	.LC38(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE5432:
+	.size	_ZNKSt8__format15__formatter_intIcE6formatInNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, .-_ZNKSt8__format15__formatter_intIcE6formatInNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.section	.text._ZNKSt8__format15__formatter_intIcE6formatIoNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format15__formatter_intIcE6formatIoNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNKSt8__format15__formatter_intIcE6formatIoNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.type	_ZNKSt8__format15__formatter_intIcE6formatIoNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, @function
+_ZNKSt8__format15__formatter_intIcE6formatIoNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_:
+.LFB5433:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	movq	%rsi, %r9
+	movq	%rdx, %r11
+	movq	%rdi, %r10
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	movq	%rcx, %r15
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	movq	%rdx, %r13
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	movq	%rsi, %r12
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$440, %rsp
+	.cfi_def_cfa_offset 496
+	movzbl	1(%rdi), %eax
+	movq	%fs:40, %rdx
+	movq	%rdx, 424(%rsp)
+	xorl	%edx, %edx
+	movl	%eax, %esi
+	andl	$120, %esi
+	cmpb	$56, %sil
+	je	.L1814
+	shrb	$3, %al
+	andl	$15, %eax
+	cmpb	$4, %al
+	je	.L1735
+	ja	.L1736
+	cmpb	$1, %al
+	ja	.L1815
+	movq	%r9, %rax
+	orq	%r11, %rax
+	jne	.L1749
+	movb	$48, 67(%rsp)
+	leaq	68(%rsp), %rbx
+	leaq	67(%rsp), %rcx
+.L1750:
+	movzbl	(%r10), %eax
+	movq	%rcx, %rsi
+.L1748:
+	shrb	$2, %al
+	andl	$3, %eax
+	cmpl	$1, %eax
+	je	.L1816
+	cmpl	$3, %eax
+	je	.L1797
+.L1783:
+	subq	%rsi, %rbx
+	movq	%rsi, %rdx
+	subq	%rsi, %rcx
+	movq	%r15, %r8
+	movq	%rbx, %rsi
+	movq	%r10, %rdi
+	call	_ZNKSt8__format15__formatter_intIcE13_M_format_intINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorESt17basic_string_viewIcSt11char_traitsIcEEmRS7_
+	jmp	.L1733
+	.p2align 4,,10
+	.p2align 3
+.L1814:
+	movl	$127, %eax
+	cmpq	%r9, %rax
+	sbbq	%r11, %rdx
+	jc	.L1732
+	leaq	63(%rsp), %rcx
+	movl	$1, %eax
+	movb	%r9b, 63(%rsp)
+	movq	%r10, %r8
+	movq	%rcx, %rsi
+	movq	%rax, %rdi
+	movq	%r15, %rcx
+	movl	$1, %edx
+	movl	$1, %r9d
+	call	_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE
+.L1733:
+	movq	424(%rsp), %rdx
+	subq	%fs:40, %rdx
+	jne	.L1813
+	addq	$440, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L1815:
+	.cfi_restore_state
+	cmpb	$16, %sil
+	leaq	.LC34(%rip), %rax
+	leaq	.LC33(%rip), %rbp
+	cmovne	%rax, %rbp
+	movq	%r9, %rax
+	orq	%r11, %rax
+	je	.L1786
+	testq	%r11, %r11
+	jne	.L1817
+	bsrq	%r9, %rdx
+	movl	$128, %ebx
+	movl	$127, %eax
+	xorq	$63, %rdx
+	addl	$64, %edx
+	subl	%edx, %ebx
+	subl	%edx, %eax
+	je	.L1787
+.L1744:
+	movl	%eax, %ecx
+	subl	$1, %eax
+	leaq	63(%rsp,%rcx), %rsi
+	leaq	64(%rsp,%rcx), %rdx
+	subq	%rax, %rsi
+	.p2align 5
+	.p2align 4
+	.p2align 3
+.L1746:
+	movl	%r12d, %eax
+	subq	$1, %rdx
+	shrdq	$1, %r13, %r12
+	andl	$1, %eax
+	shrq	%r13
+	addl	$48, %eax
+	movb	%al, 4(%rdx)
+	cmpq	%rdx, %rsi
+	jne	.L1746
+.L1745:
+	leaq	67(%rsp), %rcx
+	movslq	%ebx, %rbx
+	movl	$49, %eax
+	addq	%rcx, %rbx
+.L1742:
+	movb	%al, 67(%rsp)
+	movzbl	(%r10), %eax
+	testb	$16, %al
+	je	.L1812
+.L1795:
+	movq	$-2, %rsi
+	movl	$2, %edx
+.L1747:
+	addq	%rcx, %rsi
+	movl	%edx, %edi
+	testl	%edx, %edx
+	je	.L1748
+	xorl	%edx, %edx
+.L1780:
+	movl	%edx, %r8d
+	addl	$1, %edx
+	movzbl	0(%rbp,%r8), %r9d
+	movb	%r9b, (%rsi,%r8)
+	cmpl	%edi, %edx
+	jb	.L1780
+	jmp	.L1748
+	.p2align 4,,10
+	.p2align 3
+.L1735:
+	movq	%r9, %rax
+	orq	%r11, %rax
+	je	.L1761
+	testq	%r11, %r11
+	jne	.L1818
+	bsrq	%r9, %rax
+	movl	$63, %edx
+	leal	3(%rax), %ebx
+	movl	$2863311531, %eax
+	imulq	%rax, %rbx
+	shrq	$33, %rbx
+	leal	-1(%rbx), %eax
+	cmpq	%r9, %rdx
+	jnb	.L1765
+.L1764:
+	movl	$63, %esi
+	xorl	%edx, %edx
+	movl	%ebx, %edi
+	.p2align 6
+	.p2align 4
+	.p2align 3
+.L1766:
+	movq	%r12, %rcx
+	movl	%eax, %r8d
+	movq	%rdx, %rbx
+	andl	$7, %ecx
+	addl	$48, %ecx
+	movb	%cl, 67(%rsp,%r8)
+	movq	%r12, %rcx
+	shrdq	$6, %r13, %r12
+	leal	-1(%rax), %r8d
+	shrdq	$3, %r13, %rcx
+	subl	$2, %eax
+	shrq	$6, %r13
+	andl	$7, %ecx
+	addl	$48, %ecx
+	cmpq	%r12, %rsi
+	sbbq	%r13, %rbx
+	movb	%cl, 67(%rsp,%r8)
+	jc	.L1766
+	movl	%edi, %ebx
+.L1765:
+	movl	$7, %eax
+	cmpq	%r12, %rax
+	movl	$0, %eax
+	sbbq	%r13, %rax
+	jc	.L1819
+	addl	$48, %r12d
+.L1768:
+	movb	%r12b, 67(%rsp)
+	leaq	67(%rsp), %rcx
+	movl	%ebx, %ebx
+	leaq	.LC37(%rip), %rbp
+	addq	%rcx, %rbx
+	movl	$1, %edx
+.L1769:
+	movzbl	(%r10), %eax
+	movq	%rcx, %rsi
+	testb	$16, %al
+	je	.L1748
+	movq	%rdx, %rsi
+	negq	%rsi
+	jmp	.L1747
+	.p2align 4,,10
+	.p2align 3
+.L1816:
+	movl	$43, %eax
+.L1784:
+	movb	%al, -1(%rsi)
+	subq	$1, %rsi
+	jmp	.L1783
+	.p2align 4,,10
+	.p2align 3
+.L1736:
+	cmpb	$40, %sil
+	je	.L1820
+	movq	%r9, %rax
+	orq	%r11, %rax
+	jne	.L1793
+	movb	$48, 67(%rsp)
+	cmpb	$48, %sil
+	je	.L1794
+	leaq	68(%rsp), %rbx
+	leaq	.LC35(%rip), %rbp
+	leaq	67(%rsp), %rcx
+	jmp	.L1771
+	.p2align 4,,10
+	.p2align 3
+.L1797:
+	movl	$32, %eax
+	jmp	.L1784
+	.p2align 4,,10
+	.p2align 3
+.L1793:
+	leaq	.LC35(%rip), %rbp
+.L1770:
+	testq	%r11, %r11
+	jne	.L1821
+	bsrq	%r12, %rax
+	movdqa	.LC32(%rip), %xmm0
+	movl	$255, %ecx
+	addl	$4, %eax
+	shrl	$2, %eax
+	movaps	%xmm0, 208(%rsp)
+	leal	-1(%rax), %edx
+	cmpq	%r9, %rcx
+	jnb	.L1822
+.L1774:
+	leaq	208(%rsp), %r9
+	movl	$255, %r8d
+	xorl	%edi, %edi
+	.p2align 4
+	.p2align 3
+.L1776:
+	movq	%r12, %rcx
+	movl	%edx, %r11d
+	movq	%rdi, %rbx
+	andl	$15, %ecx
+	addq	%r9, %rcx
+	movzbl	(%rcx), %ecx
+	movb	%cl, 67(%rsp,%r11)
+	movq	%r12, %rcx
+	shrdq	$8, %r13, %r12
+	leal	-1(%rdx), %r11d
+	shrdq	$4, %r13, %rcx
+	subl	$2, %edx
+	shrq	$8, %r13
+	andl	$15, %ecx
+	addq	%r9, %rcx
+	cmpq	%r12, %r8
+	movzbl	(%rcx), %ecx
+	sbbq	%r13, %rbx
+	movb	%cl, 67(%rsp,%r11)
+	jc	.L1776
+.L1775:
+	movl	$15, %edx
+	cmpq	%r12, %rdx
+	movl	$0, %edx
+	sbbq	%r13, %rdx
+	jc	.L1823
+	addq	%r12, %r9
+	movzbl	(%r9), %edx
+.L1778:
+	leaq	67(%rsp), %rcx
+	movb	%dl, 67(%rsp)
+	leaq	(%rcx,%rax), %rbx
+	cmpb	$48, %sil
+	je	.L1772
+.L1771:
+	movzbl	(%r10), %eax
+	testb	$16, %al
+	jne	.L1795
+.L1812:
+	movq	%rcx, %rsi
+	jmp	.L1748
+	.p2align 4,,10
+	.p2align 3
+.L1749:
+	movl	$9, %eax
+	cmpq	%r9, %rax
+	sbbq	%r11, %rdx
+	jnc	.L1789
+	movl	$1, %esi
+	movq	%r10, 16(%rsp)
+	xorl	%r14d, %r14d
+	movq	%r9, %r13
+	movq	%r9, (%rsp)
+	movl	$99999, %ebx
+	movq	%r11, %r15
+	movl	%esi, %ebp
+	movq	%r11, 8(%rsp)
+	movq	%r9, 24(%rsp)
+	movq	%r11, 32(%rsp)
+	movq	%rcx, 40(%rsp)
+	jmp	.L1756
+	.p2align 4,,10
+	.p2align 3
+.L1752:
+	movl	$999, %eax
+	cmpq	%r13, %rax
+	movq	%r14, %rax
+	sbbq	%r15, %rax
+	jnc	.L1824
+	movl	$9999, %eax
+	cmpq	%r13, %rax
+	movq	%r14, %rax
+	sbbq	%r15, %rax
+	jnc	.L1825
+	xorl	%ecx, %ecx
+	movq	%r13, %rdi
+	movl	$10000, %edx
+	movq	%r15, %rsi
+	call	__udivti3@PLT
+	addl	$4, %ebp
+	movq	%r14, %rdi
+	cmpq	%r13, %rbx
+	sbbq	%r15, %rdi
+	movq	%rax, %rcx
+	movq	%rdx, %rax
+	jnc	.L1826
+	movq	%rcx, %r13
+	movq	%rax, %r15
+.L1756:
+	movl	$99, %eax
+	cmpq	%r13, %rax
+	movq	%r14, %rax
+	sbbq	%r15, %rax
+	jc	.L1752
+	movl	%ebp, %esi
+	movq	16(%rsp), %r10
+	movq	(%rsp), %r12
+	movq	8(%rsp), %r13
+	movq	24(%rsp), %r9
+	addl	$1, %esi
+	movq	32(%rsp), %r11
+	movq	40(%rsp), %r15
+.L1753:
+	cmpl	$128, %esi
+	ja	.L1791
+	movdqa	.LC8(%rip), %xmm0
+	movl	$99, %eax
+	leal	-1(%rsi), %r8d
+	cmpq	%r9, %rax
+	movl	$0, %eax
+	leaq	208(%rsp), %r9
+	movaps	%xmm0, 208(%rsp)
+	movdqa	.LC9(%rip), %xmm0
+	sbbq	%r11, %rax
+	movaps	%xmm0, 224(%rsp)
+	movdqa	.LC10(%rip), %xmm0
+	movaps	%xmm0, 240(%rsp)
+	movdqa	.LC11(%rip), %xmm0
+	movaps	%xmm0, 256(%rsp)
+	movdqa	.LC12(%rip), %xmm0
+	movaps	%xmm0, 272(%rsp)
+	movdqa	.LC13(%rip), %xmm0
+	movaps	%xmm0, 288(%rsp)
+	movdqa	.LC14(%rip), %xmm0
+	movaps	%xmm0, 304(%rsp)
+	movdqa	.LC15(%rip), %xmm0
+	movaps	%xmm0, 320(%rsp)
+	movdqa	.LC16(%rip), %xmm0
+	movaps	%xmm0, 336(%rsp)
+	movdqa	.LC17(%rip), %xmm0
+	movaps	%xmm0, 352(%rsp)
+	movdqa	.LC18(%rip), %xmm0
+	movaps	%xmm0, 368(%rsp)
+	movdqa	.LC19(%rip), %xmm0
+	movaps	%xmm0, 384(%rsp)
+	movdqa	.LC20(%rip), %xmm0
+	movups	%xmm0, 393(%rsp)
+	jnc	.L1758
+	movabsq	$1152921504606846975, %rbp
+	movl	%esi, 16(%rsp)
+	movabsq	$-8116567392432202711, %r14
+	movq	%r10, (%rsp)
+	.p2align 4
+	.p2align 3
+.L1759:
+	movq	%r12, %rax
+	movq	%r12, %rcx
+	movq	%r12, %rsi
+	xorl	%ebx, %ebx
+	shrdq	$60, %r13, %rax
+	andq	%rbp, %rcx
+	movq	%r13, %rdi
+	movl	$25, %r11d
+	andq	%rbp, %rax
+	addq	%rax, %rcx
+	movq	%r13, %rax
+	shrq	$56, %rax
+	addq	%rax, %rcx
+	movabsq	$5165088340638674453, %rax
+	mulq	%rcx
+	movq	%rcx, %rax
+	subq	%rdx, %rax
+	shrq	%rax
+	addq	%rax, %rdx
+	shrq	$4, %rdx
+	leaq	(%rdx,%rdx,4), %rax
+	leaq	(%rax,%rax,4), %rax
+	subq	%rax, %rcx
+	movabsq	$2951479051793528258, %rax
+	subq	%rcx, %rsi
+	sbbq	%rbx, %rdi
+	imulq	%rsi, %rax
+	movq	%rdi, %r10
+	imulq	%r14, %r10
+	addq	%rax, %r10
+	movq	%rsi, %rax
+	mulq	%r14
+	movq	%rax, %rsi
+	andl	$3, %eax
+	addq	%rdx, %r10
+	mulq	%r11
+	movq	%r10, %rdi
+	movq	%r13, %rdx
+	addq	%rcx, %rax
+	movq	%r12, %rcx
+	addq	%rax, %rax
+	shrq	$2, %rdi
+	movq	%rdi, %r13
+	leaq	(%r9,%rax), %rdi
+	shrdq	$2, %r10, %rsi
+	leaq	(%rax,%r9), %rax
+	movzbl	1(%rdi), %edi
+	movzbl	(%rax), %eax
+	movq	%rsi, %r12
+	movl	%r8d, %esi
+	movb	%dil, 67(%rsp,%rsi)
+	leal	-1(%r8), %esi
+	subl	$2, %r8d
+	movb	%al, 67(%rsp,%rsi)
+	movl	$9999, %eax
+	cmpq	%rcx, %rax
+	movl	$0, %eax
+	sbbq	%rdx, %rax
+	jc	.L1759
+	movl	$999, %eax
+	movl	16(%rsp), %esi
+	movq	(%rsp), %r10
+	cmpq	%rcx, %rax
+	movl	$0, %eax
+	sbbq	%rdx, %rax
+	movl	%esi, %ebx
+	jc	.L1758
+.L1751:
+	addl	$48, %r12d
+.L1760:
+	leaq	67(%rsp), %rcx
+	movb	%r12b, 67(%rsp)
+	addq	%rcx, %rbx
+	jmp	.L1750
+	.p2align 4,,10
+	.p2align 3
+.L1761:
+	leaq	67(%rsp), %rcx
+	movb	$48, 67(%rsp)
+	movzbl	(%rdi), %eax
+	leaq	68(%rsp), %rbx
+	movq	%rcx, %rsi
+	jmp	.L1748
+	.p2align 4,,10
+	.p2align 3
+.L1786:
+	movl	$48, %eax
+	leaq	68(%rsp), %rbx
+	leaq	67(%rsp), %rcx
+	jmp	.L1742
+	.p2align 4,,10
+	.p2align 3
+.L1820:
+	movq	%r9, %rax
+	orq	%r11, %rax
+	jne	.L1792
+	movb	$48, 67(%rsp)
+	leaq	68(%rsp), %rbx
+	leaq	67(%rsp), %rcx
+	leaq	.LC36(%rip), %rbp
+	jmp	.L1771
+	.p2align 4,,10
+	.p2align 3
+.L1823:
+	movq	%r12, %rcx
+	andl	$15, %ecx
+	addq	%r9, %rcx
+	movzbl	(%rcx), %edx
+	movb	%dl, 68(%rsp)
+	movq	%r12, %rdx
+	shrdq	$4, %r13, %rdx
+	movzbl	(%rdx,%r9), %edx
+	jmp	.L1778
+	.p2align 4,,10
+	.p2align 3
+.L1819:
+	movq	%r12, %rax
+	shrdq	$3, %r13, %r12
+	andl	$7, %eax
+	addl	$48, %r12d
+	addl	$48, %eax
+	movb	%al, 68(%rsp)
+	jmp	.L1768
+	.p2align 4,,10
+	.p2align 3
+.L1792:
+	leaq	.LC36(%rip), %rbp
+	jmp	.L1770
+	.p2align 4,,10
+	.p2align 3
+.L1794:
+	leaq	.LC35(%rip), %rbp
+	leaq	68(%rsp), %rbx
+	leaq	67(%rsp), %rcx
+.L1772:
+	movq	%rcx, %r13
+	movq	%r10, %r12
+	movq	%rcx, %r14
+	.p2align 4
+	.p2align 3
+.L1779:
+	movsbl	0(%r13), %edi
+	addq	$1, %r13
+	call	toupper@PLT
+	movb	%al, -1(%r13)
+	cmpq	%rbx, %r13
+	jne	.L1779
+	movq	%r12, %r10
+	movq	%r14, %rcx
+	movl	$2, %edx
+	jmp	.L1769
+	.p2align 4,,10
+	.p2align 3
+.L1821:
+	bsrq	%r11, %r11
+	movdqa	.LC32(%rip), %xmm0
+	leal	68(%r11), %eax
+	shrl	$2, %eax
+	movaps	%xmm0, 208(%rsp)
+	leal	-1(%rax), %edx
+	jmp	.L1774
+	.p2align 4,,10
+	.p2align 3
+.L1817:
+	bsrq	%r11, %r11
+	movl	$128, %ebx
+	movl	$127, %eax
+	xorq	$63, %r11
+	subl	%r11d, %ebx
+	subl	%r11d, %eax
+	jmp	.L1744
+.L1787:
+	movl	$1, %ebx
+	jmp	.L1745
+	.p2align 4,,10
+	.p2align 3
+.L1758:
+	addq	%r12, %r12
+	movl	%esi, %ebx
+	leaq	(%r9,%r12), %rax
+	addq	%r9, %r12
+	movzbl	1(%rax), %eax
+	movzbl	(%r12), %r12d
+	movb	%al, 68(%rsp)
+	jmp	.L1760
+	.p2align 4,,10
+	.p2align 3
+.L1818:
+	bsrq	%r11, %r11
+	movl	$2863311531, %eax
+	leal	67(%r11), %ebx
+	imulq	%rax, %rbx
+	shrq	$33, %rbx
+	leal	-1(%rbx), %eax
+	jmp	.L1764
+	.p2align 4,,10
+	.p2align 3
+.L1824:
+	movl	%ebp, %esi
+	movq	16(%rsp), %r10
+	movq	(%rsp), %r12
+	movq	8(%rsp), %r13
+	movq	24(%rsp), %r9
+	addl	$2, %esi
+	movq	32(%rsp), %r11
+	movq	40(%rsp), %r15
+	jmp	.L1753
+	.p2align 4,,10
+	.p2align 3
+.L1825:
+	movl	%ebp, %esi
+	movq	16(%rsp), %r10
+	movq	(%rsp), %r12
+	movq	8(%rsp), %r13
+	movq	24(%rsp), %r9
+	addl	$3, %esi
+	movq	32(%rsp), %r11
+	movq	40(%rsp), %r15
+	jmp	.L1753
+	.p2align 4,,10
+	.p2align 3
+.L1826:
+	movq	16(%rsp), %r10
+	movq	(%rsp), %r12
+	movl	%ebp, %esi
+	movq	8(%rsp), %r13
+	movq	24(%rsp), %r9
+	movq	32(%rsp), %r11
+	movq	40(%rsp), %r15
+	jmp	.L1753
+.L1822:
+	leaq	208(%rsp), %r9
+	jmp	.L1775
+.L1791:
+	leaq	195(%rsp), %rbx
+	leaq	67(%rsp), %rcx
+	jmp	.L1750
+.L1789:
+	movl	$1, %ebx
+	jmp	.L1751
+.L1732:
+	movq	424(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L1734
+.L1813:
+	call	__stack_chk_fail@PLT
+.L1734:
+	leaq	.LC38(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE5433:
+	.size	_ZNKSt8__format15__formatter_intIcE6formatIoNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, .-_ZNKSt8__format15__formatter_intIcE6formatIoNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.section	.rodata._ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0.str1.1,"aMS",@progbits,1
+.LC39:
+	.string	"basic_string_view::copy"
+	.section	.rodata._ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0.str1.8,"aMS",@progbits,1
+	.align 8
+.LC40:
+	.string	"%s: __pos (which is %zu) > __size (which is %zu)"
+	.section	.text.unlikely._ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0,"ax",@progbits
+	.align 2
+.LCOLDB41:
+	.section	.text._ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0,"ax",@progbits
+.LHOTB41:
+	.align 2
+	.p2align 4
+	.type	_ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0, @function
+_ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0:
+.LFB5894:
+	.cfi_startproc
+	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
+	.cfi_lsda 0x1b,.LLSDA5894
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	leaq	16(%rdi), %r14
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	movl	%ecx, %r13d
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	movq	%rsi, %r12
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	movq	%rdx, %rbp
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	movq	%rdi, %rbx
+	subq	$120, %rsp
+	.cfi_def_cfa_offset 176
+	movq	%fs:40, %r15
+	movq	%r15, 104(%rsp)
+	movq	%r8, %r15
+	movq	%r14, (%rdi)
+	movq	$0, 8(%rdi)
+	movb	$0, 16(%rdi)
+.LEHB20:
+	call	_ZNSt6locale7classicEv@PLT
+	movq	%rax, %rsi
+	movq	%r15, %rdi
+	call	_ZNKSt6localeeqERKS_@PLT
+	testb	%al, %al
+	je	.L1904
+.L1827:
+	movq	104(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L1905
+	addq	$120, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	movq	%rbx, %rax
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L1904:
+	.cfi_restore_state
+	leaq	_ZNSt7__cxx118numpunctIcE2idE(%rip), %rdi
+	call	_ZNKSt6locale2id5_M_idEv@PLT
+	movq	%rax, %rdx
+	movq	(%r15), %rax
+	movq	8(%rax), %rax
+	movq	(%rax,%rdx,8), %r15
+	testq	%r15, %r15
+	je	.L1829
+	movq	(%r15), %rax
+	movq	%r15, %rdi
+	call	*16(%rax)
+	movb	%al, 31(%rsp)
+	movq	(%r15), %rax
+	leaq	64(%rsp), %rdi
+	movq	%r15, %rsi
+	movq	%rdi, 56(%rsp)
+	call	*32(%rax)
+.LEHE20:
+	cmpb	$46, 31(%rsp)
+	movq	72(%rsp), %rcx
+	jne	.L1873
+	testq	%rcx, %rcx
+	jne	.L1873
+	movq	64(%rsp), %rdi
+	leaq	80(%rsp), %rax
+	cmpq	%rax, %rdi
+	jne	.L1859
+	jmp	.L1827
+	.p2align 4,,10
+	.p2align 3
+.L1873:
+	testq	%r12, %r12
+	je	.L1834
+	movq	%r12, %rdx
+	movl	$46, %esi
+	movq	%rbp, %rdi
+	movq	%rcx, 16(%rsp)
+	call	memchr@PLT
+	movsbl	%r13b, %esi
+	movq	%r12, %rdx
+	movq	%rbp, %rdi
+	movq	%rax, 8(%rsp)
+	call	memchr@PLT
+	movq	8(%rsp), %r8
+	movq	16(%rsp), %rcx
+	testq	%r8, %r8
+	je	.L1835
+	subq	%rbp, %r8
+	movq	%r8, 32(%rsp)
+	testq	%rax, %rax
+	je	.L1867
+.L1865:
+	movq	32(%rsp), %rdx
+	subq	%rbp, %rax
+	cmpq	%rdx, %rax
+	cmova	%rdx, %rax
+	movq	%rax, %r13
+.L1836:
+	cmpq	$-1, %r13
+	je	.L1837
+	movq	%r12, %rax
+	subq	%r13, %rax
+	movq	%rax, 16(%rsp)
+.L1838:
+	movq	16(%rsp), %rax
+	leaq	(%rax,%r13,2), %r9
+	movq	(%rbx), %rax
+	movq	%rax, 8(%rsp)
+	cmpq	%rax, %r14
+	je	.L1906
+	movq	16(%rbx), %rax
+	cmpq	%r9, %rax
+	jnb	.L1839
+	testq	%r9, %r9
+	js	.L1841
+	addq	%rax, %rax
+	cmpq	%rax, %r9
+	jb	.L1907
+.L1843:
+	movq	%r9, %rdi
+	addq	$1, %rdi
+	js	.L1846
+.L1847:
+	movq	%r9, 40(%rsp)
+.LEHB21:
+	call	_Znwm@PLT
+.LEHE21:
+	movq	(%rbx), %rcx
+	movq	40(%rsp), %r9
+	movq	%rax, 8(%rsp)
+	movq	8(%rbx), %rax
+	testq	%rax, %rax
+	leaq	1(%rax), %rdx
+	je	.L1908
+	testq	%rdx, %rdx
+	jne	.L1909
+.L1850:
+	movq	16(%rbx), %rax
+	movq	%rcx, %rdi
+	movq	%r9, 40(%rsp)
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+	movq	40(%rsp), %r9
+.L1851:
+	movq	8(%rsp), %rax
+	movq	72(%rsp), %rcx
+	movq	%r9, 16(%rbx)
+	movq	%rax, (%rbx)
+	jmp	.L1839
+	.p2align 4,,10
+	.p2align 3
+.L1834:
+	movq	$0, 16(%rsp)
+	movq	(%rbx), %rax
+	xorl	%r13d, %r13d
+	movq	$-1, 32(%rsp)
+	movq	%rax, 8(%rsp)
+.L1839:
+	movq	64(%rsp), %rdx
+	movq	(%r15), %rax
+	movq	%rcx, 48(%rsp)
+	movq	%r15, %rdi
+	leaq	0(%rbp,%r13), %r14
+	movq	%rdx, 40(%rsp)
+.LEHB22:
+	call	*24(%rax)
+.LEHE22:
+	movq	48(%rsp), %rcx
+	movq	40(%rsp), %rdx
+	movsbl	%al, %esi
+	movq	%r14, %r9
+	movq	8(%rsp), %rdi
+	movq	%rbp, %r8
+	call	_ZSt14__add_groupingIcEPT_S1_S0_PKcmPKS0_S5_
+	cmpq	$0, 16(%rsp)
+	movq	%rax, %rcx
+	je	.L1853
+	cmpq	$-1, 32(%rsp)
+	je	.L1854
+	movzbl	31(%rsp), %eax
+	addq	$1, %rcx
+	addq	$1, %r13
+	movb	%al, -1(%rcx)
+.L1854:
+	cmpq	$1, 16(%rsp)
+	jne	.L1910
+.L1853:
+	movq	8(%rsp), %rax
+	subq	%rax, %rcx
+	movq	(%rbx), %rax
+	movq	%rcx, 8(%rbx)
+	movb	$0, (%rax,%rcx)
+	movq	64(%rsp), %rdi
+	leaq	80(%rsp), %rax
+	cmpq	%rax, %rdi
+	je	.L1827
+.L1859:
+	movq	80(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+	jmp	.L1827
+	.p2align 4,,10
+	.p2align 3
+.L1910:
+	cmpq	%r13, %r12
+	jb	.L1901
+	subq	%r13, %r12
+	jne	.L1911
+.L1857:
+	addq	%r12, %rcx
+	jmp	.L1853
+	.p2align 4,,10
+	.p2align 3
+.L1909:
+	movq	8(%rsp), %rdi
+	movq	%rcx, %rsi
+	movq	%r9, 48(%rsp)
+	movq	%rcx, 40(%rsp)
+	call	memcpy@PLT
+	movq	40(%rsp), %rcx
+	movq	48(%rsp), %r9
+	cmpq	%rcx, %r14
+	jne	.L1850
+	jmp	.L1851
+	.p2align 4,,10
+	.p2align 3
+.L1911:
+	movq	%rcx, %rdi
+	leaq	0(%rbp,%r13), %rsi
+	movq	%r12, %rdx
+	call	memcpy@PLT
+	movq	%rax, %rcx
+	jmp	.L1857
+	.p2align 4,,10
+	.p2align 3
+.L1907:
+	leaq	1(%rax), %rdi
+	movq	%rax, %r9
+	testq	%rax, %rax
+	jns	.L1847
+.L1846:
+	movq	104(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L1912
+.LEHB23:
+	call	_ZSt17__throw_bad_allocv@PLT
+.LEHE23:
+	.p2align 4,,10
+	.p2align 3
+.L1908:
+	movzbl	(%rcx), %eax
+	movq	8(%rsp), %rdx
+	movb	%al, (%rdx)
+	cmpq	%rcx, %r14
+	jne	.L1850
+	jmp	.L1851
+	.p2align 4,,10
+	.p2align 3
+.L1835:
+	movq	$-1, 32(%rsp)
+	testq	%rax, %rax
+	jne	.L1865
+.L1837:
+	xorl	%edx, %edx
+	movq	%r12, %r13
+	movq	%rdx, 16(%rsp)
+	jmp	.L1838
+	.p2align 4,,10
+	.p2align 3
+.L1906:
+	cmpq	$15, %r9
+	jbe	.L1839
+	testq	%r9, %r9
+	js	.L1841
+	cmpq	$29, %r9
+	ja	.L1843
+	movl	$31, %edi
+	movl	$30, %r9d
+	jmp	.L1847
+	.p2align 4,,10
+	.p2align 3
+.L1867:
+	movq	32(%rsp), %r13
+	jmp	.L1836
+.L1905:
+	call	__stack_chk_fail@PLT
+.L1912:
+	call	__stack_chk_fail@PLT
+.L1895:
+	endbr64
+	jmp	.L1896
+.L1899:
+	endbr64
+	jmp	.L1900
+.L1871:
+	endbr64
+.L1898:
+	movq	%rax, %rbp
+	jmp	.L1861
+	.section	.gcc_except_table._ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0,"a",@progbits
+.LLSDA5894:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x1
+	.uleb128 .LLSDACSE5894-.LLSDACSB5894
+.LLSDACSB5894:
+	.uleb128 .LEHB20-.LFB5894
+	.uleb128 .LEHE20-.LEHB20
+	.uleb128 .L1895-.LFB5894
+	.uleb128 0
+	.uleb128 .LEHB21-.LFB5894
+	.uleb128 .LEHE21-.LEHB21
+	.uleb128 .L1871-.LFB5894
+	.uleb128 0
+	.uleb128 .LEHB22-.LFB5894
+	.uleb128 .LEHE22-.LEHB22
+	.uleb128 .L1899-.LFB5894
+	.uleb128 0
+	.uleb128 .LEHB23-.LFB5894
+	.uleb128 .LEHE23-.LEHB23
+	.uleb128 .L1871-.LFB5894
+	.uleb128 0
+.LLSDACSE5894:
+	.section	.text._ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0
+	.cfi_endproc
+	.section	.text.unlikely._ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0
+	.cfi_startproc
+	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
+	.cfi_lsda 0x1b,.LLSDAC5894
+	.type	_ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0.cold, @function
+_ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0.cold:
+.LFSB5894:
+.L1829:
+	.cfi_def_cfa_offset 176
+	.cfi_offset 3, -56
+	.cfi_offset 6, -48
+	.cfi_offset 12, -40
+	.cfi_offset 13, -32
+	.cfi_offset 14, -24
+	.cfi_offset 15, -16
+	movq	104(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L1913
+.LEHB24:
+	call	_ZSt16__throw_bad_castv@PLT
+.LEHE24:
+.L1901:
+	movq	104(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L1914
+	movq	%r12, %rcx
+	movq	%r13, %rdx
+	leaq	.LC39(%rip), %rsi
+	xorl	%eax, %eax
+	leaq	.LC40(%rip), %rdi
+.LEHB25:
+	call	_ZSt24__throw_out_of_range_fmtPKcz@PLT
+.LEHE25:
+.L1913:
+	call	__stack_chk_fail@PLT
+.L1914:
+	call	__stack_chk_fail@PLT
+.L1870:
+	endbr64
+.L1896:
+	movq	%rax, %rbp
+.L1863:
+	movq	%rbx, %rdi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+	movq	104(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L1915
+	movq	%rbp, %rdi
+.LEHB26:
+	call	_Unwind_Resume@PLT
+.LEHE26:
+.L1872:
+	endbr64
+.L1900:
+	movq	%rax, %rbp
+	xorl	%eax, %eax
+	movq	%rax, 8(%rbx)
+	movq	(%rbx), %rax
+	movb	$0, (%rax)
+.L1861:
+	movq	56(%rsp), %rdi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+	jmp	.L1863
+.L1915:
+	call	__stack_chk_fail@PLT
+.L1841:
+	movq	104(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L1916
+	leaq	.LC22(%rip), %rdi
+.LEHB27:
+	call	_ZSt20__throw_length_errorPKc@PLT
+.LEHE27:
+.L1916:
+	call	__stack_chk_fail@PLT
+.L1897:
+	endbr64
+	jmp	.L1898
+	.cfi_endproc
+.LFE5894:
+	.section	.gcc_except_table._ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0
+.LLSDAC5894:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x1
+	.uleb128 .LLSDACSEC5894-.LLSDACSBC5894
+.LLSDACSBC5894:
+	.uleb128 .LEHB24-.LCOLDB41
+	.uleb128 .LEHE24-.LEHB24
+	.uleb128 .L1870-.LCOLDB41
+	.uleb128 0
+	.uleb128 .LEHB25-.LCOLDB41
+	.uleb128 .LEHE25-.LEHB25
+	.uleb128 .L1872-.LCOLDB41
+	.uleb128 0
+	.uleb128 .LEHB26-.LCOLDB41
+	.uleb128 .LEHE26-.LEHB26
+	.uleb128 0
+	.uleb128 0
+	.uleb128 .LEHB27-.LCOLDB41
+	.uleb128 .LEHE27-.LEHB27
+	.uleb128 .L1897-.LCOLDB41
+	.uleb128 0
+.LLSDACSEC5894:
+	.section	.text.unlikely._ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0
+	.section	.text._ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0
+	.size	_ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0, .-_ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0
+	.section	.text.unlikely._ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0
+	.size	_ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0.cold, .-_ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0.cold
+.LCOLDE41:
+	.section	.text._ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0
+.LHOTE41:
+	.section	.rodata._ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_.str1.1,"aMS",@progbits,1
+.LC44:
+	.string	"basic_string::_M_replace"
+.LC45:
+	.string	"basic_string_view::substr"
+.LC46:
+	.string	"basic_string::insert"
+	.section	.rodata._ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_.str1.8,"aMS",@progbits,1
+	.align 8
+.LC47:
+	.string	"%s: __pos (which is %zu) > this->size() (which is %zu)"
+	.section	.text._ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.type	_ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, @function
+_ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_:
+.LFB5434:
+	.cfi_startproc
+	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
+	.cfi_lsda 0x1b,.LLSDA5434
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	movq	%rdi, %rbp
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$360, %rsp
+	.cfi_def_cfa_offset 416
+	movq	%rsi, 40(%rsp)
+	movaps	%xmm0, (%rsp)
+	movq	%fs:40, %rax
+	movq	%rax, 344(%rsp)
+	leaq	128(%rsp), %rax
+	movb	$0, 128(%rsp)
+	movq	$0, 120(%rsp)
+	movq	%rax, 32(%rsp)
+	movq	%rax, 112(%rsp)
+	movzbl	1(%rdi), %eax
+	movl	%eax, %edx
+	andl	$6, %edx
+	jne	.L2242
+	movl	%eax, %edx
+	shrb	$3, %dl
+	andl	$15, %edx
+	cmpb	$8, %dl
+	ja	.L1921
+	leaq	.L2108(%rip), %rcx
+	movzbl	%dl, %edx
+	movslq	(%rcx,%rdx,4), %rdx
+	addq	%rcx, %rdx
+	notrack jmp	*%rdx
+	.section	.rodata._ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"aG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 4
+	.align 4
+.L2108:
+	.long	.L1938-.L2108
+	.long	.L1933-.L2108
+	.long	.L2109-.L2108
+	.long	.L2148-.L2108
+	.long	.L2149-.L2108
+	.long	.L2150-.L2108
+	.long	.L2151-.L2108
+	.long	.L2152-.L2108
+	.long	.L2153-.L2108
+	.section	.text._ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.p2align 4,,10
+	.p2align 3
+.L1938:
+	movdqa	(%rsp), %xmm0
+	leaq	336(%rsp), %r15
+	leaq	209(%rsp), %r12
+	movq	%r15, %rsi
+	movq	%r12, %rdi
+	call	_ZSt8to_charsPcS_DF128_@PLT
+	movq	%rax, %rbx
+	cmpl	$75, %edx
+	je	.L2243
+	movb	$101, 63(%rsp)
+	movq	%r12, %r13
+	movb	$0, 48(%rsp)
+	movq	$6, 16(%rsp)
+.L1939:
+	movaps	(%rsp), %xmm2
+	movzbl	0(%rbp), %r12d
+	movmskps	%xmm2, %eax
+	testb	$8, %al
+	jne	.L2238
+	movl	%r12d, %eax
+	andl	$12, %eax
+	cmpb	$4, %al
+	je	.L2244
+	movb	$0, 80(%rsp)
+	cmpb	$12, %al
+	je	.L2245
+.L1976:
+	movq	%rbx, %r14
+	subq	%r13, %r14
+	testb	$16, %r12b
+	je	.L1980
+	movdqa	(%rsp), %xmm0
+	movdqa	.LC43(%rip), %xmm1
+	pand	.LC42(%rip), %xmm0
+	movaps	%xmm0, 64(%rsp)
+	call	__unordtf2@PLT
+	testq	%rax, %rax
+	jne	.L1980
+	movdqa	.LC43(%rip), %xmm1
+	movdqa	64(%rsp), %xmm0
+	call	__gttf2@PLT
+	testq	%rax, %rax
+	jg	.L1980
+	testq	%r14, %r14
+	je	.L2124
+	movq	%r14, %rdx
+	movl	$46, %esi
+	movq	%r13, %rdi
+	call	memchr@PLT
+	testq	%rax, %rax
+	je	.L1982
+	subq	%r13, %rax
+	movq	%rax, %r11
+	cmpq	$-1, %rax
+	je	.L1982
+	leaq	1(%rax), %r9
+	cmpq	%r14, %r9
+	jnb	.L2246
+	movsbl	63(%rsp), %esi
+	movq	%r14, %rdx
+	leaq	0(%r13,%r9), %rdi
+	movq	%r9, 64(%rsp)
+	subq	%r9, %rdx
+	movq	%rax, 88(%rsp)
+	call	memchr@PLT
+	movq	64(%rsp), %r9
+	movq	88(%rsp), %r11
+	testq	%rax, %rax
+	movq	%rax, %r10
+	je	.L2127
+	subq	%r13, %r10
+	cmpq	$-1, %r10
+	cmove	%r14, %r10
+.L1987:
+	xorl	%r8d, %r8d
+	cmpq	%r11, %r10
+	sete	%r8b
+	cmpb	$0, 48(%rsp)
+	je	.L2129
+	movzbl	80(%rsp), %eax
+	cmpb	$48, 0(%r13,%rax)
+	je	.L1988
+.L1985:
+	movq	%r10, %rdx
+	subq	%rax, %rdx
+	subq	$1, %rdx
+.L1989:
+	cmpq	$0, 16(%rsp)
+	jne	.L1991
+	.p2align 4
+	.p2align 3
+.L1984:
+	testq	%r8, %r8
+	jne	.L1990
+	leaq	160(%rsp), %rbx
+	andl	$32, %r12d
+	movq	$0, 152(%rsp)
+	movq	%rbx, 144(%rsp)
+	movb	$0, 160(%rsp)
+	je	.L2073
+.L2100:
+	movq	40(%rsp), %rax
+	cmpb	$0, 32(%rax)
+	leaq	24(%rax), %r15
+	je	.L2247
+.L2058:
+	leaq	104(%rsp), %r12
+	movq	%r15, %rsi
+	movq	%r12, %rdi
+	call	_ZNSt6localeC1ERKS_@PLT
+	movsbl	63(%rsp), %ecx
+	movq	%r13, %rdx
+	movq	%r14, %rsi
+	leaq	176(%rsp), %rdi
+	movq	%r12, %r8
+.LEHB28:
+	call	_ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0
+.LEHE28:
+	movq	144(%rsp), %rax
+	movq	%rax, %rdi
+	cmpq	%rbx, %rax
+	je	.L2248
+	movq	184(%rsp), %rdx
+	movq	176(%rsp), %rcx
+	leaq	192(%rsp), %rsi
+	movq	%rdx, %r8
+	cmpq	%rsi, %rcx
+	je	.L2095
+	movq	%rdx, %xmm0
+	movq	%rcx, 144(%rsp)
+	movq	160(%rsp), %rdx
+	movhps	192(%rsp), %xmm0
+	movups	%xmm0, 152(%rsp)
+	testq	%rax, %rax
+	je	.L2062
+	movq	%rax, 176(%rsp)
+	movq	%rdx, 192(%rsp)
+.L2071:
+	movq	$0, 184(%rsp)
+	movb	$0, (%rax)
+	movq	176(%rsp), %rdi
+	cmpq	%rsi, %rdi
+	je	.L2072
+	movq	192(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L2072:
+	movq	%r12, %rdi
+	call	_ZNSt6localeD1Ev@PLT
+	movq	152(%rsp), %rax
+	testq	%rax, %rax
+	je	.L2073
+	movzwl	0(%rbp), %edx
+	movq	144(%rsp), %rcx
+	andw	$384, %dx
+	cmpw	$128, %dx
+	je	.L2142
+	cmpw	$256, %dx
+	je	.L2143
+	movq	40(%rsp), %rsi
+	movq	%rax, %r14
+	movq	%rcx, %r13
+	movq	16(%rsi), %r15
+.L2075:
+	movq	24(%r15), %rdi
+	movq	16(%r15), %rbp
+	movq	%rdi, %rax
+	subq	8(%r15), %rax
+	subq	%rax, %rbp
+	cmpq	%rbp, %r14
+	jb	.L2080
+	.p2align 4
+	.p2align 3
+.L2082:
+	cmpq	%rbp, %r14
+	movq	%rbp, %rdx
+	cmovbe	%r14, %rdx
+	testq	%rdx, %rdx
+	je	.L2081
+	movq	%r13, %rsi
+	call	memcpy@PLT
+.L2081:
+	movq	(%r15), %rax
+	addq	%rbp, 24(%r15)
+	addq	%rbp, %r13
+	subq	%rbp, %r14
+	movq	%r15, %rdi
+.LEHB29:
+	call	*(%rax)
+	movq	24(%r15), %rdi
+	movq	16(%r15), %rbp
+	movq	%rdi, %rax
+	subq	8(%r15), %rax
+	subq	%rax, %rbp
+	cmpq	%rbp, %r14
+	jnb	.L2082
+	testq	%r14, %r14
+	je	.L2077
+.L2080:
+	movq	%r14, %rdx
+	movq	%r13, %rsi
+	call	memcpy@PLT
+	addq	%r14, 24(%r15)
+	jmp	.L2077
+	.p2align 4,,10
+	.p2align 3
+.L1980:
+	leaq	160(%rsp), %rbx
+	andl	$32, %r12d
+	movq	$0, 152(%rsp)
+	movq	%rbx, 144(%rsp)
+	movb	$0, 160(%rsp)
+	je	.L2073
+	movdqa	(%rsp), %xmm0
+	movdqa	.LC43(%rip), %xmm1
+	pand	.LC42(%rip), %xmm0
+	movaps	%xmm0, 16(%rsp)
+	call	__unordtf2@PLT
+	testq	%rax, %rax
+	jne	.L2073
+	movdqa	.LC43(%rip), %xmm1
+	movdqa	16(%rsp), %xmm0
+	call	__gttf2@PLT
+	testq	%rax, %rax
+	jle	.L2100
+.L2073:
+	movzwl	0(%rbp), %eax
+	andw	$384, %ax
+	cmpw	$128, %ax
+	je	.L2249
+	cmpw	$256, %ax
+	je	.L2144
+	movq	40(%rsp), %rax
+	movq	16(%rax), %r15
+.L2078:
+	testq	%r14, %r14
+	jne	.L2075
+.L2077:
+	movq	%r15, %r12
+.L2084:
+	movq	144(%rsp), %rdi
+	cmpq	%rbx, %rdi
+	je	.L2087
+	movq	160(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L2087:
+	movq	112(%rsp), %rdi
+	movq	32(%rsp), %rax
+	cmpq	%rax, %rdi
+	je	.L2088
+	movq	128(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L2088:
+	movq	344(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2225
+	addq	$360, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	movq	%r12, %rax
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L2245:
+	.cfi_restore_state
+	movb	$32, -1(%r13)
+	movzbl	0(%rbp), %r12d
+	subq	$1, %r13
+	.p2align 4
+	.p2align 3
+.L2238:
+	movb	$1, 80(%rsp)
+	jmp	.L1976
+	.p2align 4,,10
+	.p2align 3
+.L2242:
+	cmpb	$2, %dl
+	je	.L2250
+	movq	$-1, 16(%rsp)
+	cmpb	$4, %dl
+	je	.L2251
+.L1920:
+	movl	%eax, %edx
+	leaq	.L1923(%rip), %rcx
+	shrb	$3, %dl
+	andl	$15, %edx
+	movslq	(%rcx,%rdx,4), %rdx
+	addq	%rcx, %rdx
+	notrack jmp	*%rdx
+	.section	.rodata._ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"aG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 4
+	.align 4
+.L1923:
+	.long	.L2113-.L1923
+	.long	.L1930-.L1923
+	.long	.L1929-.L1923
+	.long	.L1928-.L1923
+	.long	.L2234-.L1923
+	.long	.L1926-.L1923
+	.long	.L2235-.L1923
+	.long	.L1924-.L1923
+	.long	.L2236-.L1923
+	.section	.text._ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.p2align 4,,10
+	.p2align 3
+.L2249:
+	movq	%r13, %r12
+.L2056:
+	movzwl	4(%rbp), %r8d
+.L2076:
+	movq	40(%rsp), %rax
+	movq	16(%rax), %r15
+	cmpq	%r8, %r14
+	jnb	.L2078
+	movzbl	0(%rbp), %edx
+	subq	%r14, %r8
+	movl	8(%rbp), %r9d
+	movq	%r8, %rbp
+	movl	%edx, %ecx
+	andl	$3, %ecx
+	jne	.L2085
+	andl	$64, %edx
+	je	.L2146
+	movdqa	(%rsp), %xmm0
+	movdqa	.LC43(%rip), %xmm1
+	pand	.LC42(%rip), %xmm0
+	movaps	%xmm0, (%rsp)
+	call	__unordtf2@PLT
+	testq	%rax, %rax
+	jne	.L2146
+	movdqa	.LC43(%rip), %xmm1
+	movdqa	(%rsp), %xmm0
+	call	__gttf2@PLT
+	testq	%rax, %rax
+	jg	.L2146
+	movzbl	(%r12), %eax
+	leaq	_ZNSt8__detail31__from_chars_alnum_to_val_tableILb0EE5valueE(%rip), %rdx
+	movl	$2, %ecx
+	movl	$48, %r9d
+	cmpb	$15, (%rdx,%rax)
+	jbe	.L2085
+	movq	24(%r15), %rax
+	movzbl	0(%r13), %edx
+	leaq	1(%rax), %rcx
+	movq	%rcx, 24(%r15)
+	movb	%dl, (%rax)
+	movq	24(%r15), %rax
+	subq	8(%r15), %rax
+	cmpq	16(%r15), %rax
+	je	.L2252
+.L2086:
+	addq	$1, %r13
+	subq	$1, %r14
+	movl	$2, %ecx
+	movl	$48, %r9d
+	jmp	.L2085
+	.p2align 4,,10
+	.p2align 3
+.L2146:
+	movl	$2, %ecx
+	movl	$32, %r9d
+.L2085:
+	movq	%r13, %rdx
+	movq	%r14, %rsi
+	movq	%rbp, %r8
+	movq	%r15, %rdi
+	call	_ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi
+.LEHE29:
+	movq	%rax, %r12
+	jmp	.L2084
+	.p2align 5
+	.p2align 4,,10
+	.p2align 3
+.L2253:
+	addq	$1, %r9
+	cmpq	%r14, %r9
+	jnb	.L2239
+.L1988:
+	cmpb	$48, 0(%r13,%r9)
+	je	.L2253
+	jmp	.L1986
+	.p2align 4,,10
+	.p2align 3
+.L2124:
+	xorl	%r11d, %r11d
+.L1981:
+	cmpb	$0, 48(%rsp)
+	je	.L2132
+	cmpq	$0, 16(%rsp)
+	je	.L2133
+	movzbl	80(%rsp), %eax
+	movq	%r11, %rdx
+	movq	%r11, %r10
+	movl	$1, %r8d
+	subq	%rax, %rdx
+.L1991:
+	subq	%rdx, 16(%rsp)
+	movq	16(%rsp), %rax
+	addq	%rax, %r8
+	jmp	.L1984
+	.p2align 4,,10
+	.p2align 3
+.L2152:
+	movq	$6, 16(%rsp)
+.L1924:
+	movb	$101, 63(%rsp)
+	xorl	%r14d, %r14d
+.L1922:
+	movb	$1, 48(%rsp)
+	movl	$3, %r13d
+.L1932:
+	movl	16(%rsp), %ecx
+	movdqa	(%rsp), %xmm0
+	movl	%r13d, %edx
+	leaq	336(%rsp), %r15
+	leaq	209(%rsp), %r12
+	movq	%r15, %rsi
+	movq	%r12, %rdi
+	call	_ZSt8to_charsPcS_DF128_St12chars_formati@PLT
+	movq	%rax, %rbx
+	cmpl	$75, %edx
+	je	.L1935
+.L2237:
+	movq	%r12, %r13
+.L1936:
+	testb	%r14b, %r14b
+	je	.L1939
+	cmpq	%rbx, %r13
+	je	.L1939
+	movq	%r13, %r14
+	.p2align 4
+	.p2align 3
+.L1978:
+	movsbl	(%r14), %edi
+	addq	$1, %r14
+	call	toupper@PLT
+	movb	%al, -1(%r14)
+	cmpq	%rbx, %r14
+	jne	.L1978
+	jmp	.L1939
+	.p2align 4,,10
+	.p2align 3
+.L2153:
+	movq	$6, 16(%rsp)
+.L2236:
+	movb	$69, 63(%rsp)
+	movl	$1, %r14d
+	jmp	.L1922
+	.p2align 4,,10
+	.p2align 3
+.L2148:
+	movq	$6, 16(%rsp)
+.L1928:
+	movb	$101, 63(%rsp)
+	xorl	%r14d, %r14d
+.L1927:
+	movb	$0, 48(%rsp)
+	movl	$1, %r13d
+	jmp	.L1932
+	.p2align 4,,10
+	.p2align 3
+.L2149:
+	movq	$6, 16(%rsp)
+.L2234:
+	movb	$69, 63(%rsp)
+	movl	$1, %r14d
+	jmp	.L1927
+	.p2align 4,,10
+	.p2align 3
+.L2150:
+	movq	$6, 16(%rsp)
+.L1926:
+	xorl	%r14d, %r14d
+.L1925:
+	movb	$101, 63(%rsp)
+	movl	$2, %r13d
+	movb	$0, 48(%rsp)
+	jmp	.L1932
+	.p2align 4,,10
+	.p2align 3
+.L2151:
+	movq	$6, 16(%rsp)
+.L2235:
+	movl	$1, %r14d
+	jmp	.L1925
+	.p2align 4,,10
+	.p2align 3
+.L1933:
+	andl	$120, %eax
+	movl	$112, %edx
+	cmpb	$16, %al
+	movl	$101, %eax
+	cmovne	%edx, %eax
+	xorl	%r14d, %r14d
+	movb	%al, 63(%rsp)
+.L1934:
+	movdqa	(%rsp), %xmm0
+	leaq	336(%rsp), %r15
+	movl	$4, %edx
+	leaq	209(%rsp), %r12
+	movq	%r15, %rsi
+	movq	%r12, %rdi
+	call	_ZSt8to_charsPcS_DF128_St12chars_format@PLT
+	movq	$6, 16(%rsp)
+	movq	%rax, %rbx
+	cmpl	$75, %edx
+	je	.L2119
+	movb	$0, 48(%rsp)
+	jmp	.L2237
+	.p2align 4,,10
+	.p2align 3
+.L2109:
+	andl	$120, %eax
+	movl	$80, %edx
+	movl	$1, %r14d
+	cmpb	$16, %al
+	movl	$112, %eax
+	cmove	%edx, %eax
+	movb	%al, 63(%rsp)
+	jmp	.L1934
+	.p2align 4,,10
+	.p2align 3
+.L2251:
+	movzwl	6(%rdi), %edi
+	movq	40(%rsp), %rsi
+	leaq	112(%rsp), %r15
+.LEHB30:
+	call	_ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+.LEHE30:
+	movq	%rax, 16(%rsp)
+	movzbl	1(%rbp), %eax
+	jmp	.L1920
+	.p2align 4,,10
+	.p2align 3
+.L2113:
+	movb	$101, 63(%rsp)
+	movl	$3, %r13d
+	xorl	%r14d, %r14d
+	movb	$0, 48(%rsp)
+	jmp	.L1932
+	.p2align 4,,10
+	.p2align 3
+.L2244:
+	movb	$43, -1(%r13)
+	subq	$1, %r13
+	movzbl	0(%rbp), %r12d
+	movb	$1, 80(%rsp)
+	jmp	.L1976
+	.p2align 4,,10
+	.p2align 3
+.L2132:
+	movq	$0, 16(%rsp)
+	movq	%r11, %r10
+	movl	$1, %r8d
+.L1990:
+	movq	120(%rsp), %r12
+	leaq	(%r14,%r8), %rcx
+	testq	%r12, %r12
+	jne	.L1993
+	subq	%rbx, %r15
+	cmpq	%r8, %r15
+	jnb	.L1994
+	movq	32(%rsp), %rax
+	cmpq	%rax, 112(%rsp)
+	je	.L2254
+	movq	128(%rsp), %rax
+	cmpq	%rcx, %rax
+	jb	.L2099
+.L2009:
+	cmpq	%r10, %r14
+	movq	%r10, %r12
+	cmovbe	%r14, %r12
+	testq	%r12, %r12
+	js	.L2103
+	movq	128(%rsp), %rax
+	movq	112(%rsp), %rbx
+	cmpq	%r12, %rax
+	jb	.L2255
+.L2106:
+	cmpq	%rbx, %r13
+	jb	.L2017
+	cmpq	%r13, %rbx
+	jnb	.L2256
+.L2017:
+	testq	%r12, %r12
+	je	.L2018
+	cmpq	$1, %r12
+	je	.L2257
+	movq	%rbx, %rdi
+	movq	%r12, %rdx
+	movq	%r13, %rsi
+	movq	%r10, 80(%rsp)
+	movq	%r11, 48(%rsp)
+	call	memcpy@PLT
+	movq	112(%rsp), %rbx
+	movq	48(%rsp), %r11
+	movq	80(%rsp), %r10
+.L2018:
+	movq	%r12, 120(%rsp)
+	movb	$0, (%rbx,%r12)
+	cmpq	%r11, %r10
+	je	.L2258
+.L2026:
+	movq	16(%rsp), %rcx
+	testq	%rcx, %rcx
+	je	.L2027
+	movabsq	$9223372036854775807, %rax
+	movq	120(%rsp), %r12
+	subq	%r12, %rax
+	cmpq	%rcx, %rax
+	jb	.L2259
+	movq	16(%rsp), %rax
+	movq	32(%rsp), %rcx
+	leaq	(%rax,%r12), %rbx
+	movq	112(%rsp), %rax
+	cmpq	%rcx, %rax
+	je	.L2138
+	movq	128(%rsp), %rdx
+.L2030:
+	cmpq	%rbx, %rdx
+	jb	.L2260
+.L2031:
+	cmpq	$1, 16(%rsp)
+	leaq	(%rax,%r12), %rdi
+	je	.L2261
+	movq	16(%rsp), %rdx
+	movl	$48, %esi
+	movq	%r10, 48(%rsp)
+	call	memset@PLT
+	movq	48(%rsp), %r10
+.L2033:
+	movq	112(%rsp), %rax
+	movq	%rbx, 120(%rsp)
+	movb	$0, (%rax,%rbx)
+.L2027:
+	cmpq	%r10, %r14
+	jb	.L2262
+	movq	120(%rsp), %rsi
+	subq	%r10, %r14
+	leaq	0(%r13,%r10), %rcx
+	movabsq	$9223372036854775807, %rax
+	subq	%rsi, %rax
+	cmpq	%r14, %rax
+	jb	.L2263
+	movq	112(%rsp), %rax
+	movq	32(%rsp), %rdi
+	leaq	(%r14,%rsi), %rbx
+	cmpq	%rdi, %rax
+	je	.L2139
+	movq	128(%rsp), %rdx
+.L2038:
+	cmpq	%rbx, %rdx
+	jb	.L2039
+	testq	%r14, %r14
+	je	.L2040
+	leaq	(%rax,%rsi), %rdi
+	cmpq	$1, %r14
+	je	.L2264
+	movq	%r14, %rdx
+	movq	%rcx, %rsi
+	call	memcpy@PLT
+	movq	112(%rsp), %rax
+.L2040:
+	movq	%rbx, 120(%rsp)
+	movb	$0, (%rax,%rbx)
+.L2042:
+	movq	120(%rsp), %r14
+	movq	112(%rsp), %r13
+	movzbl	0(%rbp), %eax
+.L2013:
+	leaq	160(%rsp), %rbx
+	movb	$0, 160(%rsp)
+	movq	%rbx, 144(%rsp)
+	movq	$0, 152(%rsp)
+	testb	$32, %al
+	je	.L2073
+	jmp	.L2100
+	.p2align 4,,10
+	.p2align 3
+.L2144:
+	movq	%r13, %r12
+.L2074:
+	movzwl	4(%rbp), %edi
+	movq	40(%rsp), %rsi
+.LEHB31:
+	call	_ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+.LEHE31:
+	movq	%rax, %r8
+	jmp	.L2076
+	.p2align 4,,10
+	.p2align 3
+.L2250:
+	movzwl	6(%rdi), %ecx
+	movq	%rcx, 16(%rsp)
+	jmp	.L1920
+	.p2align 4,,10
+	.p2align 3
+.L1935:
+	movl	$1, %r12d
+	cmpl	$2, %r13d
+	jne	.L1937
+	movq	16(%rsp), %rax
+	movl	$1, %r12d
+	leaq	4940(%rax), %rbx
+.L1942:
+	movq	112(%rsp), %r15
+	cmpq	$128, %rbx
+	jbe	.L1940
+	movq	32(%rsp), %rax
+	cmpq	%rax, %r15
+	je	.L2265
+	movq	128(%rsp), %rax
+	cmpq	%rbx, %rax
+	jb	.L2266
+.L1973:
+	movq	32(%rsp), %rax
+	cmpq	%rax, %r15
+	je	.L2122
+	movq	128(%rsp), %rax
+	leaq	(%rax,%rax), %rbx
+	cmpq	%rbx, %rax
+	jb	.L2267
+.L1962:
+	leaq	-1(%r15,%rbx), %rsi
+	leaq	1(%r15), %rdi
+	testb	%r12b, %r12b
+	jne	.L2268
+	testl	%r13d, %r13d
+	jne	.L2269
+	movdqa	(%rsp), %xmm0
+	call	_ZSt8to_charsPcS_DF128_@PLT
+	movq	%rax, %rbx
+.L1970:
+	testl	%edx, %edx
+	jne	.L1972
+	movq	112(%rsp), %rdx
+	movq	%rbx, %rax
+	subq	%r15, %rax
+	movq	%rax, 120(%rsp)
+	movb	$0, (%rdx,%rax)
+	movq	112(%rsp), %rax
+	leaq	1(%rax), %r13
+	addq	120(%rsp), %rax
+	movq	%rax, %r15
+	jmp	.L1936
+	.p2align 4,,10
+	.p2align 3
+.L2119:
+	movb	$0, 48(%rsp)
+	xorl	%r12d, %r12d
+	movl	$4, %r13d
+.L1937:
+	movq	16(%rsp), %rax
+	leaq	8(%rax), %rbx
+	jmp	.L1942
+	.p2align 4,,10
+	.p2align 3
+.L2246:
+	xorl	%r8d, %r8d
+	cmpq	%rax, %r14
+	sete	%r8b
+	cmpb	$0, 48(%rsp)
+	je	.L2125
+	movzbl	80(%rsp), %eax
+	movq	%r14, %r10
+	cmpb	$48, 0(%r13,%rax)
+	jne	.L1985
+.L2239:
+	movq	$-1, %r9
+.L1986:
+	movq	%r10, %rdx
+	subq	%r9, %rdx
+	jmp	.L1989
+	.p2align 4,,10
+	.p2align 3
+.L1982:
+	movsbl	63(%rsp), %esi
+	movq	%r14, %rdx
+	movq	%r13, %rdi
+	call	memchr@PLT
+	testq	%rax, %rax
+	je	.L2130
+	subq	%r13, %rax
+	movq	%rax, %r11
+	cmpq	$-1, %rax
+	cmove	%r14, %r11
+	jmp	.L1981
+	.p2align 4,,10
+	.p2align 3
+.L2247:
+	movq	%r15, %rdi
+	call	_ZNSt6localeC1Ev@PLT
+	movq	40(%rsp), %rax
+	movb	$1, 32(%rax)
+	jmp	.L2058
+	.p2align 4,,10
+	.p2align 3
+.L2129:
+	movq	$0, 16(%rsp)
+	jmp	.L1984
+.L1930:
+	andl	$120, %eax
+	movl	$4, %r13d
+	cmpb	$16, %al
+	je	.L2118
+	movb	$112, 63(%rsp)
+	xorl	%r14d, %r14d
+	movb	$0, 48(%rsp)
+	jmp	.L1932
+.L1929:
+	andl	$120, %eax
+	movl	$4, %r13d
+	cmpb	$16, %al
+	je	.L2116
+	movb	$112, 63(%rsp)
+	movl	$1, %r14d
+	movb	$0, 48(%rsp)
+	jmp	.L1932
+.L2269:
+	movdqa	(%rsp), %xmm0
+	movl	%r13d, %edx
+	call	_ZSt8to_charsPcS_DF128_St12chars_format@PLT
+	movq	%rax, %rbx
+	jmp	.L1970
+.L2125:
+	movq	$0, 16(%rsp)
+	movq	%r14, %r10
+	jmp	.L1984
+.L2266:
+	testq	%rbx, %rbx
+	js	.L1948
+	addq	%rax, %rax
+	cmpq	%rax, %rbx
+	jnb	.L2217
+	testq	%rax, %rax
+	js	.L1955
+.L1952:
+	leaq	1(%rax), %rdi
+	movq	%rax, %rbx
+.L1944:
+	leaq	112(%rsp), %r15
+.LEHB32:
+	call	_Znwm@PLT
+	movq	%rax, %r15
+	movq	120(%rsp), %rax
+	movq	112(%rsp), %rcx
+	leaq	1(%rax), %rdx
+	testq	%rax, %rax
+	je	.L2270
+	testq	%rdx, %rdx
+	je	.L1958
+	movq	%rcx, %rsi
+	movq	%r15, %rdi
+	movq	%rcx, 80(%rsp)
+	call	memcpy@PLT
+	movq	32(%rsp), %rax
+	movq	80(%rsp), %rcx
+	cmpq	%rax, %rcx
+	je	.L1959
+.L1958:
+	movq	128(%rsp), %rax
+	movq	%rcx, %rdi
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L1959:
+	movq	%r15, 112(%rsp)
+	movq	%rbx, 128(%rsp)
+	jmp	.L1973
+.L2143:
+	movq	%r13, %r12
+	movq	%rax, %r14
+	movq	%rcx, %r13
+	jmp	.L2074
+.L2130:
+	movq	%r14, %r11
+	jmp	.L1981
+.L2254:
+	cmpq	$15, %rcx
+	ja	.L2098
+	cmpq	%r10, %r14
+	movq	%r10, %r12
+	cmovbe	%r14, %r12
+	testq	%r12, %r12
+	js	.L2103
+	cmpq	$15, %r12
+	ja	.L2105
+	movq	32(%rsp), %rbx
+	jmp	.L2106
+	.p2align 4,,10
+	.p2align 3
+.L1972:
+	movq	$0, 120(%rsp)
+	movq	112(%rsp), %rax
+	movb	$0, (%rax)
+	movq	112(%rsp), %r15
+	cmpl	$75, %edx
+	je	.L1973
+	leaq	1(%r15), %r13
+	addq	120(%rsp), %r15
+	jmp	.L1936
+	.p2align 4,,10
+	.p2align 3
+.L1993:
+	movq	32(%rsp), %rax
+	cmpq	%rax, 112(%rsp)
+	je	.L2271
+	movq	128(%rsp), %rax
+	cmpq	%rcx, %rax
+	jnb	.L2011
+.L2099:
+	testq	%rcx, %rcx
+	js	.L1999
+	addq	%rax, %rax
+	cmpq	%rax, %rcx
+	jnb	.L2001
+	leaq	1(%rax), %rdi
+	movq	%rax, %rcx
+	testq	%rax, %rax
+	jns	.L2005
+.L2004:
+	movq	344(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2225
+	leaq	112(%rsp), %r15
+	call	_ZSt17__throw_bad_allocv@PLT
+.L2001:
+	movq	%rcx, %rdi
+	addq	$1, %rdi
+	js	.L2004
+.L2005:
+	movq	%rcx, 88(%rsp)
+	leaq	112(%rsp), %r15
+	movq	%r10, 64(%rsp)
+	movq	%r11, 80(%rsp)
+	movq	%r8, 48(%rsp)
+	call	_Znwm@PLT
+	movq	120(%rsp), %r12
+	movq	112(%rsp), %rbx
+	movq	%rax, %r15
+	movq	48(%rsp), %r8
+	movq	80(%rsp), %r11
+	testq	%r12, %r12
+	movq	64(%rsp), %r10
+	movq	88(%rsp), %rcx
+	leaq	1(%r12), %rdx
+	je	.L2272
+	testq	%rdx, %rdx
+	je	.L2008
+	movq	%rbx, %rsi
+	movq	%rax, %rdi
+	movq	%rcx, 88(%rsp)
+	movq	%r10, 64(%rsp)
+	movq	%r11, 80(%rsp)
+	movq	%r8, 48(%rsp)
+	call	memcpy@PLT
+	movq	32(%rsp), %rax
+	movq	48(%rsp), %r8
+	movq	80(%rsp), %r11
+	movq	64(%rsp), %r10
+	cmpq	%rax, %rbx
+	movq	88(%rsp), %rcx
+	je	.L2010
+.L2008:
+	movq	128(%rsp), %rax
+	movq	%rbx, %rdi
+	movq	%rcx, 88(%rsp)
+	movq	%r10, 64(%rsp)
+	leaq	1(%rax), %rsi
+	movq	%r11, 80(%rsp)
+	movq	%r8, 48(%rsp)
+	call	_ZdlPvm@PLT
+	movq	120(%rsp), %r12
+	movq	88(%rsp), %rcx
+	movq	%r15, 112(%rsp)
+	movq	48(%rsp), %r8
+	movq	80(%rsp), %r11
+	testq	%r12, %r12
+	movq	%rcx, 128(%rsp)
+	movq	64(%rsp), %r10
+	je	.L2009
+.L2011:
+	cmpq	%r10, %r12
+	jb	.L2273
+	movabsq	$9223372036854775807, %rax
+	subq	%r12, %rax
+	cmpq	%r8, %rax
+	jb	.L2274
+	movq	112(%rsp), %rax
+	movq	32(%rsp), %rcx
+	leaq	(%r8,%r12), %rbx
+	cmpq	%rcx, %rax
+	je	.L2140
+	movq	128(%rsp), %rdx
+.L2047:
+	cmpq	%rbx, %rdx
+	jb	.L2048
+	leaq	(%rax,%r10), %rdi
+	subq	%r10, %r12
+	je	.L2049
+	leaq	(%rdi,%r8), %rax
+	cmpq	$1, %r12
+	je	.L2275
+	movq	%rdi, %rsi
+	movq	%r12, %rdx
+	movq	%rax, %rdi
+	movq	%r10, 80(%rsp)
+	movq	%r11, 48(%rsp)
+	movq	%r8, 16(%rsp)
+	call	memmove@PLT
+	movq	80(%rsp), %r10
+	movq	112(%rsp), %rdi
+	movq	16(%rsp), %r8
+	movq	48(%rsp), %r11
+	addq	%r10, %rdi
+	.p2align 4
+	.p2align 3
+.L2049:
+	cmpq	$1, %r8
+	je	.L2276
+	movq	%r8, %rdx
+	movl	$48, %esi
+	movq	%r10, 48(%rsp)
+	movq	%r11, 16(%rsp)
+	call	memset@PLT
+	movq	48(%rsp), %r10
+	movq	16(%rsp), %r11
+.L2052:
+	movq	112(%rsp), %rax
+	movq	%rbx, 120(%rsp)
+	movb	$0, (%rax,%rbx)
+	cmpq	%r11, %r10
+	jne	.L2042
+	movq	112(%rsp), %rax
+	movb	$46, (%rax,%r10)
+	jmp	.L2042
+.L2248:
+	movq	176(%rsp), %rdx
+	leaq	192(%rsp), %rsi
+	cmpq	%rsi, %rdx
+	je	.L2277
+	movdqu	184(%rsp), %xmm0
+	movq	%rdx, 144(%rsp)
+	movups	%xmm0, 152(%rsp)
+.L2062:
+	movq	%rsi, 176(%rsp)
+	leaq	192(%rsp), %rsi
+	movq	%rsi, %rax
+	jmp	.L2071
+.L2267:
+	testq	%rbx, %rbx
+	js	.L2278
+	leaq	1(%rbx), %rdi
+.L1961:
+	leaq	112(%rsp), %r15
+	call	_Znwm@PLT
+	movq	%rax, %r15
+	movq	120(%rsp), %rax
+	movq	112(%rsp), %rcx
+	leaq	1(%rax), %rdx
+	testq	%rax, %rax
+	je	.L2279
+	testq	%rdx, %rdx
+	je	.L1966
+	movq	%rcx, %rsi
+	movq	%r15, %rdi
+	movq	%rcx, 80(%rsp)
+	call	memcpy@PLT
+	movq	32(%rsp), %rax
+	movq	80(%rsp), %rcx
+	cmpq	%rax, %rcx
+	je	.L1967
+.L1966:
+	movq	128(%rsp), %rax
+	movq	%rcx, %rdi
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L1967:
+	movq	%r15, 112(%rsp)
+	movq	%rbx, 128(%rsp)
+	jmp	.L1962
+.L2243:
+	movb	$101, 63(%rsp)
+	movq	112(%rsp), %r15
+	xorl	%r13d, %r13d
+	xorl	%r14d, %r14d
+	movb	$0, 48(%rsp)
+	xorl	%r12d, %r12d
+	movq	$6, 16(%rsp)
+.L1940:
+	movq	32(%rsp), %rax
+	cmpq	%rax, %r15
+	je	.L2121
+	movq	128(%rsp), %rax
+	cmpq	$255, %rax
+	ja	.L1973
+	addq	%rax, %rax
+	cmpq	$256, %rax
+	ja	.L1952
+.L2121:
+	movl	$256, %ebx
+	movl	$257, %edi
+	jmp	.L1944
+.L2268:
+	movl	16(%rsp), %ecx
+	movdqa	(%rsp), %xmm0
+	movl	%r13d, %edx
+	call	_ZSt8to_charsPcS_DF128_St12chars_formati@PLT
+	movq	%rax, %rbx
+	jmp	.L1970
+.L2277:
+	movq	184(%rsp), %rdx
+	movq	%rdx, %r8
+.L2095:
+	testq	%rdx, %rdx
+	je	.L2063
+	cmpq	$1, %rdx
+	je	.L2280
+	movl	%edx, %eax
+	cmpl	$8, %edx
+	jnb	.L2065
+	testb	$4, %dl
+	jne	.L2281
+	testl	%edx, %edx
+	je	.L2066
+	movzbl	192(%rsp), %ecx
+	andl	$2, %edx
+	movb	%cl, (%rdi)
+	jne	.L2222
+.L2240:
+	movq	144(%rsp), %rdi
+	movq	184(%rsp), %rdx
+.L2066:
+	movq	%rdx, %r8
+	movq	%rdi, %rax
+.L2063:
+	movq	%r8, 152(%rsp)
+	movb	$0, (%rax,%r8)
+	movq	176(%rsp), %rax
+	jmp	.L2071
+.L2142:
+	movq	%r13, %r12
+	movq	%rax, %r14
+	movq	%rcx, %r13
+	jmp	.L2056
+.L1994:
+	leaq	0(%r13,%r10), %rbx
+	leaq	(%r8,%r10), %rdi
+	movq	%r14, %rdx
+	movq	%rcx, 64(%rsp)
+	subq	%r10, %rdx
+	addq	%r13, %rdi
+	movq	%rbx, %rsi
+	movq	%r11, 80(%rsp)
+	movq	%r10, 48(%rsp)
+	call	memmove@PLT
+	movq	48(%rsp), %r10
+	movq	80(%rsp), %r11
+	movq	64(%rsp), %rcx
+	cmpq	%r11, %r10
+	jne	.L2012
+	movb	$46, (%rbx)
+	leaq	1(%r13,%r10), %rbx
+.L2012:
+	movq	16(%rsp), %rdx
+	movl	$48, %esi
+	movq	%rbx, %rdi
+	movq	%rcx, 48(%rsp)
+	call	memset@PLT
+	movzbl	0(%rbp), %eax
+	movq	48(%rsp), %r14
+	jmp	.L2013
+.L2133:
+	movq	%r11, %r10
+	movl	$1, %r8d
+	jmp	.L1990
+.L2127:
+	movq	%r14, %r10
+	jmp	.L1987
+.L2122:
+	movl	$31, %edi
+	movl	$30, %ebx
+	jmp	.L1961
+.L2265:
+	testq	%rbx, %rbx
+	js	.L1948
+.L2217:
+	leaq	1(%rbx), %rdi
+	testq	%rdi, %rdi
+	jns	.L1944
+.L1955:
+	movq	344(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2225
+	leaq	112(%rsp), %r15
+	call	_ZSt17__throw_bad_allocv@PLT
+.L2279:
+	movzbl	(%rcx), %eax
+	movb	%al, (%r15)
+	movq	32(%rsp), %rax
+	cmpq	%rax, %rcx
+	jne	.L1966
+	jmp	.L1967
+.L2048:
+	leaq	112(%rsp), %r15
+	xorl	%ecx, %ecx
+	xorl	%edx, %edx
+	movq	%r10, %rsi
+	movq	%r15, %rdi
+	movq	%r11, 80(%rsp)
+	movq	%r8, 48(%rsp)
+	movq	%r10, 16(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	movq	16(%rsp), %r10
+	movq	112(%rsp), %rdi
+	movq	80(%rsp), %r11
+	movq	48(%rsp), %r8
+	addq	%r10, %rdi
+	jmp	.L2049
+.L2039:
+	leaq	112(%rsp), %r15
+	movq	%r14, %r8
+	xorl	%edx, %edx
+	movq	%r15, %rdi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	movq	112(%rsp), %rax
+	jmp	.L2040
+.L2270:
+	movzbl	(%rcx), %eax
+	movb	%al, (%r15)
+	movq	32(%rsp), %rax
+	cmpq	%rax, %rcx
+	jne	.L1958
+	jmp	.L1959
+.L2272:
+	movzbl	(%rbx), %eax
+	movb	%al, (%r15)
+	movq	32(%rsp), %rax
+	cmpq	%rax, %rbx
+	jne	.L2008
+	movq	%r15, 112(%rsp)
+	movq	%rcx, 128(%rsp)
+	jmp	.L2009
+.L2118:
+	movb	$101, 63(%rsp)
+	xorl	%r14d, %r14d
+	movb	$0, 48(%rsp)
+	jmp	.L1932
+.L2116:
+	movb	$80, 63(%rsp)
+	movl	$1, %r14d
+	movb	$0, 48(%rsp)
+	jmp	.L1932
+.L2258:
+	leaq	112(%rsp), %r15
+	movl	$46, %esi
+	movq	%r10, 48(%rsp)
+	movq	%r15, %rdi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9push_backEc
+	movq	48(%rsp), %r10
+	jmp	.L2026
+.L2140:
+	movl	$15, %edx
+	jmp	.L2047
+.L2271:
+	cmpq	$15, %rcx
+	jbe	.L2011
+.L2098:
+	testq	%rcx, %rcx
+	js	.L1999
+	cmpq	$29, %rcx
+	ja	.L2001
+	movl	$31, %edi
+	movl	$30, %ecx
+	jmp	.L2005
+.L2139:
+	movl	$15, %edx
+	jmp	.L2038
+.L2276:
+	movb	$48, (%rdi)
+	jmp	.L2052
+.L2260:
+	leaq	112(%rsp), %r15
+	movq	16(%rsp), %r8
+	xorl	%ecx, %ecx
+	xorl	%edx, %edx
+	movq	%r12, %rsi
+	movq	%r15, %rdi
+	movq	%r10, 48(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	movq	112(%rsp), %rax
+	movq	48(%rsp), %r10
+	jmp	.L2031
+.L2275:
+	movzbl	(%rdi), %edx
+	movb	%dl, (%rax)
+	movq	112(%rsp), %rdi
+	addq	%r10, %rdi
+	jmp	.L2049
+.L2264:
+	movzbl	(%rcx), %eax
+	movb	%al, (%rdi)
+	movq	112(%rsp), %rax
+	jmp	.L2040
+.L2257:
+	movzbl	0(%r13), %eax
+	movb	%al, (%rbx)
+	movq	112(%rsp), %rbx
+	jmp	.L2018
+.L2065:
+	movq	192(%rsp), %rax
+	movq	%rsi, %r8
+	movq	%rax, (%rdi)
+	movl	%edx, %eax
+	movq	-8(%rsi,%rax), %rcx
+	movq	%rcx, -8(%rdi,%rax)
+	leaq	8(%rdi), %rcx
+	movq	%rdi, %rax
+	andq	$-8, %rcx
+	subq	%rcx, %rax
+	subq	%rax, %r8
+	addl	%edx, %eax
+	andl	$-8, %eax
+	cmpl	$8, %eax
+	jb	.L2240
+	andl	$-8, %eax
+	xorl	%edx, %edx
+.L2069:
+	movl	%edx, %edi
+	addl	$8, %edx
+	movq	(%r8,%rdi), %r9
+	movq	%r9, (%rcx,%rdi)
+	cmpl	%eax, %edx
+	jb	.L2069
+	jmp	.L2240
+.L2280:
+	movzbl	192(%rsp), %eax
+	movb	%al, (%rdi)
+	movq	184(%rsp), %r8
+	movq	144(%rsp), %rax
+	jmp	.L2063
+.L2255:
+	leaq	(%rax,%rax), %rcx
+	cmpq	%rcx, %r12
+	jnb	.L2020
+	leaq	1(%rcx), %rdi
+	testq	%rcx, %rcx
+	jns	.L2022
+.L2021:
+	movq	344(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2225
+	leaq	112(%rsp), %r15
+	call	_ZSt17__throw_bad_allocv@PLT
+.L2020:
+	movq	%r12, %rdi
+	movq	%r12, %rcx
+	addq	$1, %rdi
+	js	.L2021
+.L2022:
+	movq	%rcx, 64(%rsp)
+	leaq	112(%rsp), %r15
+	movq	%r10, 80(%rsp)
+	movq	%r11, 48(%rsp)
+	call	_Znwm@PLT
+.LEHE32:
+	cmpq	$1, %r12
+	movq	48(%rsp), %r11
+	movq	80(%rsp), %r10
+	movq	%rax, %rbx
+	movq	64(%rsp), %rcx
+	je	.L2282
+.L2016:
+	movq	%r12, %rdx
+	movq	%r13, %rsi
+	movq	%rbx, %rdi
+	movq	%rcx, 64(%rsp)
+	movq	%r10, 80(%rsp)
+	movq	%r11, 48(%rsp)
+	call	memcpy@PLT
+	movq	64(%rsp), %rcx
+	movq	80(%rsp), %r10
+	movq	48(%rsp), %r11
+.L2024:
+	movq	112(%rsp), %rdi
+	movq	32(%rsp), %rax
+	cmpq	%rax, %rdi
+	je	.L2025
+	movq	128(%rsp), %rax
+	movq	%rcx, 64(%rsp)
+	movq	%r10, 80(%rsp)
+	leaq	1(%rax), %rsi
+	movq	%r11, 48(%rsp)
+	call	_ZdlPvm@PLT
+	movq	64(%rsp), %rcx
+	movq	80(%rsp), %r10
+	movq	48(%rsp), %r11
+.L2025:
+	movq	%rbx, 112(%rsp)
+	movq	%rcx, 128(%rsp)
+	jmp	.L2018
+.L2138:
+	movl	$15, %edx
+	jmp	.L2030
+.L2261:
+	movb	$48, (%rdi)
+	jmp	.L2033
+.L2252:
+	movq	(%r15), %rax
+	movq	%r15, %rdi
+.LEHB33:
+	call	*(%rax)
+.LEHE33:
+	jmp	.L2086
+.L2105:
+	movq	%r10, 80(%rsp)
+	movq	%r11, 48(%rsp)
+	cmpq	$29, %r12
+	ja	.L2015
+	movl	$31, %edi
+	leaq	112(%rsp), %r15
+.LEHB34:
+	call	_Znwm@PLT
+	movq	48(%rsp), %r11
+	movq	80(%rsp), %r10
+	movq	%rax, %rbx
+	movl	$30, %ecx
+	jmp	.L2016
+.L2282:
+	movzbl	0(%r13), %eax
+	movb	%al, (%rbx)
+	jmp	.L2024
+.L2015:
+	movq	%r12, %rdi
+	addq	$1, %rdi
+	js	.L2021
+	leaq	112(%rsp), %r15
+	call	_Znwm@PLT
+	movq	48(%rsp), %r11
+	movq	80(%rsp), %r10
+	movq	%rax, %rbx
+	movq	%r12, %rcx
+	jmp	.L2016
+.L2278:
+	movq	344(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L1964
+.L2225:
+	call	__stack_chk_fail@PLT
+.L2281:
+	movl	192(%rsp), %edx
+	movl	%edx, (%rdi)
+	movl	-4(%rsi,%rax), %edx
+	movl	%edx, -4(%rdi,%rax)
+	movq	144(%rsp), %rdi
+	movq	184(%rsp), %rdx
+	jmp	.L2066
+.L2222:
+	movzwl	-2(%rsi,%rax), %edx
+	movw	%dx, -2(%rdi,%rax)
+	movq	144(%rsp), %rdi
+	movq	184(%rsp), %rdx
+	jmp	.L2066
+.L2010:
+	movq	%r15, 112(%rsp)
+	movq	%rcx, 128(%rsp)
+	jmp	.L2011
+.L2155:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L2091
+.L2103:
+	movq	344(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2225
+	leaq	.LC44(%rip), %rdi
+	leaq	112(%rsp), %r15
+	call	_ZSt20__throw_length_errorPKc@PLT
+.LEHE34:
+.L2089:
+	movq	%r12, %rdi
+	call	_ZNSt6localeD1Ev@PLT
+.L2090:
+	leaq	144(%rsp), %rdi
+	leaq	112(%rsp), %r15
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+.L2091:
+	movq	%r15, %rdi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+	movq	344(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2225
+	movq	%rbx, %rdi
+.LEHB35:
+	call	_Unwind_Resume@PLT
+.LEHE35:
+.L1948:
+	movq	344(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2225
+	leaq	.LC22(%rip), %rdi
+	leaq	112(%rsp), %r15
+.LEHB36:
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L1964:
+	leaq	.LC22(%rip), %rdi
+	leaq	112(%rsp), %r15
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L2256:
+	leaq	112(%rsp), %r15
+	xorl	%r9d, %r9d
+	movq	%r12, %r8
+	movq	%r13, %rcx
+	xorl	%edx, %edx
+	movq	%rbx, %rsi
+	movq	%r15, %rdi
+	movq	%r10, 80(%rsp)
+	movq	%r11, 48(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_replace_coldEPcmPKcmm@PLT
+	movq	80(%rsp), %r10
+	movq	48(%rsp), %r11
+	movq	112(%rsp), %rbx
+	jmp	.L2018
+.L2156:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L2089
+.L1999:
+	movq	344(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2225
+	leaq	.LC22(%rip), %rdi
+	leaq	112(%rsp), %r15
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L2263:
+	movq	344(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2225
+	leaq	.LC23(%rip), %rdi
+	leaq	112(%rsp), %r15
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L2157:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L2090
+.L2274:
+	movq	344(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2225
+	leaq	.LC24(%rip), %rdi
+	leaq	112(%rsp), %r15
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L2262:
+	movq	344(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2225
+	movq	%r14, %rcx
+	movq	%r10, %rdx
+	leaq	.LC45(%rip), %rsi
+	xorl	%eax, %eax
+	leaq	.LC40(%rip), %rdi
+	leaq	112(%rsp), %r15
+	call	_ZSt24__throw_out_of_range_fmtPKcz@PLT
+.L2259:
+	movq	344(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2225
+	leaq	.LC24(%rip), %rdi
+	leaq	112(%rsp), %r15
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L1921:
+.L2273:
+	movq	344(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2225
+	movq	%r12, %rcx
+	movq	%r10, %rdx
+	leaq	.LC46(%rip), %rsi
+	xorl	%eax, %eax
+	leaq	.LC47(%rip), %rdi
+	leaq	112(%rsp), %r15
+	call	_ZSt24__throw_out_of_range_fmtPKcz@PLT
+.LEHE36:
+	.cfi_endproc
+.LFE5434:
+	.section	.gcc_except_table._ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"aG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+.LLSDA5434:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x1
+	.uleb128 .LLSDACSE5434-.LLSDACSB5434
+.LLSDACSB5434:
+	.uleb128 .LEHB28-.LFB5434
+	.uleb128 .LEHE28-.LEHB28
+	.uleb128 .L2156-.LFB5434
+	.uleb128 0
+	.uleb128 .LEHB29-.LFB5434
+	.uleb128 .LEHE29-.LEHB29
+	.uleb128 .L2157-.LFB5434
+	.uleb128 0
+	.uleb128 .LEHB30-.LFB5434
+	.uleb128 .LEHE30-.LEHB30
+	.uleb128 .L2155-.LFB5434
+	.uleb128 0
+	.uleb128 .LEHB31-.LFB5434
+	.uleb128 .LEHE31-.LEHB31
+	.uleb128 .L2157-.LFB5434
+	.uleb128 0
+	.uleb128 .LEHB32-.LFB5434
+	.uleb128 .LEHE32-.LEHB32
+	.uleb128 .L2155-.LFB5434
+	.uleb128 0
+	.uleb128 .LEHB33-.LFB5434
+	.uleb128 .LEHE33-.LEHB33
+	.uleb128 .L2157-.LFB5434
+	.uleb128 0
+	.uleb128 .LEHB34-.LFB5434
+	.uleb128 .LEHE34-.LEHB34
+	.uleb128 .L2155-.LFB5434
+	.uleb128 0
+	.uleb128 .LEHB35-.LFB5434
+	.uleb128 .LEHE35-.LEHB35
+	.uleb128 0
+	.uleb128 0
+	.uleb128 .LEHB36-.LFB5434
+	.uleb128 .LEHE36-.LEHB36
+	.uleb128 .L2155-.LFB5434
+	.uleb128 0
+.LLSDACSE5434:
+	.section	.text._ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.size	_ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, .-_ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.section	.text._ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.type	_ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, @function
+_ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_:
+.LFB5427:
+	.cfi_startproc
+	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
+	.cfi_lsda 0x1b,.LLSDA5427
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	movq	%rdi, %rbp
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$328, %rsp
+	.cfi_def_cfa_offset 384
+	movq	%rsi, 8(%rsp)
+	movq	%fs:40, %rax
+	movq	%rax, 312(%rsp)
+	leaq	96(%rsp), %rax
+	movb	$0, 96(%rsp)
+	movq	$0, 88(%rsp)
+	movq	%rax, (%rsp)
+	movq	%rax, 80(%rsp)
+	movzbl	1(%rdi), %eax
+	movl	%eax, %edx
+	andl	$6, %edx
+	jne	.L2608
+	movl	%eax, %edx
+	shrb	$3, %dl
+	andl	$15, %edx
+	cmpb	$8, %dl
+	ja	.L2287
+	leaq	.L2474(%rip), %rcx
+	movzbl	%dl, %edx
+	movslq	(%rcx,%rdx,4), %rdx
+	addq	%rcx, %rdx
+	notrack jmp	*%rdx
+	.section	.rodata._ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"aG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 4
+	.align 4
+.L2474:
+	.long	.L2304-.L2474
+	.long	.L2299-.L2474
+	.long	.L2475-.L2474
+	.long	.L2514-.L2474
+	.long	.L2515-.L2474
+	.long	.L2516-.L2474
+	.long	.L2517-.L2474
+	.long	.L2518-.L2474
+	.long	.L2519-.L2474
+	.section	.text._ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.p2align 4,,10
+	.p2align 3
+.L2304:
+	leaq	304(%rsp), %r14
+	leaq	177(%rsp), %rbx
+	pushq	392(%rsp)
+	.cfi_def_cfa_offset 392
+	pushq	392(%rsp)
+	.cfi_def_cfa_offset 400
+	movq	%r14, %rsi
+	movq	%rbx, %rdi
+	call	_ZSt8to_charsPcS_e@PLT
+	popq	%r12
+	.cfi_def_cfa_offset 392
+	popq	%r15
+	.cfi_def_cfa_offset 384
+	movq	%rax, %r13
+	cmpl	$75, %edx
+	je	.L2305
+	movb	$101, 39(%rsp)
+	movl	$6, %r12d
+	movq	%r14, %r9
+	movb	$0, 16(%rsp)
+.L2306:
+	fldt	384(%rsp)
+	movzbl	0(%rbp), %r15d
+	fxam
+	fnstsw	%ax
+	fstp	%st(0)
+	testb	$2, %ah
+	jne	.L2604
+	movl	%r15d, %eax
+	andl	$12, %eax
+	cmpb	$4, %al
+	je	.L2609
+	xorl	%ecx, %ecx
+	cmpb	$12, %al
+	je	.L2610
+.L2341:
+	movq	%r13, %r14
+	subq	%rbx, %r14
+	testb	$16, %r15b
+	je	.L2345
+	fldt	384(%rsp)
+	fabs
+	fldt	.LC48(%rip)
+	fucomip	%st(1), %st
+	fstp	%st(0)
+	jb	.L2345
+	testq	%r14, %r14
+	je	.L2490
+	movq	%r14, %rdx
+	movl	$46, %esi
+	movq	%rbx, %rdi
+	movb	%cl, 40(%rsp)
+	movq	%r9, 24(%rsp)
+	call	memchr@PLT
+	movq	24(%rsp), %r9
+	movzbl	40(%rsp), %ecx
+	testq	%rax, %rax
+	je	.L2347
+	subq	%rbx, %rax
+	movq	%rax, 24(%rsp)
+	cmpq	$-1, %rax
+	je	.L2347
+	leaq	1(%rax), %r11
+	cmpq	%r14, %r11
+	jnb	.L2611
+	movsbl	39(%rsp), %esi
+	movq	%r14, %rdx
+	leaq	(%rbx,%r11), %rdi
+	movb	%cl, 56(%rsp)
+	subq	%r11, %rdx
+	movq	%r9, 48(%rsp)
+	movq	%r11, 40(%rsp)
+	call	memchr@PLT
+	movq	40(%rsp), %r11
+	movq	48(%rsp), %r9
+	testq	%rax, %rax
+	movzbl	56(%rsp), %ecx
+	je	.L2493
+	subq	%rbx, %rax
+	movq	%rax, %r10
+	cmpq	$-1, %rax
+	cmove	%r14, %r10
+.L2352:
+	movq	24(%rsp), %rax
+	xorl	%r8d, %r8d
+	cmpq	%rax, %r10
+	sete	%r8b
+	cmpb	$0, 16(%rsp)
+	je	.L2495
+	movzbl	%cl, %eax
+	cmpb	$48, (%rbx,%rax)
+	je	.L2353
+.L2350:
+	movq	%r10, %rdx
+	subq	%rax, %rdx
+	subq	$1, %rdx
+.L2354:
+	testq	%r12, %r12
+	jne	.L2356
+	.p2align 4
+	.p2align 3
+.L2349:
+	testq	%r8, %r8
+	jne	.L2355
+	leaq	128(%rsp), %r12
+	andl	$32, %r15d
+	movq	$0, 120(%rsp)
+	movq	%r12, 112(%rsp)
+	movb	$0, 128(%rsp)
+	je	.L2438
+.L2465:
+	movq	8(%rsp), %rax
+	cmpb	$0, 32(%rax)
+	leaq	24(%rax), %r15
+	je	.L2612
+.L2423:
+	leaq	72(%rsp), %r13
+	movq	%r15, %rsi
+	movq	%r13, %rdi
+	call	_ZNSt6localeC1ERKS_@PLT
+	movsbl	39(%rsp), %ecx
+	movq	%rbx, %rdx
+	movq	%r14, %rsi
+	leaq	144(%rsp), %rdi
+	movq	%r13, %r8
+.LEHB37:
+	call	_ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0
+.LEHE37:
+	movq	112(%rsp), %rax
+	movq	%rax, %rdi
+	cmpq	%r12, %rax
+	je	.L2613
+	movq	152(%rsp), %rdx
+	movq	144(%rsp), %rcx
+	leaq	160(%rsp), %rsi
+	movq	%rdx, %r8
+	cmpq	%rsi, %rcx
+	je	.L2460
+	movq	%rdx, %xmm0
+	movq	%rcx, 112(%rsp)
+	movq	128(%rsp), %rdx
+	movhps	160(%rsp), %xmm0
+	movups	%xmm0, 120(%rsp)
+	testq	%rax, %rax
+	je	.L2427
+	movq	%rax, 144(%rsp)
+	movq	%rdx, 160(%rsp)
+.L2436:
+	movq	$0, 152(%rsp)
+	movb	$0, (%rax)
+	movq	144(%rsp), %rdi
+	cmpq	%rsi, %rdi
+	je	.L2437
+	movq	160(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L2437:
+	movq	%r13, %rdi
+	call	_ZNSt6localeD1Ev@PLT
+	movq	120(%rsp), %rax
+	testq	%rax, %rax
+	je	.L2438
+	movzwl	0(%rbp), %edx
+	movq	112(%rsp), %rcx
+	andw	$384, %dx
+	cmpw	$128, %dx
+	je	.L2508
+	cmpw	$256, %dx
+	je	.L2509
+	movq	8(%rsp), %rbx
+	movq	%rax, %r14
+	movq	16(%rbx), %r15
+	movq	%rcx, %rbx
+.L2440:
+	movq	24(%r15), %rdi
+	movq	16(%r15), %r13
+	movq	%rdi, %rax
+	subq	8(%r15), %rax
+	subq	%rax, %r13
+	cmpq	%r13, %r14
+	jb	.L2445
+	.p2align 4
+	.p2align 3
+.L2447:
+	cmpq	%r13, %r14
+	movq	%r13, %rdx
+	cmovbe	%r14, %rdx
+	testq	%rdx, %rdx
+	je	.L2446
+	movq	%rbx, %rsi
+	call	memcpy@PLT
+.L2446:
+	movq	(%r15), %rax
+	addq	%r13, 24(%r15)
+	addq	%r13, %rbx
+	subq	%r13, %r14
+	movq	%r15, %rdi
+.LEHB38:
+	call	*(%rax)
+	movq	24(%r15), %rdi
+	movq	16(%r15), %r13
+	movq	%rdi, %rax
+	subq	8(%r15), %rax
+	subq	%rax, %r13
+	cmpq	%r13, %r14
+	jnb	.L2447
+	testq	%r14, %r14
+	je	.L2449
+.L2445:
+	movq	%r14, %rdx
+	movq	%rbx, %rsi
+	call	memcpy@PLT
+	addq	%r14, 24(%r15)
+	jmp	.L2449
+	.p2align 4,,10
+	.p2align 3
+.L2345:
+	leaq	128(%rsp), %r12
+	andl	$32, %r15d
+	movq	$0, 120(%rsp)
+	movq	%r12, 112(%rsp)
+	movb	$0, 128(%rsp)
+	je	.L2438
+	fldt	384(%rsp)
+	fabs
+	fldt	.LC48(%rip)
+	fucomip	%st(1), %st
+	fstp	%st(0)
+	jnb	.L2465
+.L2438:
+	movzwl	0(%rbp), %eax
+	andw	$384, %ax
+	cmpw	$128, %ax
+	je	.L2614
+	cmpw	$256, %ax
+	je	.L2510
+	movq	8(%rsp), %rax
+	movq	16(%rax), %rdi
+.L2443:
+	movq	%rdi, %r15
+	testq	%r14, %r14
+	jne	.L2440
+.L2449:
+	movq	112(%rsp), %rdi
+	cmpq	%r12, %rdi
+	je	.L2452
+	movq	128(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L2452:
+	movq	80(%rsp), %rdi
+	movq	(%rsp), %rax
+	cmpq	%rax, %rdi
+	je	.L2453
+	movq	96(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L2453:
+	movq	312(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2591
+	addq	$328, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	movq	%r15, %rax
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L2610:
+	.cfi_restore_state
+	movb	$32, -1(%rbx)
+	movzbl	0(%rbp), %r15d
+	subq	$1, %rbx
+	.p2align 4
+	.p2align 3
+.L2604:
+	movl	$1, %ecx
+	jmp	.L2341
+	.p2align 4,,10
+	.p2align 3
+.L2608:
+	cmpb	$2, %dl
+	je	.L2615
+	movq	$-1, %r12
+	cmpb	$4, %dl
+	je	.L2616
+.L2286:
+	movl	%eax, %edx
+	leaq	.L2289(%rip), %rcx
+	shrb	$3, %dl
+	andl	$15, %edx
+	movslq	(%rcx,%rdx,4), %rdx
+	addq	%rcx, %rdx
+	notrack jmp	*%rdx
+	.section	.rodata._ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"aG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 4
+	.align 4
+.L2289:
+	.long	.L2479-.L2289
+	.long	.L2296-.L2289
+	.long	.L2295-.L2289
+	.long	.L2294-.L2289
+	.long	.L2600-.L2289
+	.long	.L2292-.L2289
+	.long	.L2601-.L2289
+	.long	.L2290-.L2289
+	.long	.L2602-.L2289
+	.section	.text._ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.p2align 4,,10
+	.p2align 3
+.L2614:
+	movq	%rbx, %r13
+.L2421:
+	movzwl	4(%rbp), %r8d
+.L2441:
+	movq	8(%rsp), %rax
+	movq	16(%rax), %rdi
+	cmpq	%r8, %r14
+	jnb	.L2443
+	movzbl	0(%rbp), %edx
+	movl	8(%rbp), %r9d
+	subq	%r14, %r8
+	movl	%edx, %ecx
+	andl	$3, %ecx
+	jne	.L2450
+	andl	$64, %edx
+	je	.L2512
+	fldt	384(%rsp)
+	fabs
+	fldt	.LC48(%rip)
+	fucomip	%st(1), %st
+	fstp	%st(0)
+	jnb	.L2617
+.L2512:
+	movl	$2, %ecx
+	movl	$32, %r9d
+.L2450:
+	movq	%rbx, %rdx
+	movq	%r14, %rsi
+	call	_ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi
+.LEHE38:
+	movq	%rax, %r15
+	jmp	.L2449
+	.p2align 4
+	.p2align 4,,10
+	.p2align 3
+.L2618:
+	addq	$1, %r11
+	cmpq	%r14, %r11
+	jnb	.L2605
+.L2353:
+	cmpb	$48, (%rbx,%r11)
+	je	.L2618
+	jmp	.L2351
+	.p2align 4,,10
+	.p2align 3
+.L2617:
+	movzbl	0(%r13), %eax
+	leaq	_ZNSt8__detail31__from_chars_alnum_to_val_tableILb0EE5valueE(%rip), %rdx
+	movl	$2, %ecx
+	movl	$48, %r9d
+	cmpb	$15, (%rdx,%rax)
+	jbe	.L2450
+	movq	24(%rdi), %rax
+	movzbl	(%rbx), %edx
+	leaq	1(%rax), %rcx
+	movq	%rcx, 24(%rdi)
+	movb	%dl, (%rax)
+	movq	24(%rdi), %rax
+	subq	8(%rdi), %rax
+	cmpq	16(%rdi), %rax
+	je	.L2619
+.L2451:
+	addq	$1, %rbx
+	subq	$1, %r14
+	movl	$2, %ecx
+	movl	$48, %r9d
+	jmp	.L2450
+	.p2align 4,,10
+	.p2align 3
+.L2490:
+	movq	$0, 24(%rsp)
+.L2346:
+	cmpb	$0, 16(%rsp)
+	je	.L2498
+	testq	%r12, %r12
+	je	.L2499
+	movq	24(%rsp), %r10
+	movzbl	%cl, %eax
+	movl	$1, %r8d
+	movq	%r10, %rdx
+	subq	%rax, %rdx
+.L2356:
+	subq	%rdx, %r12
+	addq	%r12, %r8
+	jmp	.L2349
+	.p2align 4,,10
+	.p2align 3
+.L2518:
+	movl	$6, %r12d
+.L2290:
+	movb	$101, 39(%rsp)
+	xorl	%r15d, %r15d
+.L2288:
+	movl	$3, 24(%rsp)
+	movb	$1, 16(%rsp)
+.L2298:
+	leaq	304(%rsp), %r14
+	leaq	177(%rsp), %rbx
+	movl	%r12d, %ecx
+	pushq	392(%rsp)
+	.cfi_def_cfa_offset 392
+	pushq	392(%rsp)
+	.cfi_def_cfa_offset 400
+	movq	%r14, %rsi
+	movq	%rbx, %rdi
+	movl	40(%rsp), %edx
+	call	_ZSt8to_charsPcS_eSt12chars_formati@PLT
+	popq	%rsi
+	.cfi_def_cfa_offset 392
+	popq	%rdi
+	.cfi_def_cfa_offset 384
+	movq	%rax, %r13
+	cmpl	$75, %edx
+	je	.L2301
+.L2603:
+	movq	%r14, %r9
+.L2302:
+	testb	%r15b, %r15b
+	je	.L2306
+	cmpq	%r13, %rbx
+	je	.L2306
+	movq	%rbx, %r14
+	movq	%r9, %r15
+	.p2align 4
+	.p2align 3
+.L2343:
+	movsbl	(%r14), %edi
+	addq	$1, %r14
+	call	toupper@PLT
+	movb	%al, -1(%r14)
+	cmpq	%r13, %r14
+	jne	.L2343
+	movq	%r15, %r9
+	jmp	.L2306
+	.p2align 4,,10
+	.p2align 3
+.L2519:
+	movl	$6, %r12d
+.L2602:
+	movb	$69, 39(%rsp)
+	movl	$1, %r15d
+	jmp	.L2288
+	.p2align 4,,10
+	.p2align 3
+.L2299:
+	andl	$120, %eax
+	movl	$112, %edx
+	cmpb	$16, %al
+	movl	$101, %eax
+	cmovne	%edx, %eax
+	xorl	%r15d, %r15d
+	movb	%al, 39(%rsp)
+.L2300:
+	leaq	304(%rsp), %r14
+	leaq	177(%rsp), %rbx
+	pushq	392(%rsp)
+	.cfi_def_cfa_offset 392
+	movl	$4, %edx
+	pushq	392(%rsp)
+	.cfi_def_cfa_offset 400
+	movq	%r14, %rsi
+	movq	%rbx, %rdi
+	movl	$6, %r12d
+	call	_ZSt8to_charsPcS_eSt12chars_format@PLT
+	movq	%rax, %r13
+	popq	%rax
+	.cfi_def_cfa_offset 392
+	popq	%rcx
+	.cfi_def_cfa_offset 384
+	cmpl	$75, %edx
+	je	.L2485
+	movb	$0, 16(%rsp)
+	jmp	.L2603
+	.p2align 4,,10
+	.p2align 3
+.L2475:
+	andl	$120, %eax
+	movl	$80, %edx
+	movl	$1, %r15d
+	cmpb	$16, %al
+	movl	$112, %eax
+	cmove	%edx, %eax
+	movb	%al, 39(%rsp)
+	jmp	.L2300
+	.p2align 4,,10
+	.p2align 3
+.L2514:
+	movl	$6, %r12d
+.L2294:
+	movb	$101, 39(%rsp)
+	xorl	%r15d, %r15d
+.L2293:
+	movl	$1, 24(%rsp)
+	movb	$0, 16(%rsp)
+	jmp	.L2298
+	.p2align 4,,10
+	.p2align 3
+.L2515:
+	movl	$6, %r12d
+.L2600:
+	movb	$69, 39(%rsp)
+	movl	$1, %r15d
+	jmp	.L2293
+	.p2align 4,,10
+	.p2align 3
+.L2516:
+	movl	$6, %r12d
+.L2292:
+	xorl	%r15d, %r15d
+.L2291:
+	movl	$2, 24(%rsp)
+	movb	$101, 39(%rsp)
+	movb	$0, 16(%rsp)
+	jmp	.L2298
+	.p2align 4,,10
+	.p2align 3
+.L2517:
+	movl	$6, %r12d
+.L2601:
+	movl	$1, %r15d
+	jmp	.L2291
+	.p2align 4,,10
+	.p2align 3
+.L2616:
+	movzwl	6(%rdi), %edi
+	movq	8(%rsp), %rsi
+	leaq	80(%rsp), %rax
+	movq	%rax, 40(%rsp)
+.LEHB39:
+	call	_ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+.LEHE39:
+	movq	%rax, %r12
+	movzbl	1(%rbp), %eax
+	jmp	.L2286
+	.p2align 4,,10
+	.p2align 3
+.L2479:
+	movl	$3, 24(%rsp)
+	xorl	%r15d, %r15d
+	movb	$101, 39(%rsp)
+	movb	$0, 16(%rsp)
+	jmp	.L2298
+	.p2align 4,,10
+	.p2align 3
+.L2609:
+	movb	$43, -1(%rbx)
+	movl	$1, %ecx
+	movzbl	0(%rbp), %r15d
+	subq	$1, %rbx
+	jmp	.L2341
+	.p2align 4,,10
+	.p2align 3
+.L2498:
+	movq	24(%rsp), %r10
+	movl	$1, %r8d
+	xorl	%r12d, %r12d
+.L2355:
+	movq	88(%rsp), %r11
+	leaq	(%r14,%r8), %r15
+	testq	%r11, %r11
+	jne	.L2358
+	subq	%r13, %r9
+	cmpq	%r8, %r9
+	jnb	.L2359
+	movq	(%rsp), %rax
+	cmpq	%rax, 80(%rsp)
+	je	.L2620
+	movq	96(%rsp), %rax
+	cmpq	%r15, %rax
+	jb	.L2464
+.L2374:
+	cmpq	%r10, %r14
+	movq	%r10, %r15
+	cmovbe	%r14, %r15
+	testq	%r15, %r15
+	js	.L2468
+	movq	96(%rsp), %rax
+	movq	80(%rsp), %r13
+	cmpq	%r15, %rax
+	jb	.L2621
+.L2471:
+	cmpq	%r13, %rbx
+	jb	.L2382
+	cmpq	%rbx, %r13
+	jnb	.L2622
+.L2382:
+	testq	%r15, %r15
+	je	.L2383
+	cmpq	$1, %r15
+	je	.L2623
+	movq	%r13, %rdi
+	movq	%r15, %rdx
+	movq	%rbx, %rsi
+	movq	%r10, 16(%rsp)
+	call	memcpy@PLT
+	movq	80(%rsp), %r13
+	movq	16(%rsp), %r10
+.L2383:
+	movq	24(%rsp), %rax
+	movq	%r15, 88(%rsp)
+	movb	$0, 0(%r13,%r15)
+	cmpq	%rax, %r10
+	je	.L2624
+.L2391:
+	testq	%r12, %r12
+	je	.L2392
+	movabsq	$9223372036854775807, %rax
+	movq	88(%rsp), %r15
+	subq	%r15, %rax
+	cmpq	%r12, %rax
+	jb	.L2625
+	movq	80(%rsp), %rax
+	movq	(%rsp), %rcx
+	leaq	(%r12,%r15), %r13
+	cmpq	%rcx, %rax
+	je	.L2504
+	movq	96(%rsp), %rdx
+.L2395:
+	cmpq	%r13, %rdx
+	jb	.L2626
+.L2396:
+	leaq	(%rax,%r15), %rdi
+	cmpq	$1, %r12
+	je	.L2627
+	movq	%r12, %rdx
+	movl	$48, %esi
+	movq	%r10, 16(%rsp)
+	call	memset@PLT
+	movq	16(%rsp), %r10
+.L2398:
+	movq	80(%rsp), %rax
+	movq	%r13, 88(%rsp)
+	movb	$0, (%rax,%r13)
+.L2392:
+	cmpq	%r10, %r14
+	jb	.L2628
+	movq	88(%rsp), %rsi
+	subq	%r10, %r14
+	leaq	(%rbx,%r10), %rcx
+	movabsq	$9223372036854775807, %rax
+	subq	%rsi, %rax
+	cmpq	%r14, %rax
+	jb	.L2629
+	movq	80(%rsp), %rax
+	movq	(%rsp), %rbx
+	leaq	(%r14,%rsi), %r12
+	cmpq	%rbx, %rax
+	je	.L2505
+	movq	96(%rsp), %rdx
+.L2403:
+	cmpq	%r12, %rdx
+	jb	.L2404
+	testq	%r14, %r14
+	je	.L2405
+	leaq	(%rax,%rsi), %rdi
+	cmpq	$1, %r14
+	je	.L2630
+	movq	%r14, %rdx
+	movq	%rcx, %rsi
+	call	memcpy@PLT
+	movq	80(%rsp), %rax
+.L2405:
+	movq	%r12, 88(%rsp)
+	movb	$0, (%rax,%r12)
+.L2407:
+	movq	88(%rsp), %r14
+	movq	80(%rsp), %rbx
+	movzbl	0(%rbp), %eax
+.L2378:
+	leaq	128(%rsp), %r12
+	movb	$0, 128(%rsp)
+	movq	%r12, 112(%rsp)
+	movq	$0, 120(%rsp)
+	testb	$32, %al
+	je	.L2438
+	jmp	.L2465
+	.p2align 4,,10
+	.p2align 3
+.L2510:
+	movq	%rbx, %r13
+.L2439:
+	movzwl	4(%rbp), %edi
+	movq	8(%rsp), %rsi
+.LEHB40:
+	call	_ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+.LEHE40:
+	movq	%rax, %r8
+	jmp	.L2441
+	.p2align 4,,10
+	.p2align 3
+.L2615:
+	movzwl	6(%rdi), %r12d
+	jmp	.L2286
+	.p2align 4,,10
+	.p2align 3
+.L2301:
+	cmpl	$2, 24(%rsp)
+	leaq	8(%r12), %r13
+	movl	$1, %ebx
+	je	.L2631
+.L2303:
+	movq	80(%rsp), %r9
+	cmpq	$128, %r13
+	jbe	.L2473
+	movq	(%rsp), %rax
+	cmpq	%rax, %r9
+	je	.L2632
+	movq	96(%rsp), %rax
+	cmpq	%r13, %rax
+	jb	.L2633
+.L2338:
+	movq	(%rsp), %rax
+	cmpq	%rax, %r9
+	je	.L2488
+	movq	96(%rsp), %rax
+	leaq	(%rax,%rax), %r13
+	cmpq	%r13, %rax
+	jb	.L2634
+.L2327:
+	leaq	-1(%r9,%r13), %rsi
+	leaq	1(%r9), %rdi
+	testb	%bl, %bl
+	jne	.L2635
+	movl	24(%rsp), %edx
+	movq	%r9, 40(%rsp)
+	testl	%edx, %edx
+	jne	.L2636
+	pushq	392(%rsp)
+	.cfi_def_cfa_offset 392
+	pushq	392(%rsp)
+	.cfi_def_cfa_offset 400
+	call	_ZSt8to_charsPcS_e@PLT
+	movq	%rax, %rcx
+	popq	%rax
+	.cfi_def_cfa_offset 392
+	popq	%rsi
+	.cfi_def_cfa_offset 384
+	movq	40(%rsp), %r9
+.L2335:
+	movq	%rcx, %r13
+	testl	%edx, %edx
+	jne	.L2337
+	movq	80(%rsp), %rdx
+	movq	%rcx, %rax
+	subq	%r9, %rax
+	movq	%rax, 88(%rsp)
+	movb	$0, (%rdx,%rax)
+	movq	80(%rsp), %r9
+	leaq	1(%r9), %rbx
+	addq	88(%rsp), %r9
+	jmp	.L2302
+	.p2align 4,,10
+	.p2align 3
+.L2485:
+	movl	$4, 24(%rsp)
+	xorl	%ebx, %ebx
+	movl	$14, %r13d
+	movb	$0, 16(%rsp)
+	jmp	.L2303
+	.p2align 4,,10
+	.p2align 3
+.L2611:
+	xorl	%r8d, %r8d
+	cmpq	%rax, %r14
+	sete	%r8b
+	cmpb	$0, 16(%rsp)
+	je	.L2491
+	movzbl	%cl, %eax
+	movq	%r14, %r10
+	cmpb	$48, (%rbx,%rax)
+	jne	.L2350
+.L2605:
+	movq	$-1, %r11
+.L2351:
+	movq	%r10, %rdx
+	subq	%r11, %rdx
+	jmp	.L2354
+	.p2align 4,,10
+	.p2align 3
+.L2347:
+	movsbl	39(%rsp), %esi
+	movq	%r14, %rdx
+	movq	%rbx, %rdi
+	movb	%cl, 40(%rsp)
+	movq	%r9, 24(%rsp)
+	call	memchr@PLT
+	movq	24(%rsp), %r9
+	movzbl	40(%rsp), %ecx
+	testq	%rax, %rax
+	je	.L2496
+	subq	%rbx, %rax
+	cmpq	$-1, %rax
+	cmove	%r14, %rax
+	movq	%rax, 24(%rsp)
+	jmp	.L2346
+	.p2align 4,,10
+	.p2align 3
+.L2612:
+	movq	%r15, %rdi
+	call	_ZNSt6localeC1Ev@PLT
+	movq	8(%rsp), %rax
+	movb	$1, 32(%rax)
+	jmp	.L2423
+	.p2align 4,,10
+	.p2align 3
+.L2495:
+	xorl	%r12d, %r12d
+	jmp	.L2349
+.L2295:
+	andl	$120, %eax
+	movl	$4, 24(%rsp)
+	cmpb	$16, %al
+	je	.L2482
+	movb	$112, 39(%rsp)
+	movl	$1, %r15d
+	movb	$0, 16(%rsp)
+	jmp	.L2298
+.L2296:
+	andl	$120, %eax
+	movl	$4, 24(%rsp)
+	cmpb	$16, %al
+	je	.L2484
+	movb	$112, 39(%rsp)
+	xorl	%r15d, %r15d
+	movb	$0, 16(%rsp)
+	jmp	.L2298
+.L2636:
+	pushq	392(%rsp)
+	.cfi_def_cfa_offset 392
+	pushq	392(%rsp)
+	.cfi_def_cfa_offset 400
+	call	_ZSt8to_charsPcS_eSt12chars_format@PLT
+	popq	%rdi
+	.cfi_def_cfa_offset 392
+	popq	%r8
+	.cfi_def_cfa_offset 384
+	movq	%rax, %rcx
+	movq	40(%rsp), %r9
+	jmp	.L2335
+.L2491:
+	movq	%r14, %r10
+	xorl	%r12d, %r12d
+	jmp	.L2349
+.L2633:
+	testq	%r13, %r13
+	js	.L2313
+	addq	%rax, %rax
+	cmpq	%rax, %r13
+	jnb	.L2583
+	testq	%rax, %rax
+	js	.L2320
+.L2317:
+	leaq	1(%rax), %rdi
+	movq	%rax, %r13
+.L2309:
+	leaq	80(%rsp), %rax
+	movq	%rax, 40(%rsp)
+.LEHB41:
+	call	_Znwm@PLT
+	movq	%rax, %r9
+	movq	88(%rsp), %rax
+	movq	80(%rsp), %r8
+	leaq	1(%rax), %rdx
+	testq	%rax, %rax
+	je	.L2637
+	testq	%rdx, %rdx
+	je	.L2323
+	movq	%r8, %rsi
+	movq	%r9, %rdi
+	movq	%r8, 40(%rsp)
+	call	memcpy@PLT
+	movq	40(%rsp), %r8
+	movq	%rax, %r9
+	movq	(%rsp), %rax
+	cmpq	%rax, %r8
+	je	.L2324
+.L2323:
+	movq	96(%rsp), %rax
+	movq	%r8, %rdi
+	movq	%r9, 40(%rsp)
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+	movq	40(%rsp), %r9
+.L2324:
+	movq	%r9, 80(%rsp)
+	movq	%r13, 96(%rsp)
+	jmp	.L2338
+.L2631:
+	movl	$0, 72(%rsp)
+	leaq	72(%rsp), %rdi
+	pushq	392(%rsp)
+	.cfi_def_cfa_offset 392
+	pushq	392(%rsp)
+	.cfi_def_cfa_offset 400
+	call	frexpl@PLT
+	fstp	%st(0)
+	movl	88(%rsp), %eax
+	popq	%r11
+	.cfi_def_cfa_offset 392
+	popq	%rbx
+	.cfi_def_cfa_offset 384
+	testl	%eax, %eax
+	jle	.L2307
+	imull	$4004, %eax, %edx
+	movq	%rdx, %rax
+	imulq	$995517945, %rdx, %rdx
+	shrq	$32, %rdx
+	subl	%edx, %eax
+	shrl	%eax
+	addl	%edx, %eax
+	shrl	$13, %eax
+	addl	$1, %eax
+	addq	%rax, %r13
+.L2307:
+	movl	$1, %ebx
+	jmp	.L2303
+.L2509:
+	movq	%rbx, %r13
+	movq	%rax, %r14
+	movq	%rcx, %rbx
+	jmp	.L2439
+.L2496:
+	movq	%r14, 24(%rsp)
+	jmp	.L2346
+.L2620:
+	cmpq	$15, %r15
+	ja	.L2462
+	cmpq	%r10, %r14
+	movq	%r10, %r15
+	cmovbe	%r14, %r15
+	testq	%r15, %r15
+	js	.L2468
+	movq	(%rsp), %r13
+	cmpq	$15, %r15
+	jbe	.L2471
+	movq	%r10, 16(%rsp)
+	cmpq	$29, %r15
+	ja	.L2380
+	leaq	80(%rsp), %rax
+	movl	$31, %edi
+	movq	%rax, 40(%rsp)
+	call	_Znwm@PLT
+	movq	16(%rsp), %r10
+	movq	%rax, %r13
+	movl	$30, %ecx
+.L2381:
+	movq	%r15, %rdx
+	movq	%rbx, %rsi
+	movq	%r13, %rdi
+	movq	%rcx, 40(%rsp)
+	movq	%r10, 16(%rsp)
+	call	memcpy@PLT
+	movq	40(%rsp), %rcx
+	movq	16(%rsp), %r10
+.L2389:
+	movq	80(%rsp), %rdi
+	movq	(%rsp), %rax
+	cmpq	%rax, %rdi
+	je	.L2390
+	movq	96(%rsp), %rax
+	movq	%rcx, 40(%rsp)
+	movq	%r10, 16(%rsp)
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+	movq	40(%rsp), %rcx
+	movq	16(%rsp), %r10
+.L2390:
+	movq	%r13, 80(%rsp)
+	movq	%rcx, 96(%rsp)
+	jmp	.L2383
+	.p2align 4,,10
+	.p2align 3
+.L2337:
+	movq	$0, 88(%rsp)
+	movq	80(%rsp), %rax
+	movb	$0, (%rax)
+	movq	80(%rsp), %r9
+	cmpl	$75, %edx
+	je	.L2338
+	leaq	1(%r9), %rbx
+	addq	88(%rsp), %r9
+	jmp	.L2302
+	.p2align 4,,10
+	.p2align 3
+.L2358:
+	movq	(%rsp), %rax
+	cmpq	%rax, 80(%rsp)
+	je	.L2638
+	movq	96(%rsp), %rax
+	cmpq	%r15, %rax
+	jnb	.L2376
+.L2464:
+	testq	%r15, %r15
+	js	.L2364
+	addq	%rax, %rax
+	cmpq	%rax, %r15
+	jnb	.L2366
+	leaq	1(%rax), %rdi
+	movq	%rax, %r15
+	testq	%rax, %rax
+	jns	.L2370
+.L2369:
+	movq	312(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2591
+	leaq	80(%rsp), %rax
+	movq	%rax, 40(%rsp)
+	call	_ZSt17__throw_bad_allocv@PLT
+.L2366:
+	movq	%r15, %rdi
+	addq	$1, %rdi
+	js	.L2369
+.L2370:
+	leaq	80(%rsp), %rax
+	movq	%r10, 48(%rsp)
+	movq	%r8, 16(%rsp)
+	movq	%rax, 40(%rsp)
+	call	_Znwm@PLT
+	movq	88(%rsp), %r11
+	movq	80(%rsp), %rcx
+	movq	%rax, %r9
+	movq	16(%rsp), %r8
+	movq	48(%rsp), %r10
+	testq	%r11, %r11
+	leaq	1(%r11), %rdx
+	je	.L2639
+	movq	%r11, 16(%rsp)
+	testq	%rdx, %rdx
+	je	.L2373
+	movq	%rcx, %rsi
+	movq	%rax, %rdi
+	movq	%r10, 56(%rsp)
+	movq	%r8, 48(%rsp)
+	movq	%rcx, 40(%rsp)
+	call	memcpy@PLT
+	movq	40(%rsp), %rcx
+	movq	48(%rsp), %r8
+	movq	%rax, %r9
+	movq	(%rsp), %rax
+	movq	56(%rsp), %r10
+	movq	16(%rsp), %r11
+	cmpq	%rax, %rcx
+	je	.L2375
+.L2373:
+	movq	96(%rsp), %rax
+	movq	%rcx, %rdi
+	movq	%r9, 48(%rsp)
+	movq	%r10, 40(%rsp)
+	leaq	1(%rax), %rsi
+	movq	%r8, 16(%rsp)
+	call	_ZdlPvm@PLT
+	movq	88(%rsp), %r11
+	movq	48(%rsp), %r9
+	movq	%r15, 96(%rsp)
+	movq	16(%rsp), %r8
+	movq	40(%rsp), %r10
+	testq	%r11, %r11
+	movq	%r9, 80(%rsp)
+	je	.L2374
+.L2376:
+	cmpq	%r10, %r11
+	jb	.L2640
+	movabsq	$9223372036854775807, %rax
+	subq	%r11, %rax
+	cmpq	%r8, %rax
+	jb	.L2641
+	movq	80(%rsp), %rax
+	movq	(%rsp), %rcx
+	leaq	(%r8,%r11), %rbx
+	cmpq	%rcx, %rax
+	je	.L2506
+	movq	96(%rsp), %rdx
+.L2412:
+	cmpq	%rbx, %rdx
+	jb	.L2413
+	leaq	(%rax,%r10), %rdi
+	subq	%r10, %r11
+	je	.L2414
+	leaq	(%rdi,%r8), %rax
+	cmpq	$1, %r11
+	je	.L2642
+	movq	%rdi, %rsi
+	movq	%r11, %rdx
+	movq	%rax, %rdi
+	movq	%r10, 40(%rsp)
+	movq	%r8, 16(%rsp)
+	call	memmove@PLT
+	movq	40(%rsp), %r10
+	movq	80(%rsp), %rdi
+	movq	16(%rsp), %r8
+	addq	%r10, %rdi
+	.p2align 4
+	.p2align 3
+.L2414:
+	cmpq	$1, %r8
+	je	.L2643
+	movq	%r8, %rdx
+	movl	$48, %esi
+	movq	%r10, 16(%rsp)
+	call	memset@PLT
+	movq	16(%rsp), %r10
+.L2417:
+	movq	80(%rsp), %rax
+	movq	%rbx, 88(%rsp)
+	movb	$0, (%rax,%rbx)
+	movq	24(%rsp), %rax
+	cmpq	%rax, %r10
+	jne	.L2407
+	movq	80(%rsp), %rax
+	movb	$46, (%rax,%r10)
+	jmp	.L2407
+.L2613:
+	movq	144(%rsp), %rdx
+	leaq	160(%rsp), %rsi
+	cmpq	%rsi, %rdx
+	je	.L2644
+	movdqu	152(%rsp), %xmm0
+	movq	%rdx, 112(%rsp)
+	movups	%xmm0, 120(%rsp)
+.L2427:
+	movq	%rsi, 144(%rsp)
+	leaq	160(%rsp), %rsi
+	movq	%rsi, %rax
+	jmp	.L2436
+.L2634:
+	testq	%r13, %r13
+	js	.L2645
+	leaq	1(%r13), %rdi
+.L2326:
+	leaq	80(%rsp), %rax
+	movq	%rax, 40(%rsp)
+	call	_Znwm@PLT
+	movq	%rax, %r9
+	movq	88(%rsp), %rax
+	movq	80(%rsp), %r8
+	leaq	1(%rax), %rdx
+	testq	%rax, %rax
+	je	.L2646
+	testq	%rdx, %rdx
+	je	.L2331
+	movq	%r8, %rsi
+	movq	%r9, %rdi
+	movq	%r8, 40(%rsp)
+	call	memcpy@PLT
+	movq	40(%rsp), %r8
+	movq	%rax, %r9
+	movq	(%rsp), %rax
+	cmpq	%rax, %r8
+	je	.L2332
+.L2331:
+	movq	96(%rsp), %rax
+	movq	%r8, %rdi
+	movq	%r9, 40(%rsp)
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+	movq	40(%rsp), %r9
+.L2332:
+	movq	%r9, 80(%rsp)
+	movq	%r13, 96(%rsp)
+	jmp	.L2327
+.L2305:
+	movb	$101, 39(%rsp)
+	movq	80(%rsp), %r9
+	xorl	%r15d, %r15d
+	xorl	%ebx, %ebx
+	movb	$0, 16(%rsp)
+	movl	$6, %r12d
+	movl	$0, 24(%rsp)
+.L2473:
+	movq	(%rsp), %rax
+	cmpq	%rax, %r9
+	je	.L2487
+	movq	96(%rsp), %rax
+	cmpq	$255, %rax
+	ja	.L2338
+	addq	%rax, %rax
+	cmpq	$256, %rax
+	ja	.L2317
+.L2487:
+	movl	$256, %r13d
+	movl	$257, %edi
+	jmp	.L2309
+.L2635:
+	movq	%r9, 40(%rsp)
+	movl	%r12d, %ecx
+	pushq	392(%rsp)
+	.cfi_def_cfa_offset 392
+	pushq	392(%rsp)
+	.cfi_def_cfa_offset 400
+	movl	40(%rsp), %edx
+	call	_ZSt8to_charsPcS_eSt12chars_formati@PLT
+	popq	%r9
+	.cfi_def_cfa_offset 392
+	popq	%r10
+	.cfi_def_cfa_offset 384
+	movq	%rax, %rcx
+	movq	40(%rsp), %r9
+	jmp	.L2335
+.L2644:
+	movq	152(%rsp), %rdx
+	movq	%rdx, %r8
+.L2460:
+	testq	%rdx, %rdx
+	je	.L2428
+	cmpq	$1, %rdx
+	je	.L2647
+	movl	%edx, %eax
+	cmpl	$8, %edx
+	jnb	.L2430
+	testb	$4, %dl
+	jne	.L2648
+	testl	%edx, %edx
+	je	.L2431
+	movzbl	160(%rsp), %ecx
+	andl	$2, %edx
+	movb	%cl, (%rdi)
+	jne	.L2588
+.L2606:
+	movq	112(%rsp), %rdi
+	movq	152(%rsp), %rdx
+.L2431:
+	movq	%rdx, %r8
+	movq	%rdi, %rax
+.L2428:
+	movq	%r8, 120(%rsp)
+	movb	$0, (%rax,%r8)
+	movq	144(%rsp), %rax
+	jmp	.L2436
+.L2508:
+	movq	%rbx, %r13
+	movq	%rax, %r14
+	movq	%rcx, %rbx
+	jmp	.L2421
+.L2359:
+	leaq	(%rbx,%r10), %r13
+	leaq	(%r8,%r10), %rdi
+	movq	%r14, %rdx
+	movq	%r10, 16(%rsp)
+	subq	%r10, %rdx
+	addq	%rbx, %rdi
+	movq	%r13, %rsi
+	call	memmove@PLT
+	movq	24(%rsp), %rax
+	movq	16(%rsp), %r10
+	cmpq	%rax, %r10
+	jne	.L2377
+	movb	$46, 0(%r13)
+	leaq	1(%rbx,%r10), %r13
+.L2377:
+	movq	%r12, %rdx
+	movl	$48, %esi
+	movq	%r13, %rdi
+	movq	%r15, %r14
+	call	memset@PLT
+	movzbl	0(%rbp), %eax
+	jmp	.L2378
+.L2499:
+	movq	24(%rsp), %r10
+	movl	$1, %r8d
+	jmp	.L2355
+.L2493:
+	movq	%r14, %r10
+	jmp	.L2352
+.L2488:
+	movl	$31, %edi
+	movl	$30, %r13d
+	jmp	.L2326
+.L2632:
+	testq	%r13, %r13
+	js	.L2313
+.L2583:
+	leaq	1(%r13), %rdi
+	testq	%rdi, %rdi
+	jns	.L2309
+.L2320:
+	movq	312(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2591
+	leaq	80(%rsp), %rax
+	movq	%rax, 40(%rsp)
+	call	_ZSt17__throw_bad_allocv@PLT
+.L2646:
+	movzbl	(%r8), %eax
+	movb	%al, (%r9)
+	movq	(%rsp), %rax
+	cmpq	%rax, %r8
+	jne	.L2331
+	jmp	.L2332
+.L2413:
+	leaq	80(%rsp), %rdi
+	xorl	%ecx, %ecx
+	xorl	%edx, %edx
+	movq	%r10, %rsi
+	movq	%rdi, 40(%rsp)
+	movq	%r8, 48(%rsp)
+	movq	%r10, 16(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	movq	16(%rsp), %r10
+	movq	80(%rsp), %rdi
+	movq	48(%rsp), %r8
+	addq	%r10, %rdi
+	jmp	.L2414
+.L2404:
+	leaq	80(%rsp), %rax
+	movq	%r14, %r8
+	xorl	%edx, %edx
+	movq	%rax, %rdi
+	movq	%rax, 40(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	movq	80(%rsp), %rax
+	jmp	.L2405
+.L2637:
+	movzbl	(%r8), %eax
+	movb	%al, (%r9)
+	movq	(%rsp), %rax
+	cmpq	%rax, %r8
+	jne	.L2323
+	jmp	.L2324
+.L2639:
+	movzbl	(%rcx), %eax
+	movb	%al, (%r9)
+	movq	(%rsp), %rax
+	cmpq	%rax, %rcx
+	jne	.L2373
+	movq	%r9, 80(%rsp)
+	movq	%r15, 96(%rsp)
+	jmp	.L2374
+.L2484:
+	movb	$101, 39(%rsp)
+	xorl	%r15d, %r15d
+	movb	$0, 16(%rsp)
+	jmp	.L2298
+.L2482:
+	movb	$80, 39(%rsp)
+	movl	$1, %r15d
+	movb	$0, 16(%rsp)
+	jmp	.L2298
+.L2624:
+	leaq	80(%rsp), %rax
+	movl	$46, %esi
+	movq	%r10, 16(%rsp)
+	movq	%rax, %rdi
+	movq	%rax, 40(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9push_backEc
+	movq	16(%rsp), %r10
+	jmp	.L2391
+.L2638:
+	cmpq	$15, %r15
+	jbe	.L2376
+.L2462:
+	testq	%r15, %r15
+	js	.L2364
+	cmpq	$29, %r15
+	ja	.L2366
+	movl	$31, %edi
+	movl	$30, %r15d
+	jmp	.L2370
+.L2506:
+	movl	$15, %edx
+	jmp	.L2412
+.L2505:
+	movl	$15, %edx
+	jmp	.L2403
+.L2643:
+	movb	$48, (%rdi)
+	jmp	.L2417
+.L2626:
+	leaq	80(%rsp), %rax
+	movq	%r12, %r8
+	xorl	%ecx, %ecx
+	xorl	%edx, %edx
+	movq	%r15, %rsi
+	movq	%rax, %rdi
+	movq	%r10, 16(%rsp)
+	movq	%rax, 40(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	movq	80(%rsp), %rax
+	movq	16(%rsp), %r10
+	jmp	.L2396
+.L2642:
+	movzbl	(%rdi), %edx
+	movb	%dl, (%rax)
+	movq	80(%rsp), %rdi
+	addq	%r10, %rdi
+	jmp	.L2414
+.L2623:
+	movzbl	(%rbx), %eax
+	movb	%al, 0(%r13)
+	movq	80(%rsp), %r13
+	jmp	.L2383
+.L2630:
+	movzbl	(%rcx), %eax
+	movb	%al, (%rdi)
+	movq	80(%rsp), %rax
+	jmp	.L2405
+.L2621:
+	leaq	(%rax,%rax), %rcx
+	cmpq	%rcx, %r15
+	jnb	.L2385
+	leaq	1(%rcx), %rdi
+	testq	%rcx, %rcx
+	jns	.L2387
+.L2386:
+	movq	312(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2591
+	leaq	80(%rsp), %rax
+	movq	%rax, 40(%rsp)
+	call	_ZSt17__throw_bad_allocv@PLT
+.L2385:
+	movq	%r15, %rdi
+	movq	%r15, %rcx
+	addq	$1, %rdi
+	js	.L2386
+.L2387:
+	leaq	80(%rsp), %rax
+	movq	%rcx, 48(%rsp)
+	movq	%r10, 16(%rsp)
+	movq	%rax, 40(%rsp)
+	call	_Znwm@PLT
+.LEHE41:
+	cmpq	$1, %r15
+	movq	16(%rsp), %r10
+	movq	48(%rsp), %rcx
+	movq	%rax, %r13
+	jne	.L2381
+	movzbl	(%rbx), %eax
+	movb	%al, 0(%r13)
+	jmp	.L2389
+.L2430:
+	movq	160(%rsp), %rax
+	movq	%rax, (%rdi)
+	movl	%edx, %eax
+	movq	-8(%rsi,%rax), %rcx
+	movq	%rcx, -8(%rdi,%rax)
+	leaq	8(%rdi), %rcx
+	movq	%rdi, %rax
+	movq	%rsi, %rdi
+	andq	$-8, %rcx
+	subq	%rcx, %rax
+	subq	%rax, %rdi
+	addl	%edx, %eax
+	andl	$-8, %eax
+	cmpl	$8, %eax
+	jb	.L2606
+	andl	$-8, %eax
+	xorl	%edx, %edx
+.L2434:
+	movl	%edx, %r8d
+	addl	$8, %edx
+	movq	(%rdi,%r8), %r9
+	movq	%r9, (%rcx,%r8)
+	cmpl	%eax, %edx
+	jb	.L2434
+	jmp	.L2606
+.L2647:
+	movzbl	160(%rsp), %eax
+	movb	%al, (%rdi)
+	movq	152(%rsp), %r8
+	movq	112(%rsp), %rax
+	jmp	.L2428
+.L2504:
+	movl	$15, %edx
+	jmp	.L2395
+.L2627:
+	movb	$48, (%rdi)
+	jmp	.L2398
+.L2619:
+	movq	(%rdi), %rax
+	movq	%r8, 16(%rsp)
+	movq	%rdi, 8(%rsp)
+.LEHB42:
+	call	*(%rax)
+.LEHE42:
+	movq	16(%rsp), %r8
+	movq	8(%rsp), %rdi
+	jmp	.L2451
+.L2380:
+	movq	%r15, %rdi
+	addq	$1, %rdi
+	js	.L2386
+	leaq	80(%rsp), %rax
+	movq	%rax, 40(%rsp)
+.LEHB43:
+	call	_Znwm@PLT
+	movq	16(%rsp), %r10
+	movq	%rax, %r13
+	movq	%r15, %rcx
+	jmp	.L2381
+.L2648:
+	movl	160(%rsp), %edx
+	movl	%edx, (%rdi)
+	movl	-4(%rsi,%rax), %edx
+	movl	%edx, -4(%rdi,%rax)
+	movq	112(%rsp), %rdi
+	movq	152(%rsp), %rdx
+	jmp	.L2431
+.L2588:
+	movzwl	-2(%rsi,%rax), %edx
+	movw	%dx, -2(%rdi,%rax)
+	movq	112(%rsp), %rdi
+	movq	152(%rsp), %rdx
+	jmp	.L2431
+.L2645:
+	movq	312(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L2329
+.L2591:
+	call	__stack_chk_fail@PLT
+.L2375:
+	movq	%r9, 80(%rsp)
+	movq	%r15, 96(%rsp)
+	jmp	.L2376
+.L2625:
+	movq	312(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2591
+	leaq	80(%rsp), %rax
+	leaq	.LC24(%rip), %rdi
+	movq	%rax, 40(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L2622:
+	leaq	80(%rsp), %rax
+	xorl	%r9d, %r9d
+	movq	%r15, %r8
+	movq	%rbx, %rcx
+	xorl	%edx, %edx
+	movq	%r13, %rsi
+	movq	%rax, %rdi
+	movq	%r10, 16(%rsp)
+	movq	%rax, 40(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_replace_coldEPcmPKcmm@PLT
+	movq	16(%rsp), %r10
+	movq	80(%rsp), %r13
+	jmp	.L2383
+.L2628:
+	movq	312(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2591
+	leaq	80(%rsp), %rax
+	movq	%r14, %rcx
+	movq	%r10, %rdx
+	movq	%rax, 40(%rsp)
+	leaq	.LC45(%rip), %rsi
+	leaq	.LC40(%rip), %rdi
+	xorl	%eax, %eax
+	call	_ZSt24__throw_out_of_range_fmtPKcz@PLT
+.L2468:
+	movq	312(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2591
+	leaq	80(%rsp), %rax
+	leaq	.LC44(%rip), %rdi
+	movq	%rax, 40(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L2629:
+	movq	312(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2591
+	leaq	80(%rsp), %rax
+	leaq	.LC23(%rip), %rdi
+	movq	%rax, 40(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L2329:
+	leaq	80(%rsp), %rax
+	leaq	.LC22(%rip), %rdi
+	movq	%rax, 40(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L2364:
+	movq	312(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2591
+	leaq	80(%rsp), %rax
+	leaq	.LC22(%rip), %rdi
+	movq	%rax, 40(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.LEHE43:
+.L2521:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L2456
+.L2454:
+	movq	%r13, %rdi
+	call	_ZNSt6localeD1Ev@PLT
+.L2455:
+	leaq	112(%rsp), %rdi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+	leaq	80(%rsp), %rax
+	movq	%rax, 40(%rsp)
+.L2456:
+	movq	40(%rsp), %rdi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+	movq	312(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2591
+	movq	%rbx, %rdi
+.LEHB44:
+	call	_Unwind_Resume@PLT
+.LEHE44:
+.L2522:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L2454
+.L2313:
+	movq	312(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2591
+	leaq	80(%rsp), %rax
+	leaq	.LC22(%rip), %rdi
+	movq	%rax, 40(%rsp)
+.LEHB45:
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L2523:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L2455
+.L2287:
+.L2641:
+	movq	312(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2591
+	leaq	80(%rsp), %rax
+	leaq	.LC24(%rip), %rdi
+	movq	%rax, 40(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L2640:
+	movq	312(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2591
+	leaq	80(%rsp), %rax
+	movq	%r11, %rcx
+	movq	%r10, %rdx
+	movq	%rax, 40(%rsp)
+	leaq	.LC46(%rip), %rsi
+	leaq	.LC47(%rip), %rdi
+	xorl	%eax, %eax
+	call	_ZSt24__throw_out_of_range_fmtPKcz@PLT
+.LEHE45:
+	.cfi_endproc
+.LFE5427:
+	.section	.gcc_except_table._ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"aG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+.LLSDA5427:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x1
+	.uleb128 .LLSDACSE5427-.LLSDACSB5427
+.LLSDACSB5427:
+	.uleb128 .LEHB37-.LFB5427
+	.uleb128 .LEHE37-.LEHB37
+	.uleb128 .L2522-.LFB5427
+	.uleb128 0
+	.uleb128 .LEHB38-.LFB5427
+	.uleb128 .LEHE38-.LEHB38
+	.uleb128 .L2523-.LFB5427
+	.uleb128 0
+	.uleb128 .LEHB39-.LFB5427
+	.uleb128 .LEHE39-.LEHB39
+	.uleb128 .L2521-.LFB5427
+	.uleb128 0
+	.uleb128 .LEHB40-.LFB5427
+	.uleb128 .LEHE40-.LEHB40
+	.uleb128 .L2523-.LFB5427
+	.uleb128 0
+	.uleb128 .LEHB41-.LFB5427
+	.uleb128 .LEHE41-.LEHB41
+	.uleb128 .L2521-.LFB5427
+	.uleb128 0
+	.uleb128 .LEHB42-.LFB5427
+	.uleb128 .LEHE42-.LEHB42
+	.uleb128 .L2523-.LFB5427
+	.uleb128 0
+	.uleb128 .LEHB43-.LFB5427
+	.uleb128 .LEHE43-.LEHB43
+	.uleb128 .L2521-.LFB5427
+	.uleb128 0
+	.uleb128 .LEHB44-.LFB5427
+	.uleb128 .LEHE44-.LEHB44
+	.uleb128 0
+	.uleb128 0
+	.uleb128 .LEHB45-.LFB5427
+	.uleb128 .LEHE45-.LEHB45
+	.uleb128 .L2521-.LFB5427
+	.uleb128 0
+.LLSDACSE5427:
+	.section	.text._ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.size	_ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, .-_ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.section	.text._ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.type	_ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, @function
+_ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_:
+.LFB5424:
+	.cfi_startproc
+	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
+	.cfi_lsda 0x1b,.LLSDA5424
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	movq	%rdi, %rbp
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$344, %rsp
+	.cfi_def_cfa_offset 400
+	movq	%rsi, 24(%rsp)
+	movsd	%xmm0, 8(%rsp)
+	movq	%fs:40, %rax
+	movq	%rax, 328(%rsp)
+	leaq	112(%rsp), %rax
+	movb	$0, 112(%rsp)
+	movq	$0, 104(%rsp)
+	movq	%rax, 16(%rsp)
+	movq	%rax, 96(%rsp)
+	movzbl	1(%rdi), %eax
+	movl	%eax, %edx
+	andl	$6, %edx
+	jne	.L2974
+	movl	%eax, %edx
+	shrb	$3, %dl
+	andl	$15, %edx
+	cmpb	$8, %dl
+	ja	.L2653
+	leaq	.L2840(%rip), %rcx
+	movzbl	%dl, %edx
+	movslq	(%rcx,%rdx,4), %rdx
+	addq	%rcx, %rdx
+	notrack jmp	*%rdx
+	.section	.rodata._ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"aG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 4
+	.align 4
+.L2840:
+	.long	.L2670-.L2840
+	.long	.L2665-.L2840
+	.long	.L2841-.L2840
+	.long	.L2880-.L2840
+	.long	.L2881-.L2840
+	.long	.L2882-.L2840
+	.long	.L2883-.L2840
+	.long	.L2884-.L2840
+	.long	.L2885-.L2840
+	.section	.text._ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.p2align 4,,10
+	.p2align 3
+.L2670:
+	movsd	8(%rsp), %xmm0
+	leaq	320(%rsp), %r14
+	leaq	193(%rsp), %rbx
+	movq	%r14, %rsi
+	movq	%rbx, %rdi
+	call	_ZSt8to_charsPcS_d@PLT
+	movq	%rax, %r13
+	cmpl	$75, %edx
+	je	.L2671
+	movb	$101, 55(%rsp)
+	movl	$6, %r12d
+	movq	%r14, %r8
+	movb	$0, 32(%rsp)
+.L2672:
+	movsd	8(%rsp), %xmm2
+	movzbl	0(%rbp), %r15d
+	movmskpd	%xmm2, %eax
+	testb	$1, %al
+	jne	.L2970
+	movl	%r15d, %eax
+	andl	$12, %eax
+	cmpb	$4, %al
+	je	.L2975
+	xorl	%ecx, %ecx
+	cmpb	$12, %al
+	je	.L2976
+.L2707:
+	movq	%r13, %r14
+	subq	%rbx, %r14
+	testb	$16, %r15b
+	je	.L2711
+	movsd	8(%rsp), %xmm0
+	movsd	.LC51(%rip), %xmm1
+	andpd	.LC50(%rip), %xmm0
+	ucomisd	%xmm0, %xmm1
+	jb	.L2711
+	testq	%r14, %r14
+	je	.L2856
+	movq	%r14, %rdx
+	movl	$46, %esi
+	movq	%rbx, %rdi
+	movb	%cl, 56(%rsp)
+	movq	%r8, 40(%rsp)
+	call	memchr@PLT
+	movq	40(%rsp), %r8
+	movzbl	56(%rsp), %ecx
+	testq	%rax, %rax
+	je	.L2713
+	subq	%rbx, %rax
+	movq	%rax, 40(%rsp)
+	cmpq	$-1, %rax
+	je	.L2713
+	leaq	1(%rax), %r9
+	cmpq	%r14, %r9
+	jnb	.L2977
+	movsbl	55(%rsp), %esi
+	movq	%r14, %rdx
+	leaq	(%rbx,%r9), %rdi
+	movb	%cl, 72(%rsp)
+	subq	%r9, %rdx
+	movq	%r8, 64(%rsp)
+	movq	%r9, 56(%rsp)
+	call	memchr@PLT
+	movq	56(%rsp), %r9
+	movq	64(%rsp), %r8
+	testq	%rax, %rax
+	movzbl	72(%rsp), %ecx
+	je	.L2859
+	subq	%rbx, %rax
+	movq	%rax, %r10
+	cmpq	$-1, %rax
+	cmove	%r14, %r10
+.L2718:
+	movq	40(%rsp), %rax
+	xorl	%r11d, %r11d
+	cmpq	%rax, %r10
+	sete	%r11b
+	cmpb	$0, 32(%rsp)
+	je	.L2861
+	movzbl	%cl, %eax
+	cmpb	$48, (%rbx,%rax)
+	je	.L2719
+.L2716:
+	movq	%r10, %rdx
+	subq	%rax, %rdx
+	subq	$1, %rdx
+.L2720:
+	testq	%r12, %r12
+	jne	.L2722
+	.p2align 4
+	.p2align 3
+.L2715:
+	testq	%r11, %r11
+	jne	.L2721
+	leaq	144(%rsp), %r12
+	andl	$32, %r15d
+	movq	$0, 136(%rsp)
+	movq	%r12, 128(%rsp)
+	movb	$0, 144(%rsp)
+	je	.L2804
+.L2831:
+	movq	24(%rsp), %rax
+	cmpb	$0, 32(%rax)
+	leaq	24(%rax), %r15
+	je	.L2978
+.L2789:
+	leaq	88(%rsp), %r13
+	movq	%r15, %rsi
+	movq	%r13, %rdi
+	call	_ZNSt6localeC1ERKS_@PLT
+	movsbl	55(%rsp), %ecx
+	movq	%rbx, %rdx
+	movq	%r14, %rsi
+	leaq	160(%rsp), %rdi
+	movq	%r13, %r8
+.LEHB46:
+	call	_ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0
+.LEHE46:
+	movq	128(%rsp), %rax
+	movq	%rax, %rdi
+	cmpq	%r12, %rax
+	je	.L2979
+	movq	168(%rsp), %rdx
+	movq	160(%rsp), %rcx
+	leaq	176(%rsp), %rsi
+	movq	%rdx, %r8
+	cmpq	%rsi, %rcx
+	je	.L2826
+	movq	%rdx, %xmm0
+	movq	%rcx, 128(%rsp)
+	movq	144(%rsp), %rdx
+	movhps	176(%rsp), %xmm0
+	movups	%xmm0, 136(%rsp)
+	testq	%rax, %rax
+	je	.L2793
+	movq	%rax, 160(%rsp)
+	movq	%rdx, 176(%rsp)
+.L2802:
+	movq	$0, 168(%rsp)
+	movb	$0, (%rax)
+	movq	160(%rsp), %rdi
+	cmpq	%rsi, %rdi
+	je	.L2803
+	movq	176(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L2803:
+	movq	%r13, %rdi
+	call	_ZNSt6localeD1Ev@PLT
+	movq	136(%rsp), %rax
+	testq	%rax, %rax
+	je	.L2804
+	movzwl	0(%rbp), %edx
+	movq	128(%rsp), %rcx
+	andw	$384, %dx
+	cmpw	$128, %dx
+	je	.L2874
+	cmpw	$256, %dx
+	je	.L2875
+	movq	24(%rsp), %rbx
+	movq	%rax, %r14
+	movq	16(%rbx), %r15
+	movq	%rcx, %rbx
+.L2806:
+	movq	24(%r15), %rdi
+	movq	16(%r15), %r13
+	movq	%rdi, %rax
+	subq	8(%r15), %rax
+	subq	%rax, %r13
+	cmpq	%r13, %r14
+	jb	.L2811
+	.p2align 4
+	.p2align 3
+.L2813:
+	cmpq	%r13, %r14
+	movq	%r13, %rdx
+	cmovbe	%r14, %rdx
+	testq	%rdx, %rdx
+	je	.L2812
+	movq	%rbx, %rsi
+	call	memcpy@PLT
+.L2812:
+	movq	(%r15), %rax
+	addq	%r13, 24(%r15)
+	addq	%r13, %rbx
+	subq	%r13, %r14
+	movq	%r15, %rdi
+.LEHB47:
+	call	*(%rax)
+	movq	24(%r15), %rdi
+	movq	16(%r15), %r13
+	movq	%rdi, %rax
+	subq	8(%r15), %rax
+	subq	%rax, %r13
+	cmpq	%r13, %r14
+	jnb	.L2813
+	testq	%r14, %r14
+	je	.L2815
+.L2811:
+	movq	%r14, %rdx
+	movq	%rbx, %rsi
+	call	memcpy@PLT
+	addq	%r14, 24(%r15)
+	jmp	.L2815
+	.p2align 4,,10
+	.p2align 3
+.L2711:
+	leaq	144(%rsp), %r12
+	andl	$32, %r15d
+	movq	$0, 136(%rsp)
+	movq	%r12, 128(%rsp)
+	movb	$0, 144(%rsp)
+	je	.L2804
+	movsd	8(%rsp), %xmm0
+	movsd	.LC51(%rip), %xmm1
+	andpd	.LC50(%rip), %xmm0
+	ucomisd	%xmm0, %xmm1
+	jnb	.L2831
+.L2804:
+	movzwl	0(%rbp), %eax
+	andw	$384, %ax
+	cmpw	$128, %ax
+	je	.L2980
+	cmpw	$256, %ax
+	je	.L2876
+	movq	24(%rsp), %rax
+	movq	16(%rax), %rdi
+.L2809:
+	movq	%rdi, %r15
+	testq	%r14, %r14
+	jne	.L2806
+.L2815:
+	movq	128(%rsp), %rdi
+	cmpq	%r12, %rdi
+	je	.L2818
+	movq	144(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L2818:
+	movq	96(%rsp), %rdi
+	movq	16(%rsp), %rax
+	cmpq	%rax, %rdi
+	je	.L2819
+	movq	112(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L2819:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2957
+	addq	$344, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	movq	%r15, %rax
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L2976:
+	.cfi_restore_state
+	movb	$32, -1(%rbx)
+	movzbl	0(%rbp), %r15d
+	subq	$1, %rbx
+	.p2align 4
+	.p2align 3
+.L2970:
+	movl	$1, %ecx
+	jmp	.L2707
+	.p2align 4,,10
+	.p2align 3
+.L2974:
+	cmpb	$2, %dl
+	je	.L2981
+	movq	$-1, %r12
+	cmpb	$4, %dl
+	je	.L2982
+.L2652:
+	movl	%eax, %edx
+	leaq	.L2655(%rip), %rcx
+	shrb	$3, %dl
+	andl	$15, %edx
+	movslq	(%rcx,%rdx,4), %rdx
+	addq	%rcx, %rdx
+	notrack jmp	*%rdx
+	.section	.rodata._ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"aG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 4
+	.align 4
+.L2655:
+	.long	.L2845-.L2655
+	.long	.L2662-.L2655
+	.long	.L2661-.L2655
+	.long	.L2660-.L2655
+	.long	.L2966-.L2655
+	.long	.L2658-.L2655
+	.long	.L2967-.L2655
+	.long	.L2656-.L2655
+	.long	.L2968-.L2655
+	.section	.text._ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.p2align 4,,10
+	.p2align 3
+.L2980:
+	movq	%rbx, %r13
+.L2787:
+	movzwl	4(%rbp), %r8d
+.L2807:
+	movq	24(%rsp), %rax
+	movq	16(%rax), %rdi
+	cmpq	%r8, %r14
+	jnb	.L2809
+	movzbl	0(%rbp), %edx
+	movl	8(%rbp), %r9d
+	subq	%r14, %r8
+	movl	%edx, %ecx
+	andl	$3, %ecx
+	jne	.L2816
+	andl	$64, %edx
+	je	.L2878
+	movsd	8(%rsp), %xmm0
+	movsd	.LC51(%rip), %xmm1
+	andpd	.LC50(%rip), %xmm0
+	ucomisd	%xmm0, %xmm1
+	jnb	.L2983
+.L2878:
+	movl	$2, %ecx
+	movl	$32, %r9d
+.L2816:
+	movq	%rbx, %rdx
+	movq	%r14, %rsi
+	call	_ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi
+.LEHE47:
+	movq	%rax, %r15
+	jmp	.L2815
+	.p2align 4
+	.p2align 4,,10
+	.p2align 3
+.L2984:
+	addq	$1, %r9
+	cmpq	%r14, %r9
+	jnb	.L2971
+.L2719:
+	cmpb	$48, (%rbx,%r9)
+	je	.L2984
+	jmp	.L2717
+	.p2align 4,,10
+	.p2align 3
+.L2983:
+	movzbl	0(%r13), %eax
+	leaq	_ZNSt8__detail31__from_chars_alnum_to_val_tableILb0EE5valueE(%rip), %rdx
+	movl	$2, %ecx
+	movl	$48, %r9d
+	cmpb	$15, (%rdx,%rax)
+	jbe	.L2816
+	movq	24(%rdi), %rax
+	movzbl	(%rbx), %edx
+	leaq	1(%rax), %rcx
+	movq	%rcx, 24(%rdi)
+	movb	%dl, (%rax)
+	movq	24(%rdi), %rax
+	subq	8(%rdi), %rax
+	cmpq	16(%rdi), %rax
+	je	.L2985
+.L2817:
+	addq	$1, %rbx
+	subq	$1, %r14
+	movl	$2, %ecx
+	movl	$48, %r9d
+	jmp	.L2816
+	.p2align 4,,10
+	.p2align 3
+.L2856:
+	movq	$0, 40(%rsp)
+.L2712:
+	cmpb	$0, 32(%rsp)
+	je	.L2864
+	testq	%r12, %r12
+	je	.L2865
+	movq	40(%rsp), %r10
+	movzbl	%cl, %eax
+	movl	$1, %r11d
+	movq	%r10, %rdx
+	subq	%rax, %rdx
+.L2722:
+	subq	%rdx, %r12
+	addq	%r12, %r11
+	jmp	.L2715
+	.p2align 4,,10
+	.p2align 3
+.L2884:
+	movl	$6, %r12d
+.L2656:
+	movb	$101, 55(%rsp)
+	xorl	%r15d, %r15d
+.L2654:
+	movl	$3, 40(%rsp)
+	movb	$1, 32(%rsp)
+.L2664:
+	movl	40(%rsp), %edx
+	movsd	8(%rsp), %xmm0
+	movl	%r12d, %ecx
+	leaq	320(%rsp), %r14
+	leaq	193(%rsp), %rbx
+	movq	%r14, %rsi
+	movq	%rbx, %rdi
+	call	_ZSt8to_charsPcS_dSt12chars_formati@PLT
+	movq	%rax, %r13
+	cmpl	$75, %edx
+	je	.L2667
+.L2969:
+	movq	%r14, %r8
+.L2668:
+	testb	%r15b, %r15b
+	je	.L2672
+	cmpq	%r13, %rbx
+	je	.L2672
+	movq	%rbx, %r14
+	movq	%r8, %r15
+	.p2align 4
+	.p2align 3
+.L2709:
+	movsbl	(%r14), %edi
+	addq	$1, %r14
+	call	toupper@PLT
+	movb	%al, -1(%r14)
+	cmpq	%r13, %r14
+	jne	.L2709
+	movq	%r15, %r8
+	jmp	.L2672
+	.p2align 4,,10
+	.p2align 3
+.L2885:
+	movl	$6, %r12d
+.L2968:
+	movb	$69, 55(%rsp)
+	movl	$1, %r15d
+	jmp	.L2654
+	.p2align 4,,10
+	.p2align 3
+.L2665:
+	andl	$120, %eax
+	movl	$112, %edx
+	cmpb	$16, %al
+	movl	$101, %eax
+	cmovne	%edx, %eax
+	xorl	%r15d, %r15d
+	movb	%al, 55(%rsp)
+.L2666:
+	movsd	8(%rsp), %xmm0
+	movl	$4, %edx
+	leaq	320(%rsp), %r14
+	leaq	193(%rsp), %rbx
+	movq	%r14, %rsi
+	movq	%rbx, %rdi
+	movl	$6, %r12d
+	call	_ZSt8to_charsPcS_dSt12chars_format@PLT
+	movq	%rax, %r13
+	cmpl	$75, %edx
+	je	.L2851
+	movb	$0, 32(%rsp)
+	jmp	.L2969
+	.p2align 4,,10
+	.p2align 3
+.L2841:
+	andl	$120, %eax
+	movl	$80, %edx
+	movl	$1, %r15d
+	cmpb	$16, %al
+	movl	$112, %eax
+	cmove	%edx, %eax
+	movb	%al, 55(%rsp)
+	jmp	.L2666
+	.p2align 4,,10
+	.p2align 3
+.L2880:
+	movl	$6, %r12d
+.L2660:
+	movb	$101, 55(%rsp)
+	xorl	%r15d, %r15d
+.L2659:
+	movl	$1, 40(%rsp)
+	movb	$0, 32(%rsp)
+	jmp	.L2664
+	.p2align 4,,10
+	.p2align 3
+.L2881:
+	movl	$6, %r12d
+.L2966:
+	movb	$69, 55(%rsp)
+	movl	$1, %r15d
+	jmp	.L2659
+	.p2align 4,,10
+	.p2align 3
+.L2882:
+	movl	$6, %r12d
+.L2658:
+	xorl	%r15d, %r15d
+.L2657:
+	movl	$2, 40(%rsp)
+	movb	$101, 55(%rsp)
+	movb	$0, 32(%rsp)
+	jmp	.L2664
+	.p2align 4,,10
+	.p2align 3
+.L2883:
+	movl	$6, %r12d
+.L2967:
+	movl	$1, %r15d
+	jmp	.L2657
+	.p2align 4,,10
+	.p2align 3
+.L2982:
+	movzwl	6(%rdi), %edi
+	movq	24(%rsp), %rsi
+	leaq	96(%rsp), %rax
+	movq	%rax, 56(%rsp)
+.LEHB48:
+	call	_ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+.LEHE48:
+	movq	%rax, %r12
+	movzbl	1(%rbp), %eax
+	jmp	.L2652
+	.p2align 4,,10
+	.p2align 3
+.L2845:
+	movl	$3, 40(%rsp)
+	xorl	%r15d, %r15d
+	movb	$101, 55(%rsp)
+	movb	$0, 32(%rsp)
+	jmp	.L2664
+	.p2align 4,,10
+	.p2align 3
+.L2975:
+	movb	$43, -1(%rbx)
+	movl	$1, %ecx
+	movzbl	0(%rbp), %r15d
+	subq	$1, %rbx
+	jmp	.L2707
+	.p2align 4,,10
+	.p2align 3
+.L2864:
+	movq	40(%rsp), %r10
+	movl	$1, %r11d
+	xorl	%r12d, %r12d
+.L2721:
+	movq	104(%rsp), %r9
+	leaq	(%r14,%r11), %r15
+	testq	%r9, %r9
+	jne	.L2724
+	subq	%r13, %r8
+	cmpq	%r11, %r8
+	jnb	.L2725
+	movq	16(%rsp), %rax
+	cmpq	%rax, 96(%rsp)
+	je	.L2986
+	movq	112(%rsp), %rax
+	cmpq	%r15, %rax
+	jb	.L2830
+.L2740:
+	cmpq	%r10, %r14
+	movq	%r10, %r15
+	cmovbe	%r14, %r15
+	testq	%r15, %r15
+	js	.L2834
+	movq	112(%rsp), %rax
+	movq	96(%rsp), %r13
+	cmpq	%r15, %rax
+	jb	.L2987
+.L2837:
+	cmpq	%r13, %rbx
+	jb	.L2748
+	cmpq	%rbx, %r13
+	jnb	.L2988
+.L2748:
+	testq	%r15, %r15
+	je	.L2749
+	cmpq	$1, %r15
+	je	.L2989
+	movq	%r13, %rdi
+	movq	%r15, %rdx
+	movq	%rbx, %rsi
+	movq	%r10, 32(%rsp)
+	call	memcpy@PLT
+	movq	96(%rsp), %r13
+	movq	32(%rsp), %r10
+.L2749:
+	movq	40(%rsp), %rax
+	movq	%r15, 104(%rsp)
+	movb	$0, 0(%r13,%r15)
+	cmpq	%rax, %r10
+	je	.L2990
+.L2757:
+	testq	%r12, %r12
+	je	.L2758
+	movabsq	$9223372036854775807, %rax
+	movq	104(%rsp), %r15
+	subq	%r15, %rax
+	cmpq	%r12, %rax
+	jb	.L2991
+	movq	96(%rsp), %rax
+	movq	16(%rsp), %rcx
+	leaq	(%r12,%r15), %r13
+	cmpq	%rcx, %rax
+	je	.L2870
+	movq	112(%rsp), %rdx
+.L2761:
+	cmpq	%r13, %rdx
+	jb	.L2992
+.L2762:
+	leaq	(%rax,%r15), %rdi
+	cmpq	$1, %r12
+	je	.L2993
+	movq	%r12, %rdx
+	movl	$48, %esi
+	movq	%r10, 32(%rsp)
+	call	memset@PLT
+	movq	32(%rsp), %r10
+.L2764:
+	movq	96(%rsp), %rax
+	movq	%r13, 104(%rsp)
+	movb	$0, (%rax,%r13)
+.L2758:
+	cmpq	%r10, %r14
+	jb	.L2994
+	movq	104(%rsp), %rsi
+	subq	%r10, %r14
+	leaq	(%rbx,%r10), %rcx
+	movabsq	$9223372036854775807, %rax
+	subq	%rsi, %rax
+	cmpq	%r14, %rax
+	jb	.L2995
+	movq	96(%rsp), %rax
+	movq	16(%rsp), %rbx
+	leaq	(%r14,%rsi), %r12
+	cmpq	%rbx, %rax
+	je	.L2871
+	movq	112(%rsp), %rdx
+.L2769:
+	cmpq	%r12, %rdx
+	jb	.L2770
+	testq	%r14, %r14
+	je	.L2771
+	leaq	(%rax,%rsi), %rdi
+	cmpq	$1, %r14
+	je	.L2996
+	movq	%r14, %rdx
+	movq	%rcx, %rsi
+	call	memcpy@PLT
+	movq	96(%rsp), %rax
+.L2771:
+	movq	%r12, 104(%rsp)
+	movb	$0, (%rax,%r12)
+.L2773:
+	movq	104(%rsp), %r14
+	movq	96(%rsp), %rbx
+	movzbl	0(%rbp), %eax
+.L2744:
+	leaq	144(%rsp), %r12
+	movb	$0, 144(%rsp)
+	movq	%r12, 128(%rsp)
+	movq	$0, 136(%rsp)
+	testb	$32, %al
+	je	.L2804
+	jmp	.L2831
+	.p2align 4,,10
+	.p2align 3
+.L2876:
+	movq	%rbx, %r13
+.L2805:
+	movzwl	4(%rbp), %edi
+	movq	24(%rsp), %rsi
+.LEHB49:
+	call	_ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+.LEHE49:
+	movq	%rax, %r8
+	jmp	.L2807
+	.p2align 4,,10
+	.p2align 3
+.L2981:
+	movzwl	6(%rdi), %r12d
+	jmp	.L2652
+	.p2align 4,,10
+	.p2align 3
+.L2667:
+	cmpl	$2, 40(%rsp)
+	leaq	8(%r12), %r13
+	movl	$1, %ebx
+	je	.L2997
+.L2669:
+	movq	96(%rsp), %r8
+	cmpq	$128, %r13
+	jbe	.L2839
+	movq	16(%rsp), %rax
+	cmpq	%rax, %r8
+	je	.L2998
+	movq	112(%rsp), %rax
+	cmpq	%r13, %rax
+	jb	.L2999
+.L2704:
+	movq	16(%rsp), %rax
+	cmpq	%rax, %r8
+	je	.L2854
+	movq	112(%rsp), %rax
+	leaq	(%rax,%rax), %r13
+	cmpq	%r13, %rax
+	jb	.L3000
+.L2693:
+	leaq	-1(%r8,%r13), %rsi
+	leaq	1(%r8), %rdi
+	testb	%bl, %bl
+	jne	.L3001
+	movl	40(%rsp), %edx
+	movsd	8(%rsp), %xmm0
+	movq	%r8, 56(%rsp)
+	testl	%edx, %edx
+	jne	.L3002
+	call	_ZSt8to_charsPcS_d@PLT
+	movq	56(%rsp), %r8
+	movq	%rax, %rcx
+.L2701:
+	movq	%rcx, %r13
+	testl	%edx, %edx
+	jne	.L2703
+	movq	96(%rsp), %rdx
+	movq	%rcx, %rax
+	subq	%r8, %rax
+	movq	%rax, 104(%rsp)
+	movb	$0, (%rdx,%rax)
+	movq	96(%rsp), %r8
+	leaq	1(%r8), %rbx
+	addq	104(%rsp), %r8
+	jmp	.L2668
+	.p2align 4,,10
+	.p2align 3
+.L2851:
+	movl	$4, 40(%rsp)
+	xorl	%ebx, %ebx
+	movl	$14, %r13d
+	movb	$0, 32(%rsp)
+	jmp	.L2669
+	.p2align 4,,10
+	.p2align 3
+.L2977:
+	xorl	%r11d, %r11d
+	cmpq	%rax, %r14
+	sete	%r11b
+	cmpb	$0, 32(%rsp)
+	je	.L2857
+	movzbl	%cl, %eax
+	movq	%r14, %r10
+	cmpb	$48, (%rbx,%rax)
+	jne	.L2716
+.L2971:
+	movq	$-1, %r9
+.L2717:
+	movq	%r10, %rdx
+	subq	%r9, %rdx
+	jmp	.L2720
+	.p2align 4,,10
+	.p2align 3
+.L2713:
+	movsbl	55(%rsp), %esi
+	movq	%r14, %rdx
+	movq	%rbx, %rdi
+	movb	%cl, 56(%rsp)
+	movq	%r8, 40(%rsp)
+	call	memchr@PLT
+	movq	40(%rsp), %r8
+	movzbl	56(%rsp), %ecx
+	testq	%rax, %rax
+	je	.L2862
+	subq	%rbx, %rax
+	cmpq	$-1, %rax
+	cmove	%r14, %rax
+	movq	%rax, 40(%rsp)
+	jmp	.L2712
+	.p2align 4,,10
+	.p2align 3
+.L2978:
+	movq	%r15, %rdi
+	call	_ZNSt6localeC1Ev@PLT
+	movq	24(%rsp), %rax
+	movb	$1, 32(%rax)
+	jmp	.L2789
+	.p2align 4,,10
+	.p2align 3
+.L2861:
+	xorl	%r12d, %r12d
+	jmp	.L2715
+.L2661:
+	andl	$120, %eax
+	movl	$4, 40(%rsp)
+	cmpb	$16, %al
+	je	.L2848
+	movb	$112, 55(%rsp)
+	movl	$1, %r15d
+	movb	$0, 32(%rsp)
+	jmp	.L2664
+.L2662:
+	andl	$120, %eax
+	movl	$4, 40(%rsp)
+	cmpb	$16, %al
+	je	.L2850
+	movb	$112, 55(%rsp)
+	xorl	%r15d, %r15d
+	movb	$0, 32(%rsp)
+	jmp	.L2664
+.L3002:
+	call	_ZSt8to_charsPcS_dSt12chars_format@PLT
+	movq	56(%rsp), %r8
+	movq	%rax, %rcx
+	jmp	.L2701
+.L2857:
+	movq	%r14, %r10
+	xorl	%r12d, %r12d
+	jmp	.L2715
+.L2999:
+	testq	%r13, %r13
+	js	.L2679
+	addq	%rax, %rax
+	cmpq	%rax, %r13
+	jnb	.L2949
+	testq	%rax, %rax
+	js	.L2686
+.L2683:
+	leaq	1(%rax), %rdi
+	movq	%rax, %r13
+.L2675:
+	leaq	96(%rsp), %rax
+	movq	%rax, 56(%rsp)
+.LEHB50:
+	call	_Znwm@PLT
+	movq	%rax, %r8
+	movq	104(%rsp), %rax
+	movq	96(%rsp), %r9
+	leaq	1(%rax), %rdx
+	testq	%rax, %rax
+	je	.L3003
+	testq	%rdx, %rdx
+	je	.L2689
+	movq	%r9, %rsi
+	movq	%r8, %rdi
+	movq	%r9, 56(%rsp)
+	call	memcpy@PLT
+	movq	56(%rsp), %r9
+	movq	%rax, %r8
+	movq	16(%rsp), %rax
+	cmpq	%rax, %r9
+	je	.L2690
+.L2689:
+	movq	112(%rsp), %rax
+	movq	%r9, %rdi
+	movq	%r8, 56(%rsp)
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+	movq	56(%rsp), %r8
+.L2690:
+	movq	%r8, 96(%rsp)
+	movq	%r13, 112(%rsp)
+	jmp	.L2704
+.L2997:
+	movsd	8(%rsp), %xmm0
+	leaq	88(%rsp), %rdi
+	movl	$0, 88(%rsp)
+	call	frexp@PLT
+	movl	88(%rsp), %eax
+	testl	%eax, %eax
+	jle	.L2673
+	imull	$4004, %eax, %edx
+	movq	%rdx, %rax
+	imulq	$995517945, %rdx, %rdx
+	shrq	$32, %rdx
+	subl	%edx, %eax
+	shrl	%eax
+	addl	%edx, %eax
+	shrl	$13, %eax
+	addl	$1, %eax
+	addq	%rax, %r13
+.L2673:
+	movl	$1, %ebx
+	jmp	.L2669
+.L2875:
+	movq	%rbx, %r13
+	movq	%rax, %r14
+	movq	%rcx, %rbx
+	jmp	.L2805
+.L2862:
+	movq	%r14, 40(%rsp)
+	jmp	.L2712
+.L2986:
+	cmpq	$15, %r15
+	ja	.L2828
+	cmpq	%r10, %r14
+	movq	%r10, %r15
+	cmovbe	%r14, %r15
+	testq	%r15, %r15
+	js	.L2834
+	cmpq	$15, %r15
+	ja	.L2836
+	movq	16(%rsp), %r13
+	jmp	.L2837
+	.p2align 4,,10
+	.p2align 3
+.L2703:
+	movq	$0, 104(%rsp)
+	movq	96(%rsp), %rax
+	movb	$0, (%rax)
+	movq	96(%rsp), %r8
+	cmpl	$75, %edx
+	je	.L2704
+	leaq	1(%r8), %rbx
+	addq	104(%rsp), %r8
+	jmp	.L2668
+	.p2align 4,,10
+	.p2align 3
+.L2724:
+	movq	16(%rsp), %rax
+	cmpq	%rax, 96(%rsp)
+	je	.L3004
+	movq	112(%rsp), %rax
+	cmpq	%r15, %rax
+	jnb	.L2742
+.L2830:
+	testq	%r15, %r15
+	js	.L2730
+	addq	%rax, %rax
+	cmpq	%rax, %r15
+	jnb	.L2732
+	leaq	1(%rax), %rdi
+	movq	%rax, %r15
+	testq	%rax, %rax
+	jns	.L2736
+.L2735:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2957
+	leaq	96(%rsp), %rax
+	movq	%rax, 56(%rsp)
+	call	_ZSt17__throw_bad_allocv@PLT
+.L2732:
+	movq	%r15, %rdi
+	addq	$1, %rdi
+	js	.L2735
+.L2736:
+	leaq	96(%rsp), %rax
+	movq	%r10, 64(%rsp)
+	movq	%r11, 32(%rsp)
+	movq	%rax, 56(%rsp)
+	call	_Znwm@PLT
+	movq	104(%rsp), %r9
+	movq	96(%rsp), %rcx
+	movq	%rax, %r8
+	movq	32(%rsp), %r11
+	movq	64(%rsp), %r10
+	testq	%r9, %r9
+	leaq	1(%r9), %rdx
+	je	.L3005
+	movq	%r9, 32(%rsp)
+	testq	%rdx, %rdx
+	je	.L2739
+	movq	%rcx, %rsi
+	movq	%rax, %rdi
+	movq	%r10, 72(%rsp)
+	movq	%r11, 64(%rsp)
+	movq	%rcx, 56(%rsp)
+	call	memcpy@PLT
+	movq	56(%rsp), %rcx
+	movq	64(%rsp), %r11
+	movq	%rax, %r8
+	movq	16(%rsp), %rax
+	movq	72(%rsp), %r10
+	movq	32(%rsp), %r9
+	cmpq	%rax, %rcx
+	je	.L2741
+.L2739:
+	movq	112(%rsp), %rax
+	movq	%rcx, %rdi
+	movq	%r8, 64(%rsp)
+	movq	%r10, 56(%rsp)
+	leaq	1(%rax), %rsi
+	movq	%r11, 32(%rsp)
+	call	_ZdlPvm@PLT
+	movq	104(%rsp), %r9
+	movq	64(%rsp), %r8
+	movq	%r15, 112(%rsp)
+	movq	32(%rsp), %r11
+	movq	56(%rsp), %r10
+	testq	%r9, %r9
+	movq	%r8, 96(%rsp)
+	je	.L2740
+.L2742:
+	cmpq	%r10, %r9
+	jb	.L3006
+	movabsq	$9223372036854775807, %rax
+	subq	%r9, %rax
+	cmpq	%r11, %rax
+	jb	.L3007
+	movq	96(%rsp), %rax
+	movq	16(%rsp), %rcx
+	leaq	(%r11,%r9), %rbx
+	cmpq	%rcx, %rax
+	je	.L2872
+	movq	112(%rsp), %rdx
+.L2778:
+	cmpq	%rbx, %rdx
+	jb	.L2779
+	leaq	(%rax,%r10), %rdi
+	subq	%r10, %r9
+	je	.L2780
+	leaq	(%rdi,%r11), %rax
+	cmpq	$1, %r9
+	je	.L3008
+	movq	%rdi, %rsi
+	movq	%r9, %rdx
+	movq	%rax, %rdi
+	movq	%r10, 56(%rsp)
+	movq	%r11, 32(%rsp)
+	call	memmove@PLT
+	movq	56(%rsp), %r10
+	movq	96(%rsp), %rdi
+	movq	32(%rsp), %r11
+	addq	%r10, %rdi
+	.p2align 4
+	.p2align 3
+.L2780:
+	cmpq	$1, %r11
+	je	.L3009
+	movq	%r11, %rdx
+	movl	$48, %esi
+	movq	%r10, 32(%rsp)
+	call	memset@PLT
+	movq	32(%rsp), %r10
+.L2783:
+	movq	96(%rsp), %rax
+	movq	%rbx, 104(%rsp)
+	movb	$0, (%rax,%rbx)
+	movq	40(%rsp), %rax
+	cmpq	%rax, %r10
+	jne	.L2773
+	movq	96(%rsp), %rax
+	movb	$46, (%rax,%r10)
+	jmp	.L2773
+.L2979:
+	movq	160(%rsp), %rdx
+	leaq	176(%rsp), %rsi
+	cmpq	%rsi, %rdx
+	je	.L3010
+	movdqu	168(%rsp), %xmm0
+	movq	%rdx, 128(%rsp)
+	movups	%xmm0, 136(%rsp)
+.L2793:
+	movq	%rsi, 160(%rsp)
+	leaq	176(%rsp), %rsi
+	movq	%rsi, %rax
+	jmp	.L2802
+.L3000:
+	testq	%r13, %r13
+	js	.L3011
+	leaq	1(%r13), %rdi
+.L2692:
+	leaq	96(%rsp), %rax
+	movq	%rax, 56(%rsp)
+	call	_Znwm@PLT
+	movq	%rax, %r8
+	movq	104(%rsp), %rax
+	movq	96(%rsp), %r9
+	leaq	1(%rax), %rdx
+	testq	%rax, %rax
+	je	.L3012
+	testq	%rdx, %rdx
+	je	.L2697
+	movq	%r9, %rsi
+	movq	%r8, %rdi
+	movq	%r9, 56(%rsp)
+	call	memcpy@PLT
+	movq	56(%rsp), %r9
+	movq	%rax, %r8
+	movq	16(%rsp), %rax
+	cmpq	%rax, %r9
+	je	.L2698
+.L2697:
+	movq	112(%rsp), %rax
+	movq	%r9, %rdi
+	movq	%r8, 56(%rsp)
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+	movq	56(%rsp), %r8
+.L2698:
+	movq	%r8, 96(%rsp)
+	movq	%r13, 112(%rsp)
+	jmp	.L2693
+.L2671:
+	movb	$101, 55(%rsp)
+	movq	96(%rsp), %r8
+	xorl	%r15d, %r15d
+	xorl	%ebx, %ebx
+	movb	$0, 32(%rsp)
+	movl	$6, %r12d
+	movl	$0, 40(%rsp)
+.L2839:
+	movq	16(%rsp), %rax
+	cmpq	%rax, %r8
+	je	.L2853
+	movq	112(%rsp), %rax
+	cmpq	$255, %rax
+	ja	.L2704
+	addq	%rax, %rax
+	cmpq	$256, %rax
+	ja	.L2683
+.L2853:
+	movl	$256, %r13d
+	movl	$257, %edi
+	jmp	.L2675
+.L3001:
+	movl	40(%rsp), %edx
+	movsd	8(%rsp), %xmm0
+	movl	%r12d, %ecx
+	movq	%r8, 56(%rsp)
+	call	_ZSt8to_charsPcS_dSt12chars_formati@PLT
+	movq	56(%rsp), %r8
+	movq	%rax, %rcx
+	jmp	.L2701
+.L3010:
+	movq	168(%rsp), %rdx
+	movq	%rdx, %r8
+.L2826:
+	testq	%rdx, %rdx
+	je	.L2794
+	cmpq	$1, %rdx
+	je	.L3013
+	movl	%edx, %eax
+	cmpl	$8, %edx
+	jnb	.L2796
+	testb	$4, %dl
+	jne	.L3014
+	testl	%edx, %edx
+	je	.L2797
+	movzbl	176(%rsp), %ecx
+	andl	$2, %edx
+	movb	%cl, (%rdi)
+	jne	.L2954
+.L2972:
+	movq	128(%rsp), %rdi
+	movq	168(%rsp), %rdx
+.L2797:
+	movq	%rdx, %r8
+	movq	%rdi, %rax
+.L2794:
+	movq	%r8, 136(%rsp)
+	movb	$0, (%rax,%r8)
+	movq	160(%rsp), %rax
+	jmp	.L2802
+.L2874:
+	movq	%rbx, %r13
+	movq	%rax, %r14
+	movq	%rcx, %rbx
+	jmp	.L2787
+.L2725:
+	leaq	(%rbx,%r10), %r13
+	leaq	(%r11,%r10), %rdi
+	movq	%r14, %rdx
+	movq	%r10, 32(%rsp)
+	subq	%r10, %rdx
+	addq	%rbx, %rdi
+	movq	%r13, %rsi
+	call	memmove@PLT
+	movq	40(%rsp), %rax
+	movq	32(%rsp), %r10
+	cmpq	%rax, %r10
+	jne	.L2743
+	movb	$46, 0(%r13)
+	leaq	1(%rbx,%r10), %r13
+.L2743:
+	movq	%r12, %rdx
+	movl	$48, %esi
+	movq	%r13, %rdi
+	movq	%r15, %r14
+	call	memset@PLT
+	movzbl	0(%rbp), %eax
+	jmp	.L2744
+.L2865:
+	movq	40(%rsp), %r10
+	movl	$1, %r11d
+	jmp	.L2721
+.L2859:
+	movq	%r14, %r10
+	jmp	.L2718
+.L2854:
+	movl	$31, %edi
+	movl	$30, %r13d
+	jmp	.L2692
+.L2998:
+	testq	%r13, %r13
+	js	.L2679
+.L2949:
+	leaq	1(%r13), %rdi
+	testq	%rdi, %rdi
+	jns	.L2675
+.L2686:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2957
+	leaq	96(%rsp), %rax
+	movq	%rax, 56(%rsp)
+	call	_ZSt17__throw_bad_allocv@PLT
+.L3012:
+	movzbl	(%r9), %eax
+	movb	%al, (%r8)
+	movq	16(%rsp), %rax
+	cmpq	%rax, %r9
+	jne	.L2697
+	jmp	.L2698
+.L2779:
+	leaq	96(%rsp), %rdi
+	movq	%r11, %r8
+	xorl	%ecx, %ecx
+	xorl	%edx, %edx
+	movq	%r10, %rsi
+	movq	%rdi, 56(%rsp)
+	movq	%r11, 64(%rsp)
+	movq	%r10, 32(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	movq	32(%rsp), %r10
+	movq	96(%rsp), %rdi
+	movq	64(%rsp), %r11
+	addq	%r10, %rdi
+	jmp	.L2780
+.L2770:
+	leaq	96(%rsp), %rax
+	movq	%r14, %r8
+	xorl	%edx, %edx
+	movq	%rax, %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	movq	96(%rsp), %rax
+	jmp	.L2771
+.L3003:
+	movzbl	(%r9), %eax
+	movb	%al, (%r8)
+	movq	16(%rsp), %rax
+	cmpq	%rax, %r9
+	jne	.L2689
+	jmp	.L2690
+.L3005:
+	movzbl	(%rcx), %eax
+	movb	%al, (%r8)
+	movq	16(%rsp), %rax
+	cmpq	%rax, %rcx
+	jne	.L2739
+	movq	%r8, 96(%rsp)
+	movq	%r15, 112(%rsp)
+	jmp	.L2740
+.L2850:
+	movb	$101, 55(%rsp)
+	xorl	%r15d, %r15d
+	movb	$0, 32(%rsp)
+	jmp	.L2664
+.L2848:
+	movb	$80, 55(%rsp)
+	movl	$1, %r15d
+	movb	$0, 32(%rsp)
+	jmp	.L2664
+.L2990:
+	leaq	96(%rsp), %rax
+	movl	$46, %esi
+	movq	%r10, 32(%rsp)
+	movq	%rax, %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9push_backEc
+	movq	32(%rsp), %r10
+	jmp	.L2757
+.L3004:
+	cmpq	$15, %r15
+	jbe	.L2742
+.L2828:
+	testq	%r15, %r15
+	js	.L2730
+	cmpq	$29, %r15
+	ja	.L2732
+	movl	$31, %edi
+	movl	$30, %r15d
+	jmp	.L2736
+.L2872:
+	movl	$15, %edx
+	jmp	.L2778
+.L2871:
+	movl	$15, %edx
+	jmp	.L2769
+.L3009:
+	movb	$48, (%rdi)
+	jmp	.L2783
+.L2992:
+	leaq	96(%rsp), %rax
+	movq	%r12, %r8
+	xorl	%ecx, %ecx
+	xorl	%edx, %edx
+	movq	%r15, %rsi
+	movq	%rax, %rdi
+	movq	%r10, 32(%rsp)
+	movq	%rax, 56(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	movq	96(%rsp), %rax
+	movq	32(%rsp), %r10
+	jmp	.L2762
+.L3008:
+	movzbl	(%rdi), %edx
+	movb	%dl, (%rax)
+	movq	96(%rsp), %rdi
+	addq	%r10, %rdi
+	jmp	.L2780
+.L2989:
+	movzbl	(%rbx), %eax
+	movb	%al, 0(%r13)
+	movq	96(%rsp), %r13
+	jmp	.L2749
+.L2996:
+	movzbl	(%rcx), %eax
+	movb	%al, (%rdi)
+	movq	96(%rsp), %rax
+	jmp	.L2771
+.L2987:
+	leaq	(%rax,%rax), %rcx
+	cmpq	%rcx, %r15
+	jnb	.L2751
+	leaq	1(%rcx), %rdi
+	testq	%rcx, %rcx
+	jns	.L2753
+.L2752:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2957
+	leaq	96(%rsp), %rax
+	movq	%rax, 56(%rsp)
+	call	_ZSt17__throw_bad_allocv@PLT
+.L2751:
+	movq	%r15, %rdi
+	movq	%r15, %rcx
+	addq	$1, %rdi
+	js	.L2752
+.L2753:
+	leaq	96(%rsp), %rax
+	movq	%rcx, 64(%rsp)
+	movq	%r10, 32(%rsp)
+	movq	%rax, 56(%rsp)
+	call	_Znwm@PLT
+.LEHE50:
+	cmpq	$1, %r15
+	movq	32(%rsp), %r10
+	movq	64(%rsp), %rcx
+	movq	%rax, %r13
+	je	.L3015
+.L2747:
+	movq	%r15, %rdx
+	movq	%rbx, %rsi
+	movq	%r13, %rdi
+	movq	%rcx, 56(%rsp)
+	movq	%r10, 32(%rsp)
+	call	memcpy@PLT
+	movq	56(%rsp), %rcx
+	movq	32(%rsp), %r10
+.L2755:
+	movq	96(%rsp), %rdi
+	movq	16(%rsp), %rax
+	cmpq	%rax, %rdi
+	je	.L2756
+	movq	112(%rsp), %rax
+	movq	%rcx, 56(%rsp)
+	movq	%r10, 32(%rsp)
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+	movq	56(%rsp), %rcx
+	movq	32(%rsp), %r10
+.L2756:
+	movq	%r13, 96(%rsp)
+	movq	%rcx, 112(%rsp)
+	jmp	.L2749
+.L2796:
+	movq	176(%rsp), %rax
+	movq	%rax, (%rdi)
+	movl	%edx, %eax
+	movq	-8(%rsi,%rax), %rcx
+	movq	%rcx, -8(%rdi,%rax)
+	leaq	8(%rdi), %rcx
+	movq	%rdi, %rax
+	movq	%rsi, %rdi
+	andq	$-8, %rcx
+	subq	%rcx, %rax
+	subq	%rax, %rdi
+	addl	%edx, %eax
+	andl	$-8, %eax
+	cmpl	$8, %eax
+	jb	.L2972
+	andl	$-8, %eax
+	xorl	%edx, %edx
+.L2800:
+	movl	%edx, %r8d
+	addl	$8, %edx
+	movq	(%rdi,%r8), %r9
+	movq	%r9, (%rcx,%r8)
+	cmpl	%eax, %edx
+	jb	.L2800
+	jmp	.L2972
+.L3013:
+	movzbl	176(%rsp), %eax
+	movb	%al, (%rdi)
+	movq	168(%rsp), %r8
+	movq	128(%rsp), %rax
+	jmp	.L2794
+.L2870:
+	movl	$15, %edx
+	jmp	.L2761
+.L2993:
+	movb	$48, (%rdi)
+	jmp	.L2764
+.L2985:
+	movq	(%rdi), %rax
+	movq	%r8, 24(%rsp)
+	movq	%rdi, 8(%rsp)
+.LEHB51:
+	call	*(%rax)
+.LEHE51:
+	movq	24(%rsp), %r8
+	movq	8(%rsp), %rdi
+	jmp	.L2817
+.L2836:
+	movq	%r10, 32(%rsp)
+	cmpq	$29, %r15
+	ja	.L2746
+	leaq	96(%rsp), %rax
+	movl	$31, %edi
+	movq	%rax, 56(%rsp)
+.LEHB52:
+	call	_Znwm@PLT
+	movq	32(%rsp), %r10
+	movq	%rax, %r13
+	movl	$30, %ecx
+	jmp	.L2747
+.L3015:
+	movzbl	(%rbx), %eax
+	movb	%al, 0(%r13)
+	jmp	.L2755
+.L2746:
+	movq	%r15, %rdi
+	addq	$1, %rdi
+	js	.L2752
+	leaq	96(%rsp), %rax
+	movq	%rax, 56(%rsp)
+	call	_Znwm@PLT
+	movq	32(%rsp), %r10
+	movq	%rax, %r13
+	movq	%r15, %rcx
+	jmp	.L2747
+.L3011:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L2695
+.L2957:
+	call	__stack_chk_fail@PLT
+.L3014:
+	movl	176(%rsp), %edx
+	movl	%edx, (%rdi)
+	movl	-4(%rsi,%rax), %edx
+	movl	%edx, -4(%rdi,%rax)
+	movq	128(%rsp), %rdi
+	movq	168(%rsp), %rdx
+	jmp	.L2797
+.L2954:
+	movzwl	-2(%rsi,%rax), %edx
+	movw	%dx, -2(%rdi,%rax)
+	movq	128(%rsp), %rdi
+	movq	168(%rsp), %rdx
+	jmp	.L2797
+.L2741:
+	movq	%r8, 96(%rsp)
+	movq	%r15, 112(%rsp)
+	jmp	.L2742
+.L2995:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2957
+	leaq	96(%rsp), %rax
+	leaq	.LC23(%rip), %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L2695:
+	leaq	96(%rsp), %rax
+	leaq	.LC22(%rip), %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L2730:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2957
+	leaq	96(%rsp), %rax
+	leaq	.LC22(%rip), %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L2991:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2957
+	leaq	96(%rsp), %rax
+	leaq	.LC24(%rip), %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L3007:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2957
+	leaq	96(%rsp), %rax
+	leaq	.LC24(%rip), %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L3006:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2957
+	leaq	96(%rsp), %rax
+	movq	%r9, %rcx
+	movq	%r10, %rdx
+	movq	%rax, 56(%rsp)
+	leaq	.LC46(%rip), %rsi
+	leaq	.LC47(%rip), %rdi
+	xorl	%eax, %eax
+	call	_ZSt24__throw_out_of_range_fmtPKcz@PLT
+.L2888:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L2820
+.L2679:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2957
+	leaq	96(%rsp), %rax
+	leaq	.LC22(%rip), %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.LEHE52:
+.L2820:
+	movq	%r13, %rdi
+	call	_ZNSt6localeD1Ev@PLT
+.L2821:
+	leaq	128(%rsp), %rdi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+	leaq	96(%rsp), %rax
+	movq	%rax, 56(%rsp)
+.L2822:
+	movq	56(%rsp), %rdi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2957
+	movq	%rbx, %rdi
+.LEHB53:
+	call	_Unwind_Resume@PLT
+.LEHE53:
+.L2994:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2957
+	leaq	96(%rsp), %rax
+	movq	%r14, %rcx
+	movq	%r10, %rdx
+	movq	%rax, 56(%rsp)
+	leaq	.LC45(%rip), %rsi
+	leaq	.LC40(%rip), %rdi
+	xorl	%eax, %eax
+.LEHB54:
+	call	_ZSt24__throw_out_of_range_fmtPKcz@PLT
+.L2834:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L2957
+	leaq	96(%rsp), %rax
+	leaq	.LC44(%rip), %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L2988:
+	leaq	96(%rsp), %rax
+	xorl	%r9d, %r9d
+	movq	%r15, %r8
+	movq	%rbx, %rcx
+	xorl	%edx, %edx
+	movq	%r13, %rsi
+	movq	%rax, %rdi
+	movq	%r10, 32(%rsp)
+	movq	%rax, 56(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_replace_coldEPcmPKcmm@PLT
+.LEHE54:
+	movq	32(%rsp), %r10
+	movq	96(%rsp), %r13
+	jmp	.L2749
+.L2887:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L2822
+.L2889:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L2821
+.L2653:
+	.cfi_endproc
+.LFE5424:
+	.section	.gcc_except_table._ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"aG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+.LLSDA5424:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x1
+	.uleb128 .LLSDACSE5424-.LLSDACSB5424
+.LLSDACSB5424:
+	.uleb128 .LEHB46-.LFB5424
+	.uleb128 .LEHE46-.LEHB46
+	.uleb128 .L2888-.LFB5424
+	.uleb128 0
+	.uleb128 .LEHB47-.LFB5424
+	.uleb128 .LEHE47-.LEHB47
+	.uleb128 .L2889-.LFB5424
+	.uleb128 0
+	.uleb128 .LEHB48-.LFB5424
+	.uleb128 .LEHE48-.LEHB48
+	.uleb128 .L2887-.LFB5424
+	.uleb128 0
+	.uleb128 .LEHB49-.LFB5424
+	.uleb128 .LEHE49-.LEHB49
+	.uleb128 .L2889-.LFB5424
+	.uleb128 0
+	.uleb128 .LEHB50-.LFB5424
+	.uleb128 .LEHE50-.LEHB50
+	.uleb128 .L2887-.LFB5424
+	.uleb128 0
+	.uleb128 .LEHB51-.LFB5424
+	.uleb128 .LEHE51-.LEHB51
+	.uleb128 .L2889-.LFB5424
+	.uleb128 0
+	.uleb128 .LEHB52-.LFB5424
+	.uleb128 .LEHE52-.LEHB52
+	.uleb128 .L2887-.LFB5424
+	.uleb128 0
+	.uleb128 .LEHB53-.LFB5424
+	.uleb128 .LEHE53-.LEHB53
+	.uleb128 0
+	.uleb128 0
+	.uleb128 .LEHB54-.LFB5424
+	.uleb128 .LEHE54-.LEHB54
+	.uleb128 .L2887-.LFB5424
+	.uleb128 0
+.LLSDACSE5424:
+	.section	.text._ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.size	_ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, .-_ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.section	.text._ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.type	_ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, @function
+_ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_:
+.LFB5420:
+	.cfi_startproc
+	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
+	.cfi_lsda 0x1b,.LLSDA5420
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	movq	%rdi, %rbp
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$344, %rsp
+	.cfi_def_cfa_offset 400
+	movq	%rsi, 24(%rsp)
+	movss	%xmm0, 8(%rsp)
+	movq	%fs:40, %rax
+	movq	%rax, 328(%rsp)
+	leaq	112(%rsp), %rax
+	movb	$0, 112(%rsp)
+	movq	$0, 104(%rsp)
+	movq	%rax, 16(%rsp)
+	movq	%rax, 96(%rsp)
+	movzbl	1(%rdi), %eax
+	movl	%eax, %edx
+	andl	$6, %edx
+	jne	.L3341
+	movl	%eax, %edx
+	shrb	$3, %dl
+	andl	$15, %edx
+	cmpb	$8, %dl
+	ja	.L3020
+	leaq	.L3207(%rip), %rcx
+	movzbl	%dl, %edx
+	movslq	(%rcx,%rdx,4), %rdx
+	addq	%rcx, %rdx
+	notrack jmp	*%rdx
+	.section	.rodata._ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"aG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 4
+	.align 4
+.L3207:
+	.long	.L3037-.L3207
+	.long	.L3032-.L3207
+	.long	.L3208-.L3207
+	.long	.L3247-.L3207
+	.long	.L3248-.L3207
+	.long	.L3249-.L3207
+	.long	.L3250-.L3207
+	.long	.L3251-.L3207
+	.long	.L3252-.L3207
+	.section	.text._ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.p2align 4,,10
+	.p2align 3
+.L3037:
+	movss	8(%rsp), %xmm0
+	leaq	320(%rsp), %r14
+	leaq	193(%rsp), %rbx
+	movq	%r14, %rsi
+	movq	%rbx, %rdi
+	call	_ZSt8to_charsPcS_f@PLT
+	movq	%rax, %r13
+	cmpl	$75, %edx
+	je	.L3038
+	movb	$101, 55(%rsp)
+	movl	$6, %r12d
+	movq	%r14, %r8
+	movb	$0, 32(%rsp)
+.L3039:
+	movl	8(%rsp), %eax
+	movzbl	0(%rbp), %r15d
+	testl	%eax, %eax
+	js	.L3337
+	movl	%r15d, %eax
+	andl	$12, %eax
+	cmpb	$4, %al
+	je	.L3342
+	xorl	%ecx, %ecx
+	cmpb	$12, %al
+	je	.L3343
+.L3074:
+	movq	%r13, %r14
+	subq	%rbx, %r14
+	testb	$16, %r15b
+	je	.L3078
+	movss	8(%rsp), %xmm0
+	movss	.LC53(%rip), %xmm1
+	andps	.LC52(%rip), %xmm0
+	ucomiss	%xmm0, %xmm1
+	jb	.L3078
+	testq	%r14, %r14
+	je	.L3223
+	movq	%r14, %rdx
+	movl	$46, %esi
+	movq	%rbx, %rdi
+	movb	%cl, 56(%rsp)
+	movq	%r8, 40(%rsp)
+	call	memchr@PLT
+	movq	40(%rsp), %r8
+	movzbl	56(%rsp), %ecx
+	testq	%rax, %rax
+	je	.L3080
+	subq	%rbx, %rax
+	movq	%rax, 40(%rsp)
+	cmpq	$-1, %rax
+	je	.L3080
+	leaq	1(%rax), %r9
+	cmpq	%r14, %r9
+	jnb	.L3344
+	movsbl	55(%rsp), %esi
+	movq	%r14, %rdx
+	leaq	(%rbx,%r9), %rdi
+	movb	%cl, 72(%rsp)
+	subq	%r9, %rdx
+	movq	%r8, 64(%rsp)
+	movq	%r9, 56(%rsp)
+	call	memchr@PLT
+	movq	56(%rsp), %r9
+	movq	64(%rsp), %r8
+	testq	%rax, %rax
+	movzbl	72(%rsp), %ecx
+	je	.L3226
+	subq	%rbx, %rax
+	movq	%rax, %r10
+	cmpq	$-1, %rax
+	cmove	%r14, %r10
+.L3085:
+	movq	40(%rsp), %rax
+	xorl	%r11d, %r11d
+	cmpq	%rax, %r10
+	sete	%r11b
+	cmpb	$0, 32(%rsp)
+	je	.L3228
+	movzbl	%cl, %eax
+	cmpb	$48, (%rbx,%rax)
+	je	.L3086
+.L3083:
+	movq	%r10, %rdx
+	subq	%rax, %rdx
+	subq	$1, %rdx
+.L3087:
+	testq	%r12, %r12
+	jne	.L3089
+	.p2align 4
+	.p2align 3
+.L3082:
+	testq	%r11, %r11
+	jne	.L3088
+	leaq	144(%rsp), %r12
+	andl	$32, %r15d
+	movq	$0, 136(%rsp)
+	movq	%r12, 128(%rsp)
+	movb	$0, 144(%rsp)
+	je	.L3171
+.L3198:
+	movq	24(%rsp), %rax
+	cmpb	$0, 32(%rax)
+	leaq	24(%rax), %r15
+	je	.L3345
+.L3156:
+	leaq	88(%rsp), %r13
+	movq	%r15, %rsi
+	movq	%r13, %rdi
+	call	_ZNSt6localeC1ERKS_@PLT
+	movsbl	55(%rsp), %ecx
+	movq	%rbx, %rdx
+	movq	%r14, %rsi
+	leaq	160(%rsp), %rdi
+	movq	%r13, %r8
+.LEHB55:
+	call	_ZNKSt8__format14__formatter_fpIcE11_M_localizeB5cxx11ESt17basic_string_viewIcSt11char_traitsIcEEcRKSt6locale.isra.0
+.LEHE55:
+	movq	128(%rsp), %rax
+	movq	%rax, %rdi
+	cmpq	%r12, %rax
+	je	.L3346
+	movq	168(%rsp), %rdx
+	movq	160(%rsp), %rcx
+	leaq	176(%rsp), %rsi
+	movq	%rdx, %r8
+	cmpq	%rsi, %rcx
+	je	.L3193
+	movq	%rdx, %xmm0
+	movq	%rcx, 128(%rsp)
+	movq	144(%rsp), %rdx
+	movhps	176(%rsp), %xmm0
+	movups	%xmm0, 136(%rsp)
+	testq	%rax, %rax
+	je	.L3160
+	movq	%rax, 160(%rsp)
+	movq	%rdx, 176(%rsp)
+.L3169:
+	movq	$0, 168(%rsp)
+	movb	$0, (%rax)
+	movq	160(%rsp), %rdi
+	cmpq	%rsi, %rdi
+	je	.L3170
+	movq	176(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L3170:
+	movq	%r13, %rdi
+	call	_ZNSt6localeD1Ev@PLT
+	movq	136(%rsp), %rax
+	testq	%rax, %rax
+	je	.L3171
+	movzwl	0(%rbp), %edx
+	movq	128(%rsp), %rcx
+	andw	$384, %dx
+	cmpw	$128, %dx
+	je	.L3241
+	cmpw	$256, %dx
+	je	.L3242
+	movq	24(%rsp), %rbx
+	movq	%rax, %r14
+	movq	16(%rbx), %r15
+	movq	%rcx, %rbx
+.L3173:
+	movq	24(%r15), %rdi
+	movq	16(%r15), %r13
+	movq	%rdi, %rax
+	subq	8(%r15), %rax
+	subq	%rax, %r13
+	cmpq	%r13, %r14
+	jb	.L3178
+	.p2align 4
+	.p2align 3
+.L3180:
+	cmpq	%r13, %r14
+	movq	%r13, %rdx
+	cmovbe	%r14, %rdx
+	testq	%rdx, %rdx
+	je	.L3179
+	movq	%rbx, %rsi
+	call	memcpy@PLT
+.L3179:
+	movq	(%r15), %rax
+	addq	%r13, 24(%r15)
+	addq	%r13, %rbx
+	subq	%r13, %r14
+	movq	%r15, %rdi
+.LEHB56:
+	call	*(%rax)
+	movq	24(%r15), %rdi
+	movq	16(%r15), %r13
+	movq	%rdi, %rax
+	subq	8(%r15), %rax
+	subq	%rax, %r13
+	cmpq	%r13, %r14
+	jnb	.L3180
+	testq	%r14, %r14
+	je	.L3182
+.L3178:
+	movq	%r14, %rdx
+	movq	%rbx, %rsi
+	call	memcpy@PLT
+	addq	%r14, 24(%r15)
+	jmp	.L3182
+	.p2align 4,,10
+	.p2align 3
+.L3078:
+	leaq	144(%rsp), %r12
+	andl	$32, %r15d
+	movq	$0, 136(%rsp)
+	movq	%r12, 128(%rsp)
+	movb	$0, 144(%rsp)
+	je	.L3171
+	movss	8(%rsp), %xmm0
+	movss	.LC53(%rip), %xmm1
+	andps	.LC52(%rip), %xmm0
+	ucomiss	%xmm0, %xmm1
+	jnb	.L3198
+.L3171:
+	movzwl	0(%rbp), %eax
+	andw	$384, %ax
+	cmpw	$128, %ax
+	je	.L3347
+	cmpw	$256, %ax
+	je	.L3243
+	movq	24(%rsp), %rax
+	movq	16(%rax), %rdi
+.L3176:
+	movq	%rdi, %r15
+	testq	%r14, %r14
+	jne	.L3173
+.L3182:
+	movq	128(%rsp), %rdi
+	cmpq	%r12, %rdi
+	je	.L3185
+	movq	144(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L3185:
+	movq	96(%rsp), %rdi
+	movq	16(%rsp), %rax
+	cmpq	%rax, %rdi
+	je	.L3186
+	movq	112(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L3186:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3324
+	addq	$344, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	movq	%r15, %rax
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L3343:
+	.cfi_restore_state
+	movb	$32, -1(%rbx)
+	movzbl	0(%rbp), %r15d
+	subq	$1, %rbx
+	.p2align 4
+	.p2align 3
+.L3337:
+	movl	$1, %ecx
+	jmp	.L3074
+	.p2align 4,,10
+	.p2align 3
+.L3341:
+	cmpb	$2, %dl
+	je	.L3348
+	movq	$-1, %r12
+	cmpb	$4, %dl
+	je	.L3349
+.L3019:
+	movl	%eax, %edx
+	leaq	.L3022(%rip), %rcx
+	shrb	$3, %dl
+	andl	$15, %edx
+	movslq	(%rcx,%rdx,4), %rdx
+	addq	%rcx, %rdx
+	notrack jmp	*%rdx
+	.section	.rodata._ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"aG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.align 4
+	.align 4
+.L3022:
+	.long	.L3212-.L3022
+	.long	.L3029-.L3022
+	.long	.L3028-.L3022
+	.long	.L3027-.L3022
+	.long	.L3333-.L3022
+	.long	.L3025-.L3022
+	.long	.L3334-.L3022
+	.long	.L3023-.L3022
+	.long	.L3335-.L3022
+	.section	.text._ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.p2align 4,,10
+	.p2align 3
+.L3347:
+	movq	%rbx, %r13
+.L3154:
+	movzwl	4(%rbp), %r8d
+.L3174:
+	movq	24(%rsp), %rax
+	movq	16(%rax), %rdi
+	cmpq	%r8, %r14
+	jnb	.L3176
+	movzbl	0(%rbp), %edx
+	movl	8(%rbp), %r9d
+	subq	%r14, %r8
+	movl	%edx, %ecx
+	andl	$3, %ecx
+	jne	.L3183
+	andl	$64, %edx
+	je	.L3245
+	movss	8(%rsp), %xmm0
+	movss	.LC53(%rip), %xmm1
+	andps	.LC52(%rip), %xmm0
+	ucomiss	%xmm0, %xmm1
+	jnb	.L3350
+.L3245:
+	movl	$2, %ecx
+	movl	$32, %r9d
+.L3183:
+	movq	%rbx, %rdx
+	movq	%r14, %rsi
+	call	_ZNSt8__format14__write_paddedINS_10_Sink_iterIcEEcEET_S3_St17basic_string_viewIT0_St11char_traitsIS5_EENS_6_AlignEmDi
+.LEHE56:
+	movq	%rax, %r15
+	jmp	.L3182
+	.p2align 4
+	.p2align 4,,10
+	.p2align 3
+.L3351:
+	addq	$1, %r9
+	cmpq	%r14, %r9
+	jnb	.L3338
+.L3086:
+	cmpb	$48, (%rbx,%r9)
+	je	.L3351
+	jmp	.L3084
+	.p2align 4,,10
+	.p2align 3
+.L3350:
+	movzbl	0(%r13), %eax
+	leaq	_ZNSt8__detail31__from_chars_alnum_to_val_tableILb0EE5valueE(%rip), %rdx
+	movl	$2, %ecx
+	movl	$48, %r9d
+	cmpb	$15, (%rdx,%rax)
+	jbe	.L3183
+	movq	24(%rdi), %rax
+	movzbl	(%rbx), %edx
+	leaq	1(%rax), %rcx
+	movq	%rcx, 24(%rdi)
+	movb	%dl, (%rax)
+	movq	24(%rdi), %rax
+	subq	8(%rdi), %rax
+	cmpq	16(%rdi), %rax
+	je	.L3352
+.L3184:
+	addq	$1, %rbx
+	subq	$1, %r14
+	movl	$2, %ecx
+	movl	$48, %r9d
+	jmp	.L3183
+	.p2align 4,,10
+	.p2align 3
+.L3223:
+	movq	$0, 40(%rsp)
+.L3079:
+	cmpb	$0, 32(%rsp)
+	je	.L3231
+	testq	%r12, %r12
+	je	.L3232
+	movq	40(%rsp), %r10
+	movzbl	%cl, %eax
+	movl	$1, %r11d
+	movq	%r10, %rdx
+	subq	%rax, %rdx
+.L3089:
+	subq	%rdx, %r12
+	addq	%r12, %r11
+	jmp	.L3082
+	.p2align 4,,10
+	.p2align 3
+.L3251:
+	movl	$6, %r12d
+.L3023:
+	movb	$101, 55(%rsp)
+	xorl	%r15d, %r15d
+.L3021:
+	movl	$3, 40(%rsp)
+	movb	$1, 32(%rsp)
+.L3031:
+	movl	40(%rsp), %edx
+	movss	8(%rsp), %xmm0
+	movl	%r12d, %ecx
+	leaq	320(%rsp), %r14
+	leaq	193(%rsp), %rbx
+	movq	%r14, %rsi
+	movq	%rbx, %rdi
+	call	_ZSt8to_charsPcS_fSt12chars_formati@PLT
+	movq	%rax, %r13
+	cmpl	$75, %edx
+	je	.L3034
+.L3336:
+	movq	%r14, %r8
+.L3035:
+	testb	%r15b, %r15b
+	je	.L3039
+	cmpq	%r13, %rbx
+	je	.L3039
+	movq	%rbx, %r14
+	movq	%r8, %r15
+	.p2align 4
+	.p2align 3
+.L3076:
+	movsbl	(%r14), %edi
+	addq	$1, %r14
+	call	toupper@PLT
+	movb	%al, -1(%r14)
+	cmpq	%r13, %r14
+	jne	.L3076
+	movq	%r15, %r8
+	jmp	.L3039
+	.p2align 4,,10
+	.p2align 3
+.L3252:
+	movl	$6, %r12d
+.L3335:
+	movb	$69, 55(%rsp)
+	movl	$1, %r15d
+	jmp	.L3021
+	.p2align 4,,10
+	.p2align 3
+.L3032:
+	andl	$120, %eax
+	movl	$112, %edx
+	cmpb	$16, %al
+	movl	$101, %eax
+	cmovne	%edx, %eax
+	xorl	%r15d, %r15d
+	movb	%al, 55(%rsp)
+.L3033:
+	movss	8(%rsp), %xmm0
+	movl	$4, %edx
+	leaq	320(%rsp), %r14
+	leaq	193(%rsp), %rbx
+	movq	%r14, %rsi
+	movq	%rbx, %rdi
+	movl	$6, %r12d
+	call	_ZSt8to_charsPcS_fSt12chars_format@PLT
+	movq	%rax, %r13
+	cmpl	$75, %edx
+	je	.L3218
+	movb	$0, 32(%rsp)
+	jmp	.L3336
+	.p2align 4,,10
+	.p2align 3
+.L3208:
+	andl	$120, %eax
+	movl	$80, %edx
+	movl	$1, %r15d
+	cmpb	$16, %al
+	movl	$112, %eax
+	cmove	%edx, %eax
+	movb	%al, 55(%rsp)
+	jmp	.L3033
+	.p2align 4,,10
+	.p2align 3
+.L3247:
+	movl	$6, %r12d
+.L3027:
+	movb	$101, 55(%rsp)
+	xorl	%r15d, %r15d
+.L3026:
+	movl	$1, 40(%rsp)
+	movb	$0, 32(%rsp)
+	jmp	.L3031
+	.p2align 4,,10
+	.p2align 3
+.L3248:
+	movl	$6, %r12d
+.L3333:
+	movb	$69, 55(%rsp)
+	movl	$1, %r15d
+	jmp	.L3026
+	.p2align 4,,10
+	.p2align 3
+.L3249:
+	movl	$6, %r12d
+.L3025:
+	xorl	%r15d, %r15d
+.L3024:
+	movl	$2, 40(%rsp)
+	movb	$101, 55(%rsp)
+	movb	$0, 32(%rsp)
+	jmp	.L3031
+	.p2align 4,,10
+	.p2align 3
+.L3250:
+	movl	$6, %r12d
+.L3334:
+	movl	$1, %r15d
+	jmp	.L3024
+	.p2align 4,,10
+	.p2align 3
+.L3349:
+	movzwl	6(%rdi), %edi
+	movq	24(%rsp), %rsi
+	leaq	96(%rsp), %rax
+	movq	%rax, 56(%rsp)
+.LEHB57:
+	call	_ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+.LEHE57:
+	movq	%rax, %r12
+	movzbl	1(%rbp), %eax
+	jmp	.L3019
+	.p2align 4,,10
+	.p2align 3
+.L3212:
+	movl	$3, 40(%rsp)
+	xorl	%r15d, %r15d
+	movb	$101, 55(%rsp)
+	movb	$0, 32(%rsp)
+	jmp	.L3031
+	.p2align 4,,10
+	.p2align 3
+.L3342:
+	movb	$43, -1(%rbx)
+	movl	$1, %ecx
+	movzbl	0(%rbp), %r15d
+	subq	$1, %rbx
+	jmp	.L3074
+	.p2align 4,,10
+	.p2align 3
+.L3231:
+	movq	40(%rsp), %r10
+	movl	$1, %r11d
+	xorl	%r12d, %r12d
+.L3088:
+	movq	104(%rsp), %r9
+	leaq	(%r14,%r11), %r15
+	testq	%r9, %r9
+	jne	.L3091
+	subq	%r13, %r8
+	cmpq	%r11, %r8
+	jnb	.L3092
+	movq	16(%rsp), %rax
+	cmpq	%rax, 96(%rsp)
+	je	.L3353
+	movq	112(%rsp), %rax
+	cmpq	%r15, %rax
+	jb	.L3197
+.L3107:
+	cmpq	%r10, %r14
+	movq	%r10, %r15
+	cmovbe	%r14, %r15
+	testq	%r15, %r15
+	js	.L3201
+	movq	112(%rsp), %rax
+	movq	96(%rsp), %r13
+	cmpq	%r15, %rax
+	jb	.L3354
+.L3204:
+	cmpq	%r13, %rbx
+	jb	.L3115
+	cmpq	%rbx, %r13
+	jnb	.L3355
+.L3115:
+	testq	%r15, %r15
+	je	.L3116
+	cmpq	$1, %r15
+	je	.L3356
+	movq	%r13, %rdi
+	movq	%r15, %rdx
+	movq	%rbx, %rsi
+	movq	%r10, 32(%rsp)
+	call	memcpy@PLT
+	movq	96(%rsp), %r13
+	movq	32(%rsp), %r10
+.L3116:
+	movq	40(%rsp), %rax
+	movq	%r15, 104(%rsp)
+	movb	$0, 0(%r13,%r15)
+	cmpq	%rax, %r10
+	je	.L3357
+.L3124:
+	testq	%r12, %r12
+	je	.L3125
+	movabsq	$9223372036854775807, %rax
+	movq	104(%rsp), %r15
+	subq	%r15, %rax
+	cmpq	%r12, %rax
+	jb	.L3358
+	movq	96(%rsp), %rax
+	movq	16(%rsp), %rcx
+	leaq	(%r12,%r15), %r13
+	cmpq	%rcx, %rax
+	je	.L3237
+	movq	112(%rsp), %rdx
+.L3128:
+	cmpq	%r13, %rdx
+	jb	.L3359
+.L3129:
+	leaq	(%rax,%r15), %rdi
+	cmpq	$1, %r12
+	je	.L3360
+	movq	%r12, %rdx
+	movl	$48, %esi
+	movq	%r10, 32(%rsp)
+	call	memset@PLT
+	movq	32(%rsp), %r10
+.L3131:
+	movq	96(%rsp), %rax
+	movq	%r13, 104(%rsp)
+	movb	$0, (%rax,%r13)
+.L3125:
+	cmpq	%r10, %r14
+	jb	.L3361
+	movq	104(%rsp), %rsi
+	subq	%r10, %r14
+	leaq	(%rbx,%r10), %rcx
+	movabsq	$9223372036854775807, %rax
+	subq	%rsi, %rax
+	cmpq	%r14, %rax
+	jb	.L3362
+	movq	96(%rsp), %rax
+	movq	16(%rsp), %rbx
+	leaq	(%r14,%rsi), %r12
+	cmpq	%rbx, %rax
+	je	.L3238
+	movq	112(%rsp), %rdx
+.L3136:
+	cmpq	%r12, %rdx
+	jb	.L3137
+	testq	%r14, %r14
+	je	.L3138
+	leaq	(%rax,%rsi), %rdi
+	cmpq	$1, %r14
+	je	.L3363
+	movq	%r14, %rdx
+	movq	%rcx, %rsi
+	call	memcpy@PLT
+	movq	96(%rsp), %rax
+.L3138:
+	movq	%r12, 104(%rsp)
+	movb	$0, (%rax,%r12)
+.L3140:
+	movq	104(%rsp), %r14
+	movq	96(%rsp), %rbx
+	movzbl	0(%rbp), %eax
+.L3111:
+	leaq	144(%rsp), %r12
+	movb	$0, 144(%rsp)
+	movq	%r12, 128(%rsp)
+	movq	$0, 136(%rsp)
+	testb	$32, %al
+	je	.L3171
+	jmp	.L3198
+	.p2align 4,,10
+	.p2align 3
+.L3243:
+	movq	%rbx, %r13
+.L3172:
+	movzwl	4(%rbp), %edi
+	movq	24(%rsp), %rsi
+.LEHB58:
+	call	_ZNKSt8__format5_SpecIcE12_M_get_widthISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+.LEHE58:
+	movq	%rax, %r8
+	jmp	.L3174
+	.p2align 4,,10
+	.p2align 3
+.L3348:
+	movzwl	6(%rdi), %r12d
+	jmp	.L3019
+	.p2align 4,,10
+	.p2align 3
+.L3034:
+	cmpl	$2, 40(%rsp)
+	leaq	8(%r12), %r13
+	movl	$1, %ebx
+	je	.L3364
+.L3036:
+	movq	96(%rsp), %r8
+	cmpq	$128, %r13
+	jbe	.L3206
+	movq	16(%rsp), %rax
+	cmpq	%rax, %r8
+	je	.L3365
+	movq	112(%rsp), %rax
+	cmpq	%r13, %rax
+	jb	.L3366
+.L3071:
+	movq	16(%rsp), %rax
+	cmpq	%rax, %r8
+	je	.L3221
+	movq	112(%rsp), %rax
+	leaq	(%rax,%rax), %r13
+	cmpq	%r13, %rax
+	jb	.L3367
+.L3060:
+	leaq	-1(%r8,%r13), %rsi
+	leaq	1(%r8), %rdi
+	testb	%bl, %bl
+	jne	.L3368
+	movl	40(%rsp), %edx
+	movss	8(%rsp), %xmm0
+	movq	%r8, 56(%rsp)
+	testl	%edx, %edx
+	jne	.L3369
+	call	_ZSt8to_charsPcS_f@PLT
+	movq	56(%rsp), %r8
+	movq	%rax, %rcx
+.L3068:
+	movq	%rcx, %r13
+	testl	%edx, %edx
+	jne	.L3070
+	movq	96(%rsp), %rdx
+	movq	%rcx, %rax
+	subq	%r8, %rax
+	movq	%rax, 104(%rsp)
+	movb	$0, (%rdx,%rax)
+	movq	96(%rsp), %r8
+	leaq	1(%r8), %rbx
+	addq	104(%rsp), %r8
+	jmp	.L3035
+	.p2align 4,,10
+	.p2align 3
+.L3218:
+	movl	$4, 40(%rsp)
+	xorl	%ebx, %ebx
+	movl	$14, %r13d
+	movb	$0, 32(%rsp)
+	jmp	.L3036
+	.p2align 4,,10
+	.p2align 3
+.L3344:
+	xorl	%r11d, %r11d
+	cmpq	%rax, %r14
+	sete	%r11b
+	cmpb	$0, 32(%rsp)
+	je	.L3224
+	movzbl	%cl, %eax
+	movq	%r14, %r10
+	cmpb	$48, (%rbx,%rax)
+	jne	.L3083
+.L3338:
+	movq	$-1, %r9
+.L3084:
+	movq	%r10, %rdx
+	subq	%r9, %rdx
+	jmp	.L3087
+	.p2align 4,,10
+	.p2align 3
+.L3080:
+	movsbl	55(%rsp), %esi
+	movq	%r14, %rdx
+	movq	%rbx, %rdi
+	movb	%cl, 56(%rsp)
+	movq	%r8, 40(%rsp)
+	call	memchr@PLT
+	movq	40(%rsp), %r8
+	movzbl	56(%rsp), %ecx
+	testq	%rax, %rax
+	je	.L3229
+	subq	%rbx, %rax
+	cmpq	$-1, %rax
+	cmove	%r14, %rax
+	movq	%rax, 40(%rsp)
+	jmp	.L3079
+	.p2align 4,,10
+	.p2align 3
+.L3345:
+	movq	%r15, %rdi
+	call	_ZNSt6localeC1Ev@PLT
+	movq	24(%rsp), %rax
+	movb	$1, 32(%rax)
+	jmp	.L3156
+	.p2align 4,,10
+	.p2align 3
+.L3228:
+	xorl	%r12d, %r12d
+	jmp	.L3082
+.L3028:
+	andl	$120, %eax
+	movl	$4, 40(%rsp)
+	cmpb	$16, %al
+	je	.L3215
+	movb	$112, 55(%rsp)
+	movl	$1, %r15d
+	movb	$0, 32(%rsp)
+	jmp	.L3031
+.L3029:
+	andl	$120, %eax
+	movl	$4, 40(%rsp)
+	cmpb	$16, %al
+	je	.L3217
+	movb	$112, 55(%rsp)
+	xorl	%r15d, %r15d
+	movb	$0, 32(%rsp)
+	jmp	.L3031
+.L3369:
+	call	_ZSt8to_charsPcS_fSt12chars_format@PLT
+	movq	56(%rsp), %r8
+	movq	%rax, %rcx
+	jmp	.L3068
+.L3224:
+	movq	%r14, %r10
+	xorl	%r12d, %r12d
+	jmp	.L3082
+.L3366:
+	testq	%r13, %r13
+	js	.L3046
+	addq	%rax, %rax
+	cmpq	%rax, %r13
+	jnb	.L3316
+	testq	%rax, %rax
+	js	.L3053
+.L3050:
+	leaq	1(%rax), %rdi
+	movq	%rax, %r13
+.L3042:
+	leaq	96(%rsp), %rax
+	movq	%rax, 56(%rsp)
+.LEHB59:
+	call	_Znwm@PLT
+	movq	%rax, %r8
+	movq	104(%rsp), %rax
+	movq	96(%rsp), %r9
+	leaq	1(%rax), %rdx
+	testq	%rax, %rax
+	je	.L3370
+	testq	%rdx, %rdx
+	je	.L3056
+	movq	%r9, %rsi
+	movq	%r8, %rdi
+	movq	%r9, 56(%rsp)
+	call	memcpy@PLT
+	movq	56(%rsp), %r9
+	movq	%rax, %r8
+	movq	16(%rsp), %rax
+	cmpq	%rax, %r9
+	je	.L3057
+.L3056:
+	movq	112(%rsp), %rax
+	movq	%r9, %rdi
+	movq	%r8, 56(%rsp)
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+	movq	56(%rsp), %r8
+.L3057:
+	movq	%r8, 96(%rsp)
+	movq	%r13, 112(%rsp)
+	jmp	.L3071
+.L3364:
+	movss	8(%rsp), %xmm0
+	leaq	88(%rsp), %rdi
+	movl	$0, 88(%rsp)
+	call	frexpf@PLT
+	movl	88(%rsp), %eax
+	testl	%eax, %eax
+	jle	.L3040
+	imull	$4004, %eax, %edx
+	movq	%rdx, %rax
+	imulq	$995517945, %rdx, %rdx
+	shrq	$32, %rdx
+	subl	%edx, %eax
+	shrl	%eax
+	addl	%edx, %eax
+	shrl	$13, %eax
+	addl	$1, %eax
+	addq	%rax, %r13
+.L3040:
+	movl	$1, %ebx
+	jmp	.L3036
+.L3242:
+	movq	%rbx, %r13
+	movq	%rax, %r14
+	movq	%rcx, %rbx
+	jmp	.L3172
+.L3229:
+	movq	%r14, 40(%rsp)
+	jmp	.L3079
+.L3353:
+	cmpq	$15, %r15
+	ja	.L3195
+	cmpq	%r10, %r14
+	movq	%r10, %r15
+	cmovbe	%r14, %r15
+	testq	%r15, %r15
+	js	.L3201
+	cmpq	$15, %r15
+	ja	.L3203
+	movq	16(%rsp), %r13
+	jmp	.L3204
+	.p2align 4,,10
+	.p2align 3
+.L3070:
+	movq	$0, 104(%rsp)
+	movq	96(%rsp), %rax
+	movb	$0, (%rax)
+	movq	96(%rsp), %r8
+	cmpl	$75, %edx
+	je	.L3071
+	leaq	1(%r8), %rbx
+	addq	104(%rsp), %r8
+	jmp	.L3035
+	.p2align 4,,10
+	.p2align 3
+.L3091:
+	movq	16(%rsp), %rax
+	cmpq	%rax, 96(%rsp)
+	je	.L3371
+	movq	112(%rsp), %rax
+	cmpq	%r15, %rax
+	jnb	.L3109
+.L3197:
+	testq	%r15, %r15
+	js	.L3097
+	addq	%rax, %rax
+	cmpq	%rax, %r15
+	jnb	.L3099
+	leaq	1(%rax), %rdi
+	movq	%rax, %r15
+	testq	%rax, %rax
+	jns	.L3103
+.L3102:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3324
+	leaq	96(%rsp), %rax
+	movq	%rax, 56(%rsp)
+	call	_ZSt17__throw_bad_allocv@PLT
+.L3099:
+	movq	%r15, %rdi
+	addq	$1, %rdi
+	js	.L3102
+.L3103:
+	leaq	96(%rsp), %rax
+	movq	%r10, 64(%rsp)
+	movq	%r11, 32(%rsp)
+	movq	%rax, 56(%rsp)
+	call	_Znwm@PLT
+	movq	104(%rsp), %r9
+	movq	96(%rsp), %rcx
+	movq	%rax, %r8
+	movq	32(%rsp), %r11
+	movq	64(%rsp), %r10
+	testq	%r9, %r9
+	leaq	1(%r9), %rdx
+	je	.L3372
+	movq	%r9, 32(%rsp)
+	testq	%rdx, %rdx
+	je	.L3106
+	movq	%rcx, %rsi
+	movq	%rax, %rdi
+	movq	%r10, 72(%rsp)
+	movq	%r11, 64(%rsp)
+	movq	%rcx, 56(%rsp)
+	call	memcpy@PLT
+	movq	56(%rsp), %rcx
+	movq	64(%rsp), %r11
+	movq	%rax, %r8
+	movq	16(%rsp), %rax
+	movq	72(%rsp), %r10
+	movq	32(%rsp), %r9
+	cmpq	%rax, %rcx
+	je	.L3108
+.L3106:
+	movq	112(%rsp), %rax
+	movq	%rcx, %rdi
+	movq	%r8, 64(%rsp)
+	movq	%r10, 56(%rsp)
+	leaq	1(%rax), %rsi
+	movq	%r11, 32(%rsp)
+	call	_ZdlPvm@PLT
+	movq	104(%rsp), %r9
+	movq	64(%rsp), %r8
+	movq	%r15, 112(%rsp)
+	movq	32(%rsp), %r11
+	movq	56(%rsp), %r10
+	testq	%r9, %r9
+	movq	%r8, 96(%rsp)
+	je	.L3107
+.L3109:
+	cmpq	%r10, %r9
+	jb	.L3373
+	movabsq	$9223372036854775807, %rax
+	subq	%r9, %rax
+	cmpq	%r11, %rax
+	jb	.L3374
+	movq	96(%rsp), %rax
+	movq	16(%rsp), %rcx
+	leaq	(%r11,%r9), %rbx
+	cmpq	%rcx, %rax
+	je	.L3239
+	movq	112(%rsp), %rdx
+.L3145:
+	cmpq	%rbx, %rdx
+	jb	.L3146
+	leaq	(%rax,%r10), %rdi
+	subq	%r10, %r9
+	je	.L3147
+	leaq	(%rdi,%r11), %rax
+	cmpq	$1, %r9
+	je	.L3375
+	movq	%rdi, %rsi
+	movq	%r9, %rdx
+	movq	%rax, %rdi
+	movq	%r10, 56(%rsp)
+	movq	%r11, 32(%rsp)
+	call	memmove@PLT
+	movq	56(%rsp), %r10
+	movq	96(%rsp), %rdi
+	movq	32(%rsp), %r11
+	addq	%r10, %rdi
+	.p2align 4
+	.p2align 3
+.L3147:
+	cmpq	$1, %r11
+	je	.L3376
+	movq	%r11, %rdx
+	movl	$48, %esi
+	movq	%r10, 32(%rsp)
+	call	memset@PLT
+	movq	32(%rsp), %r10
+.L3150:
+	movq	96(%rsp), %rax
+	movq	%rbx, 104(%rsp)
+	movb	$0, (%rax,%rbx)
+	movq	40(%rsp), %rax
+	cmpq	%rax, %r10
+	jne	.L3140
+	movq	96(%rsp), %rax
+	movb	$46, (%rax,%r10)
+	jmp	.L3140
+.L3346:
+	movq	160(%rsp), %rdx
+	leaq	176(%rsp), %rsi
+	cmpq	%rsi, %rdx
+	je	.L3377
+	movdqu	168(%rsp), %xmm0
+	movq	%rdx, 128(%rsp)
+	movups	%xmm0, 136(%rsp)
+.L3160:
+	movq	%rsi, 160(%rsp)
+	leaq	176(%rsp), %rsi
+	movq	%rsi, %rax
+	jmp	.L3169
+.L3367:
+	testq	%r13, %r13
+	js	.L3378
+	leaq	1(%r13), %rdi
+.L3059:
+	leaq	96(%rsp), %rax
+	movq	%rax, 56(%rsp)
+	call	_Znwm@PLT
+	movq	%rax, %r8
+	movq	104(%rsp), %rax
+	movq	96(%rsp), %r9
+	leaq	1(%rax), %rdx
+	testq	%rax, %rax
+	je	.L3379
+	testq	%rdx, %rdx
+	je	.L3064
+	movq	%r9, %rsi
+	movq	%r8, %rdi
+	movq	%r9, 56(%rsp)
+	call	memcpy@PLT
+	movq	56(%rsp), %r9
+	movq	%rax, %r8
+	movq	16(%rsp), %rax
+	cmpq	%rax, %r9
+	je	.L3065
+.L3064:
+	movq	112(%rsp), %rax
+	movq	%r9, %rdi
+	movq	%r8, 56(%rsp)
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+	movq	56(%rsp), %r8
+.L3065:
+	movq	%r8, 96(%rsp)
+	movq	%r13, 112(%rsp)
+	jmp	.L3060
+.L3038:
+	movb	$101, 55(%rsp)
+	movq	96(%rsp), %r8
+	xorl	%r15d, %r15d
+	xorl	%ebx, %ebx
+	movb	$0, 32(%rsp)
+	movl	$6, %r12d
+	movl	$0, 40(%rsp)
+.L3206:
+	movq	16(%rsp), %rax
+	cmpq	%rax, %r8
+	je	.L3220
+	movq	112(%rsp), %rax
+	cmpq	$255, %rax
+	ja	.L3071
+	addq	%rax, %rax
+	cmpq	$256, %rax
+	ja	.L3050
+.L3220:
+	movl	$256, %r13d
+	movl	$257, %edi
+	jmp	.L3042
+.L3368:
+	movl	40(%rsp), %edx
+	movss	8(%rsp), %xmm0
+	movl	%r12d, %ecx
+	movq	%r8, 56(%rsp)
+	call	_ZSt8to_charsPcS_fSt12chars_formati@PLT
+	movq	56(%rsp), %r8
+	movq	%rax, %rcx
+	jmp	.L3068
+.L3377:
+	movq	168(%rsp), %rdx
+	movq	%rdx, %r8
+.L3193:
+	testq	%rdx, %rdx
+	je	.L3161
+	cmpq	$1, %rdx
+	je	.L3380
+	movl	%edx, %eax
+	cmpl	$8, %edx
+	jnb	.L3163
+	testb	$4, %dl
+	jne	.L3381
+	testl	%edx, %edx
+	je	.L3164
+	movzbl	176(%rsp), %ecx
+	andl	$2, %edx
+	movb	%cl, (%rdi)
+	jne	.L3321
+.L3339:
+	movq	128(%rsp), %rdi
+	movq	168(%rsp), %rdx
+.L3164:
+	movq	%rdx, %r8
+	movq	%rdi, %rax
+.L3161:
+	movq	%r8, 136(%rsp)
+	movb	$0, (%rax,%r8)
+	movq	160(%rsp), %rax
+	jmp	.L3169
+.L3241:
+	movq	%rbx, %r13
+	movq	%rax, %r14
+	movq	%rcx, %rbx
+	jmp	.L3154
+.L3092:
+	leaq	(%rbx,%r10), %r13
+	leaq	(%r11,%r10), %rdi
+	movq	%r14, %rdx
+	movq	%r10, 32(%rsp)
+	subq	%r10, %rdx
+	addq	%rbx, %rdi
+	movq	%r13, %rsi
+	call	memmove@PLT
+	movq	40(%rsp), %rax
+	movq	32(%rsp), %r10
+	cmpq	%rax, %r10
+	jne	.L3110
+	movb	$46, 0(%r13)
+	leaq	1(%rbx,%r10), %r13
+.L3110:
+	movq	%r12, %rdx
+	movl	$48, %esi
+	movq	%r13, %rdi
+	movq	%r15, %r14
+	call	memset@PLT
+	movzbl	0(%rbp), %eax
+	jmp	.L3111
+.L3232:
+	movq	40(%rsp), %r10
+	movl	$1, %r11d
+	jmp	.L3088
+.L3226:
+	movq	%r14, %r10
+	jmp	.L3085
+.L3221:
+	movl	$31, %edi
+	movl	$30, %r13d
+	jmp	.L3059
+.L3365:
+	testq	%r13, %r13
+	js	.L3046
+.L3316:
+	leaq	1(%r13), %rdi
+	testq	%rdi, %rdi
+	jns	.L3042
+.L3053:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3324
+	leaq	96(%rsp), %rax
+	movq	%rax, 56(%rsp)
+	call	_ZSt17__throw_bad_allocv@PLT
+.L3379:
+	movzbl	(%r9), %eax
+	movb	%al, (%r8)
+	movq	16(%rsp), %rax
+	cmpq	%rax, %r9
+	jne	.L3064
+	jmp	.L3065
+.L3146:
+	leaq	96(%rsp), %rdi
+	movq	%r11, %r8
+	xorl	%ecx, %ecx
+	xorl	%edx, %edx
+	movq	%r10, %rsi
+	movq	%rdi, 56(%rsp)
+	movq	%r11, 64(%rsp)
+	movq	%r10, 32(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	movq	32(%rsp), %r10
+	movq	96(%rsp), %rdi
+	movq	64(%rsp), %r11
+	addq	%r10, %rdi
+	jmp	.L3147
+.L3137:
+	leaq	96(%rsp), %rax
+	movq	%r14, %r8
+	xorl	%edx, %edx
+	movq	%rax, %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	movq	96(%rsp), %rax
+	jmp	.L3138
+.L3370:
+	movzbl	(%r9), %eax
+	movb	%al, (%r8)
+	movq	16(%rsp), %rax
+	cmpq	%rax, %r9
+	jne	.L3056
+	jmp	.L3057
+.L3372:
+	movzbl	(%rcx), %eax
+	movb	%al, (%r8)
+	movq	16(%rsp), %rax
+	cmpq	%rax, %rcx
+	jne	.L3106
+	movq	%r8, 96(%rsp)
+	movq	%r15, 112(%rsp)
+	jmp	.L3107
+.L3217:
+	movb	$101, 55(%rsp)
+	xorl	%r15d, %r15d
+	movb	$0, 32(%rsp)
+	jmp	.L3031
+.L3215:
+	movb	$80, 55(%rsp)
+	movl	$1, %r15d
+	movb	$0, 32(%rsp)
+	jmp	.L3031
+.L3357:
+	leaq	96(%rsp), %rax
+	movl	$46, %esi
+	movq	%r10, 32(%rsp)
+	movq	%rax, %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9push_backEc
+	movq	32(%rsp), %r10
+	jmp	.L3124
+.L3371:
+	cmpq	$15, %r15
+	jbe	.L3109
+.L3195:
+	testq	%r15, %r15
+	js	.L3097
+	cmpq	$29, %r15
+	ja	.L3099
+	movl	$31, %edi
+	movl	$30, %r15d
+	jmp	.L3103
+.L3239:
+	movl	$15, %edx
+	jmp	.L3145
+.L3238:
+	movl	$15, %edx
+	jmp	.L3136
+.L3376:
+	movb	$48, (%rdi)
+	jmp	.L3150
+.L3359:
+	leaq	96(%rsp), %rax
+	movq	%r12, %r8
+	xorl	%ecx, %ecx
+	xorl	%edx, %edx
+	movq	%r15, %rsi
+	movq	%rax, %rdi
+	movq	%r10, 32(%rsp)
+	movq	%rax, 56(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	movq	96(%rsp), %rax
+	movq	32(%rsp), %r10
+	jmp	.L3129
+.L3375:
+	movzbl	(%rdi), %edx
+	movb	%dl, (%rax)
+	movq	96(%rsp), %rdi
+	addq	%r10, %rdi
+	jmp	.L3147
+.L3356:
+	movzbl	(%rbx), %eax
+	movb	%al, 0(%r13)
+	movq	96(%rsp), %r13
+	jmp	.L3116
+.L3363:
+	movzbl	(%rcx), %eax
+	movb	%al, (%rdi)
+	movq	96(%rsp), %rax
+	jmp	.L3138
+.L3354:
+	leaq	(%rax,%rax), %rcx
+	cmpq	%rcx, %r15
+	jnb	.L3118
+	leaq	1(%rcx), %rdi
+	testq	%rcx, %rcx
+	jns	.L3120
+.L3119:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3324
+	leaq	96(%rsp), %rax
+	movq	%rax, 56(%rsp)
+	call	_ZSt17__throw_bad_allocv@PLT
+.L3118:
+	movq	%r15, %rdi
+	movq	%r15, %rcx
+	addq	$1, %rdi
+	js	.L3119
+.L3120:
+	leaq	96(%rsp), %rax
+	movq	%rcx, 64(%rsp)
+	movq	%r10, 32(%rsp)
+	movq	%rax, 56(%rsp)
+	call	_Znwm@PLT
+.LEHE59:
+	cmpq	$1, %r15
+	movq	32(%rsp), %r10
+	movq	64(%rsp), %rcx
+	movq	%rax, %r13
+	je	.L3382
+.L3114:
+	movq	%r15, %rdx
+	movq	%rbx, %rsi
+	movq	%r13, %rdi
+	movq	%rcx, 56(%rsp)
+	movq	%r10, 32(%rsp)
+	call	memcpy@PLT
+	movq	56(%rsp), %rcx
+	movq	32(%rsp), %r10
+.L3122:
+	movq	96(%rsp), %rdi
+	movq	16(%rsp), %rax
+	cmpq	%rax, %rdi
+	je	.L3123
+	movq	112(%rsp), %rax
+	movq	%rcx, 56(%rsp)
+	movq	%r10, 32(%rsp)
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+	movq	56(%rsp), %rcx
+	movq	32(%rsp), %r10
+.L3123:
+	movq	%r13, 96(%rsp)
+	movq	%rcx, 112(%rsp)
+	jmp	.L3116
+.L3163:
+	movq	176(%rsp), %rax
+	movq	%rax, (%rdi)
+	movl	%edx, %eax
+	movq	-8(%rsi,%rax), %rcx
+	movq	%rcx, -8(%rdi,%rax)
+	leaq	8(%rdi), %rcx
+	movq	%rdi, %rax
+	movq	%rsi, %rdi
+	andq	$-8, %rcx
+	subq	%rcx, %rax
+	subq	%rax, %rdi
+	addl	%edx, %eax
+	andl	$-8, %eax
+	cmpl	$8, %eax
+	jb	.L3339
+	andl	$-8, %eax
+	xorl	%edx, %edx
+.L3167:
+	movl	%edx, %r8d
+	addl	$8, %edx
+	movq	(%rdi,%r8), %r9
+	movq	%r9, (%rcx,%r8)
+	cmpl	%eax, %edx
+	jb	.L3167
+	jmp	.L3339
+.L3380:
+	movzbl	176(%rsp), %eax
+	movb	%al, (%rdi)
+	movq	168(%rsp), %r8
+	movq	128(%rsp), %rax
+	jmp	.L3161
+.L3237:
+	movl	$15, %edx
+	jmp	.L3128
+.L3360:
+	movb	$48, (%rdi)
+	jmp	.L3131
+.L3352:
+	movq	(%rdi), %rax
+	movq	%r8, 24(%rsp)
+	movq	%rdi, 8(%rsp)
+.LEHB60:
+	call	*(%rax)
+.LEHE60:
+	movq	24(%rsp), %r8
+	movq	8(%rsp), %rdi
+	jmp	.L3184
+.L3203:
+	movq	%r10, 32(%rsp)
+	cmpq	$29, %r15
+	ja	.L3113
+	leaq	96(%rsp), %rax
+	movl	$31, %edi
+	movq	%rax, 56(%rsp)
+.LEHB61:
+	call	_Znwm@PLT
+	movq	32(%rsp), %r10
+	movq	%rax, %r13
+	movl	$30, %ecx
+	jmp	.L3114
+.L3382:
+	movzbl	(%rbx), %eax
+	movb	%al, 0(%r13)
+	jmp	.L3122
+.L3113:
+	movq	%r15, %rdi
+	addq	$1, %rdi
+	js	.L3119
+	leaq	96(%rsp), %rax
+	movq	%rax, 56(%rsp)
+	call	_Znwm@PLT
+	movq	32(%rsp), %r10
+	movq	%rax, %r13
+	movq	%r15, %rcx
+	jmp	.L3114
+.L3378:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L3062
+.L3324:
+	call	__stack_chk_fail@PLT
+.L3381:
+	movl	176(%rsp), %edx
+	movl	%edx, (%rdi)
+	movl	-4(%rsi,%rax), %edx
+	movl	%edx, -4(%rdi,%rax)
+	movq	128(%rsp), %rdi
+	movq	168(%rsp), %rdx
+	jmp	.L3164
+.L3321:
+	movzwl	-2(%rsi,%rax), %edx
+	movw	%dx, -2(%rdi,%rax)
+	movq	128(%rsp), %rdi
+	movq	168(%rsp), %rdx
+	jmp	.L3164
+.L3108:
+	movq	%r8, 96(%rsp)
+	movq	%r15, 112(%rsp)
+	jmp	.L3109
+.L3362:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3324
+	leaq	96(%rsp), %rax
+	leaq	.LC23(%rip), %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L3062:
+	leaq	96(%rsp), %rax
+	leaq	.LC22(%rip), %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L3097:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3324
+	leaq	96(%rsp), %rax
+	leaq	.LC22(%rip), %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L3358:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3324
+	leaq	96(%rsp), %rax
+	leaq	.LC24(%rip), %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L3374:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3324
+	leaq	96(%rsp), %rax
+	leaq	.LC24(%rip), %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L3373:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3324
+	leaq	96(%rsp), %rax
+	movq	%r9, %rcx
+	movq	%r10, %rdx
+	movq	%rax, 56(%rsp)
+	leaq	.LC46(%rip), %rsi
+	leaq	.LC47(%rip), %rdi
+	xorl	%eax, %eax
+	call	_ZSt24__throw_out_of_range_fmtPKcz@PLT
+.L3255:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L3187
+.L3046:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3324
+	leaq	96(%rsp), %rax
+	leaq	.LC22(%rip), %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.LEHE61:
+.L3187:
+	movq	%r13, %rdi
+	call	_ZNSt6localeD1Ev@PLT
+.L3188:
+	leaq	128(%rsp), %rdi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+	leaq	96(%rsp), %rax
+	movq	%rax, 56(%rsp)
+.L3189:
+	movq	56(%rsp), %rdi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3324
+	movq	%rbx, %rdi
+.LEHB62:
+	call	_Unwind_Resume@PLT
+.LEHE62:
+.L3361:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3324
+	leaq	96(%rsp), %rax
+	movq	%r14, %rcx
+	movq	%r10, %rdx
+	movq	%rax, 56(%rsp)
+	leaq	.LC45(%rip), %rsi
+	leaq	.LC40(%rip), %rdi
+	xorl	%eax, %eax
+.LEHB63:
+	call	_ZSt24__throw_out_of_range_fmtPKcz@PLT
+.L3201:
+	movq	328(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3324
+	leaq	96(%rsp), %rax
+	leaq	.LC44(%rip), %rdi
+	movq	%rax, 56(%rsp)
+	call	_ZSt20__throw_length_errorPKc@PLT
+.L3355:
+	leaq	96(%rsp), %rax
+	xorl	%r9d, %r9d
+	movq	%r15, %r8
+	movq	%rbx, %rcx
+	xorl	%edx, %edx
+	movq	%r13, %rsi
+	movq	%rax, %rdi
+	movq	%r10, 32(%rsp)
+	movq	%rax, 56(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE15_M_replace_coldEPcmPKcmm@PLT
+.LEHE63:
+	movq	32(%rsp), %r10
+	movq	96(%rsp), %r13
+	jmp	.L3116
+.L3254:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L3189
+.L3256:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L3188
+.L3020:
+	.cfi_endproc
+.LFE5420:
+	.section	.gcc_except_table._ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"aG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+.LLSDA5420:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x1
+	.uleb128 .LLSDACSE5420-.LLSDACSB5420
+.LLSDACSB5420:
+	.uleb128 .LEHB55-.LFB5420
+	.uleb128 .LEHE55-.LEHB55
+	.uleb128 .L3255-.LFB5420
+	.uleb128 0
+	.uleb128 .LEHB56-.LFB5420
+	.uleb128 .LEHE56-.LEHB56
+	.uleb128 .L3256-.LFB5420
+	.uleb128 0
+	.uleb128 .LEHB57-.LFB5420
+	.uleb128 .LEHE57-.LEHB57
+	.uleb128 .L3254-.LFB5420
+	.uleb128 0
+	.uleb128 .LEHB58-.LFB5420
+	.uleb128 .LEHE58-.LEHB58
+	.uleb128 .L3256-.LFB5420
+	.uleb128 0
+	.uleb128 .LEHB59-.LFB5420
+	.uleb128 .LEHE59-.LEHB59
+	.uleb128 .L3254-.LFB5420
+	.uleb128 0
+	.uleb128 .LEHB60-.LFB5420
+	.uleb128 .LEHE60-.LEHB60
+	.uleb128 .L3256-.LFB5420
+	.uleb128 0
+	.uleb128 .LEHB61-.LFB5420
+	.uleb128 .LEHE61-.LEHB61
+	.uleb128 .L3254-.LFB5420
+	.uleb128 0
+	.uleb128 .LEHB62-.LFB5420
+	.uleb128 .LEHE62-.LEHB62
+	.uleb128 0
+	.uleb128 0
+	.uleb128 .LEHB63-.LFB5420
+	.uleb128 .LEHE63-.LEHB63
+	.uleb128 .L3254-.LFB5420
+	.uleb128 0
+.LLSDACSE5420:
+	.section	.text._ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,"axG",@progbits,_ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_,comdat
+	.size	_ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_, .-_ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	.section	.text._ZNKSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_Iterator11_M_is_breakENS0_13_Gcb_propertyES8_NS_13_Utf_iteratorIcDiPKcSB_NS_5_ReplEEE,"axG",@progbits,_ZNKSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_Iterator11_M_is_breakENS0_13_Gcb_propertyES8_NS_13_Utf_iteratorIcDiPKcSB_NS_5_ReplEEE,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNKSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_Iterator11_M_is_breakENS0_13_Gcb_propertyES8_NS_13_Utf_iteratorIcDiPKcSB_NS_5_ReplEEE
+	.type	_ZNKSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_Iterator11_M_is_breakENS0_13_Gcb_propertyES8_NS_13_Utf_iteratorIcDiPKcSB_NS_5_ReplEEE, @function
+_ZNKSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_Iterator11_M_is_breakENS0_13_Gcb_propertyES8_NS_13_Utf_iteratorIcDiPKcSB_NS_5_ReplEEE:
+.LFB5714:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	subq	$64, %rsp
+	.cfi_def_cfa_offset 112
+	movq	%fs:40, %rax
+	movq	%rax, 56(%rsp)
+	leal	-1(%rsi), %eax
+	cmpl	$1, %eax
+	jbe	.L3395
+	cmpl	$2, %edx
+	movl	%edx, %ebp
+	setne	%al
+	cmpl	$3, %esi
+	je	.L3383
+	leal	-1(%rdx), %eax
+	cmpl	$2, %eax
+	jbe	.L3395
+	leal	-7(%rsi), %eax
+	movq	%rdi, %r12
+	cmpl	$5, %eax
+	ja	.L3388
+	leaq	.L3390(%rip), %rdx
+	movslq	(%rdx,%rax,4), %rax
+	addq	%rdx, %rax
+	notrack jmp	*%rax
+	.section	.rodata._ZNKSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_Iterator11_M_is_breakENS0_13_Gcb_propertyES8_NS_13_Utf_iteratorIcDiPKcSB_NS_5_ReplEEE,"aG",@progbits,_ZNKSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_Iterator11_M_is_breakENS0_13_Gcb_propertyES8_NS_13_Utf_iteratorIcDiPKcSB_NS_5_ReplEEE,comdat
+	.align 4
+	.align 4
+.L3390:
+	.long	.L3392-.L3390
+	.long	.L3391-.L3390
+	.long	.L3389-.L3390
+	.long	.L3388-.L3390
+	.long	.L3391-.L3390
+	.long	.L3389-.L3390
+	.section	.text._ZNKSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_Iterator11_M_is_breakENS0_13_Gcb_propertyES8_NS_13_Utf_iteratorIcDiPKcSB_NS_5_ReplEEE,"axG",@progbits,_ZNKSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_Iterator11_M_is_breakENS0_13_Gcb_propertyES8_NS_13_Utf_iteratorIcDiPKcSB_NS_5_ReplEEE,comdat
+	.p2align 4,,10
+	.p2align 3
+.L3389:
+	cmpl	$9, %ebp
+	setne	%al
+	.p2align 4
+	.p2align 3
+.L3383:
+	movq	56(%rsp), %rdx
+	subq	%fs:40, %rdx
+	jne	.L3444
+	addq	$64, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L3391:
+	.cfi_restore_state
+	subl	$8, %ebp
+	cmpl	$1, %ebp
+	seta	%al
+	jmp	.L3383
+	.p2align 4,,10
+	.p2align 3
+.L3392:
+	cmpl	$8, %ebp
+	jg	.L3393
+	cmpl	$6, %ebp
+	jg	.L3394
+	.p2align 4
+	.p2align 3
+.L3395:
+	movl	$1, %eax
+	jmp	.L3383
+	.p2align 4,,10
+	.p2align 3
+.L3388:
+	movl	%ebp, %eax
+	andl	$-3, %eax
+	cmpl	$4, %eax
+	sete	%al
+	cmpl	$5, %esi
+	sete	%dl
+	orl	%edx, %eax
+	cmpl	$10, %ebp
+	sete	%dl
+	orb	%dl, %al
+	je	.L3445
+.L3394:
+	xorl	%eax, %eax
+	jmp	.L3383
+	.p2align 4,,10
+	.p2align 3
+.L3393:
+	subl	$11, %ebp
+	cmpl	$1, %ebp
+	ja	.L3395
+	xorl	%eax, %eax
+	jmp	.L3383
+	.p2align 4,,10
+	.p2align 3
+.L3445:
+	movzbl	10(%r12), %r13d
+	testb	%r13b, %r13b
+	je	.L3396
+	movl	(%r12), %ecx
+	leal	0(,%rcx,4), %edx
+	cmpl	$3073, %edx
+	ja	.L3446
+.L3396:
+	cmpl	$10, %esi
+	je	.L3447
+	cmpl	$13, %esi
+	jne	.L3395
+	cmpl	%ebp, %esi
+	jne	.L3395
+	movzbl	9(%r12), %eax
+	notl	%eax
+	andl	$1, %eax
+	jmp	.L3383
+	.p2align 4,,10
+	.p2align 3
+.L3447:
+	cmpb	$2, 8(%r12)
+	setne	%al
+	jmp	.L3383
+.L3446:
+	orl	$3, %edx
+	movl	$389, %ecx
+	leaq	_ZNSt9__unicode9__v15_1_012__incb_edgesE(%rip), %r8
+.L3398:
+	testq	%rcx, %rcx
+	jle	.L3448
+.L3399:
+	movq	%rcx, %r9
+	sarq	%r9
+	leaq	(%r8,%r9,4), %rdi
+	cmpl	%edx, (%rdi)
+	jnb	.L3421
+	subq	%r9, %rcx
+	leaq	4(%rdi), %r8
+	subq	$1, %rcx
+	testq	%rcx, %rcx
+	jg	.L3399
+.L3448:
+	movl	-4(%r8), %edx
+	andl	$3, %edx
+	cmpl	$1, %edx
+	jne	.L3396
+	movzbl	136(%rsp), %edx
+	movq	%rdx, %r14
+	movl	112(%rsp,%rdx,4), %edx
+	sall	$2, %edx
+	cmpl	$3073, %edx
+	jbe	.L3396
+	orl	$3, %edx
+	movl	$389, %ecx
+	leaq	_ZNSt9__unicode9__v15_1_012__incb_edgesE(%rip), %r8
+.L3401:
+	testq	%rcx, %rcx
+	jle	.L3449
+.L3402:
+	movq	%rcx, %r9
+	sarq	%r9
+	leaq	(%r8,%r9,4), %rdi
+	cmpl	%edx, (%rdi)
+	jnb	.L3422
+	subq	%r9, %rcx
+	leaq	4(%rdi), %r8
+	subq	$1, %rcx
+	testq	%rcx, %rcx
+	jg	.L3402
+.L3449:
+	movl	-4(%r8), %edx
+	andl	$3, %edx
+	subl	$1, %edx
+	jne	.L3396
+	movdqu	16(%r12), %xmm0
+	movq	48(%r12), %rdx
+	movaps	%xmm0, 16(%rsp)
+	movdqu	32(%r12), %xmm0
+	movq	%rdx, 48(%rsp)
+	movaps	%xmm0, 32(%rsp)
+.L3403:
+	movq	128(%rsp), %r15
+	movzbl	40(%rsp), %ecx
+	movq	32(%rsp), %r8
+.L3409:
+	movzbl	%cl, %edx
+	movzbl	41(%rsp), %edi
+	addl	$1, %edx
+	cmpl	%edi, %edx
+	je	.L3450
+	jge	.L3411
+	addl	$1, %ecx
+	movb	%cl, 40(%rsp)
+.L3411:
+	cmpq	%r8, %r15
+	sete	%dil
+	cmpb	%cl, %r14b
+	sete	%dl
+	testb	%dl, %dil
+	jne	.L3415
+	movzbl	%cl, %edx
+	movl	16(%rsp,%rdx,4), %edx
+	cmpl	$2381, %edx
+	je	.L3430
+	cmpl	$2509, %edx
+	je	.L3430
+	cmpl	$2765, %edx
+	je	.L3430
+	cmpl	$2893, %edx
+	je	.L3430
+	cmpl	$3149, %edx
+	je	.L3430
+	cmpl	$3405, %edx
+	je	.L3430
+	sall	$2, %edx
+	cmpl	$3073, %edx
+	jbe	.L3396
+	orl	$3, %edx
+	movl	$389, %ecx
+	leaq	_ZNSt9__unicode9__v15_1_012__incb_edgesE(%rip), %r8
+.L3406:
+	testq	%rcx, %rcx
+	jle	.L3451
+.L3407:
+	movq	%rcx, %r9
+	sarq	%r9
+	leaq	(%r8,%r9,4), %rdi
+	cmpl	%edx, (%rdi)
+	jnb	.L3423
+	subq	%r9, %rcx
+	leaq	4(%rdi), %r8
+	subq	$1, %rcx
+	testq	%rcx, %rcx
+	jg	.L3407
+.L3451:
+	movl	-4(%r8), %edx
+	andl	$3, %edx
+	cmpl	$1, %edx
+	je	.L3424
+	cmpl	$2, %edx
+	je	.L3403
+	jmp	.L3396
+	.p2align 4,,10
+	.p2align 3
+.L3421:
+	movq	%r9, %rcx
+	jmp	.L3398
+.L3450:
+	movq	48(%rsp), %rdx
+	cmpq	%r8, %rdx
+	je	.L3411
+	movzbl	42(%rsp), %ecx
+	addq	%rcx, %r8
+	movq	%r8, 32(%rsp)
+	cmpq	%r8, %rdx
+	je	.L3452
+	leaq	16(%rsp), %rdi
+	movl	%esi, 12(%rsp)
+	movb	%al, 11(%rsp)
+	call	_ZNSt9__unicode13_Utf_iteratorIcDiPKcS2_NS_5_ReplEE12_M_read_utf8Ev
+	movq	32(%rsp), %r8
+	movzbl	40(%rsp), %ecx
+	movzbl	11(%rsp), %eax
+	movl	12(%rsp), %esi
+	jmp	.L3411
+.L3430:
+	movl	%r13d, %eax
+	jmp	.L3409
+.L3423:
+	movq	%r9, %rcx
+	jmp	.L3406
+.L3422:
+	movq	%r9, %rcx
+	jmp	.L3401
+.L3415:
+	testb	%al, %al
+	je	.L3396
+	xorl	%eax, %eax
+	jmp	.L3383
+.L3452:
+	movb	$0, 40(%rsp)
+	xorl	%ecx, %ecx
+	jmp	.L3411
+.L3444:
+	call	__stack_chk_fail@PLT
+.L3424:
+	xorl	%eax, %eax
+	jmp	.L3403
+	.cfi_endproc
+.LFE5714:
+	.size	_ZNKSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_Iterator11_M_is_breakENS0_13_Gcb_propertyES8_NS_13_Utf_iteratorIcDiPKcSB_NS_5_ReplEEE, .-_ZNKSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_Iterator11_M_is_breakENS0_13_Gcb_propertyES8_NS_13_Utf_iteratorIcDiPKcSB_NS_5_ReplEEE
+	.section	.text._ZNSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_IteratorppEv,"axG",@progbits,_ZNSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_IteratorppEv,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_IteratorppEv
+	.type	_ZNSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_IteratorppEv, @function
+_ZNSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_IteratorppEv:
+.LFB5600:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$88, %rsp
+	.cfi_def_cfa_offset 144
+	movq	48(%rdi), %rax
+	movq	32(%rdi), %rsi
+	movq	%fs:40, %rbx
+	movq	%rbx, 72(%rsp)
+	movq	%rdi, %rbx
+	movq	%rax, 24(%rsp)
+	movq	%rsi, 16(%rsp)
+	cmpq	%rsi, %rax
+	je	.L3454
+	movdqu	16(%rbx), %xmm0
+	movl	4(%rbx), %esi
+	movq	%rax, 64(%rsp)
+	movaps	%xmm0, 32(%rsp)
+	movdqu	32(%rbx), %xmm0
+	movaps	%xmm0, 48(%rsp)
+	movzbl	56(%rsp), %r9d
+	movzbl	57(%rsp), %edx
+	movzbl	%r9b, %eax
+	addl	$1, %eax
+	cmpl	%edx, %eax
+	je	.L3516
+	.p2align 4
+	.p2align 3
+.L3477:
+	jge	.L3482
+	addl	$1, %r9d
+	movb	%r9b, 56(%rsp)
+.L3482:
+	movq	16(%rsp), %rcx
+	cmpq	%rcx, 24(%rsp)
+	je	.L3515
+	movzbl	56(%rsp), %eax
+	leaq	_ZNSt9__unicode9__v15_1_011__gcb_edgesE(%rip), %r10
+	movl	32(%rsp,%rax,4), %r8d
+	movq	%rax, %r9
+	movl	$1700, %eax
+	movl	%r8d, %r11d
+	sall	$4, %r11d
+	orl	$15, %r11d
+	.p2align 4
+	.p2align 3
+.L3457:
+	testq	%rax, %rax
+	jle	.L3517
+.L3458:
+	movq	%rax, %rdx
+	sarq	%rdx
+	leaq	(%r10,%rdx,4), %rdi
+	cmpl	%r11d, (%rdi)
+	jnb	.L3487
+	subq	%rdx, %rax
+	leaq	4(%rdi), %r10
+	subq	$1, %rax
+	testq	%rax, %rax
+	jg	.L3458
+.L3517:
+	movl	-4(%r10), %edx
+	movzbl	8(%rbx), %eax
+	andl	$15, %edx
+	cmpb	$3, %al
+	je	.L3459
+	cmpb	$1, %al
+	je	.L3460
+	cmpl	$10, %edx
+	je	.L3518
+	cmpl	$4, %edx
+	je	.L3467
+.L3468:
+	movb	$3, 8(%rbx)
+.L3459:
+	cmpl	$13, %edx
+	jne	.L3467
+	movzbl	9(%rbx), %eax
+	addl	$1, %eax
+	movb	%al, 9(%rbx)
+	movl	%r8d, %eax
+	andb	$127, %al
+	cmpl	$2381, %eax
+	je	.L3475
+.L3521:
+	leal	-2765(%r8), %eax
+	testl	$-129, %eax
+	je	.L3475
+	movl	%r8d, %eax
+	andb	$-2, %ah
+	cmpl	$3149, %eax
+	je	.L3475
+.L3485:
+	movl	%r8d, 12(%rsp)
+	subq	$48, %rsp
+	.cfi_def_cfa_offset 192
+	movq	%rbx, %rdi
+	movb	%r9b, 59(%rsp)
+	movq	80(%rsp), %r14
+	movq	88(%rsp), %r15
+	movq	96(%rsp), %r12
+	movl	%edx, 52(%rsp)
+	movq	104(%rsp), %r13
+	movq	112(%rsp), %rbp
+	movq	%r14, (%rsp)
+	movq	%r15, 8(%rsp)
+	movq	%r12, 16(%rsp)
+	movq	%r13, 24(%rsp)
+	movq	%rbp, 32(%rsp)
+	call	_ZNKSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_Iterator11_M_is_breakENS0_13_Gcb_propertyES8_NS_13_Utf_iteratorIcDiPKcSB_NS_5_ReplEEE
+	addq	$48, %rsp
+	.cfi_def_cfa_offset 144
+	movl	4(%rsp), %edx
+	movzbl	11(%rsp), %r9d
+	testb	%al, %al
+	movl	12(%rsp), %r8d
+	jne	.L3519
+	movl	%edx, %esi
+	movzbl	%r9b, %eax
+	movzbl	57(%rsp), %edx
+	addl	$1, %eax
+	cmpl	%edx, %eax
+	jne	.L3477
+.L3516:
+	movq	16(%rsp), %rcx
+	cmpq	%rcx, 24(%rsp)
+	je	.L3515
+	movzbl	58(%rsp), %eax
+	movq	16(%rsp), %rcx
+	addq	%rax, %rcx
+	movq	%rcx, 48(%rsp)
+	cmpq	%rcx, 24(%rsp)
+	je	.L3520
+	leaq	32(%rsp), %rdi
+	movl	%esi, 4(%rsp)
+	call	_ZNSt9__unicode13_Utf_iteratorIcDiPKcS2_NS_5_ReplEE12_M_read_utf8Ev
+	movq	48(%rsp), %rax
+	movl	4(%rsp), %esi
+	movq	%rax, 16(%rsp)
+	jmp	.L3482
+	.p2align 4,,10
+	.p2align 3
+.L3487:
+	movq	%rdx, %rax
+	jmp	.L3457
+.L3524:
+	subq	%r10, %r13
+	andl	$4, %r13d
+	je	.L3463
+.L3462:
+	movb	$1, 8(%rbx)
+	.p2align 4
+	.p2align 3
+.L3467:
+	xorl	%eax, %eax
+.L3523:
+	movb	%al, 9(%rbx)
+	movl	%r8d, %eax
+	andb	$127, %al
+	cmpl	$2381, %eax
+	jne	.L3521
+	.p2align 4
+	.p2align 3
+.L3475:
+	movb	$1, 10(%rbx)
+	jmp	.L3485
+	.p2align 4,,10
+	.p2align 3
+.L3460:
+	testl	%edx, %edx
+	jne	.L3468
+	cmpl	$168, %r8d
+	ja	.L3489
+	movl	$3, %ecx
+	movw	%cx, 8(%rbx)
+	jmp	.L3485
+.L3520:
+	movb	$0, 56(%rsp)
+.L3515:
+	movq	32(%rsp), %r14
+	movq	40(%rsp), %r15
+	movq	48(%rsp), %r12
+	movq	56(%rsp), %r13
+	movq	64(%rsp), %rbp
+.L3476:
+	movq	%r14, 16(%rbx)
+	movq	%r15, 24(%rbx)
+	movq	%r12, 32(%rbx)
+	movq	%r13, 40(%rbx)
+	movq	%rbp, 48(%rbx)
+.L3454:
+	movq	72(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3522
+	addq	$88, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	movq	%rbx, %rax
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L3518:
+	.cfi_restore_state
+	cmpb	$2, %al
+	je	.L3462
+	movl	(%rbx), %edi
+	leaq	_ZNSt9__unicode9__v15_1_014__xpicto_edgesE(%rip), %r10
+	movl	$156, %eax
+	movq	%r10, %r13
+	cmpl	$168, %edi
+	ja	.L3465
+.L3463:
+	movb	$3, 8(%rbx)
+	xorl	%eax, %eax
+	jmp	.L3523
+.L3488:
+	movq	%r11, %rax
+.L3465:
+	testq	%rax, %rax
+	jle	.L3524
+	movq	%rax, %r11
+	sarq	%r11
+	leaq	0(%r13,%r11,4), %r12
+	cmpl	(%r12), %edi
+	jb	.L3488
+	subq	%r11, %rax
+	leaq	4(%r12), %r13
+	subq	$1, %rax
+	jmp	.L3465
+.L3519:
+	xorl	%eax, %eax
+	movl	%r8d, (%rbx)
+	movl	%edx, 4(%rbx)
+	movw	%ax, 8(%rbx)
+	movb	$0, 10(%rbx)
+	jmp	.L3476
+.L3489:
+	leaq	_ZNSt9__unicode9__v15_1_014__xpicto_edgesE(%rip), %r10
+	movl	$156, %eax
+	movq	%r10, %r12
+.L3471:
+	testq	%rax, %rax
+	jle	.L3525
+.L3472:
+	movq	%rax, %rdi
+	sarq	%rdi
+	leaq	(%r12,%rdi,4), %r11
+	cmpl	(%r11), %r8d
+	jb	.L3490
+	subq	%rdi, %rax
+	leaq	4(%r11), %r12
+	subq	$1, %rax
+	testq	%rax, %rax
+	jg	.L3472
+.L3525:
+	subq	%r10, %r12
+	andl	$4, %r12d
+	je	.L3463
+	movb	$2, 8(%rbx)
+	xorl	%eax, %eax
+	jmp	.L3523
+.L3490:
+	movq	%rdi, %rax
+	jmp	.L3471
+.L3522:
+	call	__stack_chk_fail@PLT
+	.cfi_endproc
+.LFE5600:
+	.size	_ZNSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_IteratorppEv, .-_ZNSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_IteratorppEv
+	.section	.text._ZNKSt8__format15__formatter_strIcE6formatINS_10_Sink_iterIcEEEET_St17basic_string_viewIcSt11char_traitsIcEERSt20basic_format_contextIS5_cE,"axG",@progbits,_ZNKSt8__format15__formatter_strIcE6formatINS_10_Sink_iterIcEEEET_St17basic_string_viewIcSt11char_traitsIcEERSt20basic_format_contextIS5_cE,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNKSt8__format15__formatter_strIcE6formatINS_10_Sink_iterIcEEEET_St17basic_string_viewIcSt11char_traitsIcEERSt20basic_format_contextIS5_cE
+	.type	_ZNKSt8__format15__formatter_strIcE6formatINS_10_Sink_iterIcEEEET_St17basic_string_viewIcSt11char_traitsIcEERSt20basic_format_contextIS5_cE, @function
+_ZNKSt8__format15__formatter_strIcE6formatINS_10_Sink_iterIcEEEET_St17basic_string_viewIcSt11char_traitsIcEERSt20basic_format_contextIS5_cE:
+.LFB5430:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	movq	%rdx, %xmm0
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	movq	%rdx, %r12
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$296, %rsp
+	.cfi_def_cfa_offset 352
+	movq	%rcx, 16(%rsp)
+	movq	%fs:40, %rbp
+	movq	%rbp, 280(%rsp)
+	movq	%rsi, %rbp
+	testw	$1920, (%rdi)
+	je	.L3602
+	movzbl	1(%rdi), %edx
+	movdqa	%xmm0, %xmm1
+	movq	%rdi, %r14
+	punpcklqdq	%xmm1, %xmm1
+	andl	$6, %edx
+	jne	.L3603
+	testq	%rbp, %rbp
+	je	.L3584
+	leaq	(%r12,%rbp), %r13
+	cmpq	%r13, %r12
+	je	.L3556
+	xorl	%ecx, %ecx
+	leaq	112(%rsp), %rdi
+	movups	%xmm1, 120(%rsp)
+	movw	%cx, 136(%rsp)
+	movb	$0, 138(%rsp)
+	movq	%r13, 144(%rsp)
+	call	_ZNSt9__unicode13_Utf_iteratorIcDiPKcS2_NS_5_ReplEE12_M_read_utf8Ev
+	movq	128(%rsp), %rcx
+	movq	%r12, %xmm0
+	movq	%r13, 144(%rsp)
+	movq	%r13, 256(%rsp)
+	movzwl	136(%rsp), %edx
+	movq	%rcx, %xmm3
+	movq	%r13, 208(%rsp)
+	punpcklqdq	%xmm3, %xmm0
+	movups	%xmm0, 120(%rsp)
+	movdqa	112(%rsp), %xmm1
+	movdqa	128(%rsp), %xmm0
+	movaps	%xmm1, 224(%rsp)
+	movaps	%xmm0, 240(%rsp)
+	movaps	%xmm1, 176(%rsp)
+	movaps	%xmm0, 192(%rsp)
+	cmpq	%r13, %rcx
+	je	.L3558
+	movzbl	%dl, %eax
+	leaq	_ZNSt9__unicode9__v15_1_011__gcb_edgesE(%rip), %rsi
+	movl	224(%rsp,%rax,4), %r15d
+	movl	$1700, %eax
+	movl	%r15d, %edi
+	sall	$4, %edi
+	orl	$15, %edi
+	.p2align 4
+	.p2align 3
+.L3561:
+	testq	%rax, %rax
+	jle	.L3604
+.L3562:
+	movq	%rax, %rdx
+	sarq	%rdx
+	leaq	(%rsi,%rdx,4), %rcx
+	cmpl	%edi, (%rcx)
+	jnb	.L3585
+	subq	%rdx, %rax
+	leaq	4(%rcx), %rsi
+	subq	$1, %rax
+	testq	%rax, %rax
+	jg	.L3562
+.L3604:
+	movl	-4(%rsi), %eax
+	andl	$15, %eax
+	movl	%eax, %ebx
+.L3558:
+	xorl	%eax, %eax
+	movl	%ebx, 164(%rsp)
+	leaq	_ZNSt9__unicode9__v15_1_013__width_edgesE(%rip), %r8
+	movl	$1, %ebx
+	movw	%ax, 168(%rsp)
+	movq	%r8, %rsi
+	movl	$200, %eax
+	movl	%r15d, 160(%rsp)
+	movb	$0, 170(%rsp)
+	movdqa	160(%rsp), %xmm0
+	movq	%r13, 208(%rsp)
+	movaps	%xmm0, 224(%rsp)
+	movdqa	176(%rsp), %xmm0
+	movq	%r13, 272(%rsp)
+	movaps	%xmm0, 240(%rsp)
+	movdqa	192(%rsp), %xmm0
+	movaps	%xmm0, 256(%rsp)
+	cmpl	$4351, %r15d
+	ja	.L3565
+.L3563:
+	leaq	224(%rsp), %r15
+	jmp	.L3567
+	.p2align 4,,10
+	.p2align 3
+.L3572:
+	movl	224(%rsp), %edx
+	movl	$1, %eax
+	cmpl	$4351, %edx
+	ja	.L3605
+.L3568:
+	addq	%rax, %rbx
+.L3567:
+	movq	%r15, %rdi
+	call	_ZNSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_IteratorppEv
+	cmpq	%r13, 32(%rax)
+	jne	.L3572
+.L3554:
+	movq	%r12, %r13
+	movq	280(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3600
+	movq	16(%rsp), %rcx
+	movq	%rbp, %rdi
+	movq	%r13, %rsi
+	movq	%r14, %r8
+	addq	$296, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	movq	%rbx, %rdx
+	movl	$1, %r9d
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	jmp	_ZNSt8__format22__write_padded_as_specIcNS_10_Sink_iterIcEEEET0_St17basic_string_viewINSt13type_identityIT_E4typeESt11char_traitsIS8_EEmRSt20basic_format_contextIS3_S6_ERKNS_5_SpecIS6_EENS_6_AlignE
+	.p2align 4,,10
+	.p2align 3
+.L3603:
+	.cfi_restore_state
+	movq	%rsi, %r13
+	cmpb	$2, %dl
+	je	.L3606
+	movq	$-1, 24(%rsp)
+	cmpb	$4, %dl
+	je	.L3607
+.L3535:
+	testq	%r13, %r13
+	je	.L3584
+	movq	%xmm0, %rax
+	addq	%rax, %r13
+	cmpq	%rax, %r13
+	je	.L3537
+	xorl	%r8d, %r8d
+	leaq	64(%rsp), %rdi
+	movl	%r9d, 52(%rsp)
+	movq	%xmm0, 32(%rsp)
+	movups	%xmm1, 72(%rsp)
+	movw	%r8w, 88(%rsp)
+	movb	$0, 90(%rsp)
+	movq	%r13, 96(%rsp)
+	call	_ZNSt9__unicode13_Utf_iteratorIcDiPKcS2_NS_5_ReplEE12_M_read_utf8Ev
+	movq	80(%rsp), %rdx
+	movq	32(%rsp), %xmm0
+	movq	%r13, 96(%rsp)
+	movq	%r13, 256(%rsp)
+	movzwl	88(%rsp), %eax
+	movdqa	%xmm0, %xmm1
+	movq	%rdx, %xmm5
+	cmpq	%rdx, %r13
+	movq	%r13, 208(%rsp)
+	punpcklqdq	%xmm5, %xmm1
+	movl	52(%rsp), %r9d
+	movups	%xmm1, 72(%rsp)
+	movdqa	64(%rsp), %xmm2
+	movdqa	80(%rsp), %xmm1
+	movaps	%xmm2, 224(%rsp)
+	movaps	%xmm1, 240(%rsp)
+	movaps	%xmm2, 176(%rsp)
+	movaps	%xmm1, 192(%rsp)
+	je	.L3539
+	movzbl	%al, %eax
+	leaq	_ZNSt9__unicode9__v15_1_011__gcb_edgesE(%rip), %rsi
+	movl	224(%rsp,%rax,4), %r9d
+	movl	$1700, %eax
+	movl	%r9d, %edi
+	sall	$4, %edi
+	orl	$15, %edi
+	.p2align 4
+	.p2align 3
+.L3542:
+	testq	%rax, %rax
+	jle	.L3608
+.L3543:
+	movq	%rax, %rdx
+	sarq	%rdx
+	leaq	(%rsi,%rdx,4), %rcx
+	cmpl	%edi, (%rcx)
+	jnb	.L3577
+	subq	%rdx, %rax
+	leaq	4(%rcx), %rsi
+	subq	$1, %rax
+	testq	%rax, %rax
+	jg	.L3543
+.L3608:
+	movl	-4(%rsi), %eax
+	andl	$15, %eax
+	movl	%eax, 8(%rsp)
+.L3539:
+	movl	8(%rsp), %eax
+	xorl	%esi, %esi
+	movl	%r9d, 160(%rsp)
+	leaq	_ZNSt9__unicode9__v15_1_013__width_edgesE(%rip), %r8
+	movw	%si, 168(%rsp)
+	movl	$1, %ebx
+	movq	%r8, %rsi
+	movl	%eax, 164(%rsp)
+	movl	$200, %eax
+	movb	$0, 170(%rsp)
+	movdqa	160(%rsp), %xmm1
+	movq	%r13, 208(%rsp)
+	movaps	%xmm1, 224(%rsp)
+	movdqa	176(%rsp), %xmm1
+	movq	%r13, 272(%rsp)
+	movaps	%xmm1, 240(%rsp)
+	movdqa	192(%rsp), %xmm1
+	movaps	%xmm1, 256(%rsp)
+	cmpl	$4351, %r9d
+	ja	.L3546
+.L3544:
+	leaq	224(%rsp), %r15
+	cmpq	%rbx, 24(%rsp)
+	jnb	.L3548
+	jmp	.L3609
+	.p2align 4,,10
+	.p2align 3
+.L3549:
+	addq	%rbx, %rax
+	cmpq	%rax, 24(%rsp)
+	jb	.L3610
+	movq	%rax, %rbx
+.L3548:
+	movq	%r15, %rdi
+	movq	%xmm0, 8(%rsp)
+	call	_ZNSt9__unicode9__v15_1_022_Grapheme_cluster_viewISt17basic_string_viewIcSt11char_traitsIcEEE9_IteratorppEv
+	movq	8(%rsp), %xmm0
+	cmpq	%r13, 32(%rax)
+	je	.L3554
+	movl	224(%rsp), %edx
+	movl	$1, %eax
+	cmpl	$4351, %edx
+	jbe	.L3549
+	leaq	_ZNSt9__unicode9__v15_1_013__width_edgesE(%rip), %r8
+	movl	$200, %eax
+	movq	%r8, %rdi
+	.p2align 4
+	.p2align 3
+.L3551:
+	testq	%rax, %rax
+	jle	.L3611
+.L3552:
+	movq	%rax, %rcx
+	sarq	%rcx
+	leaq	(%rdi,%rcx,4), %rsi
+	cmpl	(%rsi), %edx
+	jb	.L3582
+	subq	%rcx, %rax
+	leaq	4(%rsi), %rdi
+	subq	$1, %rax
+	testq	%rax, %rax
+	jg	.L3552
+.L3611:
+	subq	%r8, %rdi
+	movq	%rdi, %rax
+	shrq	$63, %rdi
+	sarq	$2, %rax
+	addq	%rdi, %rax
+	andl	$1, %eax
+	subq	%rdi, %rax
+	addl	$1, %eax
+	jmp	.L3549
+	.p2align 5
+	.p2align 4,,10
+	.p2align 3
+.L3587:
+	movq	%rdx, %rax
+.L3565:
+	testq	%rax, %rax
+	jle	.L3612
+	movq	%rax, %rdx
+	sarq	%rdx
+	leaq	(%rsi,%rdx,4), %rcx
+	cmpl	(%rcx), %r15d
+	jb	.L3587
+	subq	%rdx, %rax
+	leaq	4(%rcx), %rsi
+	subq	$1, %rax
+	jmp	.L3565
+	.p2align 4,,10
+	.p2align 3
+.L3585:
+	movq	%rdx, %rax
+	jmp	.L3561
+	.p2align 4,,10
+	.p2align 3
+.L3602:
+	movq	16(%rcx), %r13
+	testq	%rbp, %rbp
+	jne	.L3613
+.L3528:
+	movq	280(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3600
+	addq	$296, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	movq	%r13, %rax
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L3605:
+	.cfi_restore_state
+	leaq	_ZNSt9__unicode9__v15_1_013__width_edgesE(%rip), %r8
+	movl	$200, %eax
+	movq	%r8, %rdi
+	.p2align 4
+	.p2align 3
+.L3570:
+	testq	%rax, %rax
+	jle	.L3614
+.L3571:
+	movq	%rax, %rcx
+	sarq	%rcx
+	leaq	(%rdi,%rcx,4), %rsi
+	cmpl	(%rsi), %edx
+	jb	.L3589
+	subq	%rcx, %rax
+	leaq	4(%rsi), %rdi
+	subq	$1, %rax
+	testq	%rax, %rax
+	jg	.L3571
+.L3614:
+	subq	%r8, %rdi
+	movq	%rdi, %rax
+	shrq	$63, %rdi
+	sarq	$2, %rax
+	addq	%rdi, %rax
+	andl	$1, %eax
+	subq	%rdi, %rax
+	addl	$1, %eax
+	jmp	.L3568
+	.p2align 4,,10
+	.p2align 3
+.L3589:
+	movq	%rcx, %rax
+	jmp	.L3570
+	.p2align 4,,10
+	.p2align 3
+.L3606:
+	movzwl	6(%rdi), %eax
+	movq	%rax, 24(%rsp)
+	jmp	.L3535
+	.p2align 4,,10
+	.p2align 3
+.L3579:
+	movq	%rdx, %rax
+.L3546:
+	testq	%rax, %rax
+	jle	.L3615
+.L3547:
+	movq	%rax, %rdx
+	sarq	%rdx
+	leaq	(%rsi,%rdx,4), %rcx
+	cmpl	(%rcx), %r9d
+	jb	.L3579
+	subq	%rdx, %rax
+	leaq	4(%rcx), %rsi
+	subq	$1, %rax
+	testq	%rax, %rax
+	jg	.L3547
+.L3615:
+	subq	%r8, %rsi
+	movq	%rsi, %rax
+	shrq	$63, %rsi
+	sarq	$2, %rax
+	addq	%rsi, %rax
+	andl	$1, %eax
+	subq	%rsi, %rax
+	leal	1(%rax), %ebx
+	jmp	.L3544
+	.p2align 4,,10
+	.p2align 3
+.L3577:
+	movq	%rdx, %rax
+	jmp	.L3542
+	.p2align 4,,10
+	.p2align 3
+.L3582:
+	movq	%rcx, %rax
+	jmp	.L3551
+	.p2align 4,,10
+	.p2align 3
+.L3556:
+	punpcklqdq	%xmm0, %xmm0
+	movl	$0, 112(%rsp)
+	xorl	%edx, %edx
+	movups	%xmm0, 120(%rsp)
+	movdqa	112(%rsp), %xmm0
+	movw	%dx, 136(%rsp)
+	movb	$0, 138(%rsp)
+	movaps	%xmm0, 176(%rsp)
+	movdqa	128(%rsp), %xmm0
+	movq	%r12, 144(%rsp)
+	movaps	%xmm0, 192(%rsp)
+	jmp	.L3558
+	.p2align 4,,10
+	.p2align 3
+.L3613:
+	movq	24(%r13), %rdi
+	movq	16(%r13), %rbx
+	movq	%rdi, %rax
+	subq	8(%r13), %rax
+	subq	%rax, %rbx
+	cmpq	%rbx, %rbp
+	jb	.L3529
+	.p2align 4
+	.p2align 3
+.L3531:
+	cmpq	%rbp, %rbx
+	movq	%rbp, %rdx
+	cmovbe	%rbx, %rdx
+	testq	%rdx, %rdx
+	je	.L3530
+	movq	%r12, %rsi
+	call	memcpy@PLT
+.L3530:
+	movq	0(%r13), %rax
+	addq	%rbx, 24(%r13)
+	movq	%r13, %rdi
+	addq	%rbx, %r12
+	subq	%rbx, %rbp
+	call	*(%rax)
+	movq	24(%r13), %rdi
+	movq	16(%r13), %rbx
+	movq	%rdi, %rax
+	subq	8(%r13), %rax
+	subq	%rax, %rbx
+	cmpq	%rbx, %rbp
+	jnb	.L3531
+	testq	%rbp, %rbp
+	je	.L3528
+.L3529:
+	movq	%rbp, %rdx
+	movq	%r12, %rsi
+	call	memcpy@PLT
+	addq	%rbp, 24(%r13)
+	jmp	.L3528
+	.p2align 4,,10
+	.p2align 3
+.L3537:
+	movdqa	%xmm0, %xmm1
+	movl	$0, 64(%rsp)
+	xorl	%edi, %edi
+	punpcklqdq	%xmm0, %xmm1
+	movw	%di, 88(%rsp)
+	movups	%xmm1, 72(%rsp)
+	movdqa	64(%rsp), %xmm1
+	movb	$0, 90(%rsp)
+	movaps	%xmm1, 176(%rsp)
+	movdqa	80(%rsp), %xmm1
+	movq	%xmm0, 96(%rsp)
+	movaps	%xmm1, 192(%rsp)
+	jmp	.L3539
+	.p2align 4,,10
+	.p2align 3
+.L3609:
+	xorl	%r12d, %r12d
+	xorl	%ebp, %ebp
+	xorl	%ebx, %ebx
+	jmp	.L3554
+	.p2align 4,,10
+	.p2align 3
+.L3584:
+	xorl	%ebx, %ebx
+	jmp	.L3554
+	.p2align 4,,10
+	.p2align 3
+.L3610:
+	movq	256(%rsp), %rbp
+	movq	%xmm0, %rax
+	subq	%rax, %rbp
+	jmp	.L3554
+	.p2align 4,,10
+	.p2align 3
+.L3607:
+	movzwl	6(%rdi), %edi
+	movq	16(%rsp), %rsi
+	movl	%r9d, 52(%rsp)
+	movq	%xmm0, 56(%rsp)
+	movaps	%xmm1, 32(%rsp)
+	call	_ZNKSt8__format5_SpecIcE16_M_get_precisionISt20basic_format_contextINS_10_Sink_iterIcEEcEEEmRT_.part.0.isra.0
+	movdqa	32(%rsp), %xmm1
+	movl	52(%rsp), %r9d
+	movq	%rax, 24(%rsp)
+	movq	56(%rsp), %xmm0
+	jmp	.L3535
+	.p2align 4,,10
+	.p2align 3
+.L3612:
+	subq	%r8, %rsi
+	movq	%rsi, %rax
+	shrq	$63, %rsi
+	sarq	$2, %rax
+	addq	%rsi, %rax
+	andl	$1, %eax
+	subq	%rsi, %rax
+	leal	1(%rax), %ebx
+	jmp	.L3563
+.L3600:
+	call	__stack_chk_fail@PLT
+	.cfi_endproc
+.LFE5430:
+	.size	_ZNKSt8__format15__formatter_strIcE6formatINS_10_Sink_iterIcEEEET_St17basic_string_viewIcSt11char_traitsIcEERSt20basic_format_contextIS5_cE, .-_ZNKSt8__format15__formatter_strIcE6formatINS_10_Sink_iterIcEEEET_St17basic_string_viewIcSt11char_traitsIcEERSt20basic_format_contextIS5_cE
+	.section	.rodata._ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_19_Formatting_scannerIS3_cE13_M_format_argEmEUlRT_E_EEDcOS9_NS1_6_Arg_tE.str1.8,"aMS",@progbits,1
+	.align 8
+.LC55:
+	.string	"format error: format-spec contains invalid formatting options for 'bool'"
+	.align 8
+.LC56:
+	.string	"format error: format-spec contains invalid formatting options for 'charT'"
+	.section	.text._ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_19_Formatting_scannerIS3_cE13_M_format_argEmEUlRT_E_EEDcOS9_NS1_6_Arg_tE,"axG",@progbits,_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_19_Formatting_scannerIS3_cE13_M_format_argEmEUlRT_E_EEDcOS9_NS1_6_Arg_tE,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_19_Formatting_scannerIS3_cE13_M_format_argEmEUlRT_E_EEDcOS9_NS1_6_Arg_tE
+	.type	_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_19_Formatting_scannerIS3_cE13_M_format_argEmEUlRT_E_EEDcOS9_NS1_6_Arg_tE, @function
+_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_19_Formatting_scannerIS3_cE13_M_format_argEmEUlRT_E_EEDcOS9_NS1_6_Arg_tE:
+.LFB5118:
+	.cfi_startproc
+	endbr64
+	pushq	%r13
+	.cfi_def_cfa_offset 16
+	.cfi_offset 13, -16
+	leaq	.L3619(%rip), %rcx
+	movzbl	%dl, %edx
+	pushq	%r12
+	.cfi_def_cfa_offset 24
+	.cfi_offset 12, -24
+	pushq	%rbp
+	.cfi_def_cfa_offset 32
+	.cfi_offset 6, -32
+	movq	%rdi, %rbp
+	pushq	%rbx
+	.cfi_def_cfa_offset 40
+	.cfi_offset 3, -40
+	subq	$40, %rsp
+	.cfi_def_cfa_offset 80
+	movslq	(%rcx,%rdx,4), %rax
+	movq	%fs:40, %rbx
+	movq	%rbx, 24(%rsp)
+	movq	%rsi, %rbx
+	addq	%rcx, %rax
+	notrack jmp	*%rax
+	.section	.rodata._ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_19_Formatting_scannerIS3_cE13_M_format_argEmEUlRT_E_EEDcOS9_NS1_6_Arg_tE,"aG",@progbits,_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_19_Formatting_scannerIS3_cE13_M_format_argEmEUlRT_E_EEDcOS9_NS1_6_Arg_tE,comdat
+	.align 4
+	.align 4
+.L3619:
+	.long	.L3635-.L3619
+	.long	.L3634-.L3619
+	.long	.L3633-.L3619
+	.long	.L3632-.L3619
+	.long	.L3631-.L3619
+	.long	.L3630-.L3619
+	.long	.L3629-.L3619
+	.long	.L3628-.L3619
+	.long	.L3627-.L3619
+	.long	.L3626-.L3619
+	.long	.L3625-.L3619
+	.long	.L3624-.L3619
+	.long	.L3623-.L3619
+	.long	.L3622-.L3619
+	.long	.L3621-.L3619
+	.long	.L3620-.L3619
+	.long	.L3618-.L3619
+	.long	.L3618-.L3619
+	.long	.L3618-.L3619
+	.long	.L3618-.L3619
+	.long	.L3618-.L3619
+	.section	.text._ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_19_Formatting_scannerIS3_cE13_M_format_argEmEUlRT_E_EEDcOS9_NS1_6_Arg_tE,"axG",@progbits,_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_19_Formatting_scannerIS3_cE13_M_format_argEmEUlRT_E_EEDcOS9_NS1_6_Arg_tE,comdat
+	.p2align 4,,10
+	.p2align 3
+.L3620:
+	movq	(%rbx), %r13
+	leaq	12(%rsp), %r12
+	movl	$1, %edx
+	movq	$0, 12(%rsp)
+	movq	%r12, %rdi
+	movl	$32, 20(%rsp)
+	leaq	8(%r13), %rsi
+	call	_ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE
+	movq	0(%rbp), %rsi
+	movq	8(%rbp), %rdx
+	movq	%r12, %rdi
+	movq	%rax, 8(%r13)
+	movq	(%rbx), %rax
+	movq	48(%rax), %rbx
+	movq	%rbx, %rcx
+	call	_ZNKSt8__format15__formatter_intIcE6formatIoNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+.L3657:
+	movq	%rax, 16(%rbx)
+	.p2align 4
+	.p2align 3
+.L3616:
+	movq	24(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3659
+	addq	$40, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 40
+	popq	%rbx
+	.cfi_def_cfa_offset 32
+	popq	%rbp
+	.cfi_def_cfa_offset 24
+	popq	%r12
+	.cfi_def_cfa_offset 16
+	popq	%r13
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L3618:
+	.cfi_restore_state
+	movq	(%rbx), %r13
+	leaq	12(%rsp), %r12
+	movq	$0, 12(%rsp)
+	movq	%r12, %rdi
+	movl	$32, 20(%rsp)
+	leaq	8(%r13), %rsi
+	call	_ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE
+	movdqa	0(%rbp), %xmm0
+	movq	%r12, %rdi
+	movq	%rax, 8(%r13)
+	movq	(%rbx), %rax
+	movq	48(%rax), %rbx
+	movq	%rbx, %rsi
+	call	_ZNKSt8__format14__formatter_fpIcE6formatIDF128_NS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	movq	%rax, 16(%rbx)
+	jmp	.L3616
+	.p2align 4,,10
+	.p2align 3
+.L3634:
+	movq	(%rbx), %r13
+	leaq	12(%rsp), %r12
+	xorl	%edx, %edx
+	movq	$0, 12(%rsp)
+	movq	%r12, %rdi
+	movl	$32, 20(%rsp)
+	leaq	8(%r13), %rsi
+	call	_ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE
+	testb	$120, 13(%rsp)
+	jne	.L3637
+	testb	$92, 12(%rsp)
+	jne	.L3660
+.L3637:
+	movq	%rax, 8(%r13)
+	movq	(%rbx), %rax
+	movq	%r12, %rdi
+	movzbl	0(%rbp), %esi
+	movq	48(%rax), %rbx
+	movq	%rbx, %rdx
+	call	_ZNKSt8__format15__formatter_intIcE6formatINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEbRS7_
+	movq	%rax, 16(%rbx)
+	jmp	.L3616
+	.p2align 4,,10
+	.p2align 3
+.L3633:
+	movq	(%rbx), %r13
+	leaq	12(%rsp), %r12
+	movl	$7, %edx
+	movq	$0, 12(%rsp)
+	movq	%r12, %rdi
+	movl	$32, 20(%rsp)
+	leaq	8(%r13), %rsi
+	call	_ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE
+	movzbl	13(%rsp), %edx
+	movl	%edx, %ecx
+	notl	%edx
+	andl	$120, %ecx
+	andl	$56, %edx
+	jne	.L3640
+	testb	$92, 12(%rsp)
+	jne	.L3661
+	movq	%rax, 8(%r13)
+	movq	(%rbx), %rax
+	movq	48(%rax), %rbx
+	cmpb	$56, %cl
+	je	.L3662
+	movq	16(%rbx), %rax
+	jmp	.L3657
+	.p2align 4,,10
+	.p2align 3
+.L3632:
+	movq	(%rbx), %r13
+	leaq	12(%rsp), %r12
+	movl	$1, %edx
+	movq	$0, 12(%rsp)
+	movq	%r12, %rdi
+	movl	$32, 20(%rsp)
+	leaq	8(%r13), %rsi
+	call	_ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE
+	movl	0(%rbp), %esi
+	movq	%r12, %rdi
+	movq	%rax, 8(%r13)
+	movq	(%rbx), %rax
+	movq	48(%rax), %rbx
+	movq	%rbx, %rdx
+	call	_ZNKSt8__format15__formatter_intIcE6formatIiNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	movq	%rax, 16(%rbx)
+	jmp	.L3616
+	.p2align 4,,10
+	.p2align 3
+.L3631:
+	movq	(%rbx), %r13
+	leaq	12(%rsp), %r12
+	movl	$1, %edx
+	movq	$0, 12(%rsp)
+	movq	%r12, %rdi
+	movl	$32, 20(%rsp)
+	leaq	8(%r13), %rsi
+	call	_ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE
+	movl	0(%rbp), %esi
+	movq	%r12, %rdi
+	movq	%rax, 8(%r13)
+	movq	(%rbx), %rax
+	movq	48(%rax), %rbx
+	movq	%rbx, %rdx
+	call	_ZNKSt8__format15__formatter_intIcE6formatIjNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	movq	%rax, 16(%rbx)
+	jmp	.L3616
+	.p2align 4,,10
+	.p2align 3
+.L3630:
+	movq	(%rbx), %r13
+	leaq	12(%rsp), %r12
+	movl	$1, %edx
+	movq	$0, 12(%rsp)
+	movq	%r12, %rdi
+	movl	$32, 20(%rsp)
+	leaq	8(%r13), %rsi
+	call	_ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE
+	movq	0(%rbp), %rsi
+	movq	%r12, %rdi
+	movq	%rax, 8(%r13)
+	movq	(%rbx), %rax
+	movq	48(%rax), %rbx
+	movq	%rbx, %rdx
+	call	_ZNKSt8__format15__formatter_intIcE6formatIxNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	movq	%rax, 16(%rbx)
+	jmp	.L3616
+	.p2align 4,,10
+	.p2align 3
+.L3629:
+	movq	(%rbx), %r13
+	leaq	12(%rsp), %r12
+	movl	$1, %edx
+	movq	$0, 12(%rsp)
+	movq	%r12, %rdi
+	movl	$32, 20(%rsp)
+	leaq	8(%r13), %rsi
+	call	_ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE
+	movq	0(%rbp), %rsi
+	movq	%r12, %rdi
+	movq	%rax, 8(%r13)
+	movq	(%rbx), %rax
+	movq	48(%rax), %rbx
+	movq	%rbx, %rdx
+	call	_ZNKSt8__format15__formatter_intIcE6formatIyNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	movq	%rax, 16(%rbx)
+	jmp	.L3616
+	.p2align 4,,10
+	.p2align 3
+.L3628:
+	movq	(%rbx), %r13
+	leaq	12(%rsp), %r12
+	movq	$0, 12(%rsp)
+	movq	%r12, %rdi
+	movl	$32, 20(%rsp)
+	leaq	8(%r13), %rsi
+	call	_ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE
+	movss	0(%rbp), %xmm0
+	movq	%r12, %rdi
+	movq	%rax, 8(%r13)
+	movq	(%rbx), %rax
+	movq	48(%rax), %rbx
+	movq	%rbx, %rsi
+	call	_ZNKSt8__format14__formatter_fpIcE6formatIfNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	movq	%rax, 16(%rbx)
+	jmp	.L3616
+	.p2align 4,,10
+	.p2align 3
+.L3627:
+	movq	(%rbx), %r13
+	leaq	12(%rsp), %r12
+	movq	$0, 12(%rsp)
+	movq	%r12, %rdi
+	movl	$32, 20(%rsp)
+	leaq	8(%r13), %rsi
+	call	_ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE
+	movsd	0(%rbp), %xmm0
+	movq	%r12, %rdi
+	movq	%rax, 8(%r13)
+	movq	(%rbx), %rax
+	movq	48(%rax), %rbx
+	movq	%rbx, %rsi
+	call	_ZNKSt8__format14__formatter_fpIcE6formatIdNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	movq	%rax, 16(%rbx)
+	jmp	.L3616
+	.p2align 4,,10
+	.p2align 3
+.L3626:
+	movq	(%rbx), %r13
+	leaq	12(%rsp), %r12
+	movq	$0, 12(%rsp)
+	movq	%r12, %rdi
+	movl	$32, 20(%rsp)
+	leaq	8(%r13), %rsi
+	call	_ZNSt8__format14__formatter_fpIcE5parseERSt26basic_format_parse_contextIcE
+	movq	%r12, %rdi
+	movq	%rax, 8(%r13)
+	movq	(%rbx), %rax
+	movq	48(%rax), %rbx
+	pushq	8(%rbp)
+	.cfi_def_cfa_offset 88
+	pushq	0(%rbp)
+	.cfi_def_cfa_offset 96
+	movq	%rbx, %rsi
+	call	_ZNKSt8__format14__formatter_fpIcE6formatIeNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	movq	%rax, 16(%rbx)
+	popq	%rax
+	.cfi_def_cfa_offset 88
+	popq	%rdx
+	.cfi_def_cfa_offset 80
+	jmp	.L3616
+	.p2align 4,,10
+	.p2align 3
+.L3625:
+	movq	(%rbx), %r12
+	leaq	12(%rsp), %r13
+	movq	$0, 12(%rsp)
+	movq	%r13, %rdi
+	movl	$32, 20(%rsp)
+	leaq	8(%r12), %rsi
+	call	_ZNSt8__format15__formatter_strIcE5parseERSt26basic_format_parse_contextIcE
+	movq	%rax, 8(%r12)
+	movq	(%rbx), %rax
+	movq	0(%rbp), %rbx
+	movq	48(%rax), %r12
+	movq	%rbx, %rdi
+	call	strlen@PLT
+	movq	%rbx, %rdx
+	movq	%r12, %rcx
+	movq	%r13, %rdi
+	movq	%rax, %rsi
+	call	_ZNKSt8__format15__formatter_strIcE6formatINS_10_Sink_iterIcEEEET_St17basic_string_viewIcSt11char_traitsIcEERSt20basic_format_contextIS5_cE
+	movq	%rax, 16(%r12)
+	jmp	.L3616
+	.p2align 4,,10
+	.p2align 3
+.L3624:
+	movq	(%rbx), %r13
+	leaq	12(%rsp), %r12
+	movq	$0, 12(%rsp)
+	movq	%r12, %rdi
+	movl	$32, 20(%rsp)
+	leaq	8(%r13), %rsi
+	call	_ZNSt8__format15__formatter_strIcE5parseERSt26basic_format_parse_contextIcE
+	movq	0(%rbp), %rsi
+	movq	8(%rbp), %rdx
+	movq	%r12, %rdi
+	movq	%rax, 8(%r13)
+	movq	(%rbx), %rax
+	movq	48(%rax), %rbx
+	movq	%rbx, %rcx
+	call	_ZNKSt8__format15__formatter_strIcE6formatINS_10_Sink_iterIcEEEET_St17basic_string_viewIcSt11char_traitsIcEERSt20basic_format_contextIS5_cE
+	movq	%rax, 16(%rbx)
+	jmp	.L3616
+	.p2align 4,,10
+	.p2align 3
+.L3623:
+	movq	24(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3659
+	addq	$40, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 40
+	movq	%rdi, %rsi
+	movq	%rbx, %rdi
+	popq	%rbx
+	.cfi_def_cfa_offset 32
+	popq	%rbp
+	.cfi_def_cfa_offset 24
+	popq	%r12
+	.cfi_def_cfa_offset 16
+	popq	%r13
+	.cfi_def_cfa_offset 8
+	jmp	_ZZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEmENKUlRT_E_clIPKvEEDaS5_
+	.p2align 4,,10
+	.p2align 3
+.L3622:
+	.cfi_restore_state
+	movq	(%rbx), %rdi
+	movq	24(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3659
+	movq	0(%rbp), %rdx
+	movq	48(%rdi), %rsi
+	addq	$8, %rdi
+	movq	8(%rbp), %rax
+	addq	$40, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 40
+	popq	%rbx
+	.cfi_def_cfa_offset 32
+	popq	%rbp
+	.cfi_def_cfa_offset 24
+	popq	%r12
+	.cfi_def_cfa_offset 16
+	popq	%r13
+	.cfi_def_cfa_offset 8
+	jmp	*%rax
+	.p2align 4,,10
+	.p2align 3
+.L3621:
+	.cfi_restore_state
+	movq	(%rbx), %r13
+	leaq	12(%rsp), %r12
+	movl	$1, %edx
+	movq	$0, 12(%rsp)
+	movq	%r12, %rdi
+	movl	$32, 20(%rsp)
+	leaq	8(%r13), %rsi
+	call	_ZNSt8__format15__formatter_intIcE11_M_do_parseERSt26basic_format_parse_contextIcENS_10_Pres_typeE
+	movq	0(%rbp), %rsi
+	movq	8(%rbp), %rdx
+	movq	%r12, %rdi
+	movq	%rax, 8(%r13)
+	movq	(%rbx), %rax
+	movq	48(%rax), %rbx
+	movq	%rbx, %rcx
+	call	_ZNKSt8__format15__formatter_intIcE6formatInNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	movq	%rax, 16(%rbx)
+	jmp	.L3616
+	.p2align 4,,10
+	.p2align 3
+.L3640:
+	movq	%rax, 8(%r13)
+	movq	(%rbx), %rax
+	movsbl	0(%rbp), %esi
+	movq	48(%rax), %rbx
+	testb	%cl, %cl
+	je	.L3648
+	cmpb	$56, %cl
+	je	.L3648
+	movzbl	%sil, %esi
+	movq	%rbx, %rdx
+	movq	%r12, %rdi
+	call	_ZNKSt8__format15__formatter_intIcE6formatIhNS_10_Sink_iterIcEEEENSt20basic_format_contextIT0_cE8iteratorET_RS7_
+	jmp	.L3657
+.L3662:
+	movsbl	0(%rbp), %esi
+.L3648:
+	movq	%rbx, %rdx
+	movq	%r12, %rdi
+	call	_ZNKSt8__format15__formatter_intIcE19_M_format_characterINS_10_Sink_iterIcEEEENSt20basic_format_contextIT_cE8iteratorEcRS7_
+	jmp	.L3657
+.L3660:
+	movq	24(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L3638
+.L3659:
+	call	__stack_chk_fail@PLT
+.L3635:
+	movq	24(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3659
+	call	_ZNSt8__format33__invalid_arg_id_in_format_stringEv
+.L3661:
+	movq	24(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3659
+	leaq	.LC56(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+.L3638:
+	leaq	.LC55(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE5118:
+	.size	_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_19_Formatting_scannerIS3_cE13_M_format_argEmEUlRT_E_EEDcOS9_NS1_6_Arg_tE, .-_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_19_Formatting_scannerIS3_cE13_M_format_argEmEUlRT_E_EEDcOS9_NS1_6_Arg_tE
+	.section	.text._ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEm,"axG",@progbits,_ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEm,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEm
+	.type	_ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEm, @function
+_ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEm:
+.LFB5115:
+	.cfi_startproc
+	endbr64
+	subq	$104, %rsp
+	.cfi_def_cfa_offset 112
+	movq	%fs:40, %rax
+	movq	%rax, 88(%rsp)
+	movq	%rdi, %rax
+	movq	48(%rdi), %rdi
+	movzbl	(%rdi), %edx
+	movl	%edx, %ecx
+	andl	$15, %edx
+	andl	$15, %ecx
+	cmpq	%rdx, %rsi
+	jnb	.L3664
+	movq	(%rdi), %rdx
+	leaq	(%rsi,%rsi,4), %rcx
+	salq	$4, %rsi
+	addq	8(%rdi), %rsi
+	movdqa	(%rsi), %xmm0
+	shrq	$4, %rdx
+	shrq	%cl, %rdx
+	movaps	%xmm0, 16(%rsp)
+	movl	%edx, %ecx
+	andl	$31, %edx
+	andl	$31, %ecx
+.L3665:
+	movdqa	16(%rsp), %xmm0
+	movb	%cl, 32(%rsp)
+	leaq	8(%rsp), %rsi
+	leaq	48(%rsp), %rdi
+	movq	%rax, 8(%rsp)
+	movaps	%xmm0, 48(%rsp)
+	movdqa	32(%rsp), %xmm0
+	movaps	%xmm0, 64(%rsp)
+	call	_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_19_Formatting_scannerIS3_cE13_M_format_argEmEUlRT_E_EEDcOS9_NS1_6_Arg_tE
+	movq	88(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3670
+	addq	$104, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L3664:
+	.cfi_restore_state
+	testb	%cl, %cl
+	jne	.L3667
+	movq	(%rdi), %r8
+	xorl	%edx, %edx
+	shrq	$4, %r8
+	cmpq	%r8, %rsi
+	jnb	.L3665
+	salq	$5, %rsi
+	addq	8(%rdi), %rsi
+	movdqu	(%rsi), %xmm0
+	movzbl	16(%rsi), %edx
+	movaps	%xmm0, 16(%rsp)
+	movl	%edx, %ecx
+	jmp	.L3665
+	.p2align 4,,10
+	.p2align 3
+.L3667:
+	xorl	%edx, %edx
+	xorl	%ecx, %ecx
+	jmp	.L3665
+.L3670:
+	call	__stack_chk_fail@PLT
+	.cfi_endproc
+.LFE5115:
+	.size	_ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEm, .-_ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEm
+	.section	.rodata._ZNSt8__format8_ScannerIcE7_M_scanEv.str1.8,"aMS",@progbits,1
+	.align 8
+.LC57:
+	.string	"format error: unmatched '}' in format string"
+	.section	.text._ZNSt8__format8_ScannerIcE7_M_scanEv,"axG",@progbits,_ZNSt8__format8_ScannerIcE7_M_scanEv,comdat
+	.align 2
+	.p2align 4
+	.weak	_ZNSt8__format8_ScannerIcE7_M_scanEv
+	.type	_ZNSt8__format8_ScannerIcE7_M_scanEv, @function
+_ZNSt8__format8_ScannerIcE7_M_scanEv:
+.LFB3993:
+	.cfi_startproc
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$120, %rsp
+	.cfi_def_cfa_offset 176
+	movq	16(%rdi), %r14
+	movq	8(%rdi), %rbx
+	movq	%fs:40, %rbp
+	movq	%rbp, 104(%rsp)
+	movq	%rdi, %rbp
+	movq	%r14, %r15
+	subq	%rbx, %r15
+	cmpq	$2, %r15
+	je	.L3767
+	testq	%r15, %r15
+	jne	.L3673
+	.p2align 4
+	.p2align 3
+.L3671:
+	movq	104(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3766
+	addq	$120, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L3767:
+	.cfi_restore_state
+	cmpb	$123, (%rbx)
+	je	.L3768
+.L3673:
+	movq	%r15, %rdx
+	movl	$123, %esi
+	movq	%rbx, %rdi
+	call	memchr@PLT
+	movq	%r15, %rdx
+	movl	$125, %esi
+	movq	%rbx, %rdi
+	movq	%rax, %r12
+	movq	$-1, %rcx
+	subq	%rbx, %r12
+	testq	%rax, %rax
+	cmove	%rcx, %r12
+	call	memchr@PLT
+	movq	$-1, %rcx
+	movq	%rax, %r13
+	subq	%rbx, %r13
+	testq	%rax, %rax
+	cmove	%rcx, %r13
+	.p2align 4
+	.p2align 3
+.L3679:
+	cmpq	%r13, %r12
+	je	.L3686
+	jb	.L3687
+.L3688:
+	leaq	1(%r13), %rcx
+	cmpq	%r15, %rcx
+	je	.L3724
+	cmpb	$125, 1(%rbx,%r13)
+	jne	.L3724
+	movq	0(%rbp), %rax
+	movq	%rcx, %rbx
+	addq	8(%rbp), %rbx
+	movq	%rcx, 8(%rsp)
+	movq	%rbx, %rsi
+	movq	%rbp, %rdi
+	addq	$1, %rbx
+	call	*(%rax)
+	movq	16(%rbp), %r14
+	movq	8(%rsp), %rcx
+	leaq	-1(%r12), %rax
+	movq	%rbx, 8(%rbp)
+	subq	%rcx, %rax
+	movq	%r14, %r15
+	cmpq	$-1, %r12
+	cmovne	%rax, %r12
+	subq	%rbx, %r15
+	je	.L3671
+	movq	%r15, %rdx
+	movl	$125, %esi
+	movq	%rbx, %rdi
+	call	memchr@PLT
+	movq	%rax, %r13
+	subq	%rbx, %r13
+	testq	%rax, %rax
+	jne	.L3679
+	movq	$-1, %r13
+	cmpq	$-1, %r12
+	je	.L3686
+	.p2align 4
+	.p2align 3
+.L3687:
+	leaq	1(%r12), %rax
+	cmpq	%rax, %r15
+	je	.L3692
+	movzbl	1(%rbx,%r12), %r15d
+	cmpq	$-1, %r13
+	je	.L3723
+.L3691:
+	xorl	%ecx, %ecx
+	cmpb	$123, %r15b
+	movq	0(%rbp), %rdx
+	movq	%rbp, %rdi
+	sete	%cl
+	addq	%r12, %rcx
+	addq	8(%rbp), %rcx
+	movq	%rcx, 8(%rsp)
+	movq	%rcx, %rsi
+	call	*(%rdx)
+	movq	8(%rsp), %rcx
+	movq	16(%rbp), %r14
+	leaq	1(%rcx), %rbx
+	movq	%rbx, 8(%rbp)
+	cmpb	$123, %r15b
+	jne	.L3693
+	leaq	-2(%r13), %rax
+	movq	%r14, %r15
+	subq	%r12, %rax
+	cmpq	$-1, %r13
+	cmovne	%rax, %r13
+	subq	%rbx, %r15
+	je	.L3671
+	movq	%r15, %rdx
+	movl	$123, %esi
+	movq	%rbx, %rdi
+	call	memchr@PLT
+	movq	%rax, %r12
+	subq	%rbx, %r12
+	testq	%rax, %rax
+	jne	.L3679
+	cmpq	$-1, %r13
+	je	.L3686
+	movq	$-1, %r12
+	jmp	.L3688
+	.p2align 4,,10
+	.p2align 3
+.L3686:
+	movq	0(%rbp), %rax
+	movq	%r14, %rsi
+	movq	%rbp, %rdi
+	call	*(%rax)
+	movq	16(%rbp), %rax
+	movq	%rax, 8(%rbp)
+	jmp	.L3671
+	.p2align 4,,10
+	.p2align 3
+.L3774:
+	cmpq	$-1, %r12
+	je	.L3686
+	leaq	1(%r12), %rax
+	cmpq	%r15, %rax
+	je	.L3692
+	movzbl	2(%r13,%r12), %r15d
+	.p2align 4
+	.p2align 3
+.L3723:
+	cmpb	$123, %r15b
+	jne	.L3692
+	movq	$-1, %r13
+	jmp	.L3691
+	.p2align 4,,10
+	.p2align 3
+.L3693:
+	movzbl	1(%rcx), %eax
+	cmpb	$125, %al
+	je	.L3769
+	cmpb	$58, %al
+	je	.L3770
+	cmpb	$48, %al
+	je	.L3771
+	leal	-49(%rax), %edx
+	cmpb	$8, %dl
+	ja	.L3703
+	movsbw	%al, %si
+	leaq	2(%rcx), %rdi
+	movzbl	2(%rcx), %eax
+	subl	$48, %esi
+	cmpq	%rdi, %r14
+	je	.L3702
+	leal	-48(%rax), %edx
+	cmpb	$9, %dl
+	ja	.L3702
+	movq	%rbx, %rdi
+	xorl	%esi, %esi
+	movl	$16, %r8d
+	jmp	.L3712
+	.p2align 4,,10
+	.p2align 3
+.L3772:
+	leal	(%rsi,%rsi,4), %esi
+	movzbl	%cl, %ecx
+	leal	(%rcx,%rsi,2), %esi
+.L3707:
+	addq	$1, %rdi
+	cmpq	%rdi, %r14
+	je	.L3713
+.L3712:
+	movzbl	(%rdi), %eax
+	leal	-48(%rax), %ecx
+	cmpb	$9, %cl
+	ja	.L3705
+	subl	$4, %r8d
+	jns	.L3772
+	movl	$10, %edx
+	movl	%esi, %eax
+	mulw	%dx
+	jo	.L3703
+	movzbl	%cl, %ecx
+	addw	%ax, %cx
+	jc	.L3703
+	movl	%ecx, %esi
+	jmp	.L3707
+	.p2align 4,,10
+	.p2align 3
+.L3771:
+	movzbl	2(%rcx), %eax
+	leaq	2(%rcx), %rdi
+	xorl	%esi, %esi
+.L3702:
+	cmpb	$125, %al
+	je	.L3714
+	cmpb	$58, %al
+	jne	.L3703
+.L3714:
+	cmpl	$2, 24(%rbp)
+	movzwl	%si, %esi
+	je	.L3674
+	xorl	%eax, %eax
+	movl	$1, 24(%rbp)
+	cmpb	$58, (%rdi)
+	sete	%al
+	addq	%rax, %rdi
+	movq	%rdi, 8(%rbp)
+.L3699:
+	movq	0(%rbp), %rax
+	leaq	_ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEm(%rip), %rdx
+	movq	8(%rax), %rax
+	cmpq	%rdx, %rax
+	jne	.L3717
+	movq	48(%rbp), %rdi
+	movzbl	(%rdi), %eax
+	movl	%eax, %edx
+	andl	$15, %eax
+	andl	$15, %edx
+	cmpq	%rax, %rsi
+	jnb	.L3718
+	movq	(%rdi), %rdx
+	leaq	(%rsi,%rsi,4), %rcx
+	salq	$4, %rsi
+	addq	8(%rdi), %rsi
+	movdqa	(%rsi), %xmm0
+	shrq	$4, %rdx
+	shrq	%cl, %rdx
+	movaps	%xmm0, 64(%rsp)
+	movl	%edx, %eax
+	andl	$31, %edx
+	andl	$31, %eax
+.L3719:
+	movdqa	64(%rsp), %xmm0
+	movb	%al, 80(%rsp)
+	leaq	24(%rsp), %rsi
+	leaq	32(%rsp), %rdi
+	movq	%rbp, 24(%rsp)
+	movaps	%xmm0, 32(%rsp)
+	movdqa	80(%rsp), %xmm0
+	movaps	%xmm0, 48(%rsp)
+	call	_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_19_Formatting_scannerIS3_cE13_M_format_argEmEUlRT_E_EEDcOS9_NS1_6_Arg_tE
+.L3720:
+	movq	8(%rbp), %r13
+	movq	16(%rbp), %r14
+	cmpq	%r14, %r13
+	je	.L3692
+	cmpb	$125, 0(%r13)
+	jne	.L3692
+	leaq	1(%r13), %rbx
+	movq	%r14, %r15
+	movq	%rbx, 8(%rbp)
+	subq	%rbx, %r15
+	je	.L3671
+	movq	%r15, %rdx
+	movl	$123, %esi
+	movq	%rbx, %rdi
+	call	memchr@PLT
+	movq	%rax, %r12
+	testq	%rax, %rax
+	je	.L3773
+	movq	%r15, %rdx
+	movl	$125, %esi
+	movq	%rbx, %rdi
+	subq	%rbx, %r12
+	call	memchr@PLT
+	testq	%rax, %rax
+	je	.L3774
+.L3722:
+	subq	%rbx, %rax
+	movq	%rax, %r13
+	jmp	.L3679
+	.p2align 4,,10
+	.p2align 3
+.L3718:
+	movl	%edx, %eax
+	testb	%dl, %dl
+	jne	.L3735
+	movq	(%rdi), %rcx
+	xorl	%edx, %edx
+	shrq	$4, %rcx
+	cmpq	%rcx, %rsi
+	jnb	.L3719
+	salq	$5, %rsi
+	addq	8(%rdi), %rsi
+	movdqu	(%rsi), %xmm0
+	movzbl	16(%rsi), %edx
+	movaps	%xmm0, 64(%rsp)
+	movl	%edx, %eax
+	jmp	.L3719
+	.p2align 4,,10
+	.p2align 3
+.L3769:
+	cmpl	$1, 24(%rbp)
+	je	.L3674
+	movq	32(%rbp), %rsi
+	movl	$2, 24(%rbp)
+	leaq	1(%rsi), %rax
+	movq	%rax, 32(%rbp)
+	jmp	.L3699
+	.p2align 4,,10
+	.p2align 3
+.L3770:
+	cmpl	$1, 24(%rbp)
+	je	.L3674
+	movq	32(%rbp), %rsi
+	addq	$2, %rcx
+	movl	$2, 24(%rbp)
+	movq	%rcx, 8(%rbp)
+	leaq	1(%rsi), %rax
+	movq	%rax, 32(%rbp)
+	jmp	.L3699
+	.p2align 4,,10
+	.p2align 3
+.L3735:
+	xorl	%edx, %edx
+	xorl	%eax, %eax
+	jmp	.L3719
+	.p2align 4,,10
+	.p2align 3
+.L3717:
+	movq	%rbp, %rdi
+	call	*%rax
+	jmp	.L3720
+	.p2align 4,,10
+	.p2align 3
+.L3768:
+	cmpb	$125, 1(%rbx)
+	jne	.L3673
+	movq	0(%rbp), %rax
+	addq	$1, %rbx
+	cmpl	$1, 24(%rbp)
+	movq	%rbx, 8(%rbp)
+	movq	8(%rax), %rax
+	je	.L3674
+	movq	32(%rbp), %rsi
+	movl	$2, 24(%rbp)
+	leaq	1(%rsi), %rdx
+	movq	%rdx, 32(%rbp)
+	leaq	_ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEm(%rip), %rdx
+	cmpq	%rdx, %rax
+	jne	.L3681
+	movq	48(%rbp), %rdi
+	movzbl	(%rdi), %edx
+	movl	%edx, %eax
+	andl	$15, %edx
+	andl	$15, %eax
+	cmpq	%rdx, %rsi
+	jnb	.L3682
+	movq	(%rdi), %rdx
+	leaq	(%rsi,%rsi,4), %rcx
+	salq	$4, %rsi
+	shrq	$4, %rdx
+	shrq	%cl, %rdx
+	movq	8(%rdi), %rcx
+	movl	%edx, %eax
+	andl	$31, %edx
+	addq	%rsi, %rcx
+	andl	$31, %eax
+	movdqa	(%rcx), %xmm0
+	movaps	%xmm0, 32(%rsp)
+.L3683:
+	movdqa	32(%rsp), %xmm0
+	movb	%al, 48(%rsp)
+	leaq	24(%rsp), %rsi
+	leaq	64(%rsp), %rdi
+	movq	%rbp, 24(%rsp)
+	movaps	%xmm0, 64(%rsp)
+	movdqa	48(%rsp), %xmm0
+	movaps	%xmm0, 80(%rsp)
+	call	_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_19_Formatting_scannerIS3_cE13_M_format_argEmEUlRT_E_EEDcOS9_NS1_6_Arg_tE
+	jmp	.L3671
+	.p2align 4,,10
+	.p2align 3
+.L3773:
+	movq	%r15, %rdx
+	movl	$125, %esi
+	movq	%rbx, %rdi
+	call	memchr@PLT
+	testq	%rax, %rax
+	je	.L3686
+	movq	$-1, %r12
+	jmp	.L3722
+.L3705:
+	cmpq	%rdi, %rbx
+	je	.L3703
+.L3713:
+	movzbl	(%rdi), %eax
+	jmp	.L3702
+.L3682:
+	testb	%al, %al
+	jne	.L3732
+	movq	(%rdi), %rcx
+	xorl	%edx, %edx
+	shrq	$4, %rcx
+	cmpq	%rcx, %rsi
+	jnb	.L3683
+	movq	%rsi, %rax
+	salq	$5, %rax
+	addq	8(%rdi), %rax
+	movdqu	(%rax), %xmm0
+	movzbl	16(%rax), %edx
+	movaps	%xmm0, 32(%rsp)
+	movl	%edx, %eax
+	jmp	.L3683
+.L3681:
+	movq	104(%rsp), %rdx
+	subq	%fs:40, %rdx
+	jne	.L3766
+	addq	$120, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	movq	%rbp, %rdi
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	jmp	*%rax
+.L3732:
+	.cfi_restore_state
+	xorl	%edx, %edx
+	xorl	%eax, %eax
+	jmp	.L3683
+.L3692:
+	movq	104(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L3690
+.L3766:
+	call	__stack_chk_fail@PLT
+.L3703:
+	movq	104(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3766
+	call	_ZNSt8__format33__invalid_arg_id_in_format_stringEv
+.L3724:
+	movq	104(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3766
+	leaq	.LC57(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+.L3674:
+	movq	104(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3766
+	call	_ZNSt8__format39__conflicting_indexing_in_format_stringEv
+.L3690:
+	leaq	.LC25(%rip), %rdi
+	call	_ZSt20__throw_format_errorPKc
+	.cfi_endproc
+.LFE3993:
+	.size	_ZNSt8__format8_ScannerIcE7_M_scanEv, .-_ZNSt8__format8_ScannerIcE7_M_scanEv
+	.section	.text._ZSt17vprint_nonunicodeP8_IO_FILESt17basic_string_viewIcSt11char_traitsIcEESt17basic_format_argsISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE,"axG",@progbits,_ZSt17vprint_nonunicodeP8_IO_FILESt17basic_string_viewIcSt11char_traitsIcEESt17basic_format_argsISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE,comdat
+	.p2align 4
+	.weak	_ZSt17vprint_nonunicodeP8_IO_FILESt17basic_string_viewIcSt11char_traitsIcEESt17basic_format_argsISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE
+	.type	_ZSt17vprint_nonunicodeP8_IO_FILESt17basic_string_viewIcSt11char_traitsIcEESt17basic_format_argsISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE, @function
+_ZSt17vprint_nonunicodeP8_IO_FILESt17basic_string_viewIcSt11char_traitsIcEESt17basic_format_argsISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE:
+.LFB3957:
+	.cfi_startproc
+	.cfi_personality 0x9b,DW.ref.__gxx_personality_v0
+	.cfi_lsda 0x1b,.LLSDA3957
+	endbr64
+	pushq	%r15
+	.cfi_def_cfa_offset 16
+	.cfi_offset 15, -16
+	movq	%rsi, %r15
+	leaq	16+_ZTVNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE(%rip), %rsi
+	pushq	%r14
+	.cfi_def_cfa_offset 24
+	.cfi_offset 14, -24
+	pushq	%r13
+	.cfi_def_cfa_offset 32
+	.cfi_offset 13, -32
+	leaq	16+_ZTVNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE(%rip), %r13
+	pushq	%r12
+	.cfi_def_cfa_offset 40
+	.cfi_offset 12, -40
+	movq	%r13, %xmm0
+	pushq	%rbp
+	.cfi_def_cfa_offset 48
+	.cfi_offset 6, -48
+	movq	%rdi, %rbp
+	pushq	%rbx
+	.cfi_def_cfa_offset 56
+	.cfi_offset 3, -56
+	subq	$856, %rsp
+	.cfi_def_cfa_offset 912
+	movq	%fs:40, %rbx
+	movq	%rbx, 840(%rsp)
+	movq	%rdx, %rbx
+	leaq	544(%rsp), %rdx
+	leaq	512(%rsp), %rax
+	movq	$256, 528(%rsp)
+	movq	%rdx, %xmm1
+	movq	%rdx, 536(%rsp)
+	leaq	224(%rsp), %rdx
+	leaq	816(%rsp), %r12
+	punpcklqdq	%xmm1, %xmm0
+	movq	%rdx, %xmm2
+	movq	%r12, 800(%rsp)
+	movaps	%xmm0, 512(%rsp)
+	movq	%rsi, %xmm0
+	punpcklqdq	%xmm2, %xmm0
+	movq	$0, 808(%rsp)
+	movb	$0, 816(%rsp)
+	movq	$256, 208(%rsp)
+	movq	%rdx, 216(%rsp)
+	movq	%rax, 480(%rsp)
+	movq	$-1, 488(%rsp)
+	movq	$0, 496(%rsp)
+	movq	%rax, 40(%rsp)
+	movaps	%xmm0, 192(%rsp)
+	cmpq	$2, %r15
+	je	.L3814
+.L3801:
+	leaq	80(%rsp), %rsi
+	leaq	128(%rsp), %rdi
+.L3776:
+	movdqa	.LC58(%rip), %xmm0
+	movq	%rax, 96(%rsp)
+	leaq	16+_ZTVNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE(%rip), %rax
+	movq	%rbx, 136(%rsp)
+	addq	%r15, %rbx
+	movq	%rcx, 80(%rsp)
+	movq	%r8, 88(%rsp)
+	movq	$0, 104(%rsp)
+	movb	$0, 112(%rsp)
+	movq	%rbx, 144(%rsp)
+	movl	$0, 152(%rsp)
+	movq	%rax, 128(%rsp)
+	movq	%rsi, 176(%rsp)
+	movaps	%xmm0, 160(%rsp)
+.LEHB64:
+	call	_ZNSt8__format8_ScannerIcE7_M_scanEv
+.LEHE64:
+	cmpb	$0, 112(%rsp)
+	jne	.L3815
+.L3780:
+	movq	520(%rsp), %rdi
+	movq	536(%rsp), %rbx
+	movq	808(%rsp), %rsi
+	subq	%rdi, %rbx
+	testq	%rsi, %rsi
+	je	.L3783
+	testq	%rbx, %rbx
+	jne	.L3816
+.L3787:
+	movq	800(%rsp), %rdi
+	movq	%rsi, %rbx
+.L3783:
+	movq	%rbp, %rcx
+	movq	%rbx, %rdx
+	movl	$1, %esi
+	leaq	800(%rsp), %r14
+.LEHB65:
+	call	fwrite@PLT
+	cmpq	%rbx, %rax
+	jne	.L3817
+	movq	800(%rsp), %rdi
+	movq	%r13, 512(%rsp)
+	cmpq	%r12, %rdi
+	je	.L3775
+	movq	816(%rsp), %rax
+	leaq	1(%rax), %rsi
+	call	_ZdlPvm@PLT
+.L3775:
+	movq	840(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3813
+	addq	$856, %rsp
+	.cfi_remember_state
+	.cfi_def_cfa_offset 56
+	popq	%rbx
+	.cfi_def_cfa_offset 48
+	popq	%rbp
+	.cfi_def_cfa_offset 40
+	popq	%r12
+	.cfi_def_cfa_offset 32
+	popq	%r13
+	.cfi_def_cfa_offset 24
+	popq	%r14
+	.cfi_def_cfa_offset 16
+	popq	%r15
+	.cfi_def_cfa_offset 8
+	ret
+	.p2align 4,,10
+	.p2align 3
+.L3814:
+	.cfi_restore_state
+	cmpb	$123, (%rbx)
+	jne	.L3801
+	cmpb	$125, 1(%rbx)
+	jne	.L3801
+	movb	$0, 39(%rsp)
+	testb	$15, %cl
+	je	.L3777
+	movq	%rcx, %rdx
+	movdqa	(%r8), %xmm0
+	shrq	$4, %rdx
+	movl	%edx, %eax
+	movaps	%xmm0, 48(%rsp)
+	andl	$31, %edx
+	andl	$31, %eax
+.L3778:
+	leaq	39(%rsp), %rsi
+	movq	%rcx, 16(%rsp)
+	leaq	40(%rsp), %rcx
+	movq	%rsi, %xmm3
+	movq	%rcx, %xmm0
+	movb	%al, 64(%rsp)
+	leaq	80(%rsp), %rsi
+	punpcklqdq	%xmm3, %xmm0
+	leaq	128(%rsp), %rdi
+	movq	%r8, 24(%rsp)
+	leaq	800(%rsp), %r14
+	movaps	%xmm0, 80(%rsp)
+	movdqa	48(%rsp), %xmm0
+	movq	%rsi, 8(%rsp)
+	movaps	%xmm0, 128(%rsp)
+	movdqa	64(%rsp), %xmm0
+	movq	%rdi, (%rsp)
+	movaps	%xmm0, 144(%rsp)
+	call	_ZNSt16basic_format_argISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE8_M_visitIZNS1_15__do_vformat_toIS3_cS4_EET_S8_St17basic_string_viewIT0_St11char_traitsISA_EERKSt17basic_format_argsIT1_EPKSt6localeEUlRS8_E_EEDcOS8_NS1_6_Arg_tE
+	cmpb	$0, 39(%rsp)
+	jne	.L3780
+	movq	40(%rsp), %rax
+	movq	(%rsp), %rdi
+	movq	8(%rsp), %rsi
+	movq	16(%rsp), %rcx
+	movq	24(%rsp), %r8
+	jmp	.L3776
+	.p2align 4,,10
+	.p2align 3
+.L3815:
+	leaq	104(%rsp), %rdi
+	call	_ZNSt6localeD1Ev@PLT
+	jmp	.L3780
+	.p2align 4,,10
+	.p2align 3
+.L3816:
+	movabsq	$9223372036854775807, %rax
+	subq	%rsi, %rax
+	cmpq	%rbx, %rax
+	jb	.L3818
+	movq	800(%rsp), %rax
+	leaq	(%rbx,%rsi), %r15
+	cmpq	%r12, %rax
+	je	.L3804
+	movq	816(%rsp), %rdx
+.L3790:
+	cmpq	%r15, %rdx
+	jb	.L3791
+	addq	%rsi, %rax
+	cmpq	$1, %rbx
+	je	.L3819
+	movq	%rdi, %rsi
+	movq	%rbx, %rdx
+	movq	%rax, %rdi
+	call	memcpy@PLT
+.L3793:
+	movq	800(%rsp), %rax
+	movq	%r15, 808(%rsp)
+	movb	$0, (%rax,%r15)
+	movq	520(%rsp), %rax
+	movq	808(%rsp), %rsi
+	movq	%rax, 536(%rsp)
+	jmp	.L3787
+	.p2align 4,,10
+	.p2align 3
+.L3819:
+	movzbl	(%rdi), %edx
+	movb	%dl, (%rax)
+	jmp	.L3793
+	.p2align 4,,10
+	.p2align 3
+.L3791:
+	leaq	800(%rsp), %r14
+	movq	%rdi, %rcx
+	movq	%rbx, %r8
+	xorl	%edx, %edx
+	movq	%r14, %rdi
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE9_M_mutateEmmPKcm
+	jmp	.L3793
+	.p2align 4,,10
+	.p2align 3
+.L3804:
+	movl	$15, %edx
+	jmp	.L3790
+	.p2align 4,,10
+	.p2align 3
+.L3777:
+	movq	%rcx, %rsi
+	xorl	%eax, %eax
+	xorl	%edx, %edx
+	shrq	$4, %rsi
+	je	.L3778
+	movdqu	(%r8), %xmm0
+	movzbl	16(%r8), %edx
+	movaps	%xmm0, 48(%rsp)
+	movl	%edx, %eax
+	jmp	.L3778
+.L3817:
+	movq	840(%rsp), %rax
+	subq	%fs:40, %rax
+	je	.L3795
+.L3813:
+	call	__stack_chk_fail@PLT
+.L3818:
+	movq	840(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3813
+	leaq	.LC23(%rip), %rdi
+	leaq	800(%rsp), %r14
+	call	_ZSt20__throw_length_errorPKc@PLT
+.LEHE65:
+.L3805:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L3786
+.L3784:
+	cmpb	$0, 112(%rsp)
+	jne	.L3820
+.L3785:
+	leaq	800(%rsp), %r14
+.L3786:
+	movq	%r14, %rdi
+	movq	%r13, 512(%rsp)
+	call	_ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE10_M_disposeEv
+	movq	840(%rsp), %rax
+	subq	%fs:40, %rax
+	jne	.L3813
+	movq	%rbx, %rdi
+.LEHB66:
+	call	_Unwind_Resume@PLT
+.LEHE66:
+.L3806:
+	endbr64
+	movq	%rax, %rbx
+	jmp	.L3784
+.L3795:
+	movl	$5, %edi
+	leaq	800(%rsp), %r14
+.LEHB67:
+	call	_ZSt20__throw_system_errori@PLT
+.LEHE67:
+.L3820:
+	leaq	104(%rsp), %rdi
+	call	_ZNSt6localeD1Ev@PLT
+	jmp	.L3785
+	.cfi_endproc
+.LFE3957:
+	.section	.gcc_except_table._ZSt17vprint_nonunicodeP8_IO_FILESt17basic_string_viewIcSt11char_traitsIcEESt17basic_format_argsISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE,"aG",@progbits,_ZSt17vprint_nonunicodeP8_IO_FILESt17basic_string_viewIcSt11char_traitsIcEESt17basic_format_argsISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE,comdat
+.LLSDA3957:
+	.byte	0xff
+	.byte	0xff
+	.byte	0x1
+	.uleb128 .LLSDACSE3957-.LLSDACSB3957
+.LLSDACSB3957:
+	.uleb128 .LEHB64-.LFB3957
+	.uleb128 .LEHE64-.LEHB64
+	.uleb128 .L3806-.LFB3957
+	.uleb128 0
+	.uleb128 .LEHB65-.LFB3957
+	.uleb128 .LEHE65-.LEHB65
+	.uleb128 .L3805-.LFB3957
+	.uleb128 0
+	.uleb128 .LEHB66-.LFB3957
+	.uleb128 .LEHE66-.LEHB66
+	.uleb128 0
+	.uleb128 0
+	.uleb128 .LEHB67-.LFB3957
+	.uleb128 .LEHE67-.LEHB67
+	.uleb128 .L3805-.LFB3957
+	.uleb128 0
+.LLSDACSE3957:
+	.section	.text._ZSt17vprint_nonunicodeP8_IO_FILESt17basic_string_viewIcSt11char_traitsIcEESt17basic_format_argsISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE,"axG",@progbits,_ZSt17vprint_nonunicodeP8_IO_FILESt17basic_string_viewIcSt11char_traitsIcEESt17basic_format_argsISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE,comdat
+	.size	_ZSt17vprint_nonunicodeP8_IO_FILESt17basic_string_viewIcSt11char_traitsIcEESt17basic_format_argsISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE, .-_ZSt17vprint_nonunicodeP8_IO_FILESt17basic_string_viewIcSt11char_traitsIcEESt17basic_format_argsISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE
+	.section	.rodata.main.str1.1,"aMS",@progbits,1
+.LC59:
+	.string	"Processing implementation \n"
+	.section	.text.startup.main,"ax",@progbits
+	.p2align 4
+	.globl	main
+	.type	main, @function
+main:
+.LFB4012:
+	.cfi_startproc
+	endbr64
+	subq	$8, %rsp
+	.cfi_def_cfa_offset 16
+	movq	stdout(%rip), %rdi
+	xorl	%ecx, %ecx
+	xorl	%r8d, %r8d
+	movl	$27, %esi
+	leaq	.LC59(%rip), %rdx
+	call	_ZSt17vprint_nonunicodeP8_IO_FILESt17basic_string_viewIcSt11char_traitsIcEESt17basic_format_argsISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE
+	xorl	%eax, %eax
+	addq	$8, %rsp
+	.cfi_def_cfa_offset 8
+	ret
+	.cfi_endproc
+.LFE4012:
+	.size	main, .-main
+	.section	.text._Z7do_workP9interfaceI4ImplE,"ax",@progbits
+	.p2align 4
+	.globl	_Z7do_workP9interfaceI4ImplE
+	.type	_Z7do_workP9interfaceI4ImplE, @function
+_Z7do_workP9interfaceI4ImplE:
+.LFB4011:
+	.cfi_startproc
+	endbr64
+	movq	stdout(%rip), %rdi
+	xorl	%ecx, %ecx
+	xorl	%r8d, %r8d
+	movl	$27, %esi
+	leaq	.LC59(%rip), %rdx
+	jmp	_ZSt17vprint_nonunicodeP8_IO_FILESt17basic_string_viewIcSt11char_traitsIcEESt17basic_format_argsISt20basic_format_contextINSt8__format10_Sink_iterIcEEcEE
+	.cfi_endproc
+.LFE4011:
+	.size	_Z7do_workP9interfaceI4ImplE, .-_Z7do_workP9interfaceI4ImplE
+	.section	.rodata.CSWTCH.936,"a"
+	.align 32
+	.type	CSWTCH.936, @object
+	.size	CSWTCH.936, 56
+CSWTCH.936:
+	.long	3
+	.long	0
+	.long	0
+	.long	0
+	.long	0
+	.long	0
+	.long	0
+	.long	0
+	.long	0
+	.long	0
+	.long	0
+	.long	1
+	.long	0
+	.long	2
+	.weak	_ZTSSt12format_error
+	.section	.rodata._ZTSSt12format_error,"aG",@progbits,_ZTSSt12format_error,comdat
+	.align 16
+	.type	_ZTSSt12format_error, @object
+	.size	_ZTSSt12format_error, 17
+_ZTSSt12format_error:
+	.string	"St12format_error"
+	.weak	_ZTISt12format_error
+	.section	.data.rel.ro._ZTISt12format_error,"awG",@progbits,_ZTISt12format_error,comdat
+	.align 8
+	.type	_ZTISt12format_error, @object
+	.size	_ZTISt12format_error, 24
+_ZTISt12format_error:
+	.quad	_ZTVN10__cxxabiv120__si_class_type_infoE+16
+	.quad	_ZTSSt12format_error
+	.quad	_ZTISt13runtime_error
+	.weak	_ZTSNSt8__format5_SinkIcEE
+	.section	.rodata._ZTSNSt8__format5_SinkIcEE,"aG",@progbits,_ZTSNSt8__format5_SinkIcEE,comdat
+	.align 16
+	.type	_ZTSNSt8__format5_SinkIcEE, @object
+	.size	_ZTSNSt8__format5_SinkIcEE, 23
+_ZTSNSt8__format5_SinkIcEE:
+	.string	"NSt8__format5_SinkIcEE"
+	.weak	_ZTINSt8__format5_SinkIcEE
+	.section	.data.rel.ro._ZTINSt8__format5_SinkIcEE,"awG",@progbits,_ZTINSt8__format5_SinkIcEE,comdat
+	.align 8
+	.type	_ZTINSt8__format5_SinkIcEE, @object
+	.size	_ZTINSt8__format5_SinkIcEE, 16
+_ZTINSt8__format5_SinkIcEE:
+	.quad	_ZTVN10__cxxabiv117__class_type_infoE+16
+	.quad	_ZTSNSt8__format5_SinkIcEE
+	.weak	_ZTSNSt8__format9_Buf_sinkIcEE
+	.section	.rodata._ZTSNSt8__format9_Buf_sinkIcEE,"aG",@progbits,_ZTSNSt8__format9_Buf_sinkIcEE,comdat
+	.align 16
+	.type	_ZTSNSt8__format9_Buf_sinkIcEE, @object
+	.size	_ZTSNSt8__format9_Buf_sinkIcEE, 27
+_ZTSNSt8__format9_Buf_sinkIcEE:
+	.string	"NSt8__format9_Buf_sinkIcEE"
+	.weak	_ZTINSt8__format9_Buf_sinkIcEE
+	.section	.data.rel.ro._ZTINSt8__format9_Buf_sinkIcEE,"awG",@progbits,_ZTINSt8__format9_Buf_sinkIcEE,comdat
+	.align 8
+	.type	_ZTINSt8__format9_Buf_sinkIcEE, @object
+	.size	_ZTINSt8__format9_Buf_sinkIcEE, 24
+_ZTINSt8__format9_Buf_sinkIcEE:
+	.quad	_ZTVN10__cxxabiv120__si_class_type_infoE+16
+	.quad	_ZTSNSt8__format9_Buf_sinkIcEE
+	.quad	_ZTINSt8__format5_SinkIcEE
+	.weak	_ZTSNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE
+	.section	.rodata._ZTSNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE,"aG",@progbits,_ZTSNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE,comdat
+	.align 32
+	.type	_ZTSNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE, @object
+	.size	_ZTSNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE, 78
+_ZTSNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE:
+	.string	"NSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE"
+	.weak	_ZTINSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE
+	.section	.data.rel.ro._ZTINSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE,"awG",@progbits,_ZTINSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE,comdat
+	.align 8
+	.type	_ZTINSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE, @object
+	.size	_ZTINSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE, 24
+_ZTINSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE:
+	.quad	_ZTVN10__cxxabiv120__si_class_type_infoE+16
+	.quad	_ZTSNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE
+	.quad	_ZTINSt8__format9_Buf_sinkIcEE
+	.weak	_ZTSNSt8__format8_ScannerIcEE
+	.section	.rodata._ZTSNSt8__format8_ScannerIcEE,"aG",@progbits,_ZTSNSt8__format8_ScannerIcEE,comdat
+	.align 16
+	.type	_ZTSNSt8__format8_ScannerIcEE, @object
+	.size	_ZTSNSt8__format8_ScannerIcEE, 26
+_ZTSNSt8__format8_ScannerIcEE:
+	.string	"NSt8__format8_ScannerIcEE"
+	.weak	_ZTINSt8__format8_ScannerIcEE
+	.section	.data.rel.ro._ZTINSt8__format8_ScannerIcEE,"awG",@progbits,_ZTINSt8__format8_ScannerIcEE,comdat
+	.align 8
+	.type	_ZTINSt8__format8_ScannerIcEE, @object
+	.size	_ZTINSt8__format8_ScannerIcEE, 16
+_ZTINSt8__format8_ScannerIcEE:
+	.quad	_ZTVN10__cxxabiv117__class_type_infoE+16
+	.quad	_ZTSNSt8__format8_ScannerIcEE
+	.weak	_ZTSNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE
+	.section	.rodata._ZTSNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE,"aG",@progbits,_ZTSNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE,comdat
+	.align 32
+	.type	_ZTSNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE, @object
+	.size	_ZTSNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE, 48
+_ZTSNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE:
+	.string	"NSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE"
+	.weak	_ZTINSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE
+	.section	.data.rel.ro._ZTINSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE,"awG",@progbits,_ZTINSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE,comdat
+	.align 8
+	.type	_ZTINSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE, @object
+	.size	_ZTINSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE, 24
+_ZTINSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE:
+	.quad	_ZTVN10__cxxabiv120__si_class_type_infoE+16
+	.quad	_ZTSNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE
+	.quad	_ZTINSt8__format9_Buf_sinkIcEE
+	.weak	_ZTSNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE
+	.section	.rodata._ZTSNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE,"aG",@progbits,_ZTSNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE,comdat
+	.align 32
+	.type	_ZTSNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE, @object
+	.size	_ZTSNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE, 57
+_ZTSNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE:
+	.string	"NSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE"
+	.weak	_ZTINSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE
+	.section	.data.rel.ro._ZTINSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE,"awG",@progbits,_ZTINSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE,comdat
+	.align 8
+	.type	_ZTINSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE, @object
+	.size	_ZTINSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE, 24
+_ZTINSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE:
+	.quad	_ZTVN10__cxxabiv120__si_class_type_infoE+16
+	.quad	_ZTSNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE
+	.quad	_ZTINSt8__format8_ScannerIcEE
+	.weak	_ZTVSt12format_error
+	.section	.data.rel.ro._ZTVSt12format_error,"awG",@progbits,_ZTVSt12format_error,comdat
+	.align 8
+	.type	_ZTVSt12format_error, @object
+	.size	_ZTVSt12format_error, 40
+_ZTVSt12format_error:
+	.quad	0
+	.quad	_ZTISt12format_error
+	.quad	_ZNSt12format_errorD1Ev
+	.quad	_ZNSt12format_errorD0Ev
+	.quad	_ZNKSt13runtime_error4whatEv
+	.weak	_ZTVNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE
+	.section	.data.rel.ro.local._ZTVNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE,"awG",@progbits,_ZTVNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE,comdat
+	.align 8
+	.type	_ZTVNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE, @object
+	.size	_ZTVNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE, 40
+_ZTVNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE:
+	.quad	0
+	.quad	_ZTINSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEEE
+	.quad	_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE11_M_overflowEv
+	.quad	_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE10_M_reserveEm
+	.quad	_ZNSt8__format9_Seq_sinkINSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEE7_M_bumpEm
+	.weak	_ZTVNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE
+	.section	.data.rel.ro.local._ZTVNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE,"awG",@progbits,_ZTVNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE,comdat
+	.align 8
+	.type	_ZTVNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE, @object
+	.size	_ZTVNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE, 40
+_ZTVNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE:
+	.quad	0
+	.quad	_ZTINSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEEE
+	.quad	_ZNSt8__format10_Iter_sinkIcNS_10_Sink_iterIcEEE11_M_overflowEv
+	.quad	_ZNSt8__format5_SinkIcE10_M_reserveEm
+	.quad	_ZNSt8__format5_SinkIcE7_M_bumpEm
+	.weak	_ZTVNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE
+	.section	.data.rel.ro.local._ZTVNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE,"awG",@progbits,_ZTVNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE,comdat
+	.align 8
+	.type	_ZTVNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE, @object
+	.size	_ZTVNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE, 32
+_ZTVNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE:
+	.quad	0
+	.quad	_ZTINSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcEE
+	.quad	_ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE11_M_on_charsEPKc
+	.quad	_ZNSt8__format19_Formatting_scannerINS_10_Sink_iterIcEEcE13_M_format_argEm
+	.weak	_ZNSt8__detail31__from_chars_alnum_to_val_tableILb0EE5valueE
+	.section	.rodata._ZNSt8__detail31__from_chars_alnum_to_val_tableILb0EE5valueE,"aG",@progbits,_ZNSt8__detail31__from_chars_alnum_to_val_tableILb0EE5valueE,comdat
+	.align 32
+	.type	_ZNSt8__detail31__from_chars_alnum_to_val_tableILb0EE5valueE, @gnu_unique_object
+	.size	_ZNSt8__detail31__from_chars_alnum_to_val_tableILb0EE5valueE, 256
+_ZNSt8__detail31__from_chars_alnum_to_val_tableILb0EE5valueE:
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	0
+	.byte	1
+	.byte	2
+	.byte	3
+	.byte	4
+	.byte	5
+	.byte	6
+	.byte	7
+	.byte	8
+	.byte	9
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	10
+	.byte	11
+	.byte	12
+	.byte	13
+	.byte	14
+	.byte	15
+	.byte	16
+	.byte	17
+	.byte	18
+	.byte	19
+	.byte	20
+	.byte	21
+	.byte	22
+	.byte	23
+	.byte	24
+	.byte	25
+	.byte	26
+	.byte	27
+	.byte	28
+	.byte	29
+	.byte	30
+	.byte	31
+	.byte	32
+	.byte	33
+	.byte	34
+	.byte	35
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	10
+	.byte	11
+	.byte	12
+	.byte	13
+	.byte	14
+	.byte	15
+	.byte	16
+	.byte	17
+	.byte	18
+	.byte	19
+	.byte	20
+	.byte	21
+	.byte	22
+	.byte	23
+	.byte	24
+	.byte	25
+	.byte	26
+	.byte	27
+	.byte	28
+	.byte	29
+	.byte	30
+	.byte	31
+	.byte	32
+	.byte	33
+	.byte	34
+	.byte	35
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.byte	127
+	.weak	_ZNSt9__unicode9__v15_1_014__xpicto_edgesE
+	.section	.rodata._ZNSt9__unicode9__v15_1_014__xpicto_edgesE,"aG",@progbits,_ZNSt9__unicode9__v15_1_014__xpicto_edgesE,comdat
+	.align 32
+	.type	_ZNSt9__unicode9__v15_1_014__xpicto_edgesE, @gnu_unique_object
+	.size	_ZNSt9__unicode9__v15_1_014__xpicto_edgesE, 624
+_ZNSt9__unicode9__v15_1_014__xpicto_edgesE:
+	.long	169
+	.long	170
+	.long	174
+	.long	175
+	.long	8252
+	.long	8253
+	.long	8265
+	.long	8266
+	.long	8482
+	.long	8483
+	.long	8505
+	.long	8506
+	.long	8596
+	.long	8602
+	.long	8617
+	.long	8619
+	.long	8986
+	.long	8988
+	.long	9000
+	.long	9001
+	.long	9096
+	.long	9097
+	.long	9167
+	.long	9168
+	.long	9193
+	.long	9204
+	.long	9208
+	.long	9211
+	.long	9410
+	.long	9411
+	.long	9642
+	.long	9644
+	.long	9654
+	.long	9655
+	.long	9664
+	.long	9665
+	.long	9723
+	.long	9727
+	.long	9728
+	.long	9734
+	.long	9735
+	.long	9747
+	.long	9748
+	.long	9862
+	.long	9872
+	.long	9990
+	.long	9992
+	.long	10003
+	.long	10004
+	.long	10005
+	.long	10006
+	.long	10007
+	.long	10013
+	.long	10014
+	.long	10017
+	.long	10018
+	.long	10024
+	.long	10025
+	.long	10035
+	.long	10037
+	.long	10052
+	.long	10053
+	.long	10055
+	.long	10056
+	.long	10060
+	.long	10061
+	.long	10062
+	.long	10063
+	.long	10067
+	.long	10070
+	.long	10071
+	.long	10072
+	.long	10083
+	.long	10088
+	.long	10133
+	.long	10136
+	.long	10145
+	.long	10146
+	.long	10160
+	.long	10161
+	.long	10175
+	.long	10176
+	.long	10548
+	.long	10550
+	.long	11013
+	.long	11016
+	.long	11035
+	.long	11037
+	.long	11088
+	.long	11089
+	.long	11093
+	.long	11094
+	.long	12336
+	.long	12337
+	.long	12349
+	.long	12350
+	.long	12951
+	.long	12952
+	.long	12953
+	.long	12954
+	.long	126976
+	.long	127232
+	.long	127245
+	.long	127248
+	.long	127279
+	.long	127280
+	.long	127340
+	.long	127346
+	.long	127358
+	.long	127360
+	.long	127374
+	.long	127375
+	.long	127377
+	.long	127387
+	.long	127405
+	.long	127462
+	.long	127489
+	.long	127504
+	.long	127514
+	.long	127515
+	.long	127535
+	.long	127536
+	.long	127538
+	.long	127547
+	.long	127548
+	.long	127552
+	.long	127561
+	.long	127995
+	.long	128000
+	.long	128318
+	.long	128326
+	.long	128592
+	.long	128640
+	.long	128768
+	.long	128884
+	.long	128896
+	.long	128981
+	.long	129024
+	.long	129036
+	.long	129040
+	.long	129096
+	.long	129104
+	.long	129114
+	.long	129120
+	.long	129160
+	.long	129168
+	.long	129198
+	.long	129280
+	.long	129292
+	.long	129339
+	.long	129340
+	.long	129350
+	.long	129351
+	.long	129792
+	.long	130048
+	.long	131070
+	.weak	_ZNSt9__unicode9__v15_1_012__incb_edgesE
+	.section	.rodata._ZNSt9__unicode9__v15_1_012__incb_edgesE,"aG",@progbits,_ZNSt9__unicode9__v15_1_012__incb_edgesE,comdat
+	.align 32
+	.type	_ZNSt9__unicode9__v15_1_012__incb_edgesE, @gnu_unique_object
+	.size	_ZNSt9__unicode9__v15_1_012__incb_edgesE, 1556
+_ZNSt9__unicode9__v15_1_012__incb_edgesE:
+	.long	3074
+	.long	3388
+	.long	3394
+	.long	3520
+	.long	4622
+	.long	4640
+	.long	5702
+	.long	5880
+	.long	5886
+	.long	5888
+	.long	5894
+	.long	5900
+	.long	5906
+	.long	5912
+	.long	5918
+	.long	5920
+	.long	6210
+	.long	6252
+	.long	6446
+	.long	6528
+	.long	6594
+	.long	6596
+	.long	7002
+	.long	7028
+	.long	7038
+	.long	7060
+	.long	7070
+	.long	7076
+	.long	7082
+	.long	7096
+	.long	7238
+	.long	7240
+	.long	7362
+	.long	7468
+	.long	8110
+	.long	8144
+	.long	8182
+	.long	8184
+	.long	8282
+	.long	8296
+	.long	8302
+	.long	8336
+	.long	8342
+	.long	8352
+	.long	8358
+	.long	8376
+	.long	8550
+	.long	8560
+	.long	8802
+	.long	8832
+	.long	9002
+	.long	9096
+	.long	9102
+	.long	9216
+	.long	9301
+	.long	9448
+	.long	9458
+	.long	9460
+	.long	9542
+	.long	9556
+	.long	9569
+	.long	9600
+	.long	9697
+	.long	9728
+	.long	9813
+	.long	9892
+	.long	9897
+	.long	9924
+	.long	9929
+	.long	9932
+	.long	9945
+	.long	9960
+	.long	9970
+	.long	9972
+	.long	10097
+	.long	10104
+	.long	10109
+	.long	10112
+	.long	10177
+	.long	10184
+	.long	10234
+	.long	10236
+	.long	10482
+	.long	10484
+	.long	10837
+	.long	10916
+	.long	10921
+	.long	10948
+	.long	10953
+	.long	10960
+	.long	10965
+	.long	10984
+	.long	10994
+	.long	10996
+	.long	11237
+	.long	11240
+	.long	11349
+	.long	11428
+	.long	11433
+	.long	11460
+	.long	11465
+	.long	11472
+	.long	11477
+	.long	11496
+	.long	11506
+	.long	11508
+	.long	11633
+	.long	11640
+	.long	11645
+	.long	11648
+	.long	11717
+	.long	11720
+	.long	12373
+	.long	12452
+	.long	12457
+	.long	12520
+	.long	12530
+	.long	12532
+	.long	12630
+	.long	12636
+	.long	12641
+	.long	12652
+	.long	13042
+	.long	13044
+	.long	13397
+	.long	13550
+	.long	13556
+	.long	14562
+	.long	14572
+	.long	14626
+	.long	14640
+	.long	15074
+	.long	15084
+	.long	15138
+	.long	15152
+	.long	15458
+	.long	15464
+	.long	15574
+	.long	15576
+	.long	15582
+	.long	15584
+	.long	15590
+	.long	15592
+	.long	15814
+	.long	15820
+	.long	15826
+	.long	15828
+	.long	15850
+	.long	15864
+	.long	15874
+	.long	15876
+	.long	15882
+	.long	15892
+	.long	15898
+	.long	15904
+	.long	16154
+	.long	16156
+	.long	16606
+	.long	16608
+	.long	16614
+	.long	16620
+	.long	16950
+	.long	16952
+	.long	19830
+	.long	19840
+	.long	23634
+	.long	23636
+	.long	24394
+	.long	24396
+	.long	24438
+	.long	24440
+	.long	25254
+	.long	25256
+	.long	25830
+	.long	25840
+	.long	26718
+	.long	26724
+	.long	27010
+	.long	27012
+	.long	27094
+	.long	27124
+	.long	27134
+	.long	27136
+	.long	27330
+	.long	27384
+	.long	27390
+	.long	27452
+	.long	27858
+	.long	27860
+	.long	28078
+	.long	28112
+	.long	28334
+	.long	28336
+	.long	28570
+	.long	28572
+	.long	28894
+	.long	28896
+	.long	29506
+	.long	29516
+	.long	29522
+	.long	29572
+	.long	29578
+	.long	29604
+	.long	29622
+	.long	29624
+	.long	29650
+	.long	29652
+	.long	29666
+	.long	29672
+	.long	30466
+	.long	30720
+	.long	32822
+	.long	32824
+	.long	33602
+	.long	33652
+	.long	33670
+	.long	33672
+	.long	33686
+	.long	33732
+	.long	46014
+	.long	46024
+	.long	46590
+	.long	46592
+	.long	46978
+	.long	47104
+	.long	49322
+	.long	49344
+	.long	49766
+	.long	49772
+	.long	170430
+	.long	170432
+	.long	170450
+	.long	170488
+	.long	170618
+	.long	170624
+	.long	170946
+	.long	170952
+	.long	172210
+	.long	172212
+	.long	172930
+	.long	173000
+	.long	173230
+	.long	173240
+	.long	173774
+	.long	173776
+	.long	174786
+	.long	174788
+	.long	174794
+	.long	174804
+	.long	174814
+	.long	174820
+	.long	174842
+	.long	174848
+	.long	174854
+	.long	174856
+	.long	175066
+	.long	175068
+	.long	176054
+	.long	176056
+	.long	257146
+	.long	257148
+	.long	260226
+	.long	260288
+	.long	264182
+	.long	264184
+	.long	265090
+	.long	265092
+	.long	265690
+	.long	265708
+	.long	272438
+	.long	272440
+	.long	272446
+	.long	272448
+	.long	272610
+	.long	272620
+	.long	272638
+	.long	272640
+	.long	273302
+	.long	273308
+	.long	275602
+	.long	275616
+	.long	277166
+	.long	277172
+	.long	277494
+	.long	277504
+	.long	277786
+	.long	277828
+	.long	278026
+	.long	278040
+	.long	278978
+	.long	278980
+	.long	279038
+	.long	279040
+	.long	279274
+	.long	279276
+	.long	279554
+	.long	279564
+	.long	279758
+	.long	279764
+	.long	280014
+	.long	280016
+	.long	280362
+	.long	280364
+	.long	280794
+	.long	280796
+	.long	281510
+	.long	281516
+	.long	281838
+	.long	281844
+	.long	282010
+	.long	282036
+	.long	282050
+	.long	282068
+	.long	282906
+	.long	282908
+	.long	283002
+	.long	283004
+	.long	283406
+	.long	283408
+	.long	284418
+	.long	284420
+	.long	285406
+	.long	285408
+	.long	285870
+	.long	285872
+	.long	286954
+	.long	286956
+	.long	287994
+	.long	287996
+	.long	288014
+	.long	288016
+	.long	288978
+	.long	288980
+	.long	289054
+	.long	289056
+	.long	289382
+	.long	289384
+	.long	292106
+	.long	292108
+	.long	292114
+	.long	292120
+	.long	292446
+	.long	292448
+	.long	294154
+	.long	294156
+	.long	371650
+	.long	371668
+	.long	371906
+	.long	371932
+	.long	455290
+	.long	455292
+	.long	476566
+	.long	476568
+	.long	476574
+	.long	476584
+	.long	476602
+	.long	476620
+	.long	476654
+	.long	476684
+	.long	476694
+	.long	476720
+	.long	476842
+	.long	476856
+	.long	477450
+	.long	477460
+	.long	491522
+	.long	491548
+	.long	491554
+	.long	491620
+	.long	491630
+	.long	491656
+	.long	491662
+	.long	491668
+	.long	491674
+	.long	491692
+	.long	492094
+	.long	492096
+	.long	492738
+	.long	492764
+	.long	494266
+	.long	494268
+	.long	494514
+	.long	494528
+	.long	496562
+	.long	496576
+	.long	500546
+	.long	500572
+	.long	501010
+	.long	501036
+	.weak	_ZNSt9__unicode9__v15_1_011__gcb_edgesE
+	.section	.rodata._ZNSt9__unicode9__v15_1_011__gcb_edgesE,"aG",@progbits,_ZNSt9__unicode9__v15_1_011__gcb_edgesE,comdat
+	.align 32
+	.type	_ZNSt9__unicode9__v15_1_011__gcb_edgesE, @gnu_unique_object
+	.size	_ZNSt9__unicode9__v15_1_011__gcb_edgesE, 6800
+_ZNSt9__unicode9__v15_1_011__gcb_edgesE:
+	.long	1
+	.long	162
+	.long	177
+	.long	211
+	.long	225
+	.long	512
+	.long	2033
+	.long	2560
+	.long	2769
+	.long	2784
+	.long	12292
+	.long	14080
+	.long	18484
+	.long	18592
+	.long	22804
+	.long	23520
+	.long	23540
+	.long	23552
+	.long	23572
+	.long	23600
+	.long	23620
+	.long	23648
+	.long	23668
+	.long	23680
+	.long	24581
+	.long	24672
+	.long	24836
+	.long	25008
+	.long	25025
+	.long	25040
+	.long	25780
+	.long	26112
+	.long	26372
+	.long	26384
+	.long	28004
+	.long	28117
+	.long	28128
+	.long	28148
+	.long	28240
+	.long	28276
+	.long	28304
+	.long	28324
+	.long	28384
+	.long	28917
+	.long	28928
+	.long	28948
+	.long	28960
+	.long	29444
+	.long	29872
+	.long	31332
+	.long	31504
+	.long	32436
+	.long	32576
+	.long	32724
+	.long	32736
+	.long	33124
+	.long	33184
+	.long	33204
+	.long	33344
+	.long	33364
+	.long	33408
+	.long	33428
+	.long	33504
+	.long	34196
+	.long	34240
+	.long	35077
+	.long	35104
+	.long	35204
+	.long	35328
+	.long	36004
+	.long	36389
+	.long	36404
+	.long	36918
+	.long	36928
+	.long	37796
+	.long	37814
+	.long	37828
+	.long	37840
+	.long	37862
+	.long	37908
+	.long	38038
+	.long	38100
+	.long	38118
+	.long	38144
+	.long	38164
+	.long	38272
+	.long	38436
+	.long	38464
+	.long	38932
+	.long	38950
+	.long	38976
+	.long	39876
+	.long	39888
+	.long	39908
+	.long	39926
+	.long	39956
+	.long	40016
+	.long	40054
+	.long	40080
+	.long	40118
+	.long	40148
+	.long	40160
+	.long	40308
+	.long	40320
+	.long	40484
+	.long	40512
+	.long	40932
+	.long	40944
+	.long	40980
+	.long	41014
+	.long	41024
+	.long	41924
+	.long	41936
+	.long	41958
+	.long	42004
+	.long	42032
+	.long	42100
+	.long	42128
+	.long	42164
+	.long	42208
+	.long	42260
+	.long	42272
+	.long	42756
+	.long	42784
+	.long	42836
+	.long	42848
+	.long	43028
+	.long	43062
+	.long	43072
+	.long	43972
+	.long	43984
+	.long	44006
+	.long	44052
+	.long	44128
+	.long	44148
+	.long	44182
+	.long	44192
+	.long	44214
+	.long	44244
+	.long	44256
+	.long	44580
+	.long	44608
+	.long	44964
+	.long	45056
+	.long	45076
+	.long	45094
+	.long	45120
+	.long	46020
+	.long	46032
+	.long	46052
+	.long	46086
+	.long	46100
+	.long	46160
+	.long	46198
+	.long	46224
+	.long	46262
+	.long	46292
+	.long	46304
+	.long	46420
+	.long	46464
+	.long	46628
+	.long	46656
+	.long	47140
+	.long	47152
+	.long	48100
+	.long	48118
+	.long	48132
+	.long	48150
+	.long	48176
+	.long	48230
+	.long	48272
+	.long	48294
+	.long	48340
+	.long	48352
+	.long	48500
+	.long	48512
+	.long	49156
+	.long	49174
+	.long	49220
+	.long	49232
+	.long	50116
+	.long	50128
+	.long	50148
+	.long	50198
+	.long	50256
+	.long	50276
+	.long	50320
+	.long	50340
+	.long	50400
+	.long	50516
+	.long	50544
+	.long	50724
+	.long	50752
+	.long	51220
+	.long	51238
+	.long	51264
+	.long	52164
+	.long	52176
+	.long	52198
+	.long	52212
+	.long	52230
+	.long	52260
+	.long	52278
+	.long	52304
+	.long	52324
+	.long	52342
+	.long	52368
+	.long	52390
+	.long	52420
+	.long	52448
+	.long	52564
+	.long	52592
+	.long	52772
+	.long	52800
+	.long	53046
+	.long	53056
+	.long	53252
+	.long	53286
+	.long	53312
+	.long	54196
+	.long	54224
+	.long	54244
+	.long	54262
+	.long	54292
+	.long	54352
+	.long	54374
+	.long	54416
+	.long	54438
+	.long	54484
+	.long	54501
+	.long	54512
+	.long	54644
+	.long	54656
+	.long	54820
+	.long	54848
+	.long	55316
+	.long	55334
+	.long	55360
+	.long	56484
+	.long	56496
+	.long	56564
+	.long	56582
+	.long	56612
+	.long	56656
+	.long	56676
+	.long	56688
+	.long	56710
+	.long	56820
+	.long	56832
+	.long	57126
+	.long	57152
+	.long	58132
+	.long	58144
+	.long	58166
+	.long	58180
+	.long	58288
+	.long	58484
+	.long	58608
+	.long	60180
+	.long	60192
+	.long	60214
+	.long	60228
+	.long	60368
+	.long	60548
+	.long	60656
+	.long	61828
+	.long	61856
+	.long	62292
+	.long	62304
+	.long	62324
+	.long	62336
+	.long	62356
+	.long	62368
+	.long	62438
+	.long	62464
+	.long	63252
+	.long	63478
+	.long	63492
+	.long	63568
+	.long	63588
+	.long	63616
+	.long	63700
+	.long	63872
+	.long	63892
+	.long	64464
+	.long	64612
+	.long	64624
+	.long	66260
+	.long	66326
+	.long	66340
+	.long	66432
+	.long	66452
+	.long	66486
+	.long	66516
+	.long	66544
+	.long	66918
+	.long	66948
+	.long	66976
+	.long	67044
+	.long	67088
+	.long	67348
+	.long	67408
+	.long	67620
+	.long	67632
+	.long	67654
+	.long	67668
+	.long	67696
+	.long	67796
+	.long	67808
+	.long	68052
+	.long	68064
+	.long	69639
+	.long	71176
+	.long	72329
+	.long	73728
+	.long	79316
+	.long	79360
+	.long	94500
+	.long	94550
+	.long	94560
+	.long	95012
+	.long	95046
+	.long	95056
+	.long	95524
+	.long	95552
+	.long	96036
+	.long	96064
+	.long	97092
+	.long	97126
+	.long	97140
+	.long	97254
+	.long	97380
+	.long	97398
+	.long	97428
+	.long	97600
+	.long	97748
+	.long	97760
+	.long	98484
+	.long	98529
+	.long	98548
+	.long	98560
+	.long	100436
+	.long	100464
+	.long	101012
+	.long	101024
+	.long	102916
+	.long	102966
+	.long	103028
+	.long	103062
+	.long	103104
+	.long	103174
+	.long	103204
+	.long	103222
+	.long	103316
+	.long	103360
+	.long	106868
+	.long	106902
+	.long	106932
+	.long	106944
+	.long	107862
+	.long	107876
+	.long	107894
+	.long	107908
+	.long	108016
+	.long	108036
+	.long	108048
+	.long	108068
+	.long	108080
+	.long	108116
+	.long	108246
+	.long	108340
+	.long	108496
+	.long	108532
+	.long	108544
+	.long	109316
+	.long	109808
+	.long	110596
+	.long	110662
+	.long	110672
+	.long	111428
+	.long	111542
+	.long	111556
+	.long	111574
+	.long	111652
+	.long	111670
+	.long	111696
+	.long	112308
+	.long	112448
+	.long	112644
+	.long	112678
+	.long	112688
+	.long	113174
+	.long	113188
+	.long	113254
+	.long	113284
+	.long	113318
+	.long	113332
+	.long	113376
+	.long	114276
+	.long	114294
+	.long	114308
+	.long	114342
+	.long	114388
+	.long	114406
+	.long	114420
+	.long	114470
+	.long	114496
+	.long	115270
+	.long	115396
+	.long	115526
+	.long	115556
+	.long	115584
+	.long	118020
+	.long	118064
+	.long	118084
+	.long	118294
+	.long	118308
+	.long	118416
+	.long	118484
+	.long	118496
+	.long	118596
+	.long	118608
+	.long	118646
+	.long	118660
+	.long	118688
+	.long	121860
+	.long	122880
+	.long	131249
+	.long	131268
+	.long	131290
+	.long	131297
+	.long	131328
+	.long	131713
+	.long	131824
+	.long	132609
+	.long	132864
+	.long	134404
+	.long	134928
+	.long	184052
+	.long	184096
+	.long	186356
+	.long	186368
+	.long	187908
+	.long	188416
+	.long	197284
+	.long	197376
+	.long	199060
+	.long	199088
+	.long	681716
+	.long	681776
+	.long	681796
+	.long	681952
+	.long	682468
+	.long	682496
+	.long	683780
+	.long	683808
+	.long	688164
+	.long	688176
+	.long	688228
+	.long	688240
+	.long	688308
+	.long	688320
+	.long	688694
+	.long	688724
+	.long	688758
+	.long	688768
+	.long	688836
+	.long	688848
+	.long	690182
+	.long	690208
+	.long	691014
+	.long	691268
+	.long	691296
+	.long	691716
+	.long	692000
+	.long	692212
+	.long	692224
+	.long	692836
+	.long	692960
+	.long	693364
+	.long	693542
+	.long	693568
+	.long	693767
+	.long	694224
+	.long	694276
+	.long	694326
+	.long	694336
+	.long	695092
+	.long	695110
+	.long	695140
+	.long	695206
+	.long	695236
+	.long	695270
+	.long	695312
+	.long	695892
+	.long	695904
+	.long	696980
+	.long	697078
+	.long	697108
+	.long	697142
+	.long	697172
+	.long	697200
+	.long	697396
+	.long	697408
+	.long	697540
+	.long	697558
+	.long	697568
+	.long	698308
+	.long	698320
+	.long	699140
+	.long	699152
+	.long	699172
+	.long	699216
+	.long	699252
+	.long	699280
+	.long	699364
+	.long	699392
+	.long	699412
+	.long	699424
+	.long	700086
+	.long	700100
+	.long	700134
+	.long	700160
+	.long	700246
+	.long	700260
+	.long	700272
+	.long	704054
+	.long	704084
+	.long	704102
+	.long	704132
+	.long	704150
+	.long	704176
+	.long	704198
+	.long	704212
+	.long	704224
+	.long	704523
+	.long	704540
+	.long	704971
+	.long	704988
+	.long	705419
+	.long	705436
+	.long	705867
+	.long	705884
+	.long	706315
+	.long	706332
+	.long	706763
+	.long	706780
+	.long	707211
+	.long	707228
+	.long	707659
+	.long	707676
+	.long	708107
+	.long	708124
+	.long	708555
+	.long	708572
+	.long	709003
+	.long	709020
+	.long	709451
+	.long	709468
+	.long	709899
+	.long	709916
+	.long	710347
+	.long	710364
+	.long	710795
+	.long	710812
+	.long	711243
+	.long	711260
+	.long	711691
+	.long	711708
+	.long	712139
+	.long	712156
+	.long	712587
+	.long	712604
+	.long	713035
+	.long	713052
+	.long	713483
+	.long	713500
+	.long	713931
+	.long	713948
+	.long	714379
+	.long	714396
+	.long	714827
+	.long	714844
+	.long	715275
+	.long	715292
+	.long	715723
+	.long	715740
+	.long	716171
+	.long	716188
+	.long	716619
+	.long	716636
+	.long	717067
+	.long	717084
+	.long	717515
+	.long	717532
+	.long	717963
+	.long	717980
+	.long	718411
+	.long	718428
+	.long	718859
+	.long	718876
+	.long	719307
+	.long	719324
+	.long	719755
+	.long	719772
+	.long	720203
+	.long	720220
+	.long	720651
+	.long	720668
+	.long	721099
+	.long	721116
+	.long	721547
+	.long	721564
+	.long	721995
+	.long	722012
+	.long	722443
+	.long	722460
+	.long	722891
+	.long	722908
+	.long	723339
+	.long	723356
+	.long	723787
+	.long	723804
+	.long	724235
+	.long	724252
+	.long	724683
+	.long	724700
+	.long	725131
+	.long	725148
+	.long	725579
+	.long	725596
+	.long	726027
+	.long	726044
+	.long	726475
+	.long	726492
+	.long	726923
+	.long	726940
+	.long	727371
+	.long	727388
+	.long	727819
+	.long	727836
+	.long	728267
+	.long	728284
+	.long	728715
+	.long	728732
+	.long	729163
+	.long	729180
+	.long	729611
+	.long	729628
+	.long	730059
+	.long	730076
+	.long	730507
+	.long	730524
+	.long	730955
+	.long	730972
+	.long	731403
+	.long	731420
+	.long	731851
+	.long	731868
+	.long	732299
+	.long	732316
+	.long	732747
+	.long	732764
+	.long	733195
+	.long	733212
+	.long	733643
+	.long	733660
+	.long	734091
+	.long	734108
+	.long	734539
+	.long	734556
+	.long	734987
+	.long	735004
+	.long	735435
+	.long	735452
+	.long	735883
+	.long	735900
+	.long	736331
+	.long	736348
+	.long	736779
+	.long	736796
+	.long	737227
+	.long	737244
+	.long	737675
+	.long	737692
+	.long	738123
+	.long	738140
+	.long	738571
+	.long	738588
+	.long	739019
+	.long	739036
+	.long	739467
+	.long	739484
+	.long	739915
+	.long	739932
+	.long	740363
+	.long	740380
+	.long	740811
+	.long	740828
+	.long	741259
+	.long	741276
+	.long	741707
+	.long	741724
+	.long	742155
+	.long	742172
+	.long	742603
+	.long	742620
+	.long	743051
+	.long	743068
+	.long	743499
+	.long	743516
+	.long	743947
+	.long	743964
+	.long	744395
+	.long	744412
+	.long	744843
+	.long	744860
+	.long	745291
+	.long	745308
+	.long	745739
+	.long	745756
+	.long	746187
+	.long	746204
+	.long	746635
+	.long	746652
+	.long	747083
+	.long	747100
+	.long	747531
+	.long	747548
+	.long	747979
+	.long	747996
+	.long	748427
+	.long	748444
+	.long	748875
+	.long	748892
+	.long	749323
+	.long	749340
+	.long	749771
+	.long	749788
+	.long	750219
+	.long	750236
+	.long	750667
+	.long	750684
+	.long	751115
+	.long	751132
+	.long	751563
+	.long	751580
+	.long	752011
+	.long	752028
+	.long	752459
+	.long	752476
+	.long	752907
+	.long	752924
+	.long	753355
+	.long	753372
+	.long	753803
+	.long	753820
+	.long	754251
+	.long	754268
+	.long	754699
+	.long	754716
+	.long	755147
+	.long	755164
+	.long	755595
+	.long	755612
+	.long	756043
+	.long	756060
+	.long	756491
+	.long	756508
+	.long	756939
+	.long	756956
+	.long	757387
+	.long	757404
+	.long	757835
+	.long	757852
+	.long	758283
+	.long	758300
+	.long	758731
+	.long	758748
+	.long	759179
+	.long	759196
+	.long	759627
+	.long	759644
+	.long	760075
+	.long	760092
+	.long	760523
+	.long	760540
+	.long	760971
+	.long	760988
+	.long	761419
+	.long	761436
+	.long	761867
+	.long	761884
+	.long	762315
+	.long	762332
+	.long	762763
+	.long	762780
+	.long	763211
+	.long	763228
+	.long	763659
+	.long	763676
+	.long	764107
+	.long	764124
+	.long	764555
+	.long	764572
+	.long	765003
+	.long	765020
+	.long	765451
+	.long	765468
+	.long	765899
+	.long	765916
+	.long	766347
+	.long	766364
+	.long	766795
+	.long	766812
+	.long	767243
+	.long	767260
+	.long	767691
+	.long	767708
+	.long	768139
+	.long	768156
+	.long	768587
+	.long	768604
+	.long	769035
+	.long	769052
+	.long	769483
+	.long	769500
+	.long	769931
+	.long	769948
+	.long	770379
+	.long	770396
+	.long	770827
+	.long	770844
+	.long	771275
+	.long	771292
+	.long	771723
+	.long	771740
+	.long	772171
+	.long	772188
+	.long	772619
+	.long	772636
+	.long	773067
+	.long	773084
+	.long	773515
+	.long	773532
+	.long	773963
+	.long	773980
+	.long	774411
+	.long	774428
+	.long	774859
+	.long	774876
+	.long	775307
+	.long	775324
+	.long	775755
+	.long	775772
+	.long	776203
+	.long	776220
+	.long	776651
+	.long	776668
+	.long	777099
+	.long	777116
+	.long	777547
+	.long	777564
+	.long	777995
+	.long	778012
+	.long	778443
+	.long	778460
+	.long	778891
+	.long	778908
+	.long	779339
+	.long	779356
+	.long	779787
+	.long	779804
+	.long	780235
+	.long	780252
+	.long	780683
+	.long	780700
+	.long	781131
+	.long	781148
+	.long	781579
+	.long	781596
+	.long	782027
+	.long	782044
+	.long	782475
+	.long	782492
+	.long	782923
+	.long	782940
+	.long	783371
+	.long	783388
+	.long	783819
+	.long	783836
+	.long	784267
+	.long	784284
+	.long	784715
+	.long	784732
+	.long	785163
+	.long	785180
+	.long	785611
+	.long	785628
+	.long	786059
+	.long	786076
+	.long	786507
+	.long	786524
+	.long	786955
+	.long	786972
+	.long	787403
+	.long	787420
+	.long	787851
+	.long	787868
+	.long	788299
+	.long	788316
+	.long	788747
+	.long	788764
+	.long	789195
+	.long	789212
+	.long	789643
+	.long	789660
+	.long	790091
+	.long	790108
+	.long	790539
+	.long	790556
+	.long	790987
+	.long	791004
+	.long	791435
+	.long	791452
+	.long	791883
+	.long	791900
+	.long	792331
+	.long	792348
+	.long	792779
+	.long	792796
+	.long	793227
+	.long	793244
+	.long	793675
+	.long	793692
+	.long	794123
+	.long	794140
+	.long	794571
+	.long	794588
+	.long	795019
+	.long	795036
+	.long	795467
+	.long	795484
+	.long	795915
+	.long	795932
+	.long	796363
+	.long	796380
+	.long	796811
+	.long	796828
+	.long	797259
+	.long	797276
+	.long	797707
+	.long	797724
+	.long	798155
+	.long	798172
+	.long	798603
+	.long	798620
+	.long	799051
+	.long	799068
+	.long	799499
+	.long	799516
+	.long	799947
+	.long	799964
+	.long	800395
+	.long	800412
+	.long	800843
+	.long	800860
+	.long	801291
+	.long	801308
+	.long	801739
+	.long	801756
+	.long	802187
+	.long	802204
+	.long	802635
+	.long	802652
+	.long	803083
+	.long	803100
+	.long	803531
+	.long	803548
+	.long	803979
+	.long	803996
+	.long	804427
+	.long	804444
+	.long	804875
+	.long	804892
+	.long	805323
+	.long	805340
+	.long	805771
+	.long	805788
+	.long	806219
+	.long	806236
+	.long	806667
+	.long	806684
+	.long	807115
+	.long	807132
+	.long	807563
+	.long	807580
+	.long	808011
+	.long	808028
+	.long	808459
+	.long	808476
+	.long	808907
+	.long	808924
+	.long	809355
+	.long	809372
+	.long	809803
+	.long	809820
+	.long	810251
+	.long	810268
+	.long	810699
+	.long	810716
+	.long	811147
+	.long	811164
+	.long	811595
+	.long	811612
+	.long	812043
+	.long	812060
+	.long	812491
+	.long	812508
+	.long	812939
+	.long	812956
+	.long	813387
+	.long	813404
+	.long	813835
+	.long	813852
+	.long	814283
+	.long	814300
+	.long	814731
+	.long	814748
+	.long	815179
+	.long	815196
+	.long	815627
+	.long	815644
+	.long	816075
+	.long	816092
+	.long	816523
+	.long	816540
+	.long	816971
+	.long	816988
+	.long	817419
+	.long	817436
+	.long	817867
+	.long	817884
+	.long	818315
+	.long	818332
+	.long	818763
+	.long	818780
+	.long	819211
+	.long	819228
+	.long	819659
+	.long	819676
+	.long	820107
+	.long	820124
+	.long	820555
+	.long	820572
+	.long	821003
+	.long	821020
+	.long	821451
+	.long	821468
+	.long	821899
+	.long	821916
+	.long	822347
+	.long	822364
+	.long	822795
+	.long	822812
+	.long	823243
+	.long	823260
+	.long	823691
+	.long	823708
+	.long	824139
+	.long	824156
+	.long	824587
+	.long	824604
+	.long	825035
+	.long	825052
+	.long	825483
+	.long	825500
+	.long	825931
+	.long	825948
+	.long	826379
+	.long	826396
+	.long	826827
+	.long	826844
+	.long	827275
+	.long	827292
+	.long	827723
+	.long	827740
+	.long	828171
+	.long	828188
+	.long	828619
+	.long	828636
+	.long	829067
+	.long	829084
+	.long	829515
+	.long	829532
+	.long	829963
+	.long	829980
+	.long	830411
+	.long	830428
+	.long	830859
+	.long	830876
+	.long	831307
+	.long	831324
+	.long	831755
+	.long	831772
+	.long	832203
+	.long	832220
+	.long	832651
+	.long	832668
+	.long	833099
+	.long	833116
+	.long	833547
+	.long	833564
+	.long	833995
+	.long	834012
+	.long	834443
+	.long	834460
+	.long	834891
+	.long	834908
+	.long	835339
+	.long	835356
+	.long	835787
+	.long	835804
+	.long	836235
+	.long	836252
+	.long	836683
+	.long	836700
+	.long	837131
+	.long	837148
+	.long	837579
+	.long	837596
+	.long	838027
+	.long	838044
+	.long	838475
+	.long	838492
+	.long	838923
+	.long	838940
+	.long	839371
+	.long	839388
+	.long	839819
+	.long	839836
+	.long	840267
+	.long	840284
+	.long	840715
+	.long	840732
+	.long	841163
+	.long	841180
+	.long	841611
+	.long	841628
+	.long	842059
+	.long	842076
+	.long	842507
+	.long	842524
+	.long	842955
+	.long	842972
+	.long	843403
+	.long	843420
+	.long	843851
+	.long	843868
+	.long	844299
+	.long	844316
+	.long	844747
+	.long	844764
+	.long	845195
+	.long	845212
+	.long	845643
+	.long	845660
+	.long	846091
+	.long	846108
+	.long	846539
+	.long	846556
+	.long	846987
+	.long	847004
+	.long	847435
+	.long	847452
+	.long	847883
+	.long	847900
+	.long	848331
+	.long	848348
+	.long	848779
+	.long	848796
+	.long	849227
+	.long	849244
+	.long	849675
+	.long	849692
+	.long	850123
+	.long	850140
+	.long	850571
+	.long	850588
+	.long	851019
+	.long	851036
+	.long	851467
+	.long	851484
+	.long	851915
+	.long	851932
+	.long	852363
+	.long	852380
+	.long	852811
+	.long	852828
+	.long	853259
+	.long	853276
+	.long	853707
+	.long	853724
+	.long	854155
+	.long	854172
+	.long	854603
+	.long	854620
+	.long	855051
+	.long	855068
+	.long	855499
+	.long	855516
+	.long	855947
+	.long	855964
+	.long	856395
+	.long	856412
+	.long	856843
+	.long	856860
+	.long	857291
+	.long	857308
+	.long	857739
+	.long	857756
+	.long	858187
+	.long	858204
+	.long	858635
+	.long	858652
+	.long	859083
+	.long	859100
+	.long	859531
+	.long	859548
+	.long	859979
+	.long	859996
+	.long	860427
+	.long	860444
+	.long	860875
+	.long	860892
+	.long	861323
+	.long	861340
+	.long	861771
+	.long	861788
+	.long	862219
+	.long	862236
+	.long	862667
+	.long	862684
+	.long	863115
+	.long	863132
+	.long	863563
+	.long	863580
+	.long	864011
+	.long	864028
+	.long	864459
+	.long	864476
+	.long	864907
+	.long	864924
+	.long	865355
+	.long	865372
+	.long	865803
+	.long	865820
+	.long	866251
+	.long	866268
+	.long	866699
+	.long	866716
+	.long	867147
+	.long	867164
+	.long	867595
+	.long	867612
+	.long	868043
+	.long	868060
+	.long	868491
+	.long	868508
+	.long	868939
+	.long	868956
+	.long	869387
+	.long	869404
+	.long	869835
+	.long	869852
+	.long	870283
+	.long	870300
+	.long	870731
+	.long	870748
+	.long	871179
+	.long	871196
+	.long	871627
+	.long	871644
+	.long	872075
+	.long	872092
+	.long	872523
+	.long	872540
+	.long	872971
+	.long	872988
+	.long	873419
+	.long	873436
+	.long	873867
+	.long	873884
+	.long	874315
+	.long	874332
+	.long	874763
+	.long	874780
+	.long	875211
+	.long	875228
+	.long	875659
+	.long	875676
+	.long	876107
+	.long	876124
+	.long	876555
+	.long	876572
+	.long	877003
+	.long	877020
+	.long	877451
+	.long	877468
+	.long	877899
+	.long	877916
+	.long	878347
+	.long	878364
+	.long	878795
+	.long	878812
+	.long	879243
+	.long	879260
+	.long	879691
+	.long	879708
+	.long	880139
+	.long	880156
+	.long	880587
+	.long	880604
+	.long	881035
+	.long	881052
+	.long	881483
+	.long	881500
+	.long	881931
+	.long	881948
+	.long	882379
+	.long	882396
+	.long	882827
+	.long	882844
+	.long	883264
+	.long	883464
+	.long	883824
+	.long	883897
+	.long	884672
+	.long	1028580
+	.long	1028592
+	.long	1040388
+	.long	1040640
+	.long	1040900
+	.long	1041152
+	.long	1044465
+	.long	1044480
+	.long	1047012
+	.long	1047040
+	.long	1048321
+	.long	1048512
+	.long	1056724
+	.long	1056736
+	.long	1060356
+	.long	1060368
+	.long	1062756
+	.long	1062832
+	.long	1089556
+	.long	1089600
+	.long	1089620
+	.long	1089648
+	.long	1089732
+	.long	1089792
+	.long	1090436
+	.long	1090480
+	.long	1090548
+	.long	1090560
+	.long	1093204
+	.long	1093232
+	.long	1102404
+	.long	1102464
+	.long	1108660
+	.long	1108688
+	.long	1109972
+	.long	1110016
+	.long	1111140
+	.long	1111312
+	.long	1112100
+	.long	1112160
+	.long	1114118
+	.long	1114132
+	.long	1114150
+	.long	1114160
+	.long	1115012
+	.long	1115248
+	.long	1115908
+	.long	1115920
+	.long	1115956
+	.long	1115984
+	.long	1116148
+	.long	1116198
+	.long	1116208
+	.long	1116934
+	.long	1116980
+	.long	1117046
+	.long	1117076
+	.long	1117104
+	.long	1117141
+	.long	1117152
+	.long	1117220
+	.long	1117232
+	.long	1117397
+	.long	1117408
+	.long	1118212
+	.long	1118256
+	.long	1118836
+	.long	1118918
+	.long	1118932
+	.long	1119056
+	.long	1119318
+	.long	1119344
+	.long	1120052
+	.long	1120064
+	.long	1120260
+	.long	1120294
+	.long	1120304
+	.long	1121078
+	.long	1121124
+	.long	1121270
+	.long	1121296
+	.long	1121317
+	.long	1121344
+	.long	1121428
+	.long	1121488
+	.long	1121510
+	.long	1121524
+	.long	1121536
+	.long	1123014
+	.long	1123060
+	.long	1123110
+	.long	1123140
+	.long	1123158
+	.long	1123172
+	.long	1123200
+	.long	1123300
+	.long	1123312
+	.long	1123348
+	.long	1123360
+	.long	1125876
+	.long	1125894
+	.long	1125940
+	.long	1126064
+	.long	1126404
+	.long	1126438
+	.long	1126464
+	.long	1127348
+	.long	1127376
+	.long	1127396
+	.long	1127414
+	.long	1127428
+	.long	1127446
+	.long	1127504
+	.long	1127542
+	.long	1127568
+	.long	1127606
+	.long	1127648
+	.long	1127796
+	.long	1127808
+	.long	1127974
+	.long	1128000
+	.long	1128036
+	.long	1128144
+	.long	1128196
+	.long	1128272
+	.long	1131350
+	.long	1131396
+	.long	1131526
+	.long	1131556
+	.long	1131606
+	.long	1131620
+	.long	1131632
+	.long	1132004
+	.long	1132016
+	.long	1133316
+	.long	1133334
+	.long	1133364
+	.long	1133462
+	.long	1133476
+	.long	1133494
+	.long	1133524
+	.long	1133542
+	.long	1133556
+	.long	1133590
+	.long	1133604
+	.long	1133632
+	.long	1137396
+	.long	1137414
+	.long	1137444
+	.long	1137504
+	.long	1137542
+	.long	1137604
+	.long	1137638
+	.long	1137652
+	.long	1137680
+	.long	1138116
+	.long	1138144
+	.long	1139462
+	.long	1139508
+	.long	1139638
+	.long	1139668
+	.long	1139686
+	.long	1139700
+	.long	1139728
+	.long	1141428
+	.long	1141446
+	.long	1141460
+	.long	1141478
+	.long	1141508
+	.long	1141606
+	.long	1141620
+	.long	1141632
+	.long	1143252
+	.long	1143296
+	.long	1143332
+	.long	1143398
+	.long	1143412
+	.long	1143488
+	.long	1147590
+	.long	1147636
+	.long	1147782
+	.long	1147796
+	.long	1147824
+	.long	1151748
+	.long	1151766
+	.long	1151840
+	.long	1151862
+	.long	1151888
+	.long	1151924
+	.long	1151958
+	.long	1151972
+	.long	1151989
+	.long	1152006
+	.long	1152021
+	.long	1152038
+	.long	1152052
+	.long	1152064
+	.long	1154326
+	.long	1154372
+	.long	1154432
+	.long	1154468
+	.long	1154502
+	.long	1154564
+	.long	1154576
+	.long	1154630
+	.long	1154640
+	.long	1155092
+	.long	1155248
+	.long	1155892
+	.long	1155990
+	.long	1156005
+	.long	1156020
+	.long	1156080
+	.long	1156212
+	.long	1156224
+	.long	1156372
+	.long	1156470
+	.long	1156500
+	.long	1156544
+	.long	1157189
+	.long	1157284
+	.long	1157494
+	.long	1157508
+	.long	1157536
+	.long	1164022
+	.long	1164036
+	.long	1164144
+	.long	1164164
+	.long	1164262
+	.long	1164276
+	.long	1164288
+	.long	1165604
+	.long	1165952
+	.long	1165974
+	.long	1165988
+	.long	1166102
+	.long	1166116
+	.long	1166150
+	.long	1166164
+	.long	1166192
+	.long	1168148
+	.long	1168240
+	.long	1168292
+	.long	1168304
+	.long	1168324
+	.long	1168352
+	.long	1168372
+	.long	1168485
+	.long	1168500
+	.long	1168512
+	.long	1169574
+	.long	1169648
+	.long	1169668
+	.long	1169696
+	.long	1169718
+	.long	1169748
+	.long	1169766
+	.long	1169780
+	.long	1169792
+	.long	1175348
+	.long	1175382
+	.long	1175408
+	.long	1175556
+	.long	1175589
+	.long	1175606
+	.long	1175616
+	.long	1176390
+	.long	1176420
+	.long	1176496
+	.long	1176550
+	.long	1176580
+	.long	1176598
+	.long	1176612
+	.long	1176624
+	.long	1262337
+	.long	1262596
+	.long	1262608
+	.long	1262708
+	.long	1262944
+	.long	1486596
+	.long	1486672
+	.long	1487620
+	.long	1487728
+	.long	1504500
+	.long	1504512
+	.long	1504534
+	.long	1505408
+	.long	1505524
+	.long	1505584
+	.long	1506884
+	.long	1506896
+	.long	1507078
+	.long	1507104
+	.long	1821140
+	.long	1821168
+	.long	1821185
+	.long	1821248
+	.long	1896452
+	.long	1897184
+	.long	1897220
+	.long	1897584
+	.long	1906260
+	.long	1906278
+	.long	1906292
+	.long	1906336
+	.long	1906390
+	.long	1906404
+	.long	1906481
+	.long	1906612
+	.long	1906736
+	.long	1906772
+	.long	1906880
+	.long	1907364
+	.long	1907424
+	.long	1909796
+	.long	1909840
+	.long	1941508
+	.long	1942384
+	.long	1942452
+	.long	1943248
+	.long	1943380
+	.long	1943392
+	.long	1943620
+	.long	1943632
+	.long	1943988
+	.long	1944064
+	.long	1944084
+	.long	1944320
+	.long	1966084
+	.long	1966192
+	.long	1966212
+	.long	1966480
+	.long	1966516
+	.long	1966624
+	.long	1966644
+	.long	1966672
+	.long	1966692
+	.long	1966768
+	.long	1968372
+	.long	1968384
+	.long	1970948
+	.long	1971056
+	.long	1977060
+	.long	1977072
+	.long	1978052
+	.long	1978112
+	.long	1986244
+	.long	1986304
+	.long	2002180
+	.long	2002288
+	.long	2004036
+	.long	2004144
+	.long	2039405
+	.long	2039808
+	.long	2047924
+	.long	2048000
+	.long	14680065
+	.long	14680580
+	.long	14682113
+	.long	14684164
+	.long	14688001
+	.long	14745600
+	.weak	_ZNSt9__unicode9__v15_1_013__width_edgesE
+	.section	.rodata._ZNSt9__unicode9__v15_1_013__width_edgesE,"aG",@progbits,_ZNSt9__unicode9__v15_1_013__width_edgesE,comdat
+	.align 32
+	.type	_ZNSt9__unicode9__v15_1_013__width_edgesE, @gnu_unique_object
+	.size	_ZNSt9__unicode9__v15_1_013__width_edgesE, 800
+_ZNSt9__unicode9__v15_1_013__width_edgesE:
+	.long	4352
+	.long	4448
+	.long	8986
+	.long	8988
+	.long	9001
+	.long	9003
+	.long	9193
+	.long	9197
+	.long	9200
+	.long	9201
+	.long	9203
+	.long	9204
+	.long	9725
+	.long	9727
+	.long	9748
+	.long	9750
+	.long	9800
+	.long	9812
+	.long	9855
+	.long	9856
+	.long	9875
+	.long	9876
+	.long	9889
+	.long	9890
+	.long	9898
+	.long	9900
+	.long	9917
+	.long	9919
+	.long	9924
+	.long	9926
+	.long	9934
+	.long	9935
+	.long	9940
+	.long	9941
+	.long	9962
+	.long	9963
+	.long	9970
+	.long	9972
+	.long	9973
+	.long	9974
+	.long	9978
+	.long	9979
+	.long	9981
+	.long	9982
+	.long	9989
+	.long	9990
+	.long	9994
+	.long	9996
+	.long	10024
+	.long	10025
+	.long	10060
+	.long	10061
+	.long	10062
+	.long	10063
+	.long	10067
+	.long	10070
+	.long	10071
+	.long	10072
+	.long	10133
+	.long	10136
+	.long	10160
+	.long	10161
+	.long	10175
+	.long	10176
+	.long	11035
+	.long	11037
+	.long	11088
+	.long	11089
+	.long	11093
+	.long	11094
+	.long	11904
+	.long	11930
+	.long	11931
+	.long	12020
+	.long	12032
+	.long	12246
+	.long	12272
+	.long	12351
+	.long	12353
+	.long	12439
+	.long	12441
+	.long	12544
+	.long	12549
+	.long	12592
+	.long	12593
+	.long	12687
+	.long	12688
+	.long	12772
+	.long	12783
+	.long	12831
+	.long	12832
+	.long	12872
+	.long	12880
+	.long	42125
+	.long	42128
+	.long	42183
+	.long	43360
+	.long	43389
+	.long	44032
+	.long	55204
+	.long	63744
+	.long	64256
+	.long	65040
+	.long	65050
+	.long	65072
+	.long	65107
+	.long	65108
+	.long	65127
+	.long	65128
+	.long	65132
+	.long	65281
+	.long	65377
+	.long	65504
+	.long	65511
+	.long	94176
+	.long	94181
+	.long	94192
+	.long	94194
+	.long	94208
+	.long	100344
+	.long	100352
+	.long	101590
+	.long	101632
+	.long	101641
+	.long	110576
+	.long	110580
+	.long	110581
+	.long	110588
+	.long	110589
+	.long	110591
+	.long	110592
+	.long	110883
+	.long	110898
+	.long	110899
+	.long	110928
+	.long	110931
+	.long	110933
+	.long	110934
+	.long	110948
+	.long	110952
+	.long	110960
+	.long	111356
+	.long	126980
+	.long	126981
+	.long	127183
+	.long	127184
+	.long	127374
+	.long	127375
+	.long	127377
+	.long	127387
+	.long	127488
+	.long	127491
+	.long	127504
+	.long	127548
+	.long	127552
+	.long	127561
+	.long	127568
+	.long	127570
+	.long	127584
+	.long	127590
+	.long	127744
+	.long	128592
+	.long	128640
+	.long	128710
+	.long	128716
+	.long	128717
+	.long	128720
+	.long	128723
+	.long	128725
+	.long	128728
+	.long	128732
+	.long	128736
+	.long	128747
+	.long	128749
+	.long	128756
+	.long	128765
+	.long	128992
+	.long	129004
+	.long	129008
+	.long	129009
+	.long	129280
+	.long	129536
+	.long	129648
+	.long	129661
+	.long	129664
+	.long	129673
+	.long	129680
+	.long	129726
+	.long	129727
+	.long	129734
+	.long	129742
+	.long	129756
+	.long	129760
+	.long	129769
+	.long	129776
+	.long	129785
+	.long	131072
+	.long	196606
+	.long	196608
+	.long	262142
+	.section	.rodata.cst16,"aM",@progbits,16
+	.align 16
+.LC8:
+	.quad	3688503277381496880
+	.quad	3976738051646829616
+	.align 16
+.LC9:
+	.quad	3544667369688283184
+	.quad	3832902143785906737
+	.align 16
+.LC10:
+	.quad	4121136918051239473
+	.quad	3689066235924983858
+	.align 16
+.LC11:
+	.quad	3977301010190316594
+	.quad	3545230328231770162
+	.align 16
+.LC12:
+	.quad	3833465102329393715
+	.quad	4121699876594726451
+	.align 16
+.LC13:
+	.quad	3689629194468470836
+	.quad	3977863968733803572
+	.align 16
+.LC14:
+	.quad	3545793286775257140
+	.quad	3834028060872880693
+	.align 16
+.LC15:
+	.quad	4122262835138213429
+	.quad	3690192153011957814
+	.align 16
+.LC16:
+	.quad	3978426927277290550
+	.quad	3546356245318744118
+	.align 16
+.LC17:
+	.quad	3834591019416367671
+	.quad	4122825793681700407
+	.align 16
+.LC18:
+	.quad	3690755111555444792
+	.quad	3978989885820777528
+	.align 16
+.LC19:
+	.quad	3546919203862231096
+	.quad	3835153977959854649
+	.align 16
+.LC20:
+	.quad	4122263930388298034
+	.quad	16106987313379638
+	.section	.data.rel.ro.local,"aw"
+	.align 8
+.LC21:
+	.quad	.LC6
+	.section	.rodata.cst4,"aM",@progbits,4
+	.align 4
+.LC30:
+	.byte	-16
+	.byte	-128
+	.byte	-128
+	.byte	-128
+	.section	.rodata.cst16
+	.align 16
+.LC32:
+	.quad	3978425819141910832
+	.quad	7378413942531504440
+	.align 16
+.LC42:
+	.long	-1
+	.long	-1
+	.long	-1
+	.long	2147483647
+	.align 16
+.LC43:
+	.long	-1
+	.long	-1
+	.long	-1
+	.long	2147418111
+	.align 16
+.LC48:
+	.long	-1
+	.long	-1
+	.long	32766
+	.long	0
+	.align 16
+.LC50:
+	.long	-1
+	.long	2147483647
+	.long	0
+	.long	0
+	.section	.rodata.cst8,"aM",@progbits,8
+	.align 8
+.LC51:
+	.long	-1
+	.long	2146435071
+	.section	.rodata.cst16
+	.align 16
+.LC52:
+	.long	2147483647
+	.long	0
+	.long	0
+	.long	0
+	.section	.rodata.cst4
+	.align 4
+.LC53:
+	.long	2139095039
+	.section	.rodata.cst16
+	.align 16
+.LC58:
+	.quad	0
+	.quad	-1
+	.hidden	DW.ref.__gxx_personality_v0
+	.weak	DW.ref.__gxx_personality_v0
+	.section	.data.rel.local.DW.ref.__gxx_personality_v0,"awG",@progbits,DW.ref.__gxx_personality_v0,comdat
+	.align 8
+	.type	DW.ref.__gxx_personality_v0, @object
+	.size	DW.ref.__gxx_personality_v0, 8
+DW.ref.__gxx_personality_v0:
+	.quad	__gxx_personality_v0
+	.globl	__gttf2
+	.globl	__unordtf2
+	.globl	__udivti3
+	.globl	__gxx_personality_v0
+	.ident	"GCC: (Ubuntu 14.2.0-4ubuntu2~24.04.1) 14.2.0"
+	.section	.note.GNU-stack,"",@progbits
+	.section	.note.gnu.property,"a"
+	.align 8
+	.long	1f - 0f
+	.long	4f - 1f
+	.long	5
+0:
+	.string	"GNU"
+1:
+	.align 8
+	.long	0xc0000002
+	.long	3f - 2f
+2:
+	.long	0x3
+3:
+	.align 8
+4:
